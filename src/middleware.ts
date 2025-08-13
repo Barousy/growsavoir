@@ -8,11 +8,15 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: 'fr',
   
-  // Always use the default locale for the root path
+  // Don't add locale prefix for default locale
   localePrefix: 'as-needed'
 });
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(fr|en|ar)/:path*']
+  // Match all pathnames except for
+  // - /api (API routes)
+  // - /_next (Next.js internals)
+  // - /_vercel (Vercel internals)
+  // - all files in the public folder
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
