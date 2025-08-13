@@ -1,16 +1,10 @@
 // src/middleware.ts
-import createMiddleware from 'next-intl/middleware';
+import { NextResponse } from 'next/server';
 
-export default createMiddleware({
-  // A list of all locales that are supported
-  locales: ['fr', 'en', 'ar'],
-  
-  // Used when no locale matches
-  defaultLocale: 'fr',
-  
-  // Don't add locale prefix for default locale
-  localePrefix: 'as-needed'
-});
+// Middleware simplifié pour éviter les conflits avec next-intl
+export function middleware() {
+  return NextResponse.next();
+}
 
 export const config = {
   // Match all pathnames except for

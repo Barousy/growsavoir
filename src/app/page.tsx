@@ -1,9 +1,7 @@
 // src/app/page.tsx
-import {getTranslations} from 'next-intl/server';
 import Link from 'next/link';
 
-export default async function HomePage() {
-  const t = await getTranslations();
+export default function HomePage() {
 
   const cards = [
     {subject: 'arabe',    title: 'Alif-Bâ-Tâ',                     level: 'maternelle'},
@@ -16,8 +14,12 @@ export default async function HomePage() {
 
   return (
     <main className="mx-auto max-w-4xl p-6">
-      <h1 className="text-3xl md:text-5xl font-bold tracking-tight">{t('hero.title')}</h1>
-      <p className="text-lg opacity-80">{t('hero.subtitle')}</p>
+      <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
+        Apprendre du CP à l&apos;université
+      </h1>
+      <p className="text-lg opacity-80">
+        Arabe, Français, Anglais, Informatique, Maths, Sciences, Histoire de l&apos;islam
+      </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-6">
         {cards.map((c) => (
