@@ -6,7 +6,13 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  // Ensure proper routing for Netlify
+  trailingSlash: false,
+  // Handle dynamic routes properly
+  experimental: {
+    appDir: true
+  }
 };
 
 export default withNextIntl(nextConfig);

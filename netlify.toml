@@ -5,9 +5,22 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Next.js routing - this is the key for proper routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+# Handle Next.js static files
+[[redirects]]
+  from = "/_next/*"
+  to = "/_next/:splat"
+  status = 200
+
+# Handle Next.js API routes
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
   status = 200
 
 [[headers]]
