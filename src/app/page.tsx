@@ -1,18 +1,9 @@
+// src/app/page.tsx
 import {getTranslations} from 'next-intl/server';
 import Link from 'next/link';
 
 export default async function HomePage() {
-  let t;
-  try {
-    t = await getTranslations();
-  } catch (error) {
-    console.warn('Failed to load translations:', error);
-    // Fallback translations
-    t = {
-      'hero.title': 'Apprendre du CP à l\'université',
-      'hero.subtitle': 'Arabe, Français, Anglais, Informatique, Maths, Sciences, Histoire de l\'islam'
-    } as any;
-  }
+  const t = await getTranslations();
 
   const cards = [
     {subject: 'arabe',    title: 'Alif-Bâ-Tâ',                     level: 'maternelle'},
@@ -40,3 +31,4 @@ export default async function HomePage() {
     </main>
   );
 }
+

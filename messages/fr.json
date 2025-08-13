@@ -1,8 +1,12 @@
 {
-  "site.title": "Académie",
-  "nav.courses": "Cours",
-  "nav.login": "Se connecter",
-  "nav.logout": "Se déconnecter",
-  "hero.title": "Apprendre du CP à l'université",
-  "hero.subtitle": "Arabe, Français, Anglais, Informatique, Maths, Sciences, Histoire de l’islam"
+  "site": { "title": "Académie" },
+  "nav": {
+    "courses": "Cours",
+    "login": "Se connecter",
+    "logout": "Se déconnecter"
+  },
+  "hero": {
+    "title": "Apprendre du CP à l'université",
+    "subtitle": "Arabe, Français, Anglais, Informatique, Maths, Sciences, Histoire de l’islam"
+  }
 }

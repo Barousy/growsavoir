@@ -1,8 +1,12 @@
 {
-  "site.title": "Academy",
-  "nav.courses": "Courses",
-  "nav.login": "Sign in",
-  "nav.logout": "Sign out",
-  "hero.title": "Learn from early years to university",
-  "hero.subtitle": "Arabic, French, English, Computing, Math, Science, Islamic history"
+  "site": { "title": "Academy" },
+  "nav": {
+    "courses": "Courses",
+    "login": "Sign in",
+    "logout": "Sign out"
+  },
+  "hero": {
+    "title": "Learn from primary school to university",
+    "subtitle": "Arabic, French, English, Computing, Math, Science, Islamic History"
+  }
 }
