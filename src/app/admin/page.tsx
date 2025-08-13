@@ -1,56 +1,70 @@
 
-"use client";
-import { useMemo, useState, useEffect } from "react";
-import { generateLessons, type Lesson } from "@/lib/data";
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
+import { auth } from '@/lib/auth'
+import { prisma } from '@/lib/db'
+import { redirect } from 'next/navigation'
 
-export default function Admin(){
-  const [pin, setPin] = useState("");
-  const ok = pin === (process.env.NEXT_PUBLIC_PARENT_PIN ?? "2748");
-  const [csv, setCsv] = useState("");
-  const [local, setLocal] = useState<Lesson[] | null>(null);
-  const lessons = useMemo(()=> local ?? generateLessons(), [local]);
-
-  useEffect(()=>{
-    if (typeof window !== "undefined"){
-      const raw = localStorage.getItem("growsavoir_custom");
-      if (raw) setLocal(JSON.parse(raw));
-    }
-  }, []);
-
-  function importCsv(){
-    const rows = csv.split(/\r?\n/).filter(Boolean);
-    const out: Lesson[] = [];
-    for(const line of rows){
-      const cols = line.split(",");
-      if(cols.length < 10) continue;
-      const [id,title,category,ageMin,ageMax,lang,durationMin,level,description,body] = cols;
-      out.push({ id, title, category: category as any, ageMin: +ageMin, ageMax: +ageMax, lang: lang as any, durationMin: +durationMin, level: level as any, description, content: { type: "text", body } });
-    }
-    setLocal(out);
-    if (typeof window !== "undefined") localStorage.setItem("growsavoir_custom", JSON.stringify(out));
+async function createCourse(formData: FormData) {
+  'use server'
+  const session = await auth()
+  if (session?.user.role !== 'ADMIN') redirect('/auth/signin')
+  const data = {
+    subject: String(formData.get('subject')||''),
+    level: String(formData.get('level')||''),
+    title: String(formData.get('title')||''),
+    slug: String(formData.get('slug')||''),
+    language: String(formData.get('language')||'fr'),
+    summary: String(formData.get('summary')||''),
+    isPublished: Boolean(formData.get('isPublished'))
   }
+  await prisma.course.create({ data })
+  redirect('/admin')
+}
 
+async function createLesson(formData: FormData) {
+  'use server'
+  const session = await auth()
+  if (session?.user.role !== 'ADMIN') redirect('/auth/signin')
+  const courseId = String(formData.get('courseId')||'')
+  const order = Number(formData.get('order')||1)
+  const title = String(formData.get('title')||'')
+  const slug = String(formData.get('slug')||'')
+  const content = { sections: [{ type: 'text', html: String(formData.get('html')||'') }] }
+  await prisma.lesson.create({ data: { courseId, order, title, slug, content } })
+  redirect('/admin')
+}
+
+export default async function AdminPage() {
+  const session = await auth()
+  if (!session?.user) redirect('/auth/signin')
+  if (session.user.role !== 'ADMIN') redirect('/')
+  const courses = await prisma.course.findMany({ orderBy: { createdAt: 'desc' } })
   return (
-    <div className="container py-8 space-y-4">
-      <h1 className="text-2xl font-semibold">Admin (prototype local)</h1>
-      {!ok ? (
-        <div className="max-w-sm space-y-2">
-          <label className="text-sm opacity-70">PIN parent</label>
-          <Input placeholder="••••" value={pin} onChange={(e)=>setPin(e.target.value)} />
-          <p className="text-xs opacity-60">Modifie NEXT_PUBLIC_PARENT_PIN dans .env pour changer.</p>
-        </div>
-      ) : (
-        <div className="space-y-4">
-          <textarea className="w-full h-40 border rounded-xl p-3" placeholder="Colle un CSV: id,title,category,ageMin,ageMax,lang,durationMin,level,description,body" value={csv} onChange={(e)=>setCsv(e.target.value)} />
-          <Button onClick={importCsv}>Importer CSV en local</Button>
-          <div className="text-xs opacity-70">Les données sont stockées dans localStorage (prototype). Pour la prod, connecter une base (Postgres) ou Headless CMS.</div>
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {lessons.map(l=> <div key={l.id} className="border rounded-xl p-3"><div className="font-medium">{l.title}</div><div className="text-xs opacity-70">{l.category} • {l.ageMin}-{l.ageMax} ans • {l.level}</div></div>)}
-          </div>
-        </div>
-      )}
+    <div className="space-y-8">
+      <h1 className="text-2xl font-semibold">Admin</h1>
+      <section className="grid md:grid-cols-2 gap-8">
+        <form action={createCourse} className="space-y-2 p-4 border rounded">
+          <h2 className="font-semibold">Créer un cours</h2>
+          <input className="w-full border rounded px-3 py-2" name="subject" placeholder="Sujet (ex: arabe)" />
+          <input className="w-full border rounded px-3 py-2" name="level" placeholder="Niveau (ex: CP)" />
+          <input className="w-full border rounded px-3 py-2" name="title" placeholder="Titre" />
+          <input className="w-full border rounded px-3 py-2" name="slug" placeholder="slug-unique" />
+          <input className="w-full border rounded px-3 py-2" name="language" placeholder="fr/en/ar" />
+          <textarea className="w-full border rounded px-3 py-2" name="summary" placeholder="Résumé" />
+          <label className="inline-flex items-center gap-2"><input type="checkbox" name="isPublished" defaultChecked /> Publier</label>
+          <button className="rounded bg-black text-white px-4 py-2">Créer</button>
+        </form>
+        <form action={createLesson} className="space-y-2 p-4 border rounded">
+          <h2 className="font-semibold">Créer une leçon</h2>
+          <select className="w-full border rounded px-3 py-2" name="courseId">
+            {courses.map(c => (<option key={c.id} value={c.id}>{c.title}</option>))}
+          </select>
+          <input className="w-full border rounded px-3 py-2" name="order" type="number" placeholder="Ordre" defaultValue={1} />
+          <input className="w-full border rounded px-3 py-2" name="title" placeholder="Titre" />
+          <input className="w-full border rounded px-3 py-2" name="slug" placeholder="slug-unique" />
+          <textarea className="w-full border rounded px-3 py-2" name="html" placeholder="HTML de la leçon" />
+          <button className="rounded bg-black text-white px-4 py-2">Créer</button>
+        </form>
+      </section>
     </div>
-  );
+  )
 }

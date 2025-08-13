@@ -1,27 +1,44 @@
-
-import { label } from "@/components/category-chip";
-import { Badge } from "@/components/ui/Badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
+// src/components/lesson-card.tsx
 import type { Lesson } from "@/lib/data";
 
-export function LessonCard({ lesson, onOpen }: { lesson: Lesson; onOpen: (l: Lesson) => void }){
+function LessonCard({
+  lesson,
+  categoryLabel,
+}: {
+  lesson: Lesson;
+  categoryLabel: string;
+}) {
   return (
-    <Card className="rounded-2xl hover:shadow-md transition cursor-pointer" onClick={()=>onOpen(lesson)}>
-      <CardHeader className="pb-2">
-        <div className="flex items-center justify-between gap-2">
-          <Badge variant="secondary">{label(lesson.category)}</Badge>
-          <Badge>{lesson.level}</Badge>
-        </div>
-        <CardTitle className="mt-2 text-lg leading-tight">{lesson.title}</CardTitle>
-      </CardHeader>
-      <CardContent className="pt-0 text-sm opacity-80">
-        <div className="flex flex-wrap items-center gap-2 mb-2">
-          <Badge variant="outline">{lesson.ageMin}–{lesson.ageMax} ans</Badge>
-          <Badge variant="outline">{lesson.durationMin} min</Badge>
-          <Badge variant="outline">UI: {lesson.lang.toUpperCase()}</Badge>
-        </div>
-        <p>{lesson.description}</p>
-      </CardContent>
-    </Card>
+    <article
+      style={{
+        border: "1px solid #e5e7eb",
+        borderRadius: 10,
+        padding: 12,
+        background: "#fff",
+      }}
+    >
+      {/* Catégorie */}
+      <div style={{ fontSize: 12, opacity: 0.7, marginBottom: 6 }}>
+        {categoryLabel}
+      </div>
+
+      {/* Titre */}
+      <h3 style={{ fontSize: 16, margin: "4px 0 6px" }}>
+        {lesson.title}
+      </h3>
+
+      {/* Infos */}
+      <div style={{ fontSize: 12, opacity: 0.75, marginBottom: 8 }}>
+        {lesson.ageMin}–{lesson.ageMax} ans • {lesson.durationMin} min • UI:{" "}
+        {lesson.lang.toUpperCase()} • {lesson.level}
+      </div>
+
+      {/* Description */}
+      <p style={{ fontSize: 14 }}>
+        {lesson.description}
+      </p>
+    </article>
   );
 }
+
+export default LessonCard;

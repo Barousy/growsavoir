@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import type { Lesson } from "@/lib/data";
+import QuizItem from "@/components/quiz-item";
 
 export function ContentViewer({ lesson, onClose }: { lesson: Lesson | null; onClose: () => void }){
   if (!lesson) return null;
@@ -22,11 +23,12 @@ export function ContentViewer({ lesson, onClose }: { lesson: Lesson | null; onCl
           {lesson.content.type !== "quiz" && (<div className="whitespace-pre-wrap leading-relaxed text-sm">{lesson.content.body}</div>)}
           {lesson.content.type === "quiz" && (
             <div className="space-y-4">
-              <p className="text-sm opacity-70">{lesson.content.body}</p>
-              {lesson.content.quiz.map((q,i)=>{
-                const QuizItem = require("@/components/quiz-item").QuizItem;
-                return <QuizItem key={i} q={q} idx={i}/>;
-              })}
+              <p className="text-sm opacity-70">{lesson.content?.body}</p>
+
+                  {(lesson.content?.quiz ?? []).map((q, i) => (
+                   <QuizItem key={i} q={q} idx={i} />
+              ))}
+
             </div>
           )}
           <div className="pt-2 border-t text-xs opacity-70">Contenu conforme: bienveillance, honnêteté, respect des parents, pudeur.</div>

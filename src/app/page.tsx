@@ -1,56 +1,42 @@
+import {getTranslations} from 'next-intl/server';
+import Link from 'next/link';
 
-"use client";
-import { useMemo, useState } from "react";
-import { generateLessons, type Lesson, type CategoryId } from "@/lib/data";
-import { Nav } from "@/components/nav";
-import { LessonCard } from "@/components/lesson-card";
-import { ContentViewer } from "@/components/content-viewer";
+export default async function HomePage() {
+  let t;
+  try {
+    t = await getTranslations();
+  } catch (error) {
+    console.warn('Failed to load translations:', error);
+    // Fallback translations
+    t = {
+      'hero.title': 'Apprendre du CP à l\'université',
+      'hero.subtitle': 'Arabe, Français, Anglais, Informatique, Maths, Sciences, Histoire de l\'islam'
+    } as any;
+  }
 
-export default function HomePage(){
-  const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<"all" | CategoryId>("all");
-  const [ageBand, setAgeBand] = useState<"all"|"3-6"|"7-10"|"11-16">("all");
-  const [openLesson, setOpenLesson] = useState<Lesson|null>(null);
-  const lessons = useMemo(()=>generateLessons(), []);
-
-  const filtered = useMemo(()=>lessons.filter(l=>{
-    const q = query.trim().toLowerCase();
-    const matchQuery = !q || l.title.toLowerCase().includes(q) || l.description.toLowerCase().includes(q);
-    const matchCat = category === "all" || l.category === category;
-    const matchAge = ageBand === "all" || (ageBand==="3-6" && l.ageMin<=6 && l.ageMax>=3) || (ageBand==="7-10" && l.ageMin<=10 && l.ageMax>=7) || (ageBand==="11-16" && l.ageMin<=16 && l.ageMax>=11);
-    return matchQuery && matchCat && matchAge;
-  }), [lessons, query, category, ageBand]);
+  const cards = [
+    {subject: 'arabe',    title: 'Alif-Bâ-Tâ',                     level: 'maternelle'},
+    {subject: 'français', title: 'Sons [a]/[i]',                   level: 'CP'},
+    {subject: 'anglais',  title: 'Greetings & Colors',             level: 'A1'},
+    {subject: 'informatique', title: 'Souris & clavier',           level: 'débutant'},
+    {subject: 'maths',    title: 'Additions jusqu’à 20',           level: 'CE1'},
+    {subject: 'histoire-islam', title: 'Naissance du Prophète ﷺ',  level: 'enfants'}
+  ];
 
   return (
-    <div className="min-h-screen">
-      <header className="border-b sticky top-0 bg-white/80 dark:bg-black/60 backdrop-blur z-20">
-        <div className="container py-3 flex items-center gap-3">
-          <div className="h-9 w-9 rounded-xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center">📚</div>
-          <h1 className="text-xl font-bold tracking-tight">GrowSavoir</h1>
-          <div className="ml-auto text-xs opacity-70">© {new Date().getFullYear()} – Contenus conformes</div>
-        </div>
-        <Nav query={query} setQuery={setQuery} category={category} setCategory={setCategory} ageBand={ageBand} setAgeBand={setAgeBand} />
-      </header>
+    <main className="mx-auto max-w-4xl p-6">
+      <h1 className="text-3xl md:text-5xl font-bold tracking-tight">{t('hero.title')}</h1>
+      <p className="text-lg opacity-80">{t('hero.subtitle')}</p>
 
-      <main className="container py-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filtered.map((l) => (
-            <div key={l.id}>
-              <LessonCard lesson={l} onOpen={setOpenLesson} />
-            </div>
-          ))}
-        </div>
-        {filtered.length === 0 && (<div className="text-center opacity-70 py-20">Aucun résultat. Ajuste la recherche ou les filtres.</div>)}
-      </main>
-
-      <footer className="border-t">
-        <div className="container py-6 text-xs opacity-70 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p>Charte éducative: bienveillance • honnêteté • respect des parents • pudeur • pas de pub.</p>
-          <p>Contact: support@growsavoir.com</p>
-        </div>
-      </footer>
-
-      <ContentViewer lesson={openLesson} onClose={()=>setOpenLesson(null)} />
-    </div>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-6">
+        {cards.map((c) => (
+          <Link key={c.title} href="/courses"
+                className="block p-4 rounded-xl border hover:border-black transition">
+            <div className="text-xs uppercase opacity-70">{c.subject} • {c.level}</div>
+            <div className="font-semibold">{c.title}</div>
+          </Link>
+        ))}
+      </div>
+    </main>
   );
 }

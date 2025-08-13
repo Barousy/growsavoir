@@ -1,34 +1,37 @@
-// src/app/layout.tsx
-import "./globals.css";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "GrowSavoir — Apprentissage interactif (3–16 ans)",
-  description:
-    "Cours conformes aux valeurs de l'Islam : arabe, anglais, français, éducation islamique, informatique, maths, sciences, histoire.",
-  metadataBase: new URL("https://growsavoir.com"),
-  openGraph: {
-    title: "GrowSavoir — Apprentissage interactif (3–16 ans)",
-    description: "Cours en ligne conformes aux valeurs de l'islam.",
-    url: "https://growsavoir.com",
-    siteName: "GrowSavoir",
-    images: [{ url: "/logo.svg", width: 800, height: 600 }],
-    locale: "fr_FR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: "GrowSavoir — Apprentissage interactif (3–16 ans)",
-    description: "Cours en ligne conformes aux valeurs de l'islam.",
-    images: ["/logo.svg"],
-  },
-};
+// src/app/layout.tsx (début de fichier)
+import '../styles/globals.css'
+import { NextIntlClientProvider } from 'next-intl'
+import getRequestConfig from '@/i18n/request'
+import { ReactNode } from 'react'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+// ...le reste inchangé
+import { getLocale } from 'next-intl/server'
+import Link from 'next/link'
+
+export const metadata = { title: 'Académie', description: 'Site éducatif' }
+
+export default async function RootLayout({ children }: { children: ReactNode }) {
+  const locale = await getLocale()
+  const { messages } = await getRequestConfig({ locale } as any)
   return (
-    <html lang="fr" suppressHydrationWarning>
-      <body className="min-h-screen">{children}</body>
+    <html lang={locale} suppressHydrationWarning>
+      <body className="min-h-dvh antialiased bg-white text-gray-900 dark:bg-neutral-950 dark:text-neutral-100">
+        <NextIntlClientProvider messages={messages}>
+          <header className="border-b border-neutral-200/50 dark:border-neutral-800">
+            <nav className="mx-auto max-w-6xl px-4 h-14 flex items-center gap-6">
+              <Link href="/" className="font-semibold">Académie</Link>
+              <Link href="/courses">Cours</Link>
+              <div className="ml-auto flex items-center gap-3 text-sm">
+                <Link href="/auth/signin">Se connecter</Link>
+                <Link href="/admin" className="underline/20 hover:underline">Admin</Link>
+              </div>
+            </nav>
+          </header>
+          <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
+          <footer className="border-t py-6 text-xs opacity-70 text-center">© {new Date().getFullYear()} Académie</footer>
+        </NextIntlClientProvider>
+      </body>
     </html>
-  );
+  )
 }
-
