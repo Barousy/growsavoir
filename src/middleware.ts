@@ -1,16 +1,12 @@
 // src/middleware.ts
-import createMiddleware from 'next-intl/middleware';
+import { NextResponse } from 'next/server';
 
-export default createMiddleware({
-  // tes locales
-  locales: ['fr', 'en', 'ar'],
-  // locale par défaut
-  defaultLocale: 'fr',
-  // ⚠️ important : on ne met PAS /fr dans l’URL
-  localePrefix: 'never'
-});
+// Désactive toute logique de réécriture/redirect le temps du diagnostic
+export function middleware() {
+  return NextResponse.next();
+}
 
-// Le middleware ne s'applique PAS aux fichiers statiques ni à /api/*
+// Laisse passer tout (sinon on pourrait bloquer du statique)
 export const config = {
-  matcher: ['/((?!_next|.*\\..*|api).*)']
+  matcher: ['/((?!_next|.*\\..*|api).*)'],
 };
