@@ -8,9 +8,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig = {
   reactStrictMode: true,
   // Ensure proper routing for Netlify
-  trailingSlash: false,
-  // Handle dynamic routes properly
-  
+  trailingSlash: false
 };
 
 export default withNextIntl(nextConfig);

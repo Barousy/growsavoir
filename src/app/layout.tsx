@@ -4,6 +4,7 @@ export const revalidate = 0;
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
 import type {ReactNode} from 'react';
+import { Header } from '@/components/header';
 
 export default async function RootLayout({children}: {children: ReactNode}) {
   const locale = await getLocale();
@@ -13,6 +14,7 @@ export default async function RootLayout({children}: {children: ReactNode}) {
     <html lang={locale} suppressHydrationWarning>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

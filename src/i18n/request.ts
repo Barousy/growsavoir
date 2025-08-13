@@ -8,5 +8,5 @@ export const defaultLocale = 'fr';
 
 export default getRequestConfig(async ({locale}) => {
   const messages = locale === 'en' ? en : locale === 'ar' ? ar : fr;
-  return {messages};
+  return {locale, messages};
 });
