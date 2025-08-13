@@ -10,9 +10,7 @@ const nextConfig = {
   // Ensure proper routing for Netlify
   trailingSlash: false,
   // Handle dynamic routes properly
-  experimental: {
-    appDir: true
-  }
+  
 };
 
 export default withNextIntl(nextConfig);
