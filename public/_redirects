@@ -1,8 +1,11 @@
-# Next.js routing for Netlify
-/*    /index.html   200
+# Configuration des redirections pour Next.js App Router sur Netlify
 
-# Handle Next.js static files
-/_next/*    /_next/:splat    200
+# Redirection des API routes
+/api/*  /.netlify/functions/:splat  200
 
-# Handle API routes
-/api/*    /api/:splat    200
+# Redirection des pages statiques et dynamiques
+/*      /index.html                 200
+
+# Redirection des assets
+/_next/*  /_next/*                  200
+/favicon.ico  /favicon.ico          200
