@@ -1,3 +1,6 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -8,21 +11,22 @@ datasource db {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
-  image         String?
-  passwordHash  String?
-  role          Role      @default(STUDENT)
-  locale        String    @default("fr")
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String
+  role      Role     @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  accounts    Account[]
-  sessions    Session[]
+  // Relations
   enrollments Enrollment[]
-  attempts    Attempt[]
+  progress    Progress[]
+  achievements Achievement[]
+  sessions    Session[]
+  accounts    Account[]
+
+  @@map("users")
 }
 
 model Account {
@@ -31,17 +35,18 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String? @map("refreshToken")
-  access_token      String? @map("accessToken")
-  expires_at        Int?    @map("expiresAt")
-  token_type        String? @map("tokenType")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
   scope             String?
-  id_token          String? @map("idToken")
-  session_state     String? @map("sessionState")
+  id_token          String? @db.Text
+  session_state     String?
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
+  @@map("accounts")
 }
 
 model Session {
@@ -49,8 +54,9 @@ model Session {
   sessionToken String   @unique
   userId       String
   expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@map("sessions")
 }
 
 model VerificationToken {
@@ -59,77 +65,180 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+model Subject {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  icon        String?
+  color       String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  categories Category[]
+
+  @@map("subjects")
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  subjectId   String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  subject  Subject   @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  levels   Level[]
+  courses  Course[]
+
+  @@map("categories")
+}
+
+model Level {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  ageRange    String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  categoryId  String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  category Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  courses  Course[]
+
+  @@map("levels")
 }
 
 model Course {
-  id          String       @id @default(cuid())
-  subject     String
-  level       String
+  id          String   @id @default(cuid())
   title       String
-  slug        String       @unique
-  language    String       @default("fr")
-  summary     String?
-  isPublished Boolean      @default(true)
-  lessons     Lesson[]
-  createdAt   DateTime     @default(now())
-  Enrollment  Enrollment[]
+  description String?
+  slug        String   @unique
+  duration    String?
+  difficulty  Difficulty @default(BEGINNER)
+  isPublished Boolean  @default(false)
+  order       Int      @default(0)
+  categoryId  String
+  levelId     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relations
+  category   Category   @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  level      Level      @relation(fields: [levelId], references: [id], onDelete: Cascade)
+  lessons    Lesson[]
+  enrollments Enrollment[]
+
+  @@map("courses")
 }
 
 model Lesson {
-  id       String      @id @default(cuid())
-  courseId String
-  order    Int
-  title    String
-  slug     String      @unique
-  duration Int         @default(8)
-  content  Json
-  sources  SourceRef[]
-  attempts Attempt[]
+  id          String   @id @default(cuid())
+  title       String
+  description String?
+  content     Json?
+  order       Int      @default(0)
+  duration    Int? // en minutes
+  isPublished Boolean  @default(false)
+  courseId    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
-  course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  // Relations
+  course   Course     @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  progress Progress[]
 
-  @@index([courseId, order])
-}
-
-model SourceRef {
-  id         String  @id @default(cuid())
-  lessonId   String
-  citation   String
-  authStatus String?
-
-  lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  @@map("lessons")
 }
 
 model Enrollment {
-  id       String @id @default(cuid())
-  userId   String
-  courseId String
-  progress Int    @default(0)
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String
+  status    EnrollmentStatus @default(IN_PROGRESS)
+  progress  Int      @default(0) // pourcentage de progression
+  startedAt DateTime @default(now())
+  completedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
-  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  // Relations
+  user  User   @relation(fields: [userId], references: [id], onDelete: Cascade)
   course Course @relation(fields: [courseId], references: [id], onDelete: Cascade)
 
   @@unique([userId, courseId])
+  @@map("enrollments")
 }
 
-model Attempt {
+model Progress {
   id        String   @id @default(cuid())
   userId    String
   lessonId  String
-  score     Int
-  passed    Boolean  @default(false)
-  answers   Json
+  status    ProgressStatus @default(NOT_STARTED)
+  score     Int?     // score sur 100
+  timeSpent Int?     // temps passé en secondes
+  completedAt DateTime?
   createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
+  // Relations
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
   lesson Lesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
 
-  @@index([userId, lessonId])
+  @@unique([userId, lessonId])
+  @@map("progress")
+}
+
+model Achievement {
+  id          String   @id @default(cuid())
+  userId      String
+  type        String
+  title       String
+  description String?
+  icon        String?
+  unlockedAt  DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("achievements")
 }
 
 enum Role {
+  USER
   ADMIN
   TEACHER
-  PARENT
-  STUDENT
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+}
+
+enum EnrollmentStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  PAUSED
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  FAILED
 }

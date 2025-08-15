@@ -1,170 +1,255 @@
 // src/lib/data.ts
 
-// ---- Types ----
-export type CategoryId =
-  | "ar"        // Arabe
-  | "en"        // Anglais
-  | "fr"        // Français
-  | "islam"     // Éducation islamique
-  | "it"        // Informatique
-  | "math"      // Maths
-  | "science"   // Sciences
-  | "history";  // Histoire de l'islam
+export interface Subject {
+  id: string;
+  name: string;
+  icon: string;
+  color: string;
+  description: string;
+  categories: Category[];
+}
 
-export type Lesson = {
+export interface Category {
+  id: string;
+  name: string;
+  description: string;
+  levels: Level[];
+}
+
+export interface Level {
+  id: string;
+  name: string;
+  ageRange: string;
+  description: string;
+  lessons: Lesson[];
+}
+
+export interface Lesson {
   id: string;
   title: string;
   description: string;
-  category: CategoryId;
-  ageMin: number;
-  ageMax: number;
-  lang: "fr" | "en";
-  durationMin: number;
-  level: "Débutant" | "Intermédiaire" | "Avancé";
-  content: {
-    type: "text" | "quiz" | "activity";
-    body: string;
-    quiz?: { q: string; options: string[]; answerIndex: number; explanation: string }[];
-  };
-};
+  duration: string;
+  difficulty: 'débutant' | 'intermédiaire' | 'avancé';
+}
 
-export const CATEGORY_LABELS: Record<CategoryId, string> = {
-  ar: "Arabe",
-  en: "Anglais",
-  fr: "Français",
-  islam: "Éducation islamique",
-  it: "Informatique",
-  math: "Maths",
-  science: "Sciences",
-  history: "Histoire de l'islam",
-};
-
-// ---- Cours de base (1 par carte “non série”) ----
-const BASE: Lesson[] = [
+export const subjects: Subject[] = [
   {
-    id: "ar-alphabet-1",
-    title: "Alphabet arabe – أ à ث",
-    category: "ar",
-    ageMin: 3, ageMax: 8, lang: "fr", durationMin: 6, level: "Débutant",
-    description: "Prononciation correcte et tracés.",
-    content: { type: "activity", body: "Prononce أ ب ت ث. Trace chaque lettre 3 fois." }
+    id: 'arabe',
+    name: 'Arabe',
+    icon: '📚',
+    color: 'bg-emerald-500',
+    description: 'Apprentissage de la langue arabe et de la culture islamique',
+    categories: [
+      {
+        id: 'alphabet',
+        name: 'Alphabet & Lecture',
+        description: 'Maîtrise de l\'alphabet arabe et de la lecture',
+        levels: [
+          {
+            id: 'maternelle',
+            name: 'Maternelle',
+            ageRange: '3-6 ans',
+            description: 'Découverte des lettres et sons de base',
+            lessons: [
+              { id: 'alif-ba-ta', title: 'Alif-Bâ-Tâ', description: 'Les premières lettres', duration: '15 min', difficulty: 'débutant' },
+              { id: 'voyelles', title: 'Les Voyelles', description: 'Apprendre les voyelles courtes', duration: '20 min', difficulty: 'débutant' }
+            ]
+          },
+          {
+            id: 'cp',
+            name: 'CP',
+            ageRange: '6-7 ans',
+            description: 'Lecture et écriture de base',
+            lessons: [
+              { id: 'mots-simples', title: 'Mots Simples', description: 'Formation des premiers mots', duration: '25 min', difficulty: 'débutant' },
+              { id: 'phrases', title: 'Premières Phrases', description: 'Construction de phrases simples', duration: '30 min', difficulty: 'intermédiaire' }
+            ]
+          }
+        ]
+      },
+      {
+        id: 'vocabulaire',
+        name: 'Vocabulaire',
+        description: 'Enrichissement du vocabulaire arabe',
+        levels: [
+          {
+            id: 'quotidien',
+            name: 'Quotidien',
+            ageRange: '7-10 ans',
+            description: 'Mots de la vie quotidienne',
+            lessons: [
+              { id: 'famille', title: 'La Famille', description: 'Noms des membres de la famille', duration: '20 min', difficulty: 'débutant' },
+              { id: 'maison', title: 'La Maison', description: 'Objets et pièces de la maison', duration: '25 min', difficulty: 'débutant' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "en-phonics-1",
-    title: "English Phonics: A E I O U",
-    category: "en",
-    ageMin: 5, ageMax: 10, lang: "en", durationMin: 7, level: "Débutant",
-    description: "Short vowels with simple words.",
-    content: {
-      type: "quiz", body: "Choose the right vowel sound.",
-      quiz: [{ q: "c_t (a/e/i/o/u)?", options: ["a","e","i","o","u"], answerIndex: 0, explanation: "cat uses short 'a'." }]
-    }
+    id: 'francais',
+    name: 'Français',
+    icon: '🇫🇷',
+    color: 'bg-blue-500',
+    description: 'Maîtrise de la langue française et de la littérature',
+    categories: [
+      {
+        id: 'lecture',
+        name: 'Lecture',
+        description: 'Apprentissage de la lecture et compréhension',
+        levels: [
+          {
+            id: 'cp',
+            name: 'CP',
+            ageRange: '6-7 ans',
+            description: 'Début de la lecture',
+            lessons: [
+              { id: 'sons-a-i', title: 'Sons [a]/[i]', description: 'Reconnaissance des sons', duration: '20 min', difficulty: 'débutant' },
+              { id: 'syllabes', title: 'Les Syllabes', description: 'Formation des syllabes', duration: '25 min', difficulty: 'débutant' }
+            ]
+          },
+          {
+            id: 'ce1',
+            name: 'CE1',
+            ageRange: '7-8 ans',
+            description: 'Lecture fluide et compréhension',
+            lessons: [
+              { id: 'histoires', title: 'Petites Histoires', description: 'Lecture de textes courts', duration: '30 min', difficulty: 'intermédiaire' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "fr-etre-1",
-    title: "Français – Verbe Être (présent)",
-    category: "fr",
-    ageMin: 7, ageMax: 12, lang: "fr", durationMin: 8, level: "Débutant",
-    description: "Je suis, tu es… + mini-quiz.",
-    content: {
-      type: "quiz", body: "Complète le verbe.",
-      quiz: [{ q: "Je ___ content.", options: ["es","suis","est"], answerIndex: 1, explanation: "Je suis." }]
-    }
+    id: 'anglais',
+    name: 'Anglais',
+    icon: '🇬🇧',
+    color: 'bg-red-500',
+    description: 'Apprentissage de l\'anglais international',
+    categories: [
+      {
+        id: 'communication',
+        name: 'Communication',
+        description: 'Expression orale et écrite en anglais',
+        levels: [
+          {
+            id: 'a1',
+            name: 'Niveau A1',
+            ageRange: '8-12 ans',
+            description: 'Premiers pas en anglais',
+            lessons: [
+              { id: 'greetings', title: 'Greetings & Colors', description: 'Salutations et couleurs', duration: '25 min', difficulty: 'débutant' },
+              { id: 'numbers', title: 'Numbers 1-20', description: 'Les nombres de 1 à 20', duration: '20 min', difficulty: 'débutant' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "islam-piliers-1",
-    title: "Les 5 piliers de l'Islam (initiation)",
-    category: "islam",
-    ageMin: 6, ageMax: 14, lang: "fr", durationMin: 10, level: "Débutant",
-    description: "Introduction adaptée.",
-    content: { type: "text", body: "Chahada, Salat, Zakat, Sawm, Hajj (si possible)." }
+    id: 'informatique',
+    name: 'Informatique',
+    icon: '💻',
+    color: 'bg-purple-500',
+    description: 'Initiation à l\'informatique et au numérique',
+    categories: [
+      {
+        id: 'bases',
+        name: 'Bases Numériques',
+        description: 'Fondamentaux de l\'informatique',
+        levels: [
+          {
+            id: 'debutant',
+            name: 'Débutant',
+            ageRange: '6-10 ans',
+            description: 'Premiers pas avec l\'ordinateur',
+            lessons: [
+              { id: 'souris-clavier', title: 'Souris & Clavier', description: 'Maîtrise des périphériques', duration: '30 min', difficulty: 'débutant' },
+              { id: 'interface', title: 'L\'Interface', description: 'Navigation dans l\'ordinateur', duration: '25 min', difficulty: 'débutant' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "it-bases-1",
-    title: "Informatique – Souris & Clavier",
-    category: "it",
-    ageMin: 6, ageMax: 12, lang: "fr", durationMin: 6, level: "Débutant",
-    description: "Clic gauche/droit, touches utiles.",
-    content: { type: "activity", body: "Écris ton prénom puis enregistre." }
+    id: 'maths',
+    name: 'Mathématiques',
+    icon: '🔢',
+    color: 'bg-orange-500',
+    description: 'Logique mathématique et résolution de problèmes',
+    categories: [
+      {
+        id: 'calcul',
+        name: 'Calcul',
+        description: 'Opérations mathématiques de base',
+        levels: [
+          {
+            id: 'ce1',
+            name: 'CE1',
+            ageRange: '7-8 ans',
+            description: 'Additions et soustractions',
+            lessons: [
+              { id: 'additions-20', title: 'Additions jusqu\'à 20', description: 'Calcul mental des additions', duration: '25 min', difficulty: 'débutant' },
+              { id: 'soustractions', title: 'Soustractions simples', description: 'Apprendre à soustraire', duration: '30 min', difficulty: 'intermédiaire' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "math-add-20-1",
-    title: "Additions jusqu'à 20",
-    category: "math",
-    ageMin: 5, ageMax: 9, lang: "fr", durationMin: 6, level: "Débutant",
-    description: "Décomposition et calcul mental.",
-    content: {
-      type: "quiz", body: "Calcule.",
-      quiz: [{ q: "7 + 5 ?", options: ["10","11","12"], answerIndex: 2, explanation: "7 + 5 = 12." }]
-    }
+    id: 'sciences',
+    name: 'Sciences',
+    icon: '🔬',
+    color: 'bg-green-500',
+    description: 'Découverte du monde scientifique',
+    categories: [
+      {
+        id: 'nature',
+        name: 'Sciences Naturelles',
+        description: 'Observation et compréhension de la nature',
+        levels: [
+          {
+            id: 'ce2',
+            name: 'CE2',
+            ageRange: '8-9 ans',
+            description: 'Exploration de l\'environnement',
+            lessons: [
+              { id: 'plantes', title: 'Le Monde des Plantes', description: 'Découverte de la botanique', duration: '35 min', difficulty: 'débutant' },
+              { id: 'animaux', title: 'Les Animaux', description: 'Classification des animaux', duration: '40 min', difficulty: 'intermédiaire' }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    id: "science-water-1",
-    title: "Le cycle de l'eau (simplifié)",
-    category: "science",
-    ageMin: 7, ageMax: 12, lang: "fr", durationMin: 7, level: "Débutant",
-    description: "Évaporation, condensation, pluie.",
-    content: { type: "text", body: "Le soleil chauffe l'eau → évaporation → nuages → pluie." }
-  },
-  {
-    id: "history-seerah-1",
-    title: "Sîrah – Grandes étapes",
-    category: "history",
-    ageMin: 8, ageMax: 16, lang: "fr", durationMin: 12, level: "Débutant",
-    description: "Naissance, Révélation, Hijra…",
-    content: { type: "text", body: "Récit adapté : naissance à La Mecque, Révélation, Hijra à Médine…" }
+    id: 'histoire-islam',
+    name: 'Histoire de l\'Islam',
+    icon: '🕌',
+    color: 'bg-teal-500',
+    description: 'Découverte de l\'histoire islamique et des valeurs',
+    categories: [
+      {
+        id: 'prophètes',
+        name: 'Les Prophètes',
+        description: 'Vie et enseignements des prophètes',
+        levels: [
+          {
+            id: 'enfants',
+            name: 'Pour les Enfants',
+            ageRange: '6-12 ans',
+            description: 'Histoires adaptées aux enfants',
+            lessons: [
+              { id: 'naissance-prophete', title: 'Naissance du Prophète ﷺ', description: 'L\'histoire de la naissance', duration: '30 min', difficulty: 'débutant' },
+              { id: 'enfance-prophete', title: 'L\'Enfance du Prophète ﷺ', description: 'Les premières années', duration: '35 min', difficulty: 'débutant' }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
-
-// ---- Duplique proprement un cours en “Série 2”, “Série 3”, … (catégorie préservée) ----
-function makeSeries(base: Lesson, count = 2): Lesson[] {
-  const out: Lesson[] = [];
-  for (let i = 2; i <= count + 1; i++) {
-    out.push({
-      ...base,
-      id: `${base.id}-s${i}`,
-      title: `${base.title} – Série ${i}`,
-      // petites variations non destructives (durée / niveau), sans toucher la catégorie
-      durationMin: base.durationMin + ((i % 2) ? 0 : 1),
-      level: i % 3 === 0 ? "Intermédiaire" : base.level,
-      content:
-        base.content.type === "quiz"
-          ? { ...base.content, quiz: base.content.quiz?.map(q => ({ ...q })) }
-          : { ...base.content }
-    });
-  }
-  return out;
-}
-
-// ---- Générateur public appelé par ta page ----
-export function generateLessons(total = 36): Lesson[] {
-  // on part des bases (catégorie correcte)
-  const lessons: Lesson[] = [...BASE];
-
-  // pour chaque base, on ajoute Série 2 et Série 3
-  for (const base of BASE) {
-    lessons.push(...makeSeries(base, 2)); // ajoute 2 séries
-  }
-
-  // si tu veux plus d’éléments (total plus grand), on re-boucle proprement
-  let idx = 0;
-  while (lessons.length < total) {
-    const base = BASE[idx % BASE.length];
-    const extraIndex = Math.floor(idx / BASE.length) + 4; // redémarre à Série 4
-    lessons.push({
-      ...base,
-      id: `${base.id}-s${extraIndex}`,
-      title: `${base.title} – Série ${extraIndex}`,
-      durationMin: base.durationMin + (extraIndex % 2),
-      level: extraIndex % 3 === 0 ? "Intermédiaire" : base.level,
-      content:
-        base.content.type === "quiz"
-          ? { ...base.content, quiz: base.content.quiz?.map(q => ({ ...q })) }
-          : { ...base.content }
-    });
-    idx++;
-  }
-
-  return lessons.slice(0, total);
-}
 

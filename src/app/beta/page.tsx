@@ -60,8 +60,8 @@ export default function BetaPage() {
         <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <div className="shrink-0 w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-400" />
-            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir</div>
-
+            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir — BÊTA</div>
+            <span className="hidden md:inline text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">Aperçu UI (safe)</span>
             <div className="ml-auto flex items-center gap-2">
               <div className="relative w-48 md:w-72">
                 <input

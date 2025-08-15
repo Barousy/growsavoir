@@ -1,12 +1,11 @@
-# ✅ netlify.toml — Runtime Next.js + Prisma bundlé
+# Configuration Netlify pour GrowSavoir
+# Site moderne et responsive avec Next.js 14
 
 [build]
   command = "npm run build"
   publish = ".next"
 
-# ⚠️ surtout PAS de redirect /* -> /index.html pour Next.js
-#    (c'est pour des SPA statiques, ça casse l'App Router)
-
+# Configuration des fonctions pour Prisma
 [functions]
   node_bundler = "esbuild"
   external_node_modules = ["@prisma/client"]
@@ -15,5 +14,49 @@
     "prisma/schema.prisma"
   ]
 
+# Plugin Next.js officiel
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Redirections pour Next.js App Router
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Redirection des pages statiques et dynamiques
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Configuration des en-têtes de sécurité
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Configuration des en-têtes pour les assets
+[[headers]]
+  for = "/_next/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Configuration des en-têtes pour les images
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"

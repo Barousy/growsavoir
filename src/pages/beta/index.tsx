@@ -1,49 +1,47 @@
-'use client';
-
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from "react";
 
 type Subject = { key: string; title: string; emoji: string; classes: string };
 type Age = { key: string; title: string; emoji: string; desc: string };
 type Latest = { slug: string; title: string; tag: string; minutes: number };
 
 const SUBJECTS: Subject[] = [
-  { key: 'ar',   title: 'Arabe',           emoji: '🕌', classes: 'bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100' },
-  { key: 'fr',   title: 'Français',        emoji: '📚', classes: 'bg-indigo-100 text-indigo-900 dark:bg-indigo-900/40 dark:text-indigo-100' },
-  { key: 'en',   title: 'Anglais',         emoji: '🗺️', classes: 'bg-sky-100 text-sky-900 dark:bg-sky-900/40 dark:text-sky-100' },
-  { key: 'math', title: 'Maths',           emoji: '➗', classes: 'bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100' },
-  { key: 'sci',  title: 'Sciences',        emoji: '🔬', classes: 'bg-teal-100 text-teal-900 dark:bg-teal-900/40 dark:text-teal-100' },
-  { key: 'it',   title: 'Informatique',    emoji: '💻', classes: 'bg-fuchsia-100 text-fuchsia-900 dark:bg-fuchsia-900/40 dark:text-fuchsia-100' },
-  { key: 'is',   title: 'Islam & Valeurs', emoji: '🌙', classes: 'bg-lime-100 text-lime-900 dark:bg-lime-900/40 dark:text-lime-100' },
+  { key: "ar",   title: "Arabe",           emoji: "🕌", classes: "bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100" },
+  { key: "fr",   title: "Français",        emoji: "📚", classes: "bg-indigo-100 text-indigo-900 dark:bg-indigo-900/40 dark:text-indigo-100" },
+  { key: "en",   title: "Anglais",         emoji: "🗺️", classes: "bg-sky-100 text-sky-900 dark:bg-sky-900/40 dark:text-sky-100" },
+  { key: "math", title: "Maths",           emoji: "➗", classes: "bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100" },
+  { key: "sci",  title: "Sciences",        emoji: "🔬", classes: "bg-teal-100 text-teal-900 dark:bg-teal-900/40 dark:text-teal-100" },
+  { key: "it",   title: "Informatique",    emoji: "💻", classes: "bg-fuchsia-100 text-fuchsia-900 dark:bg-fuchsia-900/40 dark:text-fuchsia-100" },
+  { key: "is",   title: "Islam & Valeurs", emoji: "🌙", classes: "bg-lime-100 text-lime-900 dark:bg-lime-900/40 dark:text-lime-100" },
 ];
 
 const AGES: Age[] = [
-  { key: '3-6',   title: '3–6 ans',  emoji: '🐣', desc: 'Éveil, lecture, maths ludiques' },
-  { key: '7-10',  title: '7–10 ans', emoji: '🎈', desc: 'Langues, maths, sciences' },
-  { key: '11-16', title: '11–16 ans',emoji: '🚀', desc: 'Langues, informatique, approfondissements' },
+  { key: "3-6",   title: "3–6 ans",  emoji: "🐣", desc: "Éveil, lecture, maths ludiques" },
+  { key: "7-10",  title: "7–10 ans", emoji: "🎈", desc: "Langues, maths, sciences" },
+  { key: "11-16", title: "11–16 ans",emoji: "🚀", desc: "Langues, informatique, approfondissements" },
 ];
 
 const LATEST: Latest[] = [
-  { slug: 'formes-geometriques', title: 'Les formes géométriques', tag: '3–6 ans • Maths', minutes: 4 },
-  { slug: 'alphabet-arabe-lettres-solaires', title: 'Alphabet arabe – lettres solaires', tag: '7–10 ans • Arabe', minutes: 6 },
-  { slug: 'fractions-simplifiees', title: 'Fractions simplifiées', tag: '11–16 ans • Maths', minutes: 8 },
-  { slug: 'cycle-eau', title: "Cycle de l'eau", tag: '7–10 ans • Sciences', minutes: 5 },
-  { slug: 'html-balises-base', title: 'HTML: balises de base', tag: '11–16 ans • Informatique', minutes: 7 },
+  { slug: "formes-geometriques", title: "Les formes géométriques", tag: "3–6 ans • Maths", minutes: 4 },
+  { slug: "alphabet-arabe-lettres-solaires", title: "Alphabet arabe – lettres solaires", tag: "7–10 ans • Arabe", minutes: 6 },
+  { slug: "fractions-simplifiees", title: "Fractions simplifiées", tag: "11–16 ans • Maths", minutes: 8 },
+  { slug: "cycle-eau", title: "Cycle de l'eau", tag: "7–10 ans • Sciences", minutes: 5 },
+  { slug: "html-balises-base", title: "HTML: balises de base", tag: "11–16 ans • Informatique", minutes: 7 },
 ];
 
 const BADGES = [
-  { k: 'starter', title: 'Explorateur', desc: '1ère activité terminée' },
-  { k: 'streak',  title: 'Série de 3 jours', desc: 'Apprentissage régulier' },
-  { k: 'quiz10',  title: 'Quiz 10/10', desc: 'Score parfait' },
+  { k: "starter", title: "Explorateur", desc: "1ère activité terminée" },
+  { k: "streak",  title: "Série de 3 jours", desc: "Apprentissage régulier" },
+  { k: "quiz10",  title: "Quiz 10/10", desc: "Score parfait" },
 ];
 
 function cx(...cls: Array<string | false | null | undefined>) {
-  return cls.filter(Boolean).join(' ');
+  return cls.filter(Boolean).join(" ");
 }
 
 export default function BetaPage() {
   const [dark, setDark] = useState(true);
-  const [tab, setTab] = useState<'age' | 'matiere'>('age');
-  const [search, setSearch] = useState('');
+  const [tab, setTab] = useState<"age" | "matiere">("age");
+  const [search, setSearch] = useState("");
   const [openQuiz, setOpenQuiz] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
   const [quizScore, setQuizScore] = useState(0);
@@ -54,14 +52,14 @@ export default function BetaPage() {
   }, [search]);
 
   return (
-    <div className={cx(dark ? 'dark' : '', 'min-h-screen font-sans')}>
+    <div className={cx(dark ? "dark" : "", "min-h-screen font-sans")}>
       <div className="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
         {/* Header */}
         <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <div className="shrink-0 w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-400" />
-            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir</div>
-
+            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir — BÊTA</div>
+            <span className="hidden md:inline text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">Aperçu UI (safe)</span>
             <div className="ml-auto flex items-center gap-2">
               <div className="relative w-48 md:w-72">
                 <input
@@ -77,7 +75,7 @@ export default function BetaPage() {
                 className="rounded-xl px-3 py-2 text-sm border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800"
                 aria-label="Basculer le thème"
               >
-                {dark ? '🌙' : '☀️'}
+                {dark ? "🌙" : "☀️"}
               </button>
               <button
                 onClick={() => setOpenQuiz(true)}
@@ -100,23 +98,23 @@ export default function BetaPage() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <button
-                onClick={() => setTab('age')}
+                onClick={() => setTab("age")}
                 className={cx(
-                  'px-4 py-2 rounded-xl text-sm border',
-                  tab === 'age'
-                    ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 border-transparent'
-                    : 'border-slate-300 dark:border-slate-700'
+                  "px-4 py-2 rounded-xl text-sm border",
+                  tab === "age"
+                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 border-transparent"
+                    : "border-slate-300 dark:border-slate-700"
                 )}
               >
                 Par âge
               </button>
               <button
-                onClick={() => setTab('matiere')}
+                onClick={() => setTab("matiere")}
                 className={cx(
-                  'px-4 py-2 rounded-xl text-sm border',
-                  tab === 'matiere'
-                    ? 'bg-slate-900 text-white dark:bg-white dark:text-slate-900 border-transparent'
-                    : 'border-slate-300 dark:border-slate-700'
+                  "px-4 py-2 rounded-xl text-sm border",
+                  tab === "matiere"
+                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900 border-transparent"
+                    : "border-slate-300 dark:border-slate-700"
                 )}
               >
                 Par matière
@@ -153,7 +151,7 @@ export default function BetaPage() {
 
         {/* Tabs */}
         <section className="max-w-7xl mx-auto px-4 pb-4">
-          {tab === 'age' ? (
+          {tab === "age" ? (
             <div className="grid sm:grid-cols-3 gap-4">
               {AGES.map((a) => (
                 <div
@@ -172,7 +170,10 @@ export default function BetaPage() {
               {SUBJECTS.map((s) => (
                 <div
                   key={s.key}
-                  className={cx('rounded-3xl p-5 text-left border border-slate-200 dark:border-slate-800', s.classes)}
+                  className={cx(
+                    "rounded-3xl p-5 text-left border border-slate-200 dark:border-slate-800",
+                    s.classes
+                  )}
                 >
                   <div className="text-3xl">{s.emoji}</div>
                   <div className="mt-2 text-lg font-bold">{s.title}</div>
@@ -273,7 +274,7 @@ export default function BetaPage() {
           </div>
         </footer>
 
-        {/* Quiz Modal */}
+        {/* Quiz Modal (mini prototype) */}
         {openQuiz && (
           <div className="fixed inset-0 z-50 grid place-items-center bg-black/40 p-4">
             <div className="w-full max-w-xl rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6">
@@ -296,10 +297,10 @@ export default function BetaPage() {
                     <p className="text-sm text-slate-600 dark:text-slate-300">Question 1/3 · Quelle est une lettre solaire ?</p>
                     <div className="mt-3 grid grid-cols-2 gap-3">
                       {[
-                        { t: 'الراء (ar-Râ)', correct: true },
-                        { t: 'اللام (al-Lâm)', correct: false },
-                        { t: 'الباء (al-Bâ)', correct: false },
-                        { t: 'الميم (al-Mîm)', correct: false },
+                        { t: "الراء (ar-Râ)", correct: true },
+                        { t: "اللام (al-Lâm)", correct: false },
+                        { t: "الباء (al-Bâ)", correct: false },
+                        { t: "الميم (al-Mîm)", correct: false },
                       ].map((opt, idx) => (
                         <button
                           key={idx}
@@ -320,11 +321,11 @@ export default function BetaPage() {
                   <div>
                     <p className="text-sm text-slate-600 dark:text-slate-300">Question 2/3 · 6 × 7 = ?</p>
                     <div className="mt-3 grid grid-cols-2 gap-3">
-                      {['36', '42', '48', '56'].map((t, idx) => (
+                      {["36", "42", "48", "56"].map((t, idx) => (
                         <button
                           key={idx}
                           onClick={() => {
-                            if (t === '42') setQuizScore((s) => s + 1);
+                            if (t === "42") setQuizScore((s) => s + 1);
                             setQuizStep(2);
                           }}
                           className="rounded-xl border border-slate-300 dark:border-slate-700 px-3 py-2 text-left hover:bg-slate-50 dark:hover:bg-slate-800"
@@ -341,10 +342,10 @@ export default function BetaPage() {
                     <p className="text-sm text-slate-600 dark:text-slate-300">Question 3/3 · Balise HTML pour un lien ?</p>
                     <div className="mt-3 grid grid-cols-2 gap-3">
                       {[
-                        { t: '<div>', ok: false },
-                        { t: '<a>', ok: true },
-                        { t: '<p>', ok: false },
-                        { t: '<ul>', ok: false },
+                        { t: "<div>", ok: false },
+                        { t: "<a>", ok: true },
+                        { t: "<p>", ok: false },
+                        { t: "<ul>", ok: false },
                       ].map((o, idx) => (
                         <button
                           key={idx}
