@@ -7,7 +7,7 @@ import PrintButton from '@/components/PrintButton';
 
 type Props = { params: { slug: string } };
 
-// --- Static params & metadata (SEO) ---
+// ---------- Static params & metadata ----------
 export function generateStaticParams() {
   return lessons.map((l) => ({ slug: l.slug }));
 }
@@ -37,7 +37,7 @@ export function generateMetadata({ params }: Props) {
   };
 }
 
-// --- Helpers: affichage sûr des extraits HTML ---
+// ---------- Helpers d’affichage sûrs ----------
 function looksLikeHtml(s: string) {
   return /<!doctype|<[^>]+>/.test(s);
 }
@@ -45,6 +45,7 @@ function escapeHtml(s: string) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// ---------- Page ----------
 export default function LessonPage({ params }: Props) {
   const l = getLesson(params.slug);
   if (!l) return notFound();
@@ -65,48 +66,39 @@ export default function LessonPage({ params }: Props) {
     publisher: { '@type': 'Organization', name: 'GrowSavoir' },
   };
 
+  // IMPORTANT : on utilise <section> ici car <main> est déjà dans le layout
   return (
     <section className="relative z-0 !opacity-100 max-w-4xl mx-auto px-4 py-8">
-
-
-        {/* coupe visuellement tout overlay situé derrière */}
-     <div className="pointer-events-none absolute inset-0 -z-10 bg-transparent"></div>
-
-      {/* JSON-LD SEO (ok côté serveur) */}
+      {/* JSON-LD SEO (serveur) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Barre d'actions */}
+      {/* Nav locale sous le header sticky du layout */}
       <nav className="mb-4 flex items-center gap-4">
-  <Link
-    href={`/list/age/${l.age}`}
-    className="text-sm font-medium underline underline-offset-2
-               text-sky-700 hover:text-sky-900
-               dark:text-sky-300 dark:hover:text-white"
-  >
-    ← Retour
-  </Link>
-  <PrintButton variant="primary" />
-</nav>
+        <Link
+          href={`/list/age/${l.age}`}
+          className="text-sm font-medium underline underline-offset-2
+                     text-sky-700 hover:text-sky-900
+                     dark:text-sky-300 dark:hover:text-white"
+        >
+          ← Retour
+        </Link>
+        <PrintButton variant="primary" />
+      </nav>
 
+      {/* En-tête lisible (fond carte) */}
+      <section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 shadow-sm">
+        <h1 className="m-0 text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
+          {l.title}
+        </h1>
+        <p className="m-0 mt-1 text-base md:text-lg text-slate-700 dark:text-slate-300">
+          {l.summary} • {l.minutes} min
+        </p>
+      </section>
 
-<section className="rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4 shadow-sm">
-  <h1 className="m-0 text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-    {l.title}
-  </h1>
-  <p className="m-0 mt-1 text-base md:text-lg text-slate-700 dark:text-slate-300">
-    {l.summary} • {l.minutes} min
-  </p>
-</section>
-
-
-
-
-
-
-      {/* Corps de la leçon : texte normal vs extrait HTML */}
+      {/* Corps de la leçon : texte vs extrait HTML */}
       <div className="mt-6 space-y-4 text-lg leading-relaxed">
         {l.body.map((p, i) =>
           looksLikeHtml(p) ? (
