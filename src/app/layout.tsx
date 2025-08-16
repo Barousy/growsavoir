@@ -7,13 +7,26 @@ import { AuthProvider } from '@/contexts/AuthContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'GrowSavoir - Plateforme d\'apprentissage moderne',
-  description: 'Découvrez une nouvelle façon d\'apprendre avec notre plateforme éducative interactive et personnalisée.',
-  keywords: 'éducation, apprentissage, cours en ligne, formation, développement personnel',
-  authors: [{ name: 'GrowSavoir Team' }],
-  viewport: 'width=device-width, initial-scale=1',
-  robots: 'index, follow',
+export const metadata = {
+  metadataBase: new URL('https://growsavoir.com'),
+  title: {
+    default: 'GrowSavoir — Ressources ludiques 3–16 ans',
+    template: '%s • GrowSavoir',
+  },
+  description:
+    "Cours courts, fiches à imprimer, jeux interactifs et espace parents — pour apprendre avec plaisir (3–16 ans).",
+  openGraph: {
+    type: 'website',
+    siteName: 'GrowSavoir',
+    title: 'GrowSavoir',
+    description:
+      "Cours courts, fiches à imprimer, jeux interactifs et espace parents — pour apprendre avec plaisir (3–16 ans).",
+    url: 'https://growsavoir.com',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@growsavoir', // si tu en as un
+  },
 };
 
 export default function RootLayout({
@@ -25,13 +38,22 @@ export default function RootLayout({
                     <html lang="fr" className="h-full">
                   <body className={`${inter.className} h-full bg-gray-50`}>
                     <AuthProvider>
-                      <div className="min-h-full flex flex-col">
-                        <Header />
-                        <main className="flex-1">
-                          {children}
-                        </main>
-                        <Footer />
-                      </div>
+                    <div className="min-h-full flex flex-col">
+  {/* Header fixé au-dessus du contenu */}
+  <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90
+                  border-b border-slate-200/70 dark:border-slate-800/70
+                  backdrop-blur">
+    <Header />
+  </div>
+
+  {/* Le contenu reste sous le header */}
+  <main className="relative z-0 flex-1">
+    {children}
+  </main>
+
+  <Footer />
+</div>
+
                     </AuthProvider>
                   </body>
                 </html>
