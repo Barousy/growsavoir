@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { useMemo, useState } from 'react';
 
 type Subject = { key: string; title: string; emoji: string; classes: string };
@@ -60,8 +62,8 @@ export default function BetaPage() {
         <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-3">
             <div className="shrink-0 w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-400" />
-            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir — BÊTA</div>
-            <span className="hidden md:inline text-xs px-2 py-0.5 rounded bg-amber-100 text-amber-900 dark:bg-amber-900/30 dark:text-amber-100">Aperçu UI (safe)</span>
+            <div className="text-xl md:text-2xl font-extrabold tracking-tight">GrowSavoir</div>
+            
             <div className="ml-auto flex items-center gap-2">
               <div className="relative w-48 md:w-72">
                 <input
@@ -163,7 +165,13 @@ export default function BetaPage() {
                   <div className="text-3xl">{a.emoji}</div>
                   <div className="mt-2 text-lg font-bold">{a.title}</div>
                   <div className="text-sm text-slate-500 dark:text-slate-400">{a.desc}</div>
-                  <div className="mt-4 text-sm text-sky-700 dark:text-sky-300 group-hover:underline">Voir les activités →</div>
+                  <Link
+  href={`/list/age/${a.key}`}
+  className="mt-4 inline-block text-sm text-sky-700 dark:text-sky-300 underline"
+>
+  Voir les activités →
+</Link>
+
                 </div>
               ))}
             </div>
@@ -176,7 +184,13 @@ export default function BetaPage() {
                 >
                   <div className="text-3xl">{s.emoji}</div>
                   <div className="mt-2 text-lg font-bold">{s.title}</div>
-                  <div className="text-sm opacity-80">Leçons, quiz, fiches PDF</div>
+                  <Link
+  href={`/list/subject/${s.key}`}
+  className="mt-2 inline-block text-sm underline"
+>
+  Voir les activités →
+</Link>
+
                 </div>
               ))}
             </div>
