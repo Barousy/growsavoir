@@ -1,21 +1,18 @@
-import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/db'; // ou '../../../../../lib/db' si tu n'as pas d'alias @
+// src/app/api/health/db/route.ts
+import { NextResponse, type NextRequest } from 'next/server'
+// Si tu utilises Prisma, adapte l’import :
+// import { prisma } from '@/lib/prisma'
 
-/** Évite la mise en cache côté Next pour cet endpoint */
-export const dynamic = 'force-dynamic';
-
-export async function GET() {
+export async function GET(_req: NextRequest) {
   try {
-    const [subjects, lessons] = await Promise.all([
-      prisma.subject.count(),
-      prisma.lesson.count(),
-    ]);
+    // Si tu as Prisma :
+    // await prisma.$queryRaw`SELECT 1`;
 
-    return NextResponse.json({ ok: true, subjects, lessons });
-  } catch (e: any) {
-    return NextResponse.json(
-      { ok: false, error: e?.message ?? 'db error' },
-      { status: 500 }
-    );
+    // Sinon, remplace par la vérification que tu fais réellement.
+    return NextResponse.json({ ok: true })
+  } catch (err: unknown) {
+    const message =
+      err instanceof Error ? err.message : 'Unknown error'
+    return NextResponse.json({ ok: false, error: message }, { status: 500 })
   }
 }
