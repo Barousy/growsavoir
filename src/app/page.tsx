@@ -30,9 +30,9 @@ export default function Home() {
       </section>
 
       <section className="mt-14">
-        <div className="rounded-2xl border border-slate-200 dark:border-slate-800 p-6">
+        <div className="rounded-2xl border border-slate-200">
           <h2 className="text-2xl font-semibold">Commencer</h2>
-          <p className="mt-2 text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-slate-600">
             Choisissez un âge ou une matière ci-dessus pour découvrir des leçons,
             des fiches à imprimer et des quiz rapides.
           </p>
@@ -54,7 +54,7 @@ function Card({
   return (
     <Link
       href={href}
-      className="group block rounded-2xl border border-slate-200 dark:border-slate-800 p-6 hover:shadow-lg transition"
+      className="group block rounded-2xl border border-slate-200 hover:shadow-lg transition"
     >
       <div className="text-3xl">{emoji}</div>
       <div className="mt-3 text-xl font-semibold">{title}</div>

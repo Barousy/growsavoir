@@ -10,66 +10,159 @@ generator client {
 
 model Subject {
   id        String   @id @default(cuid())
-  key       String   @unique
+  slug      String   @unique
   title     String
-  emoji     String?
-  desc      String?
-  order     Int      @default(0)
-  lessons   Lesson[]
+  desc      String?  @db.Text
+  order     Int?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  categories Category[]
+}
+
+model Category {
+  id        String   @id @default(cuid())
+  slug      String
+  title     String
+  desc      String?  @db.Text
+  order     Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id])
+
+  subcategories Subcategory[]
+
+  @@unique([subjectId, slug], map: "category_slug_per_subject")
+}
+
+model Subcategory {
+  id        String   @id @default(cuid())
+  slug      String
+  title     String
+  desc      String?  @db.Text
+  order     Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  skills Skill[]
+
+  @@unique([categoryId, slug], map: "subcategory_slug_per_category")
+}
+
+model Skill {
+  id        String   @id @default(cuid())
+  slug      String
+  title     String
+  desc      String?  @db.Text
+  order     Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  subcategoryId String
+  subcategory   Subcategory @relation(fields: [subcategoryId], references: [id])
+
+  lessons Lesson[]
+
+  @@unique([subcategoryId, slug], map: "skill_slug_per_subcategory")
+}
+
+model Lesson {
+  id        String   @id @default(cuid())
+  slug      String
+  title     String
+  desc      String?  @db.Text
+  content   String?  @db.Text
+  minutes   Int?
+  order     Int?
+  premium     Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  skillId String
+  skill   Skill  @relation(fields: [skillId], references: [id])
+
+  ageGroupId String?
+  ageGroup   AgeGroup? @relation(fields: [ageGroupId], references: [id])
+
+  quiz Quiz?
+
+  @@unique([skillId, slug], map: "lesson_slug_per_skill")
 }
 
 model AgeGroup {
   id        String   @id @default(cuid())
-  key       String   @unique  // "3-6" | "7-10" | "11-16"
+  key       String   @unique
   title     String
   minAge    Int
   maxAge    Int
   order     Int      @default(0)
-  lessons   Lesson[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-}
 
-model Lesson {
-  id         String   @id @default(cuid())
-  slug       String   @unique
-  title      String
-  summary    String?
-  minutes    Int       @default(5)
-  published  Boolean   @default(true)
-  body       Json?
-  subject    Subject   @relation(fields: [subjectId], references: [id])
-  subjectId  String
-  ageGroup   AgeGroup  @relation(fields: [ageGroupId], references: [id])
-  ageGroupId String
-  quiz       Quiz?
-  createdAt  DateTime  @default(now())
-  updatedAt  DateTime  @updatedAt
+  lessons Lesson[]
 }
 
 model Quiz {
-  id        String   @id @default(cuid())
-  lesson    Lesson   @relation(fields: [lessonId], references: [id])
-  lessonId  String   @unique
+  id        String     @id @default(cuid())
+  lessonId  String     @unique
+  lesson    Lesson     @relation(fields: [lessonId], references: [id])
   questions Question[]
 }
 
 model Question {
-  id       String    @id @default(cuid())
-  order    Int       @default(1)
-  text     String
-  quiz     Quiz      @relation(fields: [quizId], references: [id])
-  quizId   String
-  options  Option[]
+  id    String @id @default(cuid())
+  order Int    @default(1)
+  text  String
+
+  quizId String
+  quiz   Quiz   @relation(fields: [quizId], references: [id], onDelete: Cascade)
+
+  options Option[]
+
+  @@index([quizId])
 }
 
 model Option {
-  id         String   @id @default(cuid())
-  order      Int      @default(1)
-  text       String
-  ok         Boolean  @default(false)
-  question   Question @relation(fields: [questionId], references: [id])
+  id    String  @id @default(cuid())
+  order Int     @default(1)
+  text  String
+  ok    Boolean @default(false)
+
   questionId String
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@index([questionId])
+}
+enum Role {
+  FREE
+  PREMIUM
+  ADMIN
+}
+
+model User {
+  id             String   @id @default(cuid())
+  email          String   @unique
+  role           Role     @default(FREE)
+  premiumUntil   DateTime? // null = pas premium, sinon date d’expiration
+  // … autres champs si tu en as déjà (name, password hash, etc.)
+  subscriptions  Subscription[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Subscription {
+  id               String   @id @default(cuid())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId           String
+  provider         String   // 'stripe'
+  providerRef      String   // subscription id chez Stripe
+  status           String   // 'active', 'cancelled', 'past_due'…
+  currentPeriodEnd DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
 }
