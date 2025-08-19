@@ -1,0 +1,75 @@
+// prisma/schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Subject {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  title     String
+  emoji     String?
+  desc      String?
+  order     Int      @default(0)
+  lessons   Lesson[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AgeGroup {
+  id        String   @id @default(cuid())
+  key       String   @unique  // "3-6" | "7-10" | "11-16"
+  title     String
+  minAge    Int
+  maxAge    Int
+  order     Int      @default(0)
+  lessons   Lesson[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Lesson {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  title      String
+  summary    String?
+  minutes    Int       @default(5)
+  published  Boolean   @default(true)
+  body       Json?
+  subject    Subject   @relation(fields: [subjectId], references: [id])
+  subjectId  String
+  ageGroup   AgeGroup  @relation(fields: [ageGroupId], references: [id])
+  ageGroupId String
+  quiz       Quiz?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Quiz {
+  id        String   @id @default(cuid())
+  lesson    Lesson   @relation(fields: [lessonId], references: [id])
+  lessonId  String   @unique
+  questions Question[]
+}
+
+model Question {
+  id       String    @id @default(cuid())
+  order    Int       @default(1)
+  text     String
+  quiz     Quiz      @relation(fields: [quizId], references: [id])
+  quizId   String
+  options  Option[]
+}
+
+model Option {
+  id         String   @id @default(cuid())
+  order      Int      @default(1)
+  text       String
+  ok         Boolean  @default(false)
+  question   Question @relation(fields: [questionId], references: [id])
+  questionId String
+}
