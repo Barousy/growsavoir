@@ -20,13 +20,15 @@ export default function Home() {
         <Card emoji="🎈" title="7–10 ans" href="/list?age=7-10" />
         <Card emoji="🚀" title="11–16 ans" href="/list?age=11-16" />
 
-        <Card emoji="🕌" title="Langue arabe" href="/subjects/arabe" />
-        <Card emoji="📘" title="Français" href="/subjects/francais" />
-        <Card emoji="🧮" title="Mathématiques" href="/subjects/maths" />
-        <Card emoji="🧪" title="Sciences" href="/subjects/sciences" />
-        <Card emoji="💻" title="Informatique" href="/subjects/informatique" />
-        <Card emoji="📖" title="Sciences islamiques" href="/subjects/islam" />
-        <Card emoji="🧭" title="Histoire de l’Islam" href="/subjects/histoire" />
+        <Card emoji="🏰" title="Langue arabe"   href="/subject/arabe" />
+        <Card emoji="📘" title="Français"       href="/subject/francais" />
+        
+        <Card emoji="🧮" title="Mathématiques"  href="/subject/mathematiques" />
+        <Card emoji="🧪" title="Sciences"       href="/subject/sciences" />
+        <Card emoji="💻" title="Informatique"   href="/subject/informatique" />
+        <Card emoji="📖" title="Sciences islamiques" href="/subject/sciences-islamiques" />
+        <Card emoji="🧭" title="Histoire de l’Islam" href="/subject/histoire-islam" />
+
       </section>
 
       <section className="mt-14">
