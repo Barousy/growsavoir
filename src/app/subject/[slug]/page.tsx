@@ -9,20 +9,16 @@ export default async function SubjectPage({
 }) {
   const { slug } = await params;
 
-  // 1) Récupère le subject (header)
-  const subject = await prisma.subject.findUnique({
-    where: { slug },
-  });
+  // 1) Récupère le subject
+  const subject = await prisma.subject.findUnique({ where: { slug } });
   if (!subject) return notFound();
 
-  // 2) Récupère les leçons liées à ce subject via Skill → Subcategory → Category
+  // 2) Récupère les leçons liées à ce subject
   const lessons = await prisma.lesson.findMany({
     where: {
       skill: {
         subcategory: {
-          category: {
-            subjectId: subject.id,
-          },
+          category: { subjectId: subject.id },
         },
       },
     },
@@ -42,10 +38,10 @@ export default async function SubjectPage({
       </header>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        {lessons.map((l) => (
+        {lessons.map((l: (typeof lessons)[number]) => (
           <article key={l.id} className="rounded-2xl border p-4">
             <h2 className="text-lg font-semibold">{l.title}</h2>
-            {l.desc && <p className="text-sm text-muted-foreground">{l.desc}</p>}
+            {l.summary && <p className="text-sm text-muted-foreground">{l.summary}</p>}
             <div className="mt-2 flex gap-3 text-xs opacity-75">
               <span>{l.ageGroup?.title ?? "Âge"}</span>
               <span>•</span>
@@ -55,9 +51,7 @@ export default async function SubjectPage({
         ))}
 
         {lessons.length === 0 && (
-          <p className="text-sm text-muted-foreground">
-            Aucune leçon publiée pour le moment.
-          </p>
+          <p className="text-sm text-muted-foreground">Aucune leçon publiée pour le moment.</p>
         )}
       </section>
     </main>

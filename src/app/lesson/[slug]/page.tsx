@@ -3,24 +3,24 @@ import { prisma } from '@/lib/db';
 import InlineQuiz from '@/components/quiz/InlineQuiz';
 
 export default async function LessonPage({
-    params,
-  }: {
-    params: Promise<{ slug: string }>; // ← Next 15 : params est un Promise
-  }) {
-    const { slug } = await params;     // ← on “await” params
-  
-    const lesson = await prisma.lesson.findFirst({
-      where: { slug },
-      include: {
-        ageGroup: true,
-        quiz: { include: { questions: { include: { options: true } } } },
-        skill: {
-          include: {
-            subcategory: { include: { category: { include: { subject: true } } } },
-          },
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const lesson = await prisma.lesson.findFirst({
+    where: { slug },
+    include: {
+      ageGroup: true,
+      quiz: { include: { questions: { include: { options: true } } } },
+      skill: {
+        include: {
+          subcategory: { include: { category: { include: { subject: true } } } },
         },
       },
-    });
+    },
+  });
 
   if (!lesson) return notFound();
 
@@ -32,10 +32,11 @@ export default async function LessonPage({
         {subject.title} · {lesson.ageGroup?.title ?? 'Sans tranche'} · {lesson.minutes ?? 8} min
       </div>
       <h1 className="mt-1 text-2xl md:text-3xl font-bold">{lesson.title}</h1>
-      {lesson.desc && <p className="mt-2 text-slate-600">{lesson.desc}</p>}
+
+      {lesson.summary && <p className="mt-2 text-slate-600">{lesson.summary}</p>}
 
       <article className="prose max-w-none mt-6">
-        {typeof lesson.content === 'string' && lesson.content.trim().length > 0
+        {typeof lesson.content === 'string' && lesson.content.trim()
           ? lesson.content
           : 'Contenu à venir.'}
       </article>
