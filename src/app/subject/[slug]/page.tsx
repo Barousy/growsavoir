@@ -41,7 +41,7 @@ export default async function SubjectPage({
         {lessons.map((l: (typeof lessons)[number]) => (
           <article key={l.id} className="rounded-2xl border p-4">
             <h2 className="text-lg font-semibold">{l.title}</h2>
-            {l.summary && <p className="text-sm text-muted-foreground">{l.summary}</p>}
+            {l.desc && <p className="text-sm text-muted-foreground">{l.desc}</p>}
             <div className="mt-2 flex gap-3 text-xs opacity-75">
               <span>{l.ageGroup?.title ?? "Âge"}</span>
               <span>•</span>

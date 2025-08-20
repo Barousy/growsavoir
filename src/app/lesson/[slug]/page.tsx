@@ -33,7 +33,7 @@ export default async function LessonPage({
       </div>
       <h1 className="mt-1 text-2xl md:text-3xl font-bold">{lesson.title}</h1>
 
-      {lesson.summary && <p className="mt-2 text-slate-600">{lesson.summary}</p>}
+      {lesson.desc && <p className="mt-2 text-slate-600">{lesson.desc}</p>}
 
       <article className="prose max-w-none mt-6">
         {typeof lesson.content === 'string' && lesson.content.trim()
