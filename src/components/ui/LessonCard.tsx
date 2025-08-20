@@ -1,5 +1,4 @@
 'use client';
-
 import Link from 'next/link';
 import Locked from './Locked';
 
@@ -19,47 +18,31 @@ export default function LessonCard({
 }: {
   lesson: LessonLite;
   userIsPremium?: boolean;
-  hrefPrefix?: string; // ex: /lesson ou /subjects/[slug]/lesson
+  hrefPrefix?: string;
 }) {
-  const href = `${hrefPrefix}/${lesson.slug}`;
-
   const locked = lesson.premium && !userIsPremium;
+  const href = locked ? '/upgrade' : `${hrefPrefix}/${lesson.slug}`;
 
   return (
-    <div className="group relative rounded-2xl border bg-white hover:shadow-md transition">
-      <div className="p-4">
-        <div className="flex items-center gap-2">
-          <h3 className="text-lg font-semibold text-neutral-900">{lesson.title}</h3>
-          {lesson.premium && (
-            <span className="text-xs rounded-full bg-amber-100 text-amber-700 px-2 py-0.5">Premium</span>
-          )}
-        </div>
-
-        {lesson.desc && (
-          <p className="mt-1 text-sm text-neutral-600 line-clamp-2">{lesson.desc}</p>
-        )}
-
-        <div className="mt-3 flex items-center justify-between text-sm text-neutral-500">
-          <span>{lesson.minutes ?? 5} min</span>
-
-          {!locked ? (
-            <Link
-              href={href}
-              className="rounded-lg px-3 py-1.5 bg-blue-600 text-white text-sm hover:bg-blue-700"
-            >
-              Ouvrir
-            </Link>
-          ) : (
-            <span className="opacity-75">Verrouillé</span>
-          )}
-        </div>
-
-        {locked && (
-          <div className="mt-4">
-            <Locked />
+    <div className="rounded-2xl border p-4 hover:shadow transition">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h3 className="text-lg font-semibold">{lesson.title}</h3>
+          {lesson.desc && <p className="text-sm opacity-80">{lesson.desc}</p>}
+          <div className="mt-2 text-xs opacity-70 flex items-center gap-2">
+            {lesson.minutes ? <span>{lesson.minutes} min</span> : null}
+            {lesson.premium ? <span>• Premium</span> : null}
           </div>
-        )}
+        </div>
+        <Link
+          href={href}
+          className="shrink-0 inline-flex items-center rounded-lg border px-3 py-1.5 text-sm hover:bg-slate-50"
+        >
+          {locked ? 'Débloquer' : 'Ouvrir'}
+        </Link>
       </div>
+
+      {locked && <div className="mt-4"><Locked /></div>}
     </div>
   );
 }

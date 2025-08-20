@@ -1,66 +1,59 @@
-import { notFound } from 'next/navigation';
-import { prisma } from '@/lib/db';
-import LessonGrid from '@/components/LessonGrid';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { prisma } from "@/lib/db";
 
-type Params = { params: { slug: string } };
+export default async function SubjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
 
-export default async function SubjectPage({ params }: Params) {
-  const { slug } = params;
+  // 1) Récupère le subject
+  const subject = await prisma.subject.findUnique({ where: { slug } });
+  if (!subject) return notFound();
 
-  // TODO: remplacer par ta vraie détection premium (cookie/session)
-  const userIsPremium = false;
-
-  // On charge la hiérarchie complète pour collecter toutes les leçons du subject.
-  const subject = await prisma.subject.findUnique({
-    where: { slug },
-    include: {
-      categories: {
-        include: {
-          subcategories: {
-            include: {
-              skills: {
-                include: {
-                  lessons: true,
-                },
-              },
-            },
-          },
+  // 2) Récupère les leçons liées à ce subject
+  const lessons = await prisma.lesson.findMany({
+    where: {
+      skill: {
+        subcategory: {
+          category: { subjectId: subject.id },
         },
       },
     },
+    include: { ageGroup: true },
+    orderBy: { createdAt: "desc" },
   });
 
-  if (!subject) return notFound();
-
-  // Aplatis les leçons de toutes les skills
-  const lessons = subject.categories.flatMap((cat) =>
-    cat.subcategories.flatMap((sub) =>
-      sub.skills.flatMap((sk) => sk.lessons)
-    )
-  );
-
-  // Optionnel: tri par "order" puis titre
-  lessons.sort((a, b) => (a.order ?? 0) - (b.order ?? 0) || a.title.localeCompare(b.title));
-
   return (
-    <div className="container mx-auto max-w-6xl px-4 py-8">
-      <h1 className="text-2xl font-bold text-neutral-900">{subject.title}</h1>
-      {subject.desc && <p className="mt-1 text-neutral-600">{subject.desc}</p>}
-
-      <div className="mt-6">
-        <LessonGrid
-          lessons={lessons.map(l => ({
-            id: l.id,
-            slug: l.slug,
-            title: l.title,
-            desc: l.desc,
-            minutes: l.minutes ?? undefined,
-            premium: !!l.premium,
-          }))}
-          userIsPremium={userIsPremium}
-          hrefPrefix="/lesson"
-        />
+    <main className="mx-auto max-w-5xl px-4 py-8">
+      <div className="mb-6">
+        <Link href="/" className="text-sm underline">← Retour</Link>
       </div>
-    </div>
+
+      <header className="mb-6">
+        <h1 className="mt-2 text-2xl md:text-3xl font-bold">{subject.title}</h1>
+        {subject.desc && <p className="mt-1 text-muted-foreground">{subject.desc}</p>}
+      </header>
+
+      <section className="grid gap-4 sm:grid-cols-2">
+        {lessons.map((l: (typeof lessons)[number]) => (
+          <article key={l.id} className="rounded-2xl border p-4">
+            <h2 className="text-lg font-semibold">{l.title}</h2>
+            {l.desc && <p className="text-sm text-muted-foreground">{l.desc}</p>}
+            <div className="mt-2 flex gap-3 text-xs opacity-75">
+              <span>{l.ageGroup?.title ?? "Âge"}</span>
+              <span>•</span>
+              <span>{l.minutes ?? 8} min</span>
+            </div>
+          </article>
+        ))}
+
+        {lessons.length === 0 && (
+          <p className="text-sm text-muted-foreground">Aucune leçon publiée pour le moment.</p>
+        )}
+      </section>
+    </main>
   );
 }
