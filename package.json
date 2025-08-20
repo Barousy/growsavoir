@@ -2,26 +2,20 @@
   "name": "growsavoir",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
-    "dev": "next dev --turbo pack",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-
     "postinstall": "prisma generate",
-
     "db:push": "prisma db push",
     "db:reset": "prisma db push --force-reset && npm run db:seed:arabe",
-    "db:seed": "tsx prisma/seed.ts",
-    "db:seed:arabe": "tsx prisma/seed.arabe.ts",
     "db:seed:arabe:plus": "tsx prisma/seed.arabe.plus.ts",
     "db:studio": "prisma studio",
-    "db:seed:fr": "tsx prisma/seed.fr.ts",
-    "db:seed:math": "tsx prisma/seed.math.ts"
+    "db:seed": "tsx prisma/seed.arabe.ts && tsx prisma/seed.fr.ts && tsx prisma/seed.math.ts && tsx prisma/seed.ts"
   },
   "prisma": {
-    "seed": "tsx prisma/seed.arabe.ts"
+    "seed": "tsx prisma/seed.arabe.ts && tsx prisma/seed.fr.ts && tsx prisma/seed.math.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.14.0",
@@ -32,7 +26,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.11",
     "@types/react": "^19",
     "@types/react-dom": "^19",
