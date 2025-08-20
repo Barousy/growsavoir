@@ -19,7 +19,7 @@ export default function Home() {
         <Card emoji="🍼" title="3–6 ans" href="/list?age=3-6" />
         <Card emoji="🎈" title="7–10 ans" href="/list?age=7-10" />
         <Card emoji="🚀" title="11–16 ans" href="/list?age=11-16" />
-
+        <Card emoji="🇬🇧" title="Anglais" href="/subject/anglais" />
         <Card emoji="🏰" title="Langue arabe"   href="/subject/arabe" />
         <Card emoji="📘" title="Français"       href="/subject/francais" />
         
