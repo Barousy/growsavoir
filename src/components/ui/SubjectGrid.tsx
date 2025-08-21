@@ -28,7 +28,7 @@ const subjects = [
   {
     slug: 'arabe',
     title: 'Langue arabe',
-    desc: 'Apprentissage de l&apos;arabe classique et moderne',
+    desc: "Apprentissage de l'arabe classique et moderne",
     emoji: '🏰',
     icon: BookOpen,
     color: 'from-green-500 to-green-600',
@@ -93,7 +93,7 @@ const subjects = [
   },
   {
     slug: 'histoire-islam',
-    title: 'Histoire de l&apos;Islam',
+    title: "Histoire de l'Islam",
     desc: 'Civilisation islamique et figures historiques',
     emoji: '🧭',
     icon: History,
