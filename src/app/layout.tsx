@@ -1,4 +1,3 @@
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -47,7 +46,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'GrowSavoir - Apprentissage ludique pour enfants',
-    description: 'Plateforme d&apos;apprentissage innovante avec des leçons interactives et des quiz amusants',
+    description: 'Plateforme d\'apprentissage innovante avec des leçons interactives et des quiz amusants',
     images: ['/og-image.jpg'],
   },
   robots: {
