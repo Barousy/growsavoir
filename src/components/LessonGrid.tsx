@@ -1,37 +1,55 @@
 'use client';
-
+import { useState } from 'react';
 import LessonCard from './ui/LessonCard';
 
 type LessonLite = {
   id: string;
-  slug: string;
   title: string;
-  desc?: string | null;
-  minutes?: number | null;
-  premium: boolean;
+  description: string;
+  duration: number;
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  isCompleted?: boolean;
+  isLocked?: boolean;
+  emoji: string;
+  color: string;
 };
+
+interface LessonGridProps {
+  lessons: LessonLite[];
+  userIsPremium?: boolean;
+  hrefPrefix?: string;
+}
 
 export default function LessonGrid({
   lessons,
   userIsPremium = false,
   hrefPrefix = '/lesson',
-}: {
-  lessons: LessonLite[];
-  userIsPremium?: boolean;
-  hrefPrefix?: string;
-}) {
+}: LessonGridProps) {
+  const [completedLessons, setCompletedLessons] = useState<string[]>([]);
+
+  const handleLessonStart = (lessonId: string) => {
+    console.log(`Démarrage de la leçon: ${lessonId}`);
+  };
+
   if (!lessons?.length) {
     return <p className="text-neutral-500">Aucune leçon pour le moment.</p>;
   }
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {lessons.map((lesson) => (
         <LessonCard
           key={lesson.id}
-          lesson={lesson}
-          userIsPremium={userIsPremium}
-          hrefPrefix={hrefPrefix}
+          id={lesson.id}
+          title={lesson.title}
+          description={lesson.description}
+          duration={lesson.duration}
+          difficulty={lesson.difficulty}
+          isCompleted={completedLessons.includes(lesson.id)}
+          isLocked={lesson.isLocked ?? false}
+          emoji={lesson.emoji}
+          color={lesson.color}
+          onStart={() => handleLessonStart(lesson.id)}
         />
       ))}
     </div>
