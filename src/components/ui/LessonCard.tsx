@@ -1,5 +1,4 @@
 'use client';
-
 import { Clock, Star, Lock, Play, CheckCircle } from 'lucide-react';
 
 interface LessonCardProps {
@@ -8,7 +7,6 @@ import Link from 'next/link';
 import Locked from './Locked';
 
 type LessonLite = {
-
   id: string;
   title: string;
   description: string;
@@ -22,7 +20,6 @@ type LessonLite = {
 }
 
 export default function LessonCard({
-
   title,
   description,
   duration,
@@ -44,6 +41,7 @@ export default function LessonCard({
     intermediate: 'Intermédiaire',
     advanced: 'Avancé'
   };
+
 
   return (
     <div
@@ -91,7 +89,50 @@ export default function LessonCard({
           <div className="flex items-center text-green-600">
             <Star className="w-4 h-4 mr-1 fill-current" />
             <span className="text-sm font-medium">Terminé</span>
-=======
+          </div>
+        )}
+      </div>
+
+      {/* Action button */}
+      <button
+        onClick={onStart}
+        disabled={isLocked}
+        className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center ${
+          isLocked
+            ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
+            : isCompleted
+              ? 'bg-green-500 text-white hover:bg-green-600'
+              : 'bg-blue-500 text-white hover:bg-blue-600'
+        }`}
+      >
+        {isLocked ? (
+          <>
+            <Lock className="w-4 h-4 mr-2" />
+            Débloquer
+          </>
+        ) : isCompleted ? (
+          <>
+            <CheckCircle className="w-4 h-4 mr-2" />
+            Réviser
+          </>
+        ) : (
+          <>
+            <Play className="w-4 h-4 mr-2" />
+            Commencer
+          </>
+        )}
+      </button>
+
+      {/* Progress indicator */}
+      {isCompleted && (
+        <div className="absolute top-4 right-4">
+          <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+            <CheckCircle className="w-5 h-5 text-white" />
+          </div>
+        </div>
+      )}
+
+
   lesson,
   userIsPremium = false,
   hrefPrefix = '/lesson',

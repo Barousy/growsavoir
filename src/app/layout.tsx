@@ -1,4 +1,3 @@
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,7 +12,6 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-
   title: "GrowSavoir - Apprentissage ludique pour enfants de 3 à 16 ans",
   description: "Découvrez des milliers de leçons interactives, quiz et activités pour enfants. Langues, mathématiques, sciences et plus encore, adaptés à chaque niveau.",
   keywords: "éducation, apprentissage, enfants, leçons, quiz, langues, mathématiques, sciences, arabe, français, anglais",
@@ -67,9 +65,6 @@ export const metadata = {
   },
 } satisfies import("next").Metadata;
 
-  title: "GrowSavoir",
-  description: "Apprentissages ludiques pour 3–16 ans",
-} satisfies import("next").Metadata;
 
 export default function RootLayout({
   children,
@@ -80,7 +75,6 @@ export default function RootLayout({
 
     <html lang="fr" className="scroll-smooth">
 
-   
       <head>
         <meta name="color-scheme" content="light" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
