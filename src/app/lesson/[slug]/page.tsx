@@ -1,3 +1,4 @@
+
 'use client';
 import { useParams } from 'next/navigation';
 import Navigation from '@/components/ui/Navigation';
@@ -390,4 +391,3 @@ export default function LessonPage() {
       <Footer />
     </>
   );
-}

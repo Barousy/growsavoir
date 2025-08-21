@@ -2,6 +2,11 @@
 import { Clock, Star, Lock, Play, CheckCircle } from 'lucide-react';
 
 interface LessonCardProps {
+
+import Link from 'next/link';
+import Locked from './Locked';
+
+type LessonLite = {
   id: string;
   title: string;
   description: string;
@@ -36,6 +41,7 @@ export default function LessonCard({
     intermediate: 'Intermédiaire',
     advanced: 'Avancé'
   };
+
 
   return (
     <div
@@ -125,6 +131,81 @@ export default function LessonCard({
           </div>
         </div>
       )}
+
+
+  lesson,
+  userIsPremium = false,
+  hrefPrefix = '/lesson',
+}: {
+  lesson: LessonLite;
+  userIsPremium?: boolean;
+  hrefPrefix?: string;
+}) {
+  const locked = lesson.premium && !userIsPremium;
+  const href = locked ? '/upgrade' : `${hrefPrefix}/${lesson.slug}`;
+
+  return (
+    <div className="rounded-2xl border p-4 hover:shadow transition">
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h3 className="text-lg font-semibold">{lesson.title}</h3>
+          {lesson.desc && <p className="text-sm opacity-80">{lesson.desc}</p>}
+          <div className="mt-2 text-xs opacity-70 flex items-center gap-2">
+            {lesson.minutes ? <span>{lesson.minutes} min</span> : null}
+            {lesson.premium ? <span>• Premium</span> : null}
+
+          </div>
+        </div>
+        <Link
+          href={href}
+          className="shrink-0 inline-flex items-center rounded-lg border px-3 py-1.5 text-sm hover:bg-slate-50"
+        >
+          {locked ? 'Débloquer' : 'Ouvrir'}
+        </Link>
+      </div>
+
+
+      {/* Action button */}
+      <button
+        onClick={onStart}
+        disabled={isLocked}
+        className={`w-full py-3 px-4 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center ${
+          isLocked
+            ? 'bg-slate-300 text-slate-500 cursor-not-allowed'
+            : isCompleted
+              ? 'bg-green-500 text-white hover:bg-green-600'
+              : 'bg-blue-500 text-white hover:bg-blue-600'
+        }`}
+      >
+        {isLocked ? (
+          <>
+            <Lock className="w-4 h-4 mr-2" />
+            Débloquer
+          </>
+        ) : isCompleted ? (
+          <>
+            <CheckCircle className="w-4 h-4 mr-2" />
+            Réviser
+          </>
+        ) : (
+          <>
+            <Play className="w-4 h-4 mr-2" />
+            Commencer
+          </>
+        )}
+      </button>
+
+      {/* Progress indicator */}
+      {isCompleted && (
+        <div className="absolute top-4 right-4">
+          <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+            <CheckCircle className="w-5 h-5 text-white" />
+          </div>
+        </div>
+      )}
+
+      {locked && <div className="mt-4"><Locked /></div>}
+
     </div>
   );
 }

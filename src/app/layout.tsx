@@ -65,13 +65,16 @@ export const metadata = {
   },
 } satisfies import("next").Metadata;
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="fr" className="scroll-smooth">
+
       <head>
         <meta name="color-scheme" content="light" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
