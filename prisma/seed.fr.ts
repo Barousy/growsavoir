@@ -15,8 +15,8 @@ async function getSubjectId(slug: string) {
   return s.id;
 }
 
-async function upsertCategory(subjectSlug: string, slug: string, title: string, order = 1) {
-  const subjectId = await getSubjectId(subjectSlug);
+async function upsertCategory(subjectslug: string, slug: string, title: string, order = 1) {
+  const subjectId = await getSubjectId(subjectslug);
   return prisma.category.upsert({
     where: { slug },
     update: { title, order, subjectId },
