@@ -1,296 +1,296 @@
 export interface Level {
-    id: number;
-    name: string;
+  id: number;
+  name: string;
+  description: string;
+  lessonCount: number;
+  color: string;
+  lessons: Array<{
+    id: string;
+    title: string;
     description: string;
-    lessonCount: number;
-    color: string;
-    lessons: Array<{
-      id: string;
-      title: string;
-      description: string;
-      duration: number;
-      difficulty: 'beginner' | 'intermediate' | 'advanced';
-      isCompleted?: boolean;
-      isLocked?: boolean;
-      emoji: string;
-    }>;
+    duration: number;
+    difficulty: 'beginner' | 'intermediate' | 'advanced';
+    isCompleted?: boolean;
+    isLocked?: boolean;
+    emoji: string;
+  }>;
+}
+
+export const artsLevels: Level[] = [
+  {
+    id: 1,
+    name: "Niveau 1 - Découverte",
+    description: "Bases des arts et de la créativité",
+    lessonCount: 6,
+    color: "bg-green-500",
+    lessons: [
+      {
+        id: "arts-dessin-basique",
+        title: "Dessin de base",
+        description: "Lignes, formes géométriques, ombres",
+        duration: 15,
+        difficulty: "beginner",
+        emoji: "✏️",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arts-couleurs-primaires",
+        title: "Les couleurs primaires",
+        description: "Rouge, bleu, jaune et mélanges",
+        duration: 12,
+        difficulty: "beginner",
+        emoji: "🎨",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arts-peinture-au-doigt",
+        title: "Peinture au doigt",
+        description: "Techniques de base et créativité",
+        duration: 18,
+        difficulty: "beginner",
+        emoji: "👆",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arts-collage",
+        title: "Art du collage",
+        description: "Découpage, assemblage, composition",
+        duration: 20,
+        difficulty: "beginner",
+        emoji: "✂️",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arts-modelage",
+        title: "Modelage en pâte",
+        description: "Pâte à modeler, formes 3D",
+        duration: 22,
+        difficulty: "beginner",
+        emoji: "🟡",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arts-musique-basique",
+        title: "Musique de base",
+        description: "Rythme, sons, instruments simples",
+        duration: 16,
+        difficulty: "beginner",
+        emoji: "🎵",
+        isCompleted: false,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "Niveau 2 - Exploration",
+    description: "Techniques artistiques avancées",
+    lessonCount: 6,
+    color: "bg-blue-500",
+    lessons: [
+      {
+        id: "arts-aquarelle",
+        title: "Technique de l'aquarelle",
+        description: "Transparence, dégradés, effets",
+        duration: 25,
+        difficulty: "intermediate",
+        emoji: "🎨",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-perspective",
+        title: "Dessin en perspective",
+        description: "Point de fuite, profondeur, 3D",
+        duration: 30,
+        difficulty: "intermediate",
+        emoji: "🏗️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-portrait",
+        title: "Dessin de portrait",
+        description: "Proportions du visage, expressions",
+        duration: 28,
+        difficulty: "intermediate",
+        emoji: "👤",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-paysage",
+        title: "Dessin de paysage",
+        description: "Horizon, plans, atmosphère",
+        duration: 32,
+        difficulty: "intermediate",
+        emoji: "🏞️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-sculpture",
+        title: "Sculpture en argile",
+        description: "Volume, texture, modelage avancé",
+        duration: 35,
+        difficulty: "intermediate",
+        emoji: "🗿",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-musique-instruments",
+        title: "Instruments de musique",
+        description: "Flûte, tambour, xylophone",
+        duration: 26,
+        difficulty: "intermediate",
+        emoji: "🎼",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "Niveau 3 - Création",
+    description: "Expression artistique personnelle",
+    lessonCount: 6,
+    color: "bg-purple-500",
+    lessons: [
+      {
+        id: "arts-style-personnel",
+        title: "Développer son style",
+        description: "Expression unique et créativité",
+        duration: 40,
+        difficulty: "advanced",
+        emoji: "✨",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-techniques-mixte",
+        title: "Techniques mixtes",
+        description: "Combiner différents médiums",
+        duration: 38,
+        difficulty: "advanced",
+        emoji: "🎭",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-numerique",
+        title: "Art numérique",
+        description: "Tablette graphique, logiciels",
+        duration: 45,
+        difficulty: "advanced",
+        emoji: "💻",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-installation",
+        title: "Installation artistique",
+        description: "Art dans l'espace, environnement",
+        duration: 42,
+        difficulty: "advanced",
+        emoji: "🏛️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-performance",
+        title: "Performance artistique",
+        description: "Théâtre, danse, expression corporelle",
+        duration: 48,
+        difficulty: "advanced",
+        emoji: "🎭",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-culture-artistique",
+        title: "Culture artistique",
+        description: "Histoire de l'art, artistes célèbres",
+        duration: 44,
+        difficulty: "advanced",
+        emoji: "🏛️",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "Niveau 4 - Maîtrise",
+    description: "Perfectionnement et transmission",
+    lessonCount: 6,
+    color: "bg-red-500",
+    lessons: [
+      {
+        id: "arts-exposition",
+        title: "Organiser une exposition",
+        description: "Scénographie, accrochage, médiation",
+        duration: 55,
+        difficulty: "advanced",
+        emoji: "🎨",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-enseignement",
+        title: "Enseigner l'art",
+        description: "Transmettre ses connaissances",
+        duration: 50,
+        difficulty: "advanced",
+        emoji: "👨‍🏫",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-restauration",
+        title: "Restauration d'œuvres",
+        description: "Conservation, réparation, préservation",
+        duration: 58,
+        difficulty: "advanced",
+        emoji: "🔧",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-innovation",
+        title: "Innovation artistique",
+        description: "Nouvelles technologies, expérimentation",
+        duration: 52,
+        difficulty: "advanced",
+        emoji: "💡",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-communaute",
+        title: "Art communautaire",
+        description: "Projets collectifs, engagement social",
+        duration: 48,
+        difficulty: "advanced",
+        emoji: "👥",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arts-legacy",
+        title: "Héritage artistique",
+        description: "Créer un impact durable",
+        duration: 60,
+        difficulty: "advanced",
+        emoji: "🌟",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
   }
-  
-  export const artsLevels: Level[] = [
-    {
-      id: 1,
-      name: "Niveau 1 - Découverte",
-      description: "Bases du dessin et de la couleur",
-      lessonCount: 6,
-      color: "bg-pink-500",
-      lessons: [
-        {
-          id: "arts-dessin-lignes",
-          title: "Les lignes de base",
-          description: "Droites, courbes et formes simples",
-          duration: 10,
-          difficulty: "beginner",
-          emoji: "✏️",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "arts-formes-geometriques",
-          title: "Formes géométriques",
-          description: "Carré, cercle, triangle en dessin",
-          duration: 12,
-          difficulty: "beginner",
-          emoji: "🔷",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "arts-couleurs-primaires",
-          title: "Couleurs primaires",
-          description: "Rouge, bleu, jaune et mélanges",
-          duration: 15,
-          difficulty: "beginner",
-          emoji: "🎨",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "arts-ombres-lumiere",
-          title: "Ombres et lumière",
-          description: "Créer de la profondeur",
-          duration: 14,
-          difficulty: "beginner",
-          emoji: "💡",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "arts-perspective-simple",
-          title: "Perspective simple",
-          description: "Premiers pas en 3D",
-          duration: 16,
-          difficulty: "beginner",
-          emoji: "🏗️",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "arts-nature-morte",
-          title: "Nature morte",
-          description: "Dessiner des objets du quotidien",
-          duration: 18,
-          difficulty: "beginner",
-          emoji: "🍎",
-          isCompleted: false,
-          isLocked: false
-        }
-      ]
-    },
-    {
-      id: 2,
-      name: "Niveau 2 - Intermédiaire",
-      description: "Techniques avancées et composition",
-      lessonCount: 6,
-      color: "bg-purple-500",
-      lessons: [
-        {
-          id: "arts-portrait-basique",
-          title: "Portrait de base",
-          description: "Proportions du visage",
-          duration: 20,
-          difficulty: "intermediate",
-          emoji: "👤",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-paysage-composition",
-          title: "Composition de paysage",
-          description: "Règles de composition",
-          duration: 22,
-          difficulty: "intermediate",
-          emoji: "🏔️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-aquarelle-techniques",
-          title: "Techniques d'aquarelle",
-          description: "Peinture à l'eau",
-          duration: 25,
-          difficulty: "intermediate",
-          emoji: "🌊",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-crayon-techniques",
-          title: "Techniques au crayon",
-          description: "Hachures et textures",
-          duration: 18,
-          difficulty: "intermediate",
-          emoji: "✏️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-anatomie-basique",
-          title: "Anatomie de base",
-          description: "Proportions du corps humain",
-          duration: 24,
-          difficulty: "intermediate",
-          emoji: "🦴",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-couleurs-complementaires",
-          title: "Couleurs complémentaires",
-          description: "Harmonie et contraste",
-          duration: 16,
-          difficulty: "intermediate",
-          emoji: "🎨",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 3,
-      name: "Niveau 3 - Avancé",
-      description: "Expression artistique et style",
-      lessonCount: 6,
-      color: "bg-yellow-500",
-      lessons: [
-        {
-          id: "arts-portrait-avance",
-          title: "Portrait avancé",
-          description: "Expression et caractère",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "🎭",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-paysage-atmospherique",
-          title: "Paysage atmosphérique",
-          description: "Créer une ambiance",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "🌅",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-abstraction",
-          title: "Art abstrait",
-          description: "Formes et couleurs pures",
-          duration: 26,
-          difficulty: "advanced",
-          emoji: "🔄",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-numerique-bases",
-          title: "Art numérique de base",
-          description: "Tablette graphique et logiciels",
-          duration: 32,
-          difficulty: "advanced",
-          emoji: "💻",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-sculpture-basique",
-          title: "Sculpture de base",
-          description: "Modelage et formes 3D",
-          duration: 29,
-          difficulty: "advanced",
-          emoji: "🗿",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-histoire-art",
-          title: "Histoire de l'art",
-          description: "Mouvements et artistes",
-          duration: 34,
-          difficulty: "advanced",
-          emoji: "🏛️",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 4,
-      name: "Niveau 4 - Expert",
-      description: "Création personnelle et innovation",
-      lessonCount: 6,
-      color: "bg-red-500",
-      lessons: [
-        {
-          id: "arts-style-personnel",
-          title: "Développer son style",
-          description: "Créer une signature artistique",
-          duration: 35,
-          difficulty: "advanced",
-          emoji: "✨",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-oeuvre-complete",
-          title: "Créer une œuvre complète",
-          description: "Projet artistique personnel",
-          duration: 40,
-          difficulty: "advanced",
-          emoji: "🎨",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-numerique-avance",
-          title: "Art numérique avancé",
-          description: "3D, animation et effets",
-          duration: 38,
-          difficulty: "advanced",
-          emoji: "🚀",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-exposition",
-          title: "Présenter son art",
-          description: "Exposition et communication",
-          duration: 25,
-          difficulty: "advanced",
-          emoji: "🎪",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-innovation-technique",
-          title: "Innovation technique",
-          description: "Nouvelles approches artistiques",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "🔬",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "arts-enseignement",
-          title: "Enseigner l'art",
-          description: "Partager ses connaissances",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "👨‍🏫",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    }
-  ];
+];

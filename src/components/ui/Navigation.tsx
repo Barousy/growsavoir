@@ -28,7 +28,7 @@ export default function Navigation() {
               Matières
             </Link>
             <Link href="/age-groups" className="text-slate-700 hover:text-blue-600 transition-colors">
-              Par âge
+              Niveaux
             </Link>
             <Link href="/activities" className="text-slate-700 hover:text-blue-600 transition-colors">
               Activités
