@@ -13,7 +13,7 @@ interface Level {
     title: string;
     description: string;
     duration: number;
-    difficulty: 'beginner' | 'intermediate' | 'advanced';
+    difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert'; // ✅ Ajout de 'expert'
     isCompleted?: boolean;
     isLocked?: boolean;
     emoji: string;
@@ -30,13 +30,15 @@ export default function LevelCard({ level, isExpanded, onToggle }: LevelCardProp
   const difficultyColors = {
     beginner: 'bg-green-100 text-green-800',
     intermediate: 'bg-yellow-100 text-yellow-800',
-    advanced: 'bg-red-100 text-red-800'
+    advanced: 'bg-red-100 text-red-800',
+    expert: 'bg-purple-100 text-purple-800' // ✅ Ajout de la couleur pour expert
   };
 
   const difficultyLabels = {
     beginner: 'Débutant',
     intermediate: 'Intermédiaire',
-    advanced: 'Avancé'
+    advanced: 'Avancé',
+    expert: 'Expert' // ✅ Ajout du label pour expert
   };
 
   return (
@@ -72,8 +74,8 @@ export default function LevelCard({ level, isExpanded, onToggle }: LevelCardProp
         </div>
       </div>
 
-            {/* Contenu des leçons (visible si étendu) */}
-            {isExpanded && (
+      {/* Contenu des leçons (visible si étendu) */}
+      {isExpanded && (
         <div className="p-6 bg-gray-50">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {level.lessons.map((lesson) => (

@@ -3,8 +3,7 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
-import { arabicLevels } from '@/data/arabicLevelData';
-import { Brain, Trophy, ArrowLeft, BookOpen, Clock, Star } from 'lucide-react';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function ArabicSubjectPage() {
   const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
@@ -13,20 +12,292 @@ export default function ArabicSubjectPage() {
     setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const handleLessonStart = (lessonId: string) => {
-    console.log(`Démarrage de la leçon: ${lessonId}`);
-    // Ici vous pourriez naviguer vers la leçon ou ouvrir un modal
-  };
-
   const handleQuizStart = () => {
     console.log('Démarrage du quiz');
-    // Ici vous pourriez ouvrir le quiz
   };
 
   const handleDailyChallenge = () => {
     console.log('Participation au défi quotidien');
-    // Ici vous pourriez ouvrir le défi
   };
+
+  const arabicLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux de la langue arabe",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "arabe-alphabet",
+          title: "الحروف الأبجدية",
+          description: "تعلم الحروف العربية الـ 28 وطريقة كتابتها",
+          duration: 20,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔤"
+        },
+        {
+          id: "arabe-voyelles",
+          title: "الحركات",
+          description: "الفتحة والكسرة والضمة والسكون",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔊"
+        },
+        {
+          id: "arabe-nombres",
+          title: "الأرقام العربية",
+          description: "تعلم العد من 1 إلى 100 باللغة العربية",
+          duration: 22,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔢"
+        },
+        {
+          id: "arabe-couleurs",
+          title: "الألوان والأشكال",
+          description: "تعلم أسماء الألوان والأشكال الهندسية",
+          duration: 16,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🎨"
+        },
+        {
+          id: "arabe-famille",
+          title: "أفراد العائلة",
+          description: "أسماء أفراد العائلة والعلاقات",
+          duration: 24,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "👨‍��‍👧‍👦"
+        },
+        {
+          id: "arabe-animaux",
+          title: "الحيوانات",
+          description: "أسماء الحيوانات الأليفة والبرية",
+          duration: 20,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🐾"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Arabe intermédiaire",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "arabe-articles",
+          title: "أدوات التعريف والتنكير",
+          description: "ال التعريف والتنوين وأدوات أخرى",
+          duration: 25,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📝"
+        },
+        {
+          id: "arabe-verbes",
+          title: "الأفعال",
+          description: "تصريف الأفعال في الماضي والمضارع",
+          duration: 28,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔗"
+        },
+        {
+          id: "arabe-adjectifs",
+          title: "الصفات",
+          description: "الصفات المشبهة والصفات المفضلة",
+          duration: 26,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✨"
+        },
+        {
+          id: "arabe-pluriel",
+          title: "جمع المذكر والمؤنث",
+          description: "قواعد جمع الأسماء والصفات",
+          duration: 30,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "arabe-phrases",
+          title: "الجمل البسيطة",
+          description: "بناء الجمل الاسمية والفعلية",
+          duration: 32,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💬"
+        },
+        {
+          id: "arabe-questions",
+          title: "أدوات الاستفهام",
+          description: "كيفية طرح الأسئلة باللغة العربية",
+          duration: 24,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "❓"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Arabe avancé",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "arabe-temps-verbaux",
+          title: "الأزمنة",
+          description: "الماضي والمضارع والأمر والمضارع المنصوب",
+          duration: 35,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⏰"
+        },
+        {
+          id: "arabe-grammaire",
+          title: "قواعد النحو",
+          description: "الإعراب والبناء والجملة الاسمية والفعلية",
+          duration: 40,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📖"
+        },
+        {
+          id: "arabe-morphologie",
+          title: "علم الصرف",
+          description: "اشتقاق الكلمات والأوزان الصرفية",
+          duration: 38,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔍"
+        },
+        {
+          id: "arabe-rhetorique",
+          title: "علم البلاغة",
+          description: "المجاز والكناية والاستعارة",
+          duration: 42,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎭"
+        },
+        {
+          id: "arabe-poesie",
+          title: "الشعر العربي",
+          description: "أوزان الشعر والقوافي والبحور",
+          duration: 45,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌹"
+        },
+        {
+          id: "arabe-litterature",
+          title: "الأدب العربي",
+          description: "النثر العربي والقصص والروايات",
+          duration: 48,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Arabe expert",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "arabe-classique",
+          title: "العربية الفصحى",
+          description: "اللغة العربية الكلاسيكية والقديمة",
+          duration: 50,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏛️"
+        },
+        {
+          id: "arabe-dialectes",
+          title: "اللهجات العربية",
+          description: "اللهجات المصرية والشامية والخليجية",
+          duration: 55,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🗣️"
+        },
+        {
+          id: "arabe-calligraphie",
+          title: "فن الخط العربي",
+          description: "الخط الكوفي والنسخ والرقعة",
+          duration: 60,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✒️"
+        },
+        {
+          id: "arabe-traduction",
+          title: "الترجمة",
+          description: "ترجمة النصوص من العربية وإليها",
+          duration: 52,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔄"
+        },
+        {
+          id: "arabe-enseignement",
+          title: "تعليم العربية",
+          description: "طرق تدريس اللغة العربية للناطقين بغيرها",
+          duration: 58,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👨‍🏫"
+        },
+        {
+          id: "arabe-perfectionnement",
+          title: "الكمال اللغوي",
+          description: "الوصول إلى مستوى متقدم في اللغة العربية",
+          duration: 65,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏆"
+        }
+      ]
+    }
+  ];
 
   return (
     <>
@@ -39,13 +310,10 @@ export default function ArabicSubjectPage() {
               <span className="text-3xl font-bold text-white">ع</span>
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              تعلم اللغة العربية
+              اللغة العربية
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              اكتشف اللغة العربية بطريقة ممتعة مع دروسنا التفاعلية
-            </p>
-            <p className="text-lg text-gray-500 mt-2">
-              Learn Arabic in a fun way with our interactive lessons
+              اكتشف اللغة العربية بطريقة تفاعلية وممتعة
             </p>
           </div>
 
@@ -84,10 +352,10 @@ export default function ArabicSubjectPage() {
           {/* Section Quiz et Défis */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              اختبر معرفتك
+              Testez vos connaissances
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Testez vos connaissances avec notre quiz
+              Prenez notre quiz pour vérifier ce que vous avez appris
             </p>
           </div>
 
@@ -96,8 +364,8 @@ export default function ArabicSubjectPage() {
             {/* Quiz */}
             <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                  <Brain className="w-8 h-8 text-blue-600" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-4">
+                  <Brain className="w-8 h-8 text-pink-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Quiz Niveau 1

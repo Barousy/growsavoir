@@ -2,490 +2,419 @@
 import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
-import LessonCard from '@/components/ui/LessonCard';
-import SubjectQuiz from '@/components/quiz/SubjectQuiz';
-import { frenchQuiz } from '@/data/quizData';
+import LevelCard from '@/components/ui/LevelCard';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function FrenchSubjectPage() {
-  const [showQuiz, setShowQuiz] = useState(false);
-  const [quizCompleted, setQuizCompleted] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState('1');
+  const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
 
-  const handleQuizComplete = (score: number, total: number) => {
-    setQuizCompleted(true);
-    console.log(`Quiz completed with score: ${score}/${total}`);
+  const handleLevelToggle = (levelId: number) => {
+    setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const lessons = {
-    '1': [
-      {
-        id: '1',
-        title: "L'alphabet français",
-        description: "Les 26 lettres et leurs sons de base",
-        duration: 5,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '2',
-        title: "Lecture de base",
-        description: "Premiers mots et phrases simples",
-        duration: 8,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '3',
-        title: "Écriture",
-        description: "Former les lettres et écrire des mots",
-        duration: 10,
-        difficulty: 'beginner' as const,
-        emoji: '✏️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '4',
-        title: "Les voyelles",
-        description: "A, E, I, O, U, Y et leurs sons",
-        duration: 7,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '5',
-        title: "Les consonnes",
-        description: "B, C, D, F et autres consonnes",
-        duration: 9,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '6',
-        title: "Syllabes simples",
-        description: "Composer des syllabes et des mots",
-        duration: 8,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: false
-      }
-    ],
-    '2': [
-      {
-        id: '7',
-        title: "Grammaire de base",
-        description: "Articles, noms et adjectifs simples",
-        duration: 12,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '8',
-        title: "Conjugaison présent",
-        description: "Être, avoir et verbes du premier groupe",
-        duration: 15,
-        difficulty: 'intermediate' as const,
-        emoji: '⏰',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '9',
-        title: "Orthographe",
-        description: "Règles d'orthographe de base",
-        duration: 14,
-        difficulty: 'intermediate' as const,
-        emoji: '✍️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '10',
-        title: "Vocabulaire enrichi",
-        description: "Familles de mots et expressions",
-        duration: 11,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '11',
-        title: "Compréhension de texte",
-        description: "Lire et comprendre des textes courts",
-        duration: 13,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '12',
-        title: "Rédaction simple",
-        description: "Écrire des phrases et petits textes",
-        duration: 16,
-        difficulty: 'intermediate' as const,
-        emoji: '✏️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '3': [
-      {
-        id: '13',
-        title: "Grammaire avancée",
-        description: "Subjonctif, conditionnel et temps composés",
-        duration: 20,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '14',
-        title: "Littérature",
-        description: "Découvrir des auteurs et textes classiques",
-        duration: 18,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '15',
-        title: "Expression écrite",
-        description: "Rédiger des textes structurés",
-        duration: 22,
-        difficulty: 'advanced' as const,
-        emoji: '✍️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '16',
-        title: "Analyse de texte",
-        description: "Comprendre et analyser des textes complexes",
-        duration: 25,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '17',
-        title: "Culture française",
-        description: "Histoire, traditions et expressions idiomatiques",
-        duration: 20,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '18',
-        title: "Communication orale",
-        description: "S'exprimer avec fluidité et précision",
-        duration: 18,
-        difficulty: 'advanced' as const,
-        emoji: '🗣️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '4': [
-      {
-        id: '19',
-        title: "Stylistique avancée",
-        description: "Maîtriser les figures de style et la rhétorique",
-        duration: 30,
-        difficulty: 'expert' as const,
-        emoji: '✨',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '20',
-        title: "Traduction littéraire",
-        description: "Traduire des textes complexes et poétiques",
-        duration: 35,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '21',
-        title: "Critique littéraire",
-        description: "Analyser et critiquer des œuvres littéraires",
-        duration: 40,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '22',
-        title: "Écriture créative",
-        description: "Créer des histoires et des poèmes originaux",
-        duration: 45,
-        difficulty: 'expert' as const,
-        emoji: '✍️',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '23',
-        title: "Linguistique française",
-        description: "Étudier la structure et l'évolution de la langue",
-        duration: 38,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '24',
-        title: "Perfectionnement",
-        description: "Affiner sa maîtrise de la langue française",
-        duration: 42,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-red-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ]
+  const handleQuizStart = () => {
+    console.log('Démarrage du quiz');
   };
 
-  const levels = [
-    { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
-    { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
-    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
+  const handleDailyChallenge = () => {
+    console.log('Participation au défi quotidien');
+  };
+
+  const frenchLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux du français",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "francais-alphabet",
+          title: "L'alphabet français",
+          description: "Apprendre les 26 lettres",
+          duration: 15,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔤"
+        },
+        {
+          id: "francais-voyelles",
+          title: "Les voyelles",
+          description: "A, E, I, O, U, Y",
+          duration: 12,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔊"
+        },
+        {
+          id: "francais-consonnes",
+          title: "Les consonnes",
+          description: "Toutes les consonnes françaises",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔇"
+        },
+        {
+          id: "francais-nombres",
+          title: "Les nombres",
+          description: "Compter de 1 à 100",
+          duration: 20,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔢"
+        },
+        {
+          id: "francais-couleurs",
+          title: "Les couleurs",
+          description: "Nommer les couleurs",
+          duration: 14,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🎨"
+        },
+        {
+          id: "francais-jours-semaine",
+          title: "Les jours de la semaine",
+          description: "Lundi, mardi, mercredi...",
+          duration: 16,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "📅"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Français intermédiaire",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "francais-articles",
+          title: "Les articles",
+          description: "Le, la, les, un, une, des",
+          duration: 22,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📝"
+        },
+        {
+          id: "francais-verbes-etre-avoir",
+          title: "Être et avoir",
+          description: "Conjugaison des verbes de base",
+          duration: 25,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔗"
+        },
+        {
+          id: "francais-adjectifs",
+          title: "Les adjectifs",
+          description: "Qualifier les noms",
+          duration: 20,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✨"
+        },
+        {
+          id: "francais-pluriel",
+          title: "Le pluriel",
+          description: "Règles de formation du pluriel",
+          duration: 18,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "francais-feminin",
+          title: "Le féminin",
+          description: "Formation du féminin",
+          duration: 24,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👩"
+        },
+        {
+          id: "francais-phrases-simples",
+          title: "Phrases simples",
+          description: "Construire des phrases",
+          duration: 28,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💬"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Français avancé",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "francais-temps-verbaux",
+          title: "Les temps verbaux",
+          description: "Présent, passé, futur",
+          duration: 30,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⏰"
+        },
+        {
+          id: "francais-subjonctif",
+          title: "Le subjonctif",
+          description: "Mode du doute et du souhait",
+          duration: 35,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🤔"
+        },
+        {
+          id: "francais-conditionnel",
+          title: "Le conditionnel",
+          description: "Hypothèses et politesse",
+          duration: 32,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎭"
+        },
+        {
+          id: "francais-pronoms",
+          title: "Les pronoms",
+          description: "Pronoms personnels et relatifs",
+          duration: 28,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👤"
+        },
+        {
+          id: "francais-adverbes",
+          title: "Les adverbes",
+          description: "Modifier les verbes",
+          duration: 25,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📝"
+        },
+        {
+          id: "francais-conjonctions",
+          title: "Les conjonctions",
+          description: "Lier les phrases",
+          duration: 30,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔗"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Français expert",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "francais-litterature",
+          title: "Littérature française",
+          description: "Grands auteurs et œuvres",
+          duration: 40,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "francais-poesie",
+          title: "La poésie",
+          description: "Vers, rimes et figures de style",
+          duration: 38,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌹"
+        },
+        {
+          id: "francais-theatre",
+          title: "Le théâtre",
+          description: "Tragédie, comédie et dramaturgie",
+          duration: 35,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎭"
+        },
+        {
+          id: "francais-essai",
+          title: "L'essai",
+          description: "Argumentation et réflexion",
+          duration: 42,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✍️"
+        },
+        {
+          id: "francais-analyse-texte",
+          title: "Analyse de texte",
+          description: "Méthodes d'analyse littéraire",
+          duration: 45,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔍"
+        },
+        {
+          id: "francais-perfectionnement",
+          title: "Perfectionnement",
+          description: "Maîtrise avancée du français",
+          duration: 50,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏆"
+        }
+      ]
+    }
   ];
-
-  if (showQuiz) {
-    return (
-      <>
-        <Navigation />
-        <main className="pt-16">
-          <div className="bg-gradient-to-br from-red-50 via-white to-red-100 py-12">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <button
-                onClick={() => setShowQuiz(false)}
-                className="mb-6 text-red-600 hover:text-red-800 flex items-center"
-              >
-                ← Retour aux leçons
-              </button>
-              
-              <SubjectQuiz
-                quiz={frenchQuiz}
-                onClose={() => setShowQuiz(false)}
-                onComplete={(score) => {
-                  setQuizCompleted(true);
-                  setShowQuiz(false);
-                  console.log('Quiz completed with score:', score);
-                }}
-              />
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
 
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-red-50 via-white to-red-100 py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="text-6xl mb-6">📘</div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-              Apprendre le français
+      <main className="pt-16 pb-8 bg-gradient-to-br from-blue-50 to-red-50 min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-red-600 rounded-full mb-6">
+              <span className="text-3xl font-bold text-white">🇫��</span>
+            </div>
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+              Français
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Maîtrisez la langue française avec nos leçons structurées et amusantes
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez le français de manière ludique avec nos leçons interactives
             </p>
           </div>
-        </section>
 
-        {/* Course Overview */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
-              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet de français en 4 niveaux, de débutant à expert
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-              {levels.map((level) => (
-                <div 
-                  key={level.id}
-                  className={`text-center p-6 rounded-xl cursor-pointer transition-all duration-300 ${
-                    selectedLevel === level.id 
-                      ? 'bg-red-100 border-2 border-red-300' 
-                      : 'bg-slate-50 hover:bg-red-50'
-                  }`}
-                  onClick={() => setSelectedLevel(level.id)}
-                >
-                  <div className={`w-16 h-16 ${level.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-2xl text-white font-bold">{level.id}</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">{level.name}</h3>
-                  <p className="text-sm text-slate-600">{level.count} leçons</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Lessons Grid */}
-        <section className="py-16 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Niveau {selectedLevel} - {levels.find(l => l.id === selectedLevel)?.name}
+          {/* Vue d'ensemble du cours */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Vue d'ensemble du cours
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {lessons[selectedLevel as keyof typeof lessons].map((lesson) => (
-                <LessonCard
-                  key={lesson.id}
-                  {...lesson}
-                  onStart={() => {
-                    const lessonSlugs = {
-                      '1': 'francais-alphabet',
-                      '2': 'francais-lecture-base',
-                      '3': 'francais-ecriture',
-                      '4': 'francais-voyelles',
-                      '5': 'francais-consonnes',
-                      '6': 'francais-syllabes-simples',
-                      '7': 'francais-grammaire-base',
-                      '8': 'francais-conjugaison-present',
-                      '9': 'francais-orthographe',
-                      '10': 'francais-vocabulaire-enrichi',
-                      '11': 'francais-comprehension-texte',
-                      '12': 'francais-redaction-simple',
-                      '13': 'francais-grammaire-avancee',
-                      '14': 'francais-litterature',
-                      '15': 'francais-expression-ecrite',
-                      '16': 'francais-analyse-texte',
-                      '17': 'francais-culture-francaise',
-                      '18': 'francais-communication-orale',
-                      '19': 'francais-stylistique-avancee',
-                      '20': 'francais-traduction-litteraire',
-                      '21': 'francais-critique-litteraire',
-                      '22': 'francais-ecriture-creative',
-                      '23': 'francais-linguistique-francaise',
-                      '24': 'francais-perfectionnement'
-                    };
-                    const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
-                    if (slug) {
-                      window.location.href = `/lesson/${slug}`;
-                    }
-                  }}
-                />
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <button className="bg-red-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors">
-                Voir toutes les leçons du niveau {selectedLevel}
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Quiz Section */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-8">Testez vos connaissances</h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Prenez notre quiz pour vérifier ce que vous avez appris en français
+            <p className="text-lg text-gray-600">
+              Un programme complet de français en 4 niveaux, de débutant à expert
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-6 border border-red-200">
-                <div className="text-4xl mb-4">🧠</div>
-                <h3 className="text-xl font-semibold mb-2">Quiz Niveau 1</h3>
-                <p className="text-slate-600 mb-4">Testez vos connaissances de base</p>
-                <button 
-                  onClick={() => setShowQuiz(true)}
-                  className="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 transition-colors"
+          </div>
+
+          {/* Niveaux interactifs */}
+          <div className="space-y-6 mb-12">
+            {frenchLevels.map((level) => (
+              <LevelCard
+                key={level.id}
+                level={level}
+                isExpanded={expandedLevel === level.id}
+                onToggle={handleLevelToggle}
+              />
+            ))}
+          </div>
+
+          {/* Bouton pour voir toutes les leçons du niveau 1 */}
+          <div className="text-center mb-12">
+            <button
+              onClick={() => setExpandedLevel(1)}
+              className="bg-blue-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-blue-600 transition-colors shadow-lg hover:shadow-xl"
+            >
+              Voir toutes les leçons du niveau 1
+            </button>
+          </div>
+
+          {/* Section Quiz et Défis */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Testez vos connaissances
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Prenez notre quiz pour vérifier ce que vous avez appris
+            </p>
+          </div>
+
+          {/* Cartes Quiz et Défi */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Quiz */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-4">
+                  <Brain className="w-8 h-8 text-pink-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Quiz Niveau 1
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Testez vos connaissances de base
+                </p>
+                <button
+                  onClick={handleQuizStart}
+                  className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors"
                 >
                   Commencer le quiz
                 </button>
               </div>
-              
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                <div className="text-4xl mb-4">🏆</div>
-                <h3 className="text-xl font-semibold mb-2">Défi quotidien</h3>
-                <p className="text-slate-600 mb-4">Un nouveau défi chaque jour</p>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            </div>
+
+            {/* Défi quotidien */}
+            <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 border border-red-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                  <Trophy className="w-8 h-8 text-yellow-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Défi quotidien
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Un nouveau défi chaque jour
+                </p>
+                <button
+                  onClick={handleDailyChallenge}
+                  className="bg-red-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-600 transition-colors"
+                >
                   Participer
                 </button>
               </div>
             </div>
-
-            {quizCompleted && (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                <p className="text-green-800">
-                  🎉 Félicitations ! Vous avez terminé le quiz. Continuez à pratiquer !
-                </p>
-              </div>
-            )}
           </div>
-        </section>
 
-        {/* Back to subject */}
-        <section className="py-16 bg-slate-50">
+          {/* Bouton retour */}
           <div className="text-center">
             <a
-              href="/subject"
-              className="inline-block bg-slate-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors"
+              href="/subjects"
+              className="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors"
             >
+              <ArrowLeft className="w-5 h-5 mr-2" />
               ← Retour aux matières
             </a>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </>

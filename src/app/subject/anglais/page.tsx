@@ -3,8 +3,7 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
-import { englishLevels } from '@/data/levelData';
-import { Brain, Trophy, ArrowLeft, BookOpen, Clock, Star } from 'lucide-react';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function EnglishSubjectPage() {
   const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
@@ -13,20 +12,292 @@ export default function EnglishSubjectPage() {
     setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const handleLessonStart = (lessonId: string) => {
-    console.log(`Démarrage de la leçon: ${lessonId}`);
-    // Ici vous pourriez naviguer vers la leçon ou ouvrir un modal
-  };
-
   const handleQuizStart = () => {
     console.log('Démarrage du quiz');
-    // Ici vous pourriez ouvrir le quiz
   };
 
   const handleDailyChallenge = () => {
     console.log('Participation au défi quotidien');
-    // Ici vous pourriez ouvrir le défi
   };
+
+  const englishLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux de l'anglais",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "anglais-alphabet",
+          title: "The English Alphabet",
+          description: "Learn the 26 letters and their pronunciation",
+          duration: 15,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔤"
+        },
+        {
+          id: "anglais-voyelles",
+          title: "Vowels and Consonants",
+          description: "Understanding A, E, I, O, U and other sounds",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔊"
+        },
+        {
+          id: "anglais-nombres",
+          title: "Numbers 1-100",
+          description: "Count and write numbers in English",
+          duration: 20,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🔢"
+        },
+        {
+          id: "anglais-couleurs",
+          title: "Colors and Shapes",
+          description: "Learn basic colors and geometric shapes",
+          duration: 16,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🎨"
+        },
+        {
+          id: "anglais-famille",
+          title: "Family Members",
+          description: "Names of family members and relationships",
+          duration: 22,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "👨‍��‍👧‍👦"
+        },
+        {
+          id: "anglais-animaux",
+          title: "Animals and Pets",
+          description: "Common animals and their names",
+          duration: 19,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🐾"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Anglais intermédiaire",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "anglais-articles",
+          title: "Articles and Pronouns",
+          description: "A, an, the and personal pronouns",
+          duration: 25,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📝"
+        },
+        {
+          id: "anglais-verbes-etre-avoir",
+          title: "To Be and To Have",
+          description: "Conjugation of basic verbs",
+          duration: 28,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔗"
+        },
+        {
+          id: "anglais-adjectifs",
+          title: "Adjectives and Adverbs",
+          description: "Describing people, places and things",
+          duration: 24,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✨"
+        },
+        {
+          id: "anglais-temps-present",
+          title: "Present Tenses",
+          description: "Simple present and present continuous",
+          duration: 30,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⏰"
+        },
+        {
+          id: "anglais-questions",
+          title: "Question Forms",
+          description: "How to ask questions in English",
+          duration: 26,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "❓"
+        },
+        {
+          id: "anglais-negation",
+          title: "Negative Forms",
+          description: "Expressing negation and refusal",
+          duration: 22,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "❌"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Anglais avancé",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "anglais-temps-passes",
+          title: "Past Tenses",
+          description: "Simple past, past continuous and present perfect",
+          duration: 35,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📅"
+        },
+        {
+          id: "anglais-futur",
+          title: "Future Tenses",
+          description: "Will, going to and future continuous",
+          duration: 32,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔮"
+        },
+        {
+          id: "anglais-conditionnel",
+          title: "Conditional Sentences",
+          description: "If clauses and hypothetical situations",
+          duration: 38,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎭"
+        },
+        {
+          id: "anglais-passif",
+          title: "Passive Voice",
+          description: "Understanding and using passive constructions",
+          duration: 34,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔀"
+        },
+        {
+          id: "anglais-phrasal-verbs",
+          title: "Phrasal Verbs",
+          description: "Common phrasal verbs and their meanings",
+          duration: 40,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔤"
+        },
+        {
+          id: "anglais-idiomes",
+          title: "Idioms and Expressions",
+          description: "Popular English idioms and their usage",
+          duration: 36,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💬"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Anglais expert",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "anglais-litterature",
+          title: "English Literature",
+          description: "Classic works and literary analysis",
+          duration: 45,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "anglais-business",
+          title: "Business English",
+          description: "Professional communication and vocabulary",
+          duration: 42,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💼"
+        },
+        {
+          id: "anglais-academique",
+          title: "Academic English",
+          description: "Writing essays and academic papers",
+          duration: 48,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎓"
+        },
+        {
+          id: "anglais-medias",
+          title: "Media and Journalism",
+          description: "Understanding news and media language",
+          duration: 44,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📰"
+        },
+        {
+          id: "anglais-culture",
+          title: "Cultural Context",
+          description: "Understanding English-speaking cultures",
+          duration: 50,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌍"
+        },
+        {
+          id: "anglais-fluency",
+          title: "Fluency and Pronunciation",
+          description: "Achieving native-like fluency",
+          duration: 55,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎯"
+        }
+      ]
+    }
+  ];
 
   return (
     <>

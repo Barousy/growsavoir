@@ -2,491 +2,419 @@
 import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
-import LessonCard from '@/components/ui/LessonCard';
-import SubjectQuiz from '@/components/quiz/SubjectQuiz';
-import { wellbeingQuiz } from '@/data/quizData';
+import LevelCard from '@/components/ui/LevelCard';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function WellbeingSubjectPage() {
-  const [showQuiz, setShowQuiz] = useState(false);
-  const [quizCompleted, setQuizCompleted] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState('1');
+  const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
 
-  const handleQuizComplete = (score: number, total: number) => {
-    setQuizCompleted(true);
-    console.log(`Quiz completed with score: ${score}/${total}`);
+  const handleLevelToggle = (levelId: number) => {
+    setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const lessons = {
-    '1': [
-      {
-        id: '1',
-        title: 'Respiration calme',
-        description: 'Apprendre à respirer calmement et se détendre',
-        duration: 10,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '2',
-        title: 'Reconnaître les émotions',
-        description: 'Identifier et exprimer ses sentiments',
-        duration: 15,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '3',
-        title: 'Pratique de la gratitude',
-        description: 'Découvrir ce qui nous rend heureux',
-        duration: 12,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '4',
-        title: 'Relaxation musculaire',
-        description: 'Détendre chaque muscle du corps',
-        duration: 18,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '5',
-        title: 'Imagination positive',
-        description: 'Créer des images mentales apaisantes',
-        duration: 14,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '6',
-        title: 'Rituels du matin',
-        description: 'Commencer la journée avec sérénité',
-        duration: 16,
-        difficulty: 'beginner' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: false
-      }
-    ],
-    '2': [
-      {
-        id: '7',
-        title: 'Méditation guidée',
-        description: 'Introduction à la méditation pour enfants',
-        duration: 20,
-        difficulty: 'intermediate' as const,
-        emoji: '��‍♀️',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '8',
-        title: 'Développer la confiance',
-        description: 'Techniques pour renforcer l\'estime de soi',
-        duration: 25,
-        difficulty: 'intermediate' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '9',
-        title: 'Relations amicales',
-        description: 'Apprendre à bien s\'entendre avec les autres',
-        duration: 18,
-        difficulty: 'intermediate' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '10',
-        title: 'Gestion de la colère',
-        description: 'Apprendre à maîtriser ses émotions',
-        duration: 22,
-        difficulty: 'intermediate' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '11',
-        title: 'Techniques de concentration',
-        description: 'Améliorer sa capacité d\'attention',
-        duration: 20,
-        difficulty: 'intermediate' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '12',
-        title: 'Affirmations positives',
-        description: 'Utiliser des mots qui nous font du bien',
-        duration: 15,
-        difficulty: 'intermediate' as const,
-        emoji: '✨',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '3': [
-      {
-        id: '13',
-        title: 'Gérer le stress',
-        description: 'Techniques avancées de gestion du stress',
-        duration: 30,
-        difficulty: 'advanced' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '14',
-        title: 'Fixer des objectifs',
-        description: 'Planifier et atteindre ses objectifs personnels',
-        duration: 35,
-        difficulty: 'advanced' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '15',
-        title: 'Pleine conscience',
-        description: 'Pratiques de mindfulness pour adolescents',
-        duration: 40,
-        difficulty: 'advanced' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '16',
-        title: 'Communication non-violente',
-        description: 'S\'exprimer avec respect et écouter l\'autre',
-        duration: 28,
-        difficulty: 'advanced' as const,
-        emoji: '🗣️',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '17',
-        title: 'Gestion du temps',
-        description: 'Organiser son temps efficacement',
-        duration: 32,
-        difficulty: 'advanced' as const,
-        emoji: '⏰',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '18',
-        title: 'Résolution de conflits',
-        description: 'Apprendre à résoudre les désaccords',
-        duration: 26,
-        difficulty: 'advanced' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '4': [
-      {
-        id: '19',
-        title: 'Thérapie par l\'art',
-        description: 'Utiliser la créativité pour se soigner',
-        duration: 45,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '20',
-        title: 'Médecine alternative',
-        description: 'Découvrir les approches holistiques',
-        duration: 50,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '21',
-        title: 'Développement spirituel',
-        description: 'Explorer sa dimension spirituelle',
-        duration: 55,
-        difficulty: 'expert' as const,
-        emoji: '🕊️',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '22',
-        title: 'Coaching personnel',
-        description: 'Accompagner les autres dans leur développement',
-        duration: 60,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '23',
-        title: 'Médecine préventive',
-        description: 'Prévenir les problèmes de santé mentale',
-        duration: 48,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '24',
-        title: 'Héritage de bien-être',
-        description: 'Transmettre ses connaissances aux autres',
-        duration: 52,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-teal-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ]
+  const handleQuizStart = () => {
+    console.log('Démarrage du quiz');
   };
 
-  const levels = [
-    { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
-    { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
-    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
+  const handleDailyChallenge = () => {
+    console.log('Participation au défi quotidien');
+  };
+
+  const wellbeingLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux du bien-être",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "bien-etre-respiration",
+          title: "Respiration consciente",
+          description: "Apprendre à respirer correctement",
+          duration: 10,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🫁"
+        },
+        {
+          id: "bien-etre-relaxation",
+          title: "Techniques de relaxation",
+          description: "Se détendre et se calmer",
+          duration: 12,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "😌"
+        },
+        {
+          id: "bien-etre-sommeil",
+          title: "Hygiène du sommeil",
+          description: "Améliorer la qualité du sommeil",
+          duration: 15,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "😴"
+        },
+        {
+          id: "bien-etre-nutrition",
+          title: "Nutrition équilibrée",
+          description: "Manger sainement au quotidien",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🥗"
+        },
+        {
+          id: "bien-etre-activite-physique",
+          title: "Activité physique douce",
+          description: "Bouger sans se faire mal",
+          duration: 14,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🚶"
+        },
+        {
+          id: "bien-etre-emotions",
+          title: "Gestion des émotions",
+          description: "Comprendre et accepter ses émotions",
+          duration: 16,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "💭"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Bien-être intermédiaire",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "bien-etre-meditation",
+          title: "Méditation guidée",
+          description: "Pratiquer la méditation quotidienne",
+          duration: 20,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🧘"
+        },
+        {
+          id: "bien-etre-yoga",
+          title: "Yoga doux",
+          description: "Postures et enchaînements simples",
+          duration: 25,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🧘‍♀️"
+        },
+        {
+          id: "bien-etre-gestion-stress",
+          title: "Gestion du stress",
+          description: "Techniques anti-stress efficaces",
+          duration: 22,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "😰"
+        },
+        {
+          id: "bien-etre-relations",
+          title: "Relations saines",
+          description: "Cultiver des relations positives",
+          duration: 24,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🤝"
+        },
+        {
+          id: "bien-etre-creativite",
+          title: "Expression créative",
+          description: "Libérer sa créativité",
+          duration: 18,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎨"
+        },
+        {
+          id: "bien-etre-nature",
+          title: "Connexion à la nature",
+          description: "Se ressourcer en pleine nature",
+          duration: 20,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌿"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Bien-être avancé",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "bien-etre-mindfulness",
+          title: "Pleine conscience",
+          description: "Vivre l'instant présent",
+          duration: 30,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌅"
+        },
+        {
+          id: "bien-etre-yoga-avance",
+          title: "Yoga avancé",
+          description: "Postures complexes et équilibre",
+          duration: 35,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🧘‍♂️"
+        },
+        {
+          id: "bien-etre-therapie",
+          title: "Techniques thérapeutiques",
+          description: "Méthodes de guérison naturelle",
+          duration: 40,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💆"
+        },
+        {
+          id: "bien-etre-spiritualite",
+          title: "Développement spirituel",
+          description: "Explorer sa dimension spirituelle",
+          duration: 38,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✨"
+        },
+        {
+          id: "bien-etre-energie",
+          title: "Gestion de l'énergie",
+          description: "Optimiser son niveau d'énergie",
+          duration: 32,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⚡"
+        },
+        {
+          id: "bien-etre-transformation",
+          title: "Transformation personnelle",
+          description: "Changer et évoluer consciemment",
+          duration: 45,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🦋"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Bien-être expert",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "bien-etre-enseignement",
+          title: "Enseigner le bien-être",
+          description: "Transmettre ses connaissances",
+          duration: 50,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👨‍🏫"
+        },
+        {
+          id: "bien-etre-coaching",
+          title: "Coaching en bien-être",
+          description: "Accompagner les autres",
+          duration: 55,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎯"
+        },
+        {
+          id: "bien-etre-recherche",
+          title: "Recherche en bien-être",
+          description: "Étudier et développer de nouvelles approches",
+          duration: 60,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔬"
+        },
+        {
+          id: "bien-etre-innovation",
+          title: "Innovation en bien-être",
+          description: "Créer de nouvelles méthodes",
+          duration: 48,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💡"
+        },
+        {
+          id: "bien-etre-leadership",
+          title: "Leadership en bien-être",
+          description: "Diriger des projets de bien-être",
+          duration: 52,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👑"
+        },
+        {
+          id: "bien-etre-heritage",
+          title: "Héritage de bien-être",
+          description: "Créer un impact durable",
+          duration: 65,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏛️"
+        }
+      ]
+    }
   ];
-
-  if (showQuiz) {
-    return (
-      <>
-        <Navigation />
-        <main className="pt-16">
-          <div className="bg-gradient-to-br from-teal-50 via-white to-teal-100 py-12">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <button
-                onClick={() => setShowQuiz(false)}
-                className="mb-6 text-teal-600 hover:text-teal-800 flex items-center"
-              >
-                ← Retour aux leçons
-              </button>
-              
-              <SubjectQuiz
-                quiz={wellbeingQuiz}
-                onClose={() => setShowQuiz(false)}
-                onComplete={(score) => {
-                  setQuizCompleted(true);
-                  setShowQuiz(false);
-                  console.log('Quiz completed with score:', score);
-                }}
-              />
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
 
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-teal-50 via-white to-teal-100 py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="text-6xl mb-6">🧘</div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
-              Bien-être & Développement personnel
+      <main className="pt-16 pb-8 bg-gradient-to-br from-teal-50 to-green-50 min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-teal-500 to-green-600 rounded-full mb-6">
+              <span className="text-3xl font-bold text-white"></span>
+            </div>
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+              Bien-être
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Développez votre équilibre émotionnel, votre confiance en vous et 
-              votre bien-être mental à travers des pratiques simples et efficaces !
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez le bien-être de manière ludique avec nos leçons interactives
             </p>
           </div>
-        </section>
 
-        {/* Course Overview */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
-              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet de bien-être en 4 niveaux, de débutant à expert
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-              {levels.map((level) => (
-                <div 
-                  key={level.id}
-                  className={`text-center p-6 rounded-xl cursor-pointer transition-all duration-300 ${
-                    selectedLevel === level.id 
-                      ? 'bg-teal-100 border-2 border-teal-300' 
-                      : 'bg-slate-50 hover:bg-teal-50'
-                  }`}
-                  onClick={() => setSelectedLevel(level.id)}
-                >
-                  <div className={`w-16 h-16 ${level.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-2xl text-white font-bold">{level.id}</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">{level.name}</h3>
-                  <p className="text-sm text-slate-600">{level.count} leçons</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Lessons Grid */}
-        <section className="py-16 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Niveau {selectedLevel} - {levels.find(l => l.id === selectedLevel)?.name}
+          {/* Vue d'ensemble du cours */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Vue d'ensemble du cours
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {lessons[selectedLevel as keyof typeof lessons].map((lesson) => (
-                <LessonCard
-                  key={lesson.id}
-                  {...lesson}
-                  onStart={() => {
-                    const lessonSlugs = {
-                      '1': 'bien-etre-respiration-calme',
-                      '2': 'bien-etre-reconnaitre-emotions',
-                      '3': 'bien-etre-pratique-gratitude',
-                      '4': 'bien-etre-relaxation-musculaire',
-                      '5': 'bien-etre-imagination-positive',
-                      '6': 'bien-etre-rituels-matin',
-                      '7': 'bien-etre-meditation-guidee',
-                      '8': 'bien-etre-developper-confiance',
-                      '9': 'bien-etre-relations-amicales',
-                      '10': 'bien-etre-gestion-colere',
-                      '11': 'bien-etre-techniques-concentration',
-                      '12': 'bien-etre-affirmations-positives',
-                      '13': 'bien-etre-gerer-stress',
-                      '14': 'bien-etre-fixer-objectifs',
-                      '15': 'bien-etre-pleine-conscience',
-                      '16': 'bien-etre-communication-non-violente',
-                      '17': 'bien-etre-gestion-temps',
-                      '18': 'bien-etre-resolution-conflits',
-                      '19': 'bien-etre-therapie-art',
-                      '20': 'bien-etre-medecine-alternative',
-                      '21': 'bien-etre-developpement-spirituel',
-                      '22': 'bien-etre-coaching-personnel',
-                      '23': 'bien-etre-medecine-preventive',
-                      '24': 'bien-etre-heritage-bien-etre'
-                    };
-                    const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
-                    if (slug) {
-                      window.location.href = `/lesson/${slug}`;
-                    }
-                  }}
-                />
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <button className="bg-teal-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-colors">
-                Voir toutes les leçons du niveau {selectedLevel}
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Quiz Section */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-8">Testez vos connaissances</h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Prenez notre quiz pour vérifier ce que vous avez appris en bien-être
+            <p className="text-lg text-gray-600">
+              Un programme complet de bien-être en 4 niveaux, de débutant à expert
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-6 border border-teal-200">
-                <div className="text-4xl mb-4">🧠</div>
-                <h3 className="text-xl font-semibold mb-2">Quiz Niveau 1</h3>
-                <p className="text-slate-600 mb-4">Testez vos connaissances de base</p>
-                <button 
-                  onClick={() => setShowQuiz(true)}
-                  className="bg-teal-500 text-white px-6 py-2 rounded-lg hover:bg-teal-600 transition-colors"
+          </div>
+
+          {/* Niveaux interactifs */}
+          <div className="space-y-6 mb-12">
+            {wellbeingLevels.map((level) => (
+              <LevelCard
+                key={level.id}
+                level={level}
+                isExpanded={expandedLevel === level.id}
+                onToggle={handleLevelToggle}
+              />
+            ))}
+          </div>
+
+          {/* Bouton pour voir toutes les leçons du niveau 1 */}
+          <div className="text-center mb-12">
+            <button
+              onClick={() => setExpandedLevel(1)}
+              className="bg-teal-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-teal-600 transition-colors shadow-lg hover:shadow-xl"
+            >
+              Voir toutes les leçons du niveau 1
+            </button>
+          </div>
+
+          {/* Section Quiz et Défis */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Testez vos connaissances
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Prenez notre quiz pour vérifier ce que vous avez appris
+            </p>
+          </div>
+
+          {/* Cartes Quiz et Défi */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Quiz */}
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-8 border border-teal-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-4">
+                  <Brain className="w-8 h-8 text-pink-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Quiz Niveau 1
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Testez vos connaissances de base
+                </p>
+                <button
+                  onClick={handleQuizStart}
+                  className="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-colors"
                 >
                   Commencer le quiz
                 </button>
               </div>
-              
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                <div className="text-4xl mb-4">🏆</div>
-                <h3 className="text-xl font-semibold mb-2">Défi quotidien</h3>
-                <p className="text-slate-600 mb-4">Un nouveau défi chaque jour</p>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            </div>
+
+            {/* Défi quotidien */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                  <Trophy className="w-8 h-8 text-yellow-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Défi quotidien
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Un nouveau défi chaque jour
+                </p>
+                <button
+                  onClick={handleDailyChallenge}
+                  className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+                >
                   Participer
                 </button>
               </div>
             </div>
-
-            {quizCompleted && (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                <p className="text-green-800">
-                  🎉 Félicitations ! Vous avez terminé le quiz. Continuez à pratiquer !
-                </p>
-              </div>
-            )}
           </div>
-        </section>
 
-        {/* Back to subject */}
-        <section className="py-16 bg-slate-50">
+          {/* Bouton retour */}
           <div className="text-center">
             <a
-              href="/subject"
-              className="inline-block bg-slate-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors"
+              href="/subjects"
+              className="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors"
             >
+              <ArrowLeft className="w-5 h-5 mr-2" />
               ← Retour aux matières
             </a>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </>

@@ -2,485 +2,419 @@
 import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
-import LessonCard from '@/components/ui/LessonCard';
-import SubjectQuiz from '@/components/quiz/SubjectQuiz';
-import { islamicSciencesQuiz } from '@/data/quizData';
+import LevelCard from '@/components/ui/LevelCard';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function IslamicSciencesSubjectPage() {
-  const [showQuiz, setShowQuiz] = useState(false);
-  const [quizCompleted, setQuizCompleted] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState('1');
+  const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
 
-  const handleQuizComplete = (score: number, total: number) => {
-    setQuizCompleted(true);
-    console.log(`Quiz completed with score: ${score}/${total}`);
+  const handleLevelToggle = (levelId: number) => {
+    setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const lessons = {
-    '1': [
-      {
-        id: '1',
-        title: "Les piliers de l'Islam",
-        description: "Les cinq piliers fondamentaux de la religion musulmane",
-        duration: 10,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '2',
-        title: "La profession de foi",
-        description: "La Chahada et son importance",
-        duration: 8,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '3',
-        title: "La prière",
-        description: "Les cinq prières quotidiennes et leurs règles",
-        duration: 12,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '4',
-        title: "Le jeûne",
-        description: "Le Ramadan et ses bienfaits",
-        duration: 9,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '5',
-        title: "L'aumône",
-        description: "La Zakat et la charité en Islam",
-        duration: 7,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      },
-      {
-        id: '6',
-        title: "Le pèlerinage",
-        description: "Le Hajj et ses étapes",
-        duration: 11,
-        difficulty: 'beginner' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: false
-      }
-    ],
-    '2': [
-      {
-        id: '7',
-        title: "Les vertus islamiques",
-        description: "Patience, gratitude, humilité et autres qualités",
-        duration: 14,
-        difficulty: 'intermediate' as const,
-        emoji: '✨',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '8',
-        title: "Les relations sociales",
-        description: "Respect des parents, bon voisinage, amitié",
-        duration: 13,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '9',
-        title: "L'éthique islamique",
-        description: "Les bonnes manières et le comportement",
-        duration: 15,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '10',
-        title: "Les interdits",
-        description: "Ce qui est interdit en Islam et pourquoi",
-        duration: 12,
-        difficulty: 'intermediate' as const,
-        emoji: '❌',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '11',
-        title: "Les obligations",
-        description: "Les devoirs du musulman envers Allah et les autres",
-        duration: 16,
-        difficulty: 'intermediate' as const,
-        emoji: '✅',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '12',
-        title: "La purification",
-        description: "Les ablutions et la propreté en Islam",
-        duration: 10,
-        difficulty: 'intermediate' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '3': [
-      {
-        id: '13',
-        title: "Le Fiqh avancé",
-        description: "Jurisprudence islamique et règles détaillées",
-        duration: 22,
-        difficulty: 'advanced' as const,
-        emoji: '⚖️',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '14',
-        title: "Les écoles juridiques",
-        description: "Les différentes madhahib et leurs spécificités",
-        duration: 20,
-        difficulty: 'advanced' as const,
-        emoji: '🏛️',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '15',
-        title: "L'exégèse coranique",
-        description: "Tafsir et interprétation du Coran",
-        duration: 25,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '16',
-        title: "La science du Hadith",
-        description: "Étude des traditions prophétiques",
-        duration: 23,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '17',
-        title: "La théologie islamique",
-        description: "Aqida et croyances fondamentales",
-        duration: 21,
-        difficulty: 'advanced' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '18',
-        title: "La spiritualité",
-        description: "Tasawwuf et développement spirituel",
-        duration: 24,
-        difficulty: 'advanced' as const,
-        emoji: '🕊️',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ],
-    '4': [
-      {
-        id: '19',
-        title: "Méthodologie des Salaf",
-        description: "Comprendre la méthodologie des pieux prédécesseurs",
-        duration: 30,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '20',
-        title: "Aqida authentique",
-        description: "Croyance correcte selon le Coran et la Sunna",
-        duration: 28,
-        difficulty: 'expert' as const,
-        emoji: '��',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '21',
-        title: "Fiqh contemporain",
-        description: "Application des règles islamiques aux situations modernes",
-        duration: 32,
-        difficulty: 'expert' as const,
-        emoji: '⚖️',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '22',
-        title: "Sciences coraniques avancées",
-        description: "Étude approfondie des sciences du Coran",
-        duration: 35,
-        difficulty: 'expert' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '23',
-        title: "Hadith authentique",
-        description: "Critique et authentification des traditions",
-        duration: 30,
-        difficulty: 'expert' as const,
-        emoji: '',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      },
-      {
-        id: '24',
-        title: "Préparation à l'enseignement",
-        description: "Former la prochaine génération de savants",
-        duration: 40,
-        difficulty: 'expert' as const,
-        emoji: '��‍��',
-        color: 'bg-emerald-500',
-        isCompleted: false,
-        isLocked: true
-      }
-    ]
+  const handleQuizStart = () => {
+    console.log('Démarrage du quiz');
   };
 
-  const levels = [
-    { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
-    { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
-    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
+  const handleDailyChallenge = () => {
+    console.log('Participation au défi quotidien');
+  };
+
+  const islamicLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux des sciences islamiques",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "islam-piliers-islam",
+          title: "Les piliers de l'Islam",
+          description: "Les cinq piliers fondamentaux de la religion musulmane",
+          duration: 10,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🕌"
+        },
+        {
+          id: "islam-profession-foi",
+          title: "La profession de foi",
+          description: "La Chahada et son importance",
+          duration: 8,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "📖"
+        },
+        {
+          id: "islam-priere",
+          title: "La prière",
+          description: "Les cinq prières quotidiennes et leurs règles",
+          duration: 12,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🕌"
+        },
+        {
+          id: "islam-jeune",
+          title: "Le jeûne",
+          description: "Le Ramadan et ses bienfaits",
+          duration: 9,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🌙"
+        },
+        {
+          id: "islam-aumone",
+          title: "L'aumône",
+          description: "La Zakat et la charité en Islam",
+          duration: 7,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🤲"
+        },
+        {
+          id: "islam-pelerinage",
+          title: "Le pèlerinage",
+          description: "Le Hajj et ses étapes",
+          duration: 11,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🕋"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Sciences islamiques intermédiaires",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "islam-vertus-islamiques",
+          title: "Les vertus islamiques",
+          description: "Patience, gratitude, humilité et autres qualités",
+          duration: 14,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✨"
+        },
+        {
+          id: "islam-relations-sociales",
+          title: "Les relations sociales",
+          description: "Respect des parents, bon voisinage, amitié",
+          duration: 13,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🤝"
+        },
+        {
+          id: "islam-ethique-islamique",
+          title: "L'éthique islamique",
+          description: "Les bonnes manières et le comportement",
+          duration: 15,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "islam-interdits",
+          title: "Les interdits",
+          description: "Ce qui est interdit en Islam et pourquoi",
+          duration: 12,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "❌"
+        },
+        {
+          id: "islam-obligations",
+          title: "Les obligations",
+          description: "Les devoirs du musulman envers Allah et les autres",
+          duration: 16,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "✅"
+        },
+        {
+          id: "islam-purification",
+          title: "La purification",
+          description: "Les ablutions et la propreté en Islam",
+          duration: 10,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💧"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Sciences islamiques avancées",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "islam-fiqh-avance",
+          title: "Le Fiqh avancé",
+          description: "Jurisprudence islamique et règles détaillées",
+          duration: 22,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⚖️"
+        },
+        {
+          id: "islam-ecoles-juridiques",
+          title: "Les écoles juridiques",
+          description: "Les différentes madhahib et leurs spécificités",
+          duration: 20,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏛️"
+        },
+        {
+          id: "islam-exegese-coranique",
+          title: "L'exégèse coranique",
+          description: "Tafsir et interprétation du Coran",
+          duration: 25,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📖"
+        },
+        {
+          id: "islam-science-hadith",
+          title: "La science du Hadith",
+          description: "Étude des traditions prophétiques",
+          duration: 23,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "islam-theologie-islamique",
+          title: "La théologie islamique",
+          description: "Aqida et croyances fondamentales",
+          duration: 21,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🕌"
+        },
+        {
+          id: "islam-spiritualite",
+          title: "La spiritualité",
+          description: "Tasawwuf et développement spirituel",
+          duration: 24,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🕊️"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Sciences islamiques expertes",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "islam-methodologie-salaf",
+          title: "Méthodologie des Salaf",
+          description: "Comprendre la méthodologie des pieux prédécesseurs",
+          duration: 30,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "islam-aqida-authentique",
+          title: "Aqida authentique",
+          description: "Croyance correcte selon le Coran et la Sunna",
+          duration: 28,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🕌"
+        },
+        {
+          id: "islam-fiqh-contemporain",
+          title: "Fiqh contemporain",
+          description: "Application des règles islamiques aux situations modernes",
+          duration: 32,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "⚖️"
+        },
+        {
+          id: "islam-sciences-coraniques",
+          title: "Sciences coraniques avancées",
+          description: "Étude approfondie des sciences du Coran",
+          duration: 35,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📖"
+        },
+        {
+          id: "islam-hadith-authentique",
+          title: "Hadith authentique",
+          description: "Critique et authentification des traditions",
+          duration: 30,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📚"
+        },
+        {
+          id: "islam-preparation-enseignement",
+          title: "Préparation à l'enseignement",
+          description: "Former la prochaine génération de savants",
+          duration: 40,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👨‍🏫"
+        }
+      ]
+    }
   ];
-
-
-  if (showQuiz) {
-    return (
-      <>
-        <Navigation />
-        <main className="pt-16">
-          <div className="bg-gradient-to-br from-emerald-50 via-white to-emerald-100 py-12">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-              <button
-                onClick={() => setShowQuiz(false)}
-                className="mb-6 text-emerald-600 hover:text-emerald-800 flex items-center"
-              >
-                ← Retour aux leçons
-              </button>
-              
-              <SubjectQuiz
-  quiz={islamicSciencesQuiz}
-  onClose={() => setShowQuiz(false)}
-  onComplete={(score) => {
-    setQuizCompleted(true);
-    setShowQuiz(false);
-    console.log('Quiz completed with score:', score);
-  }}
-/>
-            </div>
-          </div>
-        </main>
-        <Footer />
-      </>
-    );
-  }
 
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-emerald-50 via-white to-emerald-100 py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="text-6xl mb-6">📖</div>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">
+      <main className="pt-16 pb-8 bg-gradient-to-br from-emerald-50 to-teal-50 min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-full mb-6">
+              <span className="text-3xl font-bold text-white">��</span>
+            </div>
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">
               Sciences islamiques
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Découvrez la richesse de la culture islamique et ses enseignements
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez les sciences islamiques de manière ludique avec nos leçons interactives
             </p>
           </div>
-        </section>
 
-        {/* Course Overview */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
-              <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet de sciences islamiques en 3 niveaux, de débutant à avancé
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {levels.map((level) => (
-                <div 
-                  key={level.id}
-                  className={`text-center p-6 rounded-xl cursor-pointer transition-all duration-300 ${
-                    selectedLevel === level.id 
-                      ? 'bg-emerald-100 border-2 border-emerald-300' 
-                      : 'bg-slate-50 hover:bg-emerald-50'
-                  }`}
-                  onClick={() => setSelectedLevel(level.id)}
-                >
-                  <div className={`w-16 h-16 ${level.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <span className="text-2xl text-white font-bold">{level.id}</span>
-                  </div>
-                  <h3 className="font-semibold text-slate-800 mb-2">{level.name}</h3>
-                  <p className="text-sm text-slate-600">{level.count} leçons</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Lessons Grid */}
-        <section className="py-16 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-8">
-              Niveau {selectedLevel} - {levels.find(l => l.id === selectedLevel)?.name}
+          {/* Vue d'ensemble du cours */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Vue d'ensemble du cours
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {lessons[selectedLevel as keyof typeof lessons].map((lesson) => (
-                <LessonCard
-                  key={lesson.id}
-                  {...lesson}
-                  onStart={() => {
-                    const lessonSlugs = {
-                      '1': 'islam-piliers-islam',
-                      '2': 'islam-profession-foi',
-                      '3': 'islam-priere',
-                      '4': 'islam-jeune',
-                      '5': 'islam-aumone',
-                      '6': 'islam-pelerinage',
-                      '7': 'islam-vertus-islamiques',
-                      '8': 'islam-relations-sociales',
-                      '9': 'islam-ethique-islamique',
-                      '10': 'islam-interdits',
-                      '11': 'islam-obligations',
-                      '12': 'islam-purification',
-                      '13': 'islam-fiqh-avance',
-                      '14': 'islam-ecoles-juridiques',
-                      '15': 'islam-exegese-coranique',
-                      '16': 'islam-science-hadith',
-                      '17': 'islam-theologie-islamique',
-                      '18': 'islam-spiritualite'
-                    };
-                    const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
-                    if (slug) {
-                      window.location.href = `/lesson/${slug}`;
-                    }
-                  }}
-                />
-              ))}
-            </div>
-
-            <div className="text-center mt-12">
-              <button className="bg-emerald-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors">
-                Voir toutes les leçons du niveau {selectedLevel}
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Quiz Section */}
-        <section className="py-16 bg-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-8">Testez vos connaissances</h2>
-            <p className="text-lg text-slate-600 mb-8">
-              Prenez notre quiz pour vérifier ce que vous avez appris en sciences islamiques
+            <p className="text-lg text-gray-600">
+              Un programme complet de sciences islamiques en 4 niveaux, de débutant à expert
             </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-6 border border-emerald-200">
-                <div className="text-4xl mb-4">🧠</div>
-                <h3 className="text-xl font-semibold mb-2">Quiz Niveau 1</h3>
-                <p className="text-slate-600 mb-4">Testez vos connaissances de base</p>
-                <button 
-                  onClick={() => setShowQuiz(true)}
-                  className="bg-emerald-500 text-white px-6 py-2 rounded-lg hover:bg-emerald-600 transition-colors"
+          </div>
+
+          {/* Niveaux interactifs */}
+          <div className="space-y-6 mb-12">
+            {islamicLevels.map((level) => (
+              <LevelCard
+                key={level.id}
+                level={level}
+                isExpanded={expandedLevel === level.id}
+                onToggle={handleLevelToggle}
+              />
+            ))}
+          </div>
+
+          {/* Bouton pour voir toutes les leçons du niveau 1 */}
+          <div className="text-center mb-12">
+            <button
+              onClick={() => setExpandedLevel(1)}
+              className="bg-emerald-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-emerald-600 transition-colors shadow-lg hover:shadow-xl"
+            >
+              Voir toutes les leçons du niveau 1
+            </button>
+          </div>
+
+          {/* Section Quiz et Défis */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Testez vos connaissances
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Prenez notre quiz pour vérifier ce que vous avez appris
+            </p>
+          </div>
+
+          {/* Cartes Quiz et Défi */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Quiz */}
+            <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 border border-emerald-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-4">
+                  <Brain className="w-8 h-8 text-pink-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Quiz Niveau 1
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Testez vos connaissances de base
+                </p>
+                <button
+                  onClick={handleQuizStart}
+                  className="bg-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors"
                 >
                   Commencer le quiz
                 </button>
               </div>
-              
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border border-blue-200">
-                <div className="text-4xl mb-4">🏆</div>
-                <h3 className="text-xl font-semibold mb-2">Défi quotidien</h3>
-                <p className="text-slate-600 mb-4">Un nouveau défi chaque jour</p>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            </div>
+
+            {/* Défi quotidien */}
+            <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-2xl p-8 border border-teal-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                  <Trophy className="w-8 h-8 text-yellow-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Défi quotidien
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Un nouveau défi chaque jour
+                </p>
+                <button
+                  onClick={handleDailyChallenge}
+                  className="bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-colors"
+                >
                   Participer
                 </button>
               </div>
             </div>
-
-            {quizCompleted && (
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                <p className="text-green-800">
-                  🎉 Félicitations ! Vous avez terminé le quiz. Continuez à pratiquer !
-                </p>
-              </div>
-            )}
           </div>
-        </section>
 
-        {/* Back to subject */}
-        <section className="py-16 bg-slate-50">
+          {/* Bouton retour */}
           <div className="text-center">
             <a
-              href="/subject"
-              className="inline-block bg-slate-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-slate-600 transition-colors"
+              href="/subjects"
+              className="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors"
             >
+              <ArrowLeft className="w-5 h-5 mr-2" />
               ← Retour aux matières
             </a>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </>
