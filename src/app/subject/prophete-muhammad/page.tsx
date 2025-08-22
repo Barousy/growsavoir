@@ -3,10 +3,10 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
-import { arabicLevels } from '@/data/arabicLevelData';
+import { prophetMuhammadLevels } from '@/data/prophetMuhammadLevelData';
 import { Brain, Trophy, ArrowLeft, BookOpen, Clock, Star } from 'lucide-react';
 
-export default function ArabicSubjectPage() {
+export default function ProphetMuhammadSubjectPage() {
   const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
 
   const handleLevelToggle = (levelId: number) => {
@@ -36,16 +36,16 @@ export default function ArabicSubjectPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-500 to-blue-600 rounded-full mb-6">
-              <span className="text-3xl font-bold text-white">ع</span>
+              <span className="text-3xl font-bold text-white">م</span>
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              تعلم اللغة العربية
+              Le Prophète Muhammad ﷺ
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              اكتشف اللغة العربية بطريقة ممتعة مع دروسنا التفاعلية
+              Découvrez la vie complète du Messager d'Allah et de Ses Compagnons
             </p>
             <p className="text-lg text-gray-500 mt-2">
-              Learn Arabic in a fun way with our interactive lessons
+              Learn about the complete life of the Messenger of Allah and His Companions
             </p>
           </div>
 
@@ -55,13 +55,13 @@ export default function ArabicSubjectPage() {
               Vue d'ensemble du cours
             </h2>
             <p className="text-lg text-gray-600">
-              Un programme complet d'arabe en 4 niveaux, de débutant à expert
+              Un programme complet en 4 niveaux, de la naissance à l'héritage spirituel
             </p>
           </div>
 
           {/* Niveaux interactifs */}
           <div className="space-y-6 mb-12">
-            {arabicLevels.map((level) => (
+            {prophetMuhammadLevels.map((level) => (
               <LevelCard
                 key={level.id}
                 level={level}
@@ -84,10 +84,10 @@ export default function ArabicSubjectPage() {
           {/* Section Quiz et Défis */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              اختبر معرفتك
+              Testez vos connaissances
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Testez vos connaissances avec notre quiz
+              Prenez notre quiz pour vérifier ce que vous avez appris
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function ArabicSubjectPage() {
                   Quiz Niveau 1
                 </h3>
                 <p className="text-gray-700 mb-6">
-                  Testez vos connaissances de base
+                  Testez vos connaissances de base sur la vie du Prophète
                 </p>
                 <button
                   onClick={handleQuizStart}
@@ -124,7 +124,7 @@ export default function ArabicSubjectPage() {
                   Défi quotidien
                 </h3>
                 <p className="text-gray-700 mb-6">
-                  Un nouveau défi chaque jour
+                  Un nouveau défi chaque jour sur la Sira
                 </p>
                 <button
                   onClick={handleDailyChallenge}

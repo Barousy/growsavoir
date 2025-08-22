@@ -19,55 +19,350 @@ interface Lesson {
 }
 
 const lessonData: Record<string, Lesson> = {
-  'anglais-alphabet': {
-    id: 'anglais-alphabet',
-    title: 'Alphabet anglais',
-    description: 'Apprendre les 26 lettres de l\'alphabet anglais',
-    content: [
-      'L\'alphabet anglais contient 26 lettres, de A à Z.',
-      'Les lettres peuvent être majuscules (A, B, C) ou minuscules (a, b, c).',
-      'Chaque lettre a un son unique et peut être combinée avec d\'autres pour former des mots.',
-      'Pratiquez la prononciation de chaque lettre plusieurs fois.',
-      'Une fois à l\'aise avec l\'alphabet, vous pourrez épeler des mots !'
-    ],
-    exercises: [
-      {
-        question: 'Combien y a-t-il de lettres dans l\'alphabet anglais ?',
-        options: ['24', '25', '26', '27'],
-        correctAnswer: 2,
-        explanation: 'L\'alphabet anglais contient exactement 26 lettres, de A à Z.'
-      },
-      {
-        question: 'Quelle est la première lettre de l\'alphabet anglais ?',
-        options: ['A', 'B', 'C', 'D'],
-        correctAnswer: 0,
-        explanation: 'A est la première lettre de l\'alphabet anglais.'
-      }
-    ]
-  },
+    // Niveau 1 - Débutant
+    'alphabet': {
+      id: '1',
+      title: 'L\'alphabet anglais',
+      description: 'Apprenez à prononcer les 26 lettres de l\'alphabet anglais',
+      content: [
+        'Bienvenue dans votre première leçon d\'anglais !',
+        'Aujourd\'hui, nous allons apprendre l\'alphabet anglais.',
+        'L\'alphabet anglais a 26 lettres, comme l\'alphabet français.',
+        'Voici les lettres : A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z.',
+        'Chaque lettre a sa propre prononciation en anglais.',
+        'Répétez après moi : A (éi), B (bi), C (si), D (di), E (i)...'
+      ],
+      exercises: [
+        {
+          question: 'Combien de lettres y a-t-il dans l\'alphabet anglais ?',
+          options: ['24', '25', '26', '27'],
+          correctAnswer: 2,
+          explanation: 'Exactement ! L\'alphabet anglais compte 26 lettres.'
+        },
+        {
+          question: 'Quelle est la première lettre de l\'alphabet anglais ?',
+          options: ['B', 'A', 'C', 'D'],
+          correctAnswer: 1,
+          explanation: 'Parfait ! "A" est la première lettre de l\'alphabet.'
+        },
+        {
+          question: 'Comment se prononce la lettre "A" en anglais ?',
+          options: ['Ah', 'Éi', 'A', 'Euh'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! En anglais, "A" se prononce "éi".'
+        }
+      ]
+    },
+    'greetings': {
+      id: '2',
+      title: 'Salutations de base',
+      description: 'Hello, Good morning, How are you? et plus encore',
+      content: [
+        'Bienvenue dans la leçon sur les salutations !',
+        'Les salutations sont très importantes en anglais.',
+        'Voici les salutations de base :',
+        '- Hello = Bonjour (formel et informel)',
+        '- Hi = Salut (informel)',
+        '- Good morning = Bonjour (matin)',
+        '- Good afternoon = Bonjour (après-midi)',
+        '- Good evening = Bonsoir',
+        '- How are you? = Comment allez-vous ?',
+        '- I\'m fine, thank you = Je vais bien, merci'
+      ],
+      exercises: [
+        {
+          question: 'Comment dit-on "Bonjour" en anglais ?',
+          options: ['Goodbye', 'Hello', 'Thank you', 'Please'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "Hello" signifie "Bonjour" en anglais.'
+        },
+        {
+          question: 'Que signifie "How are you?" ?',
+          options: ['Comment allez-vous ?', 'Au revoir', 'Merci', 'S\'il vous plaît'],
+          correctAnswer: 0,
+          explanation: 'Parfait ! "How are you?" signifie "Comment allez-vous ?".'
+        },
+        {
+          question: 'Quelle salutation utilise-t-on le matin ?',
+          options: ['Good evening', 'Good morning', 'Good afternoon', 'Good night'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "Good morning" se dit le matin.'
+        }
+      ]
+    },
+    'colors': {
+      id: '3',
+      title: 'Les couleurs',
+      description: 'Red, blue, green, yellow et bien plus encore',
+      content: [
+        'Aujourd\'hui, nous allons apprendre les couleurs en anglais !',
+        'Les couleurs sont partout autour de nous.',
+        'Voici les couleurs de base :',
+        '- Red = Rouge',
+        '- Blue = Bleu',
+        '- Green = Vert',
+        '- Yellow = Jaune',
+        '- Black = Noir',
+        '- White = Blanc',
+        '- Purple = Violet',
+        '- Orange = Orange',
+        '- Pink = Rose',
+        '- Brown = Marron'
+      ],
+      exercises: [
+        {
+          question: 'Comment dit-on "rouge" en anglais ?',
+          options: ['Blue', 'Red', 'Green', 'Yellow'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "Red" signifie "rouge" en anglais.'
+        },
+        {
+          question: 'Que signifie "blue" ?',
+          options: ['Vert', 'Bleu', 'Rouge', 'Jaune'],
+          correctAnswer: 1,
+          explanation: 'Parfait ! "Blue" signifie "bleu".'
+        },
+        {
+          question: 'Quelle couleur est "green" ?',
+          options: ['Rouge', 'Bleu', 'Vert', 'Jaune'],
+          correctAnswer: 2,
+          explanation: 'Exactement ! "Green" signifie "vert".'
+        }
+      ]
+    },
+    'numbers': {
+      id: '4',
+      title: 'Compter de 1 à 20',
+      description: 'One, two, three... jusqu\'à twenty',
+      content: [
+        'Bienvenue dans la leçon sur les nombres !',
+        'Nous allons apprendre à compter de 1 à 20 en anglais.',
+        'Voici les nombres de 1 à 20 :',
+        '1 = One, 2 = Two, 3 = Three, 4 = Four, 5 = Five',
+        '6 = Six, 7 = Seven, 8 = Eight, 9 = Nine, 10 = Ten',
+        '11 = Eleven, 12 = Twelve, 13 = Thirteen, 14 = Fourteen, 15 = Fifteen',
+        '16 = Sixteen, 17 = Seventeen, 18 = Eighteen, 19 = Nineteen, 20 = Twenty',
+        'Répétez après moi : One, Two, Three...'
+      ],
+      exercises: [
+        {
+          question: 'Comment dit-on "5" en anglais ?',
+          options: ['Four', 'Five', 'Six', 'Seven'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "5" se dit "Five" en anglais.'
+        },
+        {
+          question: 'Que signifie "ten" ?',
+          options: ['Neuf', 'Dix', 'Onze', 'Douze'],
+          correctAnswer: 1,
+          explanation: 'Parfait ! "Ten" signifie "dix".'
+        },
+        {
+          question: 'Comment dit-on "20" en anglais ?',
+          options: ['Eighteen', 'Nineteen', 'Twenty', 'Twenty-one'],
+          correctAnswer: 2,
+          explanation: 'Exactement ! "20" se dit "Twenty".'
+        }
+      ]
+    },
+    'animals': {
+      id: '5',
+      title: 'Les animaux',
+      description: 'Dog, cat, bird, fish et autres animaux',
+      content: [
+        'Aujourd\'hui, nous allons apprendre les noms des animaux !',
+        'Les animaux sont nos amis, apprenons leurs noms.',
+        'Voici les animaux de base :',
+        '- Dog = Chien',
+        '- Cat = Chat',
+        '- Bird = Oiseau',
+        '- Fish = Poisson',
+        '- Horse = Cheval',
+        '- Cow = Vache',
+        '- Pig = Cochon',
+        '- Sheep = Mouton',
+        '- Chicken = Poule',
+        '- Duck = Canard'
+      ],
+      exercises: [
+        {
+          question: 'Comment dit-on "chat" en anglais ?',
+          options: ['Dog', 'Cat', 'Bird', 'Fish'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "Cat" signifie "chat" en anglais.'
+        },
+        {
+          question: 'Que signifie "dog" ?',
+          options: ['Chat', 'Chien', 'Oiseau', 'Poisson'],
+          correctAnswer: 1,
+          explanation: 'Parfait ! "Dog" signifie "chien".'
+        },
+        {
+          question: 'Quel animal est "bird" ?',
+          options: ['Chien', 'Chat', 'Oiseau', 'Poisson'],
+          correctAnswer: 2,
+          explanation: 'Exactement ! "Bird" signifie "oiseau".'
+        }
+      ]
+    },
+    'food': {
+      id: '6',
+      title: 'Les fruits et légumes',
+      description: 'Apple, banana, carrot, tomato et plus',
+      content: [
+        'Bienvenue dans la leçon sur les fruits et légumes !',
+        'Manger sain est important, apprenons les noms en anglais.',
+        'Voici les fruits de base :',
+        '- Apple = Pomme',
+        '- Banana = Banane',
+        '- Orange = Orange',
+        '- Strawberry = Fraise',
+        '- Grape = Raisin',
+        'Et les légumes :',
+        '- Carrot = Carotte',
+        '- Tomato = Tomate',
+        '- Potato = Pomme de terre',
+        '- Onion = Oignon',
+        '- Lettuce = Laitue'
+      ],
+      exercises: [
+        {
+          question: 'Comment dit-on "pomme" en anglais ?',
+          options: ['Banana', 'Apple', 'Orange', 'Strawberry'],
+          correctAnswer: 1,
+          explanation: 'Exactement ! "Apple" signifie "pomme" en anglais.'
+        },
+        {
+          question: 'Que signifie "banana" ?',
+          options: ['Pomme', 'Banane', 'Orange', 'Fraise'],
+          correctAnswer: 1,
+          explanation: 'Parfait ! "Banana" signifie "banane".'
+        },
+        {
+          question: 'Quel fruit est "orange" ?',
+          options: ['Pomme', 'Banane', 'Orange', 'Fraise'],
+          correctAnswer: 2,
+          explanation: 'Exactement ! "Orange" signifie "orange".'
+        }
+      ]
+    },
+     // Leçons d'arabe - Niveau 1
   'arabe-alphabet': {
-    id: 'arabe-alphabet',
-    title: 'Alphabet arabe',
-    description: 'Découvrir les 28 lettres de l\'alphabet arabe',
+    id: '7',
+    title: 'L\'alphabet arabe',
+    description: 'Apprenez les 28 lettres de l\'alphabet arabe',
     content: [
-      'L\'alphabet arabe contient 28 lettres.',
-      'L\'écriture arabe se fait de droite à gauche.',
-      'Chaque lettre peut avoir plusieurs formes selon sa position dans le mot.',
-      'Les voyelles courtes sont généralement omises à l\'écrit.',
-      'L\'arabe est une langue sémitique avec une calligraphie magnifique.'
+      'Bienvenue dans votre première leçon d\'arabe !',
+      'L\'alphabet arabe compte 28 lettres, contrairement à l\'alphabet français qui en a 26.',
+      'L\'arabe s\'écrit de droite à gauche.',
+      'Voici les premières lettres :',
+      'أ (Alif) - se prononce comme un "a" long',
+      'ب (Ba) - se prononce comme "b" en français',
+      'ت (Ta) - se prononce comme "t" en français',
+      'ث (Tha) - se prononce comme "th" en anglais',
+      'ج (Jim) - se prononce comme "dj" en français',
+      'ح (Ha) - se prononce comme un "h" aspiré',
+      'Chaque lettre a une forme différente selon sa position dans le mot.',
+      'Répétez après moi et n\'ayez pas peur de faire des erreurs !'
     ],
     exercises: [
       {
-        question: 'Combien y a-t-il de lettres dans l\'alphabet arabe ?',
+        question: 'Combien de lettres y a-t-il dans l\'alphabet arabe ?',
         options: ['26', '27', '28', '29'],
         correctAnswer: 2,
-        explanation: 'L\'alphabet arabe contient exactement 28 lettres.'
+        explanation: 'Exactement ! L\'alphabet arabe compte 28 lettres.'
       },
       {
         question: 'Dans quel sens s\'écrit l\'arabe ?',
         options: ['De gauche à droite', 'De droite à gauche', 'De haut en bas', 'De bas en haut'],
         correctAnswer: 1,
-        explanation: 'L\'arabe s\'écrit de droite à gauche.'
+        explanation: 'Exactement ! L\'arabe s\'écrit de droite à gauche.'
+      },
+      {
+        question: 'Comment se prononce la lettre أ (Alif) ?',
+        options: ['Comme "b"', 'Comme "a" long', 'Comme "t"', 'Comme "h"'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! أ (Alif) se prononce comme un "a" long.'
+      }
+    ]
+  },
+  'arabe-greetings': {
+    id: '8',
+    title: 'Salutations de base',
+    description: 'Assalamu alaykum, Marhaba, Ahlan wa sahlan',
+    content: [
+      'Aujourd\'hui, nous allons apprendre les salutations en arabe !',
+      'Les salutations sont très importantes dans la culture islamique.',
+      'Voici les salutations de base :',
+      'السلام عليكم (Assalamu alaykum) = Que la paix soit sur vous',
+      'وعليكم السلام (Wa alaykum assalam) = Et sur vous la paix (réponse)',
+      'مرحبا (Marhaba) = Bonjour (informel)',
+      'أهلا وسهلا (Ahlan wa sahlan) = Bienvenue',
+      'صباح الخير (Sabah al-khayr) = Bonjour (matin)',
+      'مساء الخير (Masa al-khayr) = Bonsoir',
+      'كيف حالك؟ (Kayfa haluk?) = Comment allez-vous ?',
+      'أنا بخير (Ana bi-khayr) = Je vais bien',
+      'الحمد لله (Alhamdulillah) = Louange à Allah'
+    ],
+    exercises: [
+      {
+        question: 'Que signifie "السلام عليكم" (Assalamu alaykum) ?',
+        options: ['Au revoir', 'Que la paix soit sur vous', 'Merci', 'Comment allez-vous ?'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "السلام عليكم" signifie "Que la paix soit sur vous".'
+      },
+      {
+        question: 'Comment répondre à "السلام عليكم" ?',
+        options: ['مرحبا', 'وعليكم السلام', 'أهلا وسهلا', 'صباح الخير'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! On répond "وعليكم السلام" (Wa alaykum assalam).'
+      },
+      {
+        question: 'Que signifie "أهلا وسهلا" (Ahlan wa sahlan) ?',
+        options: ['Au revoir', 'Merci', 'Bienvenue', 'Comment allez-vous ?'],
+        correctAnswer: 2,
+        explanation: 'Exactement ! "أهلا وسهلا" signifie "Bienvenue".'
+      }
+    ]
+  },
+  'arabe-numbers': {
+    id: '9',
+    title: 'Compter de 1 à 10',
+    description: 'Wahid, ithnan, thalatha... jusqu\'à ashara',
+    content: [
+      'Aujourd\'hui, nous allons apprendre à compter en arabe !',
+      'Les nombres sont très utiles dans la vie quotidienne.',
+      'Voici les nombres de 1 à 10 :',
+      '١ = واحد (Wahid) = Un',
+      '٢ = اثنان (Ithnan) = Deux',
+      '٣ = ثلاثة (Thalatha) = Trois',
+      '٤ = أربعة (Arba\'a) = Quatre',
+      '٥ = خمسة (Khamsa) = Cinq',
+      '٦ = ستة (Sitta) = Six',
+      '٧ = سبعة (Sab\'a) = Sept',
+      '٨ = ثمانية (Thamaniya) = Huit',
+      '٩ = تسعة (Tis\'a) = Neuf',
+      '١٠ = عشرة (Ashara) = Dix',
+      'Répétez après moi : Wahid, Ithnan, Thalatha...'
+    ],
+    exercises: [
+      {
+        question: 'Comment dit-on "5" en arabe ?',
+        options: ['أربعة', 'خمسة', 'ستة', 'سبعة'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "5" se dit "خمسة" (Khamsa) en arabe.'
+      },
+      {
+        question: 'Que signifie "عشرة" (Ashara) ?',
+        options: ['Neuf', 'Dix', 'Onze', 'Douze'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! "عشرة" (Ashara) signifie "dix".'
+      },
+      {
+        question: 'Comment dit-on "3" en arabe ?',
+        options: ['اثنان', 'ثلاثة', 'أربعة', 'خمسة'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "3" se dit "ثلاثة" (Thalatha) en arabe.'
       }
     ]
   },
