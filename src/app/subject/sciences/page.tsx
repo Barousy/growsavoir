@@ -220,14 +220,84 @@ export default function SciencesSubjectPage() {
         isCompleted: false,
         isLocked: true
       }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "Physique des particules",
+        description: "Les constituants fondamentaux de la matière",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '⚛️',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Astrophysique avancée",
+        description: "Trous noirs, énergie sombre et cosmologie",
+        duration: 28,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "Biologie synthétique",
+        description: "Création de formes de vie artificielles",
+        duration: 32,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "Sciences du climat",
+        description: "Comprendre et prévoir les changements climatiques",
+        duration: 25,
+        difficulty: 'expert' as const,
+        emoji: '🌡️',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "Recherche spatiale",
+        description: "Exploration et colonisation de l'espace",
+        duration: 35,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "Innovation scientifique",
+        description: "Créer et développer de nouvelles technologies",
+        duration: 40,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-orange-500',
+        isCompleted: false,
+        isLocked: true
+      }
     ]
   };
 
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
+
 
   if (showQuiz) {
     return (

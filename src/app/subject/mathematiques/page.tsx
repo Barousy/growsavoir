@@ -220,13 +220,82 @@ export default function MathSubjectPage() {
         isCompleted: false,
         isLocked: true
       }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "Trigonométrie",
+        description: "Sinus, cosinus et tangente",
+        duration: 28,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Calcul différentiel",
+        description: "Introduction aux dérivées",
+        duration: 32,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "Probabilités avancées",
+        description: "Théorie des probabilités et statistiques",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "Géométrie analytique",
+        description: "Coordonnées et équations de droites",
+        duration: 26,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "Suites et séries",
+        description: "Suites arithmétiques et géométriques",
+        duration: 24,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "Applications réelles",
+        description: "Utiliser les mathématiques dans la vie quotidienne",
+        duration: 29,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-purple-500',
+        isCompleted: false,
+        isLocked: true
+      }
     ]
   };
 
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
 
   if (showQuiz) {
@@ -247,10 +316,10 @@ export default function MathSubjectPage() {
                 quiz={mathQuiz}
                 onClose={() => setShowQuiz(false)}
                 onComplete={(score) => {
-                setQuizCompleted(true);
-                setShowQuiz(false);
-                console.log('Quiz completed with score:', score);
-                 }}
+                  setQuizCompleted(true);
+                  setShowQuiz(false);
+                  console.log('Quiz completed with score:', score);
+                }}
               />
             </div>
           </div>
@@ -283,11 +352,11 @@ export default function MathSubjectPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet de mathématiques en 3 niveaux, de débutant à avancé
+                Un programme complet de mathématiques en 4 niveaux, de débutant à expert
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {levels.map((level) => (
                 <div 
                   key={level.id}
@@ -340,7 +409,13 @@ export default function MathSubjectPage() {
                       '15': 'math-pourcentages',
                       '16': 'math-geometrie-3d',
                       '17': 'math-algebre-base',
-                      '18': 'math-statistiques-simples'
+                      '18': 'math-statistiques-simples',
+                      '19': 'math-trigonometrie',
+                      '20': 'math-calcul-differentiel',
+                      '21': 'math-probabilites-avancees',
+                      '22': 'math-geometrie-analytique',
+                      '23': 'math-suites-series',
+                      '24': 'math-applications-reelles'
                     };
                     const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
                     if (slug) {

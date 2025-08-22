@@ -220,15 +220,84 @@ export default function ComputerScienceSubjectPage() {
         isCompleted: false,
         isLocked: true
       }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "Développement web",
+        description: "Créer des sites web modernes",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Applications mobiles",
+        description: "Développer pour smartphones et tablettes",
+        duration: 28,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "Cloud computing",
+        description: "Travail collaboratif et stockage en ligne",
+        duration: 25,
+        difficulty: 'expert' as const,
+        emoji: '☁️',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "DevOps et déploiement",
+        description: "Automatiser le développement et la mise en production",
+        duration: 32,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "Projet final avancé",
+        description: "Créer une application complète de A à Z",
+        duration: 40,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "Préparation professionnelle",
+        description: "Se préparer aux métiers de l'informatique",
+        duration: 35,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-indigo-500',
+        isCompleted: false,
+        isLocked: true
+      }
     ]
   };
 
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
-
+  
   if (showQuiz) {
     return (
       <>

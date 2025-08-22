@@ -24,7 +24,7 @@ export default function IslamicHistorySubjectPage() {
         description: "La vie et le message du dernier prophète",
         duration: 12,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: false
@@ -35,7 +35,7 @@ export default function IslamicHistorySubjectPage() {
         description: "Les premières révélations et la propagation",
         duration: 10,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: false
@@ -46,7 +46,7 @@ export default function IslamicHistorySubjectPage() {
         description: "L'émigration de La Mecque à Médine",
         duration: 8,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: false
@@ -79,7 +79,7 @@ export default function IslamicHistorySubjectPage() {
         description: "Abu Bakr, Omar, Othman et Ali",
         duration: 13,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: false
@@ -92,7 +92,7 @@ export default function IslamicHistorySubjectPage() {
         description: "La diffusion de l'Islam en Asie et en Afrique",
         duration: 15,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -114,7 +114,7 @@ export default function IslamicHistorySubjectPage() {
         description: "Le premier califat héréditaire",
         duration: 14,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -125,7 +125,7 @@ export default function IslamicHistorySubjectPage() {
         description: "L'apogée de la civilisation islamique",
         duration: 17,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -136,7 +136,7 @@ export default function IslamicHistorySubjectPage() {
         description: "L'Espagne islamique et sa richesse culturelle",
         duration: 18,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -171,7 +171,7 @@ export default function IslamicHistorySubjectPage() {
         description: "L'Islam en Inde et sa contribution culturelle",
         duration: 20,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -182,7 +182,7 @@ export default function IslamicHistorySubjectPage() {
         description: "La diffusion en Malaisie, Indonésie et Philippines",
         duration: 19,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -193,7 +193,7 @@ export default function IslamicHistorySubjectPage() {
         description: "Les royaumes islamiques africains",
         duration: 21,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -204,7 +204,7 @@ export default function IslamicHistorySubjectPage() {
         description: "L'Islam au 20e et 21e siècle",
         duration: 24,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -215,7 +215,75 @@ export default function IslamicHistorySubjectPage() {
         description: "Les grands personnages de l'histoire islamique",
         duration: 23,
         difficulty: 'advanced' as const,
+        emoji: '',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "L'Islam contemporain",
+        description: "Les défis et opportunités du 21e siècle",
+        duration: 28,
+        difficulty: 'expert' as const,
         emoji: '��',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Les mouvements réformistes",
+        description: "L'évolution de la pensée islamique moderne",
+        duration: 32,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "L'Islam et la science",
+        description: "Les contributions scientifiques de la civilisation islamique",
+        duration: 35,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "L'Islam et l'art",
+        description: "L'architecture, la calligraphie et les arts islamiques",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "L'Islam et la philosophie",
+        description: "Les penseurs et philosophes musulmans",
+        duration: 38,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-amber-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "L'héritage islamique",
+        description: "L'influence de l'Islam sur le monde moderne",
+        duration: 42,
+        difficulty: 'expert' as const,
+        emoji: '🏛️',
         color: 'bg-amber-500',
         isCompleted: false,
         isLocked: true
@@ -226,7 +294,8 @@ export default function IslamicHistorySubjectPage() {
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
 
   if (showQuiz) {
@@ -244,14 +313,14 @@ export default function IslamicHistorySubjectPage() {
               </button>
               
               <SubjectQuiz
-  quiz={islamicHistoryQuiz}
-  onClose={() => setShowQuiz(false)}
-  onComplete={(score) => {
-    setQuizCompleted(true);
-    setShowQuiz(false);
-    console.log('Quiz completed with score:', score);
-  }}
-/>
+                quiz={islamicHistoryQuiz}
+                onClose={() => setShowQuiz(false)}
+                onComplete={(score) => {
+                  setQuizCompleted(true);
+                  setShowQuiz(false);
+                  console.log('Quiz completed with score:', score);
+                }}
+              />
             </div>
           </div>
         </main>
@@ -283,11 +352,11 @@ export default function IslamicHistorySubjectPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet d'histoire islamique en 3 niveaux, de débutant à avancé
+                Un programme complet d'histoire islamique en 4 niveaux, de débutant à expert
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {levels.map((level) => (
                 <div 
                   key={level.id}
@@ -340,7 +409,13 @@ export default function IslamicHistorySubjectPage() {
                       '15': 'histoire-islam-asie-sud-est',
                       '16': 'histoire-islam-afrique',
                       '17': 'histoire-islam-moderne',
-                      '18': 'histoire-figures-historiques'
+                      '18': 'histoire-figures-historiques',
+                      '19': 'histoire-islam-contemporain',
+                      '20': 'histoire-mouvements-reformistes',
+                      '21': 'histoire-islam-science',
+                      '22': 'histoire-islam-art',
+                      '23': 'histoire-islam-philosophie',
+                      '24': 'histoire-heritage-islamique'
                     };
                     const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
                     if (slug) {

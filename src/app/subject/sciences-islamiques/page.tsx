@@ -24,7 +24,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Les cinq piliers fondamentaux de la religion musulmane",
         duration: 10,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -35,7 +35,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "La Chahada et son importance",
         duration: 8,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -46,7 +46,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Les cinq prières quotidiennes et leurs règles",
         duration: 12,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -57,7 +57,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Le Ramadan et ses bienfaits",
         duration: 9,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -68,7 +68,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "La Zakat et la charité en Islam",
         duration: 7,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -79,7 +79,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Le Hajj et ses étapes",
         duration: 11,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: false
@@ -103,7 +103,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Respect des parents, bon voisinage, amitié",
         duration: 13,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -114,7 +114,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Les bonnes manières et le comportement",
         duration: 15,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -147,7 +147,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Les ablutions et la propreté en Islam",
         duration: 10,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -182,7 +182,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Tafsir et interprétation du Coran",
         duration: 25,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -193,7 +193,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Étude des traditions prophétiques",
         duration: 23,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -204,7 +204,7 @@ export default function IslamicSciencesSubjectPage() {
         description: "Aqida et croyances fondamentales",
         duration: 21,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-emerald-500',
         isCompleted: false,
         isLocked: true
@@ -220,14 +220,84 @@ export default function IslamicSciencesSubjectPage() {
         isCompleted: false,
         isLocked: true
       }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "Méthodologie des Salaf",
+        description: "Comprendre la méthodologie des pieux prédécesseurs",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Aqida authentique",
+        description: "Croyance correcte selon le Coran et la Sunna",
+        duration: 28,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "Fiqh contemporain",
+        description: "Application des règles islamiques aux situations modernes",
+        duration: 32,
+        difficulty: 'expert' as const,
+        emoji: '⚖️',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "Sciences coraniques avancées",
+        description: "Étude approfondie des sciences du Coran",
+        duration: 35,
+        difficulty: 'expert' as const,
+        emoji: '',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "Hadith authentique",
+        description: "Critique et authentification des traditions",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "Préparation à l'enseignement",
+        description: "Former la prochaine génération de savants",
+        duration: 40,
+        difficulty: 'expert' as const,
+        emoji: '��‍��',
+        color: 'bg-emerald-500',
+        isCompleted: false,
+        isLocked: true
+      }
     ]
   };
 
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
+
 
   if (showQuiz) {
     return (

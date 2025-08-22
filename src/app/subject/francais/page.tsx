@@ -24,7 +24,7 @@ export default function FrenchSubjectPage() {
         description: "Les 26 lettres et leurs sons de base",
         duration: 5,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: false
@@ -35,7 +35,7 @@ export default function FrenchSubjectPage() {
         description: "Premiers mots et phrases simples",
         duration: 8,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: false
@@ -57,7 +57,7 @@ export default function FrenchSubjectPage() {
         description: "A, E, I, O, U, Y et leurs sons",
         duration: 7,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: false
@@ -68,7 +68,7 @@ export default function FrenchSubjectPage() {
         description: "B, C, D, F et autres consonnes",
         duration: 9,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: false
@@ -79,7 +79,7 @@ export default function FrenchSubjectPage() {
         description: "Composer des syllabes et des mots",
         duration: 8,
         difficulty: 'beginner' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: false
@@ -92,7 +92,7 @@ export default function FrenchSubjectPage() {
         description: "Articles, noms et adjectifs simples",
         duration: 12,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -125,7 +125,7 @@ export default function FrenchSubjectPage() {
         description: "Familles de mots et expressions",
         duration: 11,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -136,7 +136,7 @@ export default function FrenchSubjectPage() {
         description: "Lire et comprendre des textes courts",
         duration: 13,
         difficulty: 'intermediate' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -160,7 +160,7 @@ export default function FrenchSubjectPage() {
         description: "Subjonctif, conditionnel et temps composés",
         duration: 20,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -171,7 +171,7 @@ export default function FrenchSubjectPage() {
         description: "Découvrir des auteurs et textes classiques",
         duration: 18,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -193,7 +193,7 @@ export default function FrenchSubjectPage() {
         description: "Comprendre et analyser des textes complexes",
         duration: 25,
         difficulty: 'advanced' as const,
-        emoji: '��',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -204,7 +204,7 @@ export default function FrenchSubjectPage() {
         description: "Histoire, traditions et expressions idiomatiques",
         duration: 20,
         difficulty: 'advanced' as const,
-        emoji: '����',
+        emoji: '',
         color: 'bg-red-500',
         isCompleted: false,
         isLocked: true
@@ -220,13 +220,82 @@ export default function FrenchSubjectPage() {
         isCompleted: false,
         isLocked: true
       }
+    ],
+    '4': [
+      {
+        id: '19',
+        title: "Stylistique avancée",
+        description: "Maîtriser les figures de style et la rhétorique",
+        duration: 30,
+        difficulty: 'expert' as const,
+        emoji: '✨',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '20',
+        title: "Traduction littéraire",
+        description: "Traduire des textes complexes et poétiques",
+        duration: 35,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '21',
+        title: "Critique littéraire",
+        description: "Analyser et critiquer des œuvres littéraires",
+        duration: 40,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '22',
+        title: "Écriture créative",
+        description: "Créer des histoires et des poèmes originaux",
+        duration: 45,
+        difficulty: 'expert' as const,
+        emoji: '✍️',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '23',
+        title: "Linguistique française",
+        description: "Étudier la structure et l'évolution de la langue",
+        duration: 38,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: '24',
+        title: "Perfectionnement",
+        description: "Affiner sa maîtrise de la langue française",
+        duration: 42,
+        difficulty: 'expert' as const,
+        emoji: '��',
+        color: 'bg-red-500',
+        isCompleted: false,
+        isLocked: true
+      }
     ]
   };
 
   const levels = [
     { id: '1', name: 'Débutant', count: 6, color: 'bg-green-500' },
     { id: '2', name: 'Intermédiaire', count: 6, color: 'bg-yellow-500' },
-    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' }
+    { id: '3', name: 'Avancé', count: 6, color: 'bg-red-500' },
+    { id: '4', name: 'Expert', count: 6, color: 'bg-purple-500' }
   ];
 
   if (showQuiz) {
@@ -244,14 +313,14 @@ export default function FrenchSubjectPage() {
               </button>
               
               <SubjectQuiz
-  quiz={frenchQuiz}
-  onClose={() => setShowQuiz(false)}
-  onComplete={(score) => {
-    setQuizCompleted(true);
-    setShowQuiz(false);
-    console.log('Quiz completed with score:', score);
-  }}
-/>
+                quiz={frenchQuiz}
+                onClose={() => setShowQuiz(false)}
+                onComplete={(score) => {
+                  setQuizCompleted(true);
+                  setShowQuiz(false);
+                  console.log('Quiz completed with score:', score);
+                }}
+              />
             </div>
           </div>
         </main>
@@ -283,11 +352,11 @@ export default function FrenchSubjectPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-4">Vue d'ensemble du cours</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Un programme complet de français en 3 niveaux, de débutant à avancé
+                Un programme complet de français en 4 niveaux, de débutant à expert
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
               {levels.map((level) => (
                 <div 
                   key={level.id}
@@ -340,7 +409,13 @@ export default function FrenchSubjectPage() {
                       '15': 'francais-expression-ecrite',
                       '16': 'francais-analyse-texte',
                       '17': 'francais-culture-francaise',
-                      '18': 'francais-communication-orale'
+                      '18': 'francais-communication-orale',
+                      '19': 'francais-stylistique-avancee',
+                      '20': 'francais-traduction-litteraire',
+                      '21': 'francais-critique-litteraire',
+                      '22': 'francais-ecriture-creative',
+                      '23': 'francais-linguistique-francaise',
+                      '24': 'francais-perfectionnement'
                     };
                     const slug = lessonSlugs[lesson.id as keyof typeof lessonSlugs];
                     if (slug) {
