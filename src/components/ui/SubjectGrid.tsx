@@ -10,7 +10,8 @@ import {
   Building2, 
   History, 
   Palette,
-  Heart
+  Heart,
+  BookOpenCheck
 } from 'lucide-react';
 
 const subjects = [
@@ -35,6 +36,17 @@ const subjects = [
     bgColor: 'bg-green-50',
     borderColor: 'border-green-200',
     lessonCount: 78
+  },
+  {
+    slug: 'prophete-muhammad',
+    title: 'Le Prophète Muhammad ﷺ',
+    desc: 'Vie complète du Messager d\'Allah et de Ses Compagnons',
+    emoji: '🕌',
+    icon: BookOpenCheck,
+    color: 'from-green-500 to-emerald-600',
+    bgColor: 'bg-emerald-50',
+    borderColor: 'border-emerald-200',
+    lessonCount: 32
   },
   {
     slug: 'francais',
