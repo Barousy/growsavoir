@@ -1,5 +1,6 @@
 'use client';
-import { Users, GraduationCap, Star, Trophy } from 'lucide-react';
+import { Users, GraduationCap, Star, Trophy, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const levels = [
   {
@@ -15,7 +16,9 @@ const levels = [
       'Exercices de base',
       'Progression guidée',
       'Support complet'
-    ]
+    ],
+    ageRange: '3-6 ans',
+    lessonCount: '150+ leçons'
   },
   {
     id: 'intermediaire',
@@ -30,7 +33,9 @@ const levels = [
       'Problèmes complexes',
       'Développement des compétences',
       'Projets concrets'
-    ]
+    ],
+    ageRange: '7-10 ans',
+    lessonCount: '200+ leçons'
   },
   {
     id: 'avance',
@@ -45,7 +50,9 @@ const levels = [
       'Analyses approfondies',
       'Résolution de problèmes complexes',
       'Pensée critique'
-    ]
+    ],
+    ageRange: '11-13 ans',
+    lessonCount: '180+ leçons'
   },
   {
     id: 'expert',
@@ -60,13 +67,15 @@ const levels = [
       'Innovation et recherche',
       'Enseignement aux autres',
       'Leadership dans le domaine'
-    ]
+    ],
+    ageRange: '14-16 ans',
+    lessonCount: '120+ leçons'
   }
 ];
 
 export default function LevelSection() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -78,16 +87,16 @@ export default function LevelSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {levels.map((level) => {
             const IconComponent = level.icon;
             return (
               <div
                 key={level.id}
-                className={`relative p-6 rounded-2xl border-2 ${level.borderColor} ${level.bgColor} hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1`}
+                className={`relative p-6 rounded-2xl border-2 ${level.borderColor} ${level.bgColor} hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group cursor-pointer`}
               >
                 {/* Icon */}
-                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${level.color} flex items-center justify-center mb-4`}>
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${level.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <IconComponent className="w-6 h-6 text-white" />
                 </div>
 
@@ -100,8 +109,20 @@ export default function LevelSection() {
                   {level.description}
                 </p>
 
+                {/* Age range and lesson count */}
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center justify-between text-xs text-slate-500">
+                    <span>Âge:</span>
+                    <span className="font-medium">{level.ageRange}</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs text-slate-500">
+                    <span>Leçons:</span>
+                    <span className="font-medium">{level.lessonCount}</span>
+                  </div>
+                </div>
+
                 {/* Features */}
-                <ul className="space-y-2">
+                <ul className="space-y-2 mb-4">
                   {level.features.map((feature, index) => (
                     <li key={index} className="text-xs text-slate-600 flex items-center">
                       <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${level.color} mr-2`}></div>
@@ -111,26 +132,24 @@ export default function LevelSection() {
                 </ul>
 
                 {/* Hover effect overlay */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${level.color} opacity-0 hover:opacity-5 transition-opacity duration-300`}></div>
+                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${level.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
               </div>
             );
           })}
         </div>
 
         {/* Call to action */}
-        <div className="text-center mt-12">
-          <p className="text-slate-600 mb-4">
+        <div className="text-center">
+          <p className="text-slate-600 mb-6 text-lg">
             Choisissez votre niveau et commencez votre progression
           </p>
-          <a
+          <Link
             href="/subjects"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Découvrir les matières
-            <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
+            <ArrowRight className="ml-2 w-5 h-5" />
+          </Link>
         </div>
       </div>
     </section>

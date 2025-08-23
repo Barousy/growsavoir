@@ -29,8 +29,8 @@ export default function MathSubjectPage() {
       color: "bg-green-500",
       lessons: [
         {
-          id: "math-nombres-1-20",
-          title: "Nombres de 1 à 20",
+          id: "math-nombres-1-100",
+          title: "Nombres de 1 à 100",
           description: "Compter et écrire les nombres",
           duration: 15,
           difficulty: 'beginner' as const,
@@ -69,8 +69,8 @@ export default function MathSubjectPage() {
           emoji: "🔷"
         },
         {
-          id: "math-mesures-longueur",
-          title: "Mesures de longueur",
+          id: "math-mesures-simples",
+          title: "Mesures simples",
           description: "Mesurer avec des unités",
           duration: 14,
           difficulty: 'beginner' as const,

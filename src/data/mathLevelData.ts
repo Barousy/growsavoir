@@ -25,8 +25,8 @@ export const mathLevels: Level[] = [
     color: "bg-green-500",
     lessons: [
       {
-        id: "math-nombres-1-20",
-        title: "Nombres de 1 à 20",
+        id: "math-nombres-1-100",
+        title: "Nombres de 1 à 100",
         description: "Compter et écrire les nombres",
         duration: 15,
         difficulty: "beginner",
@@ -75,8 +75,8 @@ export const mathLevels: Level[] = [
         isLocked: false
       },
       {
-        id: "math-problemes-verbaux",
-        title: "Problèmes verbaux",
+        id: "math-problemes-simples",
+        title: "Problèmes simples",
         description: "Résoudre des problèmes simples",
         duration: 25,
         difficulty: "beginner",

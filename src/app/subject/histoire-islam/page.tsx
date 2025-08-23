@@ -39,6 +39,16 @@ export default function IslamicHistorySubjectPage() {
           emoji: "🌌"
         },
         {
+          id: "histoire-creation-anges",
+          title: "La création des Anges",
+          description: "Créés de lumière, leurs missions et rôles",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "👼"
+        },
+        {
           id: "histoire-creation-terre",
           title: "La création de la Terre",
           description: "Formation de notre planète et ses merveilles",
@@ -51,7 +61,7 @@ export default function IslamicHistorySubjectPage() {
         {
           id: "histoire-creation-adam",
           title: "La création d'Adam",
-          description: "Le premier être humain selon l'Islam",
+          description: "Premier homme, premier prophète - père de l'Humanité",
           duration: 22,
           difficulty: 'beginner' as const,
           isCompleted: false,
@@ -59,7 +69,7 @@ export default function IslamicHistorySubjectPage() {
           emoji: "👤"
         },
         {
-          id: "histoire-premiers-prophètes",
+          id: "histoire-premiers-prophetes",
           title: "Les premiers prophètes",
           description: "Noé, Ibrahim et les autres messagers",
           duration: 25,
@@ -69,7 +79,7 @@ export default function IslamicHistorySubjectPage() {
           emoji: "📖"
         },
         {
-          id: "histoire-moïse-pharaon",
+          id: "histoire-moise-pharaon",
           title: "Moïse et le Pharaon",
           description: "L'histoire de la libération des enfants d'Israël",
           duration: 28,
@@ -79,7 +89,7 @@ export default function IslamicHistorySubjectPage() {
           emoji: "🌊"
         },
         {
-          id: "histoire-jésus-marie",
+          id: "histoire-jesus-marie",
           title: "Jésus et Marie",
           description: "La naissance miraculeuse et les miracles",
           duration: 24,
@@ -98,16 +108,7 @@ export default function IslamicHistorySubjectPage() {
           isLocked: false,
           emoji: "🏜️"
         },
-        {
-          id: "histoire-naissance-prophète",
-          title: "La naissance du Prophète",
-          description: "L'année de l'éléphant et la naissance de Muhammad",
-          duration: 26,
-          difficulty: 'beginner' as const,
-          isCompleted: false,
-          isLocked: false,
-          emoji: "🕊️"
-        }
+        
       ]
     },
     {

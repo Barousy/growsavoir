@@ -15,7 +15,6 @@ export interface Level {
     emoji: string;
   }>;
 }
-
 export const islamicHistoryLevels: Level[] = [
   {
     id: 1,
@@ -40,9 +39,9 @@ export const islamicHistoryLevels: Level[] = [
         description: "Nature, rôles et hiérarchie des anges selon Ibn Kathir",
         duration: 18,
         difficulty: "beginner",
-        emoji: "👼",
         isCompleted: false,
-        isLocked: false
+        isLocked: false,
+        emoji: "👼"
       },
       {
         id: "histoire-creation-jinn",

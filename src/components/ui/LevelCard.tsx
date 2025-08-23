@@ -13,7 +13,7 @@ interface Level {
     title: string;
     description: string;
     duration: number;
-    difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert'; // ✅ Ajout de 'expert'
+    difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert';
     isCompleted?: boolean;
     isLocked?: boolean;
     emoji: string;
@@ -31,14 +31,14 @@ export default function LevelCard({ level, isExpanded, onToggle }: LevelCardProp
     beginner: 'bg-green-100 text-green-800',
     intermediate: 'bg-yellow-100 text-yellow-800',
     advanced: 'bg-red-100 text-red-800',
-    expert: 'bg-purple-100 text-purple-800' // ✅ Ajout de la couleur pour expert
+    expert: 'bg-purple-100 text-purple-800'
   };
 
   const difficultyLabels = {
     beginner: 'Débutant',
     intermediate: 'Intermédiaire',
     advanced: 'Avancé',
-    expert: 'Expert' // ✅ Ajout du label pour expert
+    expert: 'Expert'
   };
 
   return (

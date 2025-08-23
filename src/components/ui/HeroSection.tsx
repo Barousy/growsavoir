@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowRight, Play, Star, Users, BookOpen } from 'lucide-react';
+import { ArrowRight, Play, Star, Users, BookOpen, Sparkles } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -15,6 +15,12 @@ export default function HeroSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="text-center">
+          {/* Badge */}
+          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full border border-blue-200 mb-8">
+            <Sparkles className="w-4 h-4 text-blue-600 mr-2" />
+            <span className="text-sm font-medium text-blue-700">🚀 Nouveau : Quiz interactifs et IA adaptative</span>
+          </div>
+
           {/* Main heading */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -25,48 +31,65 @@ export default function HeroSection() {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto mb-8 leading-relaxed">
             Découvrez des milliers de leçons interactives, quiz et activités pour enfants de 3 à 16 ans. 
-            Langues, mathématiques, sciences et plus encore, adaptés à chaque niveau.
+            <span className="font-semibold text-slate-700"> Langues, mathématiques, sciences et plus encore</span>, 
+            adaptés à chaque niveau avec une progression personnalisée.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link 
               href="/subjects" 
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Commencer gratuitement
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             
             <Link 
-              href="/demo" 
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all duration-200"
+              href="/subjects" 
+              className="group inline-flex items-center justify-center px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 transition-all duration-200 hover:bg-blue-50"
             >
-              <Play className="mr-2 w-5 h-5" />
-              Voir la démo
+              <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+              Explorer les matières
             </Link>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="flex items-center justify-center space-x-8 mb-12 text-sm text-slate-500">
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+              <span>100% gratuit</span>
+            </div>
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+              <span>Sans publicité</span>
+            </div>
+            <div className="flex items-center">
+              <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
+              <span>Valeurs islamiques</span>
+            </div>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                 <BookOpen className="w-8 h-8 text-blue-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900 mb-2">500+</div>
               <div className="text-slate-600">Leçons disponibles</div>
             </div>
             
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                 <Users className="w-8 h-8 text-purple-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900 mb-2">10k+</div>
               <div className="text-slate-600">Enfants apprennent</div>
             </div>
             
-            <div className="text-center">
-              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                 <Star className="w-8 h-8 text-pink-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900 mb-2">4.9/5</div>

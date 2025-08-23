@@ -9,7 +9,7 @@ export interface Level {
       title: string;
       description: string;
       duration: number;
-      difficulty: 'beginner' | 'intermediate' | 'advanced';
+      difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert';
       isCompleted?: boolean;
       isLocked?: boolean;
       emoji: string;
@@ -36,9 +36,9 @@ export interface Level {
         },
         {
           id: "english-numbers",
-          title: "Numbers 1-20",
-          description: "Counting and writing numbers",
-          duration: 18,
+          title: "Numbers 1-100",
+          description: "Counting and writing numbers from 1 to 100",
+          duration: 20,
           difficulty: "beginner",
           emoji: "🔢",
           isCompleted: false,
@@ -70,7 +70,7 @@ export interface Level {
           description: "Mother, father, sister, brother",
           duration: 22,
           difficulty: "beginner",
-          emoji: "��‍��‍👧‍👦",
+          emoji: "👨‍👩‍👧‍👦",
           isCompleted: false,
           isLocked: false
         },
@@ -168,14 +168,14 @@ export interface Level {
           description: "Regular and irregular verbs",
           duration: 35,
           difficulty: "advanced",
-          emoji: "⏰",
+          emoji: "📅",
           isCompleted: false,
           isLocked: true
         },
         {
           id: "english-future-tense",
           title: "Future Tense",
-          description: "Will, going to, present continuous",
+          description: "Will, going to, future continuous",
           duration: 32,
           difficulty: "advanced",
           emoji: "🔮",
@@ -183,42 +183,42 @@ export interface Level {
           isLocked: true
         },
         {
-          id: "english-prepositions",
-          title: "Prepositions",
-          description: "In, on, at, under, above, etc.",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "📍",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "english-conversation",
-          title: "Daily Conversations",
-          description: "Shopping, restaurants, travel",
+          id: "english-conditionals",
+          title: "Conditional Sentences",
+          description: "If clauses and hypothetical situations",
           duration: 38,
           difficulty: "advanced",
-          emoji: "💬",
+          emoji: "🎭",
           isCompleted: false,
           isLocked: true
         },
         {
-          id: "english-reading",
-          title: "Reading Comprehension",
-          description: "Short stories and texts",
+          id: "english-passive-voice",
+          title: "Passive Voice",
+          description: "Understanding passive constructions",
+          duration: 34,
+          difficulty: "advanced",
+          emoji: "🔀",
+          isCompleted: false,
+          isLocked: true
+        },
+        {
+          id: "english-phrasal-verbs",
+          title: "Phrasal Verbs",
+          description: "Common phrasal verbs and meanings",
           duration: 40,
           difficulty: "advanced",
-          emoji: "📖",
+          emoji: "🔤",
           isCompleted: false,
           isLocked: true
         },
         {
-          id: "english-writing",
-          title: "Basic Writing",
-          description: "Sentences, paragraphs, emails",
+          id: "english-idioms",
+          title: "Idioms and Expressions",
+          description: "Popular English idioms and usage",
           duration: 36,
           difficulty: "advanced",
-          emoji: "✍️",
+          emoji: "💬",
           isCompleted: false,
           isLocked: true
         }
@@ -227,36 +227,16 @@ export interface Level {
     {
       id: 4,
       name: "Niveau 4 - Expert",
-      description: "Maîtrise et perfectionnement",
+      description: "Maîtrise et fluidité",
       lessonCount: 6,
-      color: "bg-red-500",
+      color: "bg-purple-500",
       lessons: [
-        {
-          id: "english-advanced-grammar",
-          title: "Advanced Grammar",
-          description: "Conditionals, passive voice, reported speech",
-          duration: 45,
-          difficulty: "advanced",
-          emoji: "🧠",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "english-idioms",
-          title: "English Idioms",
-          description: "Common expressions and phrases",
-          duration: 42,
-          difficulty: "advanced",
-          emoji: "💡",
-          isCompleted: false,
-          isLocked: true
-        },
         {
           id: "english-literature",
           title: "English Literature",
-          description: "Classic authors and works",
-          duration: 48,
-          difficulty: "advanced",
+          description: "Classic works and literary analysis",
+          duration: 45,
+          difficulty: "expert",
           emoji: "📚",
           isCompleted: false,
           isLocked: true
@@ -264,9 +244,9 @@ export interface Level {
         {
           id: "english-business",
           title: "Business English",
-          description: "Professional vocabulary and communication",
-          duration: 44,
-          difficulty: "advanced",
+          description: "Professional communication and vocabulary",
+          duration: 42,
+          difficulty: "expert",
           emoji: "💼",
           isCompleted: false,
           isLocked: true
@@ -274,20 +254,40 @@ export interface Level {
         {
           id: "english-academic",
           title: "Academic English",
-          description: "Essay writing, research, presentations",
-          duration: 50,
-          difficulty: "advanced",
+          description: "Writing essays and academic papers",
+          duration: 48,
+          difficulty: "expert",
           emoji: "🎓",
+          isCompleted: false,
+          isLocked: true
+        },
+        {
+          id: "english-media",
+          title: "Media and Journalism",
+          description: "Understanding news and media language",
+          duration: 44,
+          difficulty: "expert",
+          emoji: "📰",
+          isCompleted: false,
+          isLocked: true
+        },
+        {
+          id: "english-culture",
+          title: "Cultural Context",
+          description: "Understanding English-speaking cultures",
+          duration: 50,
+          difficulty: "expert",
+          emoji: "🌍",
           isCompleted: false,
           isLocked: true
         },
         {
           id: "english-fluency",
           title: "Fluency and Pronunciation",
-          description: "Speaking naturally and clearly",
-          duration: 46,
-          difficulty: "advanced",
-          emoji: "🗣️",
+          description: "Achieving native-like fluency",
+          duration: 55,
+          difficulty: "expert",
+          emoji: "🎯",
           isCompleted: false,
           isLocked: true
         }

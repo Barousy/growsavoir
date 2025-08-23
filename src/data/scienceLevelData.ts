@@ -25,64 +25,64 @@ export const scienceLevels: Level[] = [
     color: "bg-green-500",
     lessons: [
       {
-        id: "sciences-animaux-domestiques",
-        title: "Les animaux domestiques",
-        description: "Caractéristiques et comportements",
-        duration: 20,
-        difficulty: "beginner",
-        emoji: "🐕",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-plantes",
+  title: "Les plantes",
+  description: "Comment poussent les plantes et les fleurs",
+  duration: 12,
+  difficulty: "beginner",
+  emoji: "🌱",
+  isCompleted: false,
+  isLocked: false
       },
       {
-        id: "sciences-plantes-basiques",
-        title: "Les plantes de base",
-        description: "Parties d'une plante et croissance",
-        duration: 18,
-        difficulty: "beginner",
-        emoji: "🌱",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-terre",
+  title: "La Terre",
+  description: "Notre planète et ses merveilles",
+  duration: 10,
+  difficulty: "beginner",
+  emoji: "🌍",
+  isCompleted: false,
+  isLocked: false
       },
       {
-        id: "sciences-eau-etats",
-        title: "Les états de l'eau",
-        description: "Solide, liquide et gazeux",
-        duration: 22,
-        difficulty: "beginner",
-        emoji: "💧",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-energie",
+  title: "L’énergie",
+  description: "Les différentes formes d’énergie",
+  duration: 9,
+  difficulty: "beginner",
+  emoji: "⚡",
+  isCompleted: false,
+  isLocked: false
       },
       {
-        id: "sciences-soleil-ombre",
-        title: "Le soleil et les ombres",
-        description: "Mouvement du soleil et ombres",
-        duration: 19,
-        difficulty: "beginner",
-        emoji: "☀️",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-animaux",
+  title: "Les animaux",
+  description: "Découvrir le monde animal",
+  duration: 11,
+  difficulty: "beginner",
+  emoji: "🐾",
+  isCompleted: false,
+  isLocked: false
       },
       {
-        id: "sciences-sens-humains",
-        title: "Les 5 sens",
-        description: "Vue, ouïe, toucher, goût, odorat",
-        duration: 21,
-        difficulty: "beginner",
-        emoji: "👁️",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-eau",
+  title: "L’eau",
+  description: "Le cycle de l’eau et ses états",
+  duration: 10,
+  difficulty: "beginner",
+  emoji: "💧",
+  isCompleted: false,
+  isLocked: false
       },
       {
-        id: "sciences-meteo-basique",
-        title: "La météo simple",
-        description: "Pluie, soleil, vent et nuages",
-        duration: 17,
-        difficulty: "beginner",
-        emoji: "🌤️",
-        isCompleted: false,
-        isLocked: false
+        id: "sciences-air",
+  title: "L’air",
+  description: "L’atmosphère et la respiration",
+  duration: 8,
+  difficulty: "beginner",
+  emoji: "🌬️",
+  isCompleted: false,
+  isLocked: false
       }
     ]
   },

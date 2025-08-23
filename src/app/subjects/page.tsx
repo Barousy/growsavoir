@@ -24,7 +24,7 @@ export default function SubjectsPage() {
             </p>
             <div className="mt-8">
               <p className="text-lg text-gray-500">
-                Choisissez parmi nos 10 matières spécialement conçues pour les enfants de 3 à 12 ans
+                Choisissez parmi nos 10 matières spécialement conçues pour les enfants de 3 à 16 ans
               </p>
             </div>
           </div>
@@ -55,12 +55,18 @@ export default function SubjectsPage() {
               Choisissez un sujet et commencez votre voyage d'apprentissage dès aujourd'hui !
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary text-lg px-8 py-3">
+              <a 
+                href="/subjects" 
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
                 Découvrir plus de contenu
-              </button>
-              <button className="btn-secondary text-lg px-8 py-3">
+              </a>
+              <a 
+                href="/activities" 
+                className="inline-flex items-center px-8 py-4 border-2 border-slate-300 text-slate-700 font-semibold rounded-xl hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200"
+              >
                 Voir nos activités
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -78,8 +84,8 @@ export default function SubjectsPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 group">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                   <span className="text-2xl">🎯</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -90,8 +96,8 @@ export default function SubjectsPage() {
                 </p>
               </div>
               
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 group">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                   <span className="text-2xl">🎮</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
@@ -102,8 +108,8 @@ export default function SubjectsPage() {
                 </p>
               </div>
               
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="text-center p-6 group">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                   <span className="text-2xl">🌟</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
