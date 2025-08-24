@@ -249,7 +249,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'arabe-alphabet': {
+
   id: "7",
   title: "Les lettres de l'alphabet arabe",
   description: "Apprends les 28 lettres arabes, le sens d'écriture et les lettres qui ne se lient pas.",
@@ -534,7 +536,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-naissance': {
+
   id: "prophete-naissance",
   title: "La naissance du Prophète ﷺ",
   description: "La nuit bénie de sa naissance et les circonstances entourant son enfance",
@@ -579,7 +583,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-famille': {
+
   id: "prophete-famille",
   title: "Sa famille et ses ancêtres",
   description: "La noble lignée du Prophète ﷺ et son appartenance à Quraysh",
@@ -611,7 +617,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-enfance': {
+
   id: "prophete-enfance",
   title: "Son enfance et sa jeunesse",
   description: "Les étapes marquantes de son éducation et de sa jeunesse",
@@ -637,7 +645,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-mariage': {
+
   id: "prophete-mariage",
   title: "Son mariage avec Khadija رضي الله عنها",
   description: "Une union bénie qui marqua sa vie",
@@ -663,7 +673,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-hira': {
+
   id: "prophete-hira",
   title: "La grotte de Hira",
   description: "Un lieu de méditation et de préparation spirituelle",
@@ -688,7 +700,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-revelation': {
+
   id: "prophete-revelation",
   title: "La première révélation",
   description: "Le début de la mission prophétique",
@@ -718,7 +732,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-premiers-musulmans': {
+
   id: "prophete-premiers-musulmans",
   title: "Les premiers musulmans",
   description: "Les premiers compagnons qui embrassèrent l’Islam",
@@ -746,7 +762,9 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
+
 'prophete-persecution': {
+
   id: "prophete-persecution",
   title: "Les débuts de la persécution",
   description: "Les épreuves des premiers croyants à La Mecque",
@@ -776,6 +794,7 @@ const lessonData: Record<string, Lesson> = {
     id: 'francais-alphabet',
     title: 'L\'alphabet français',
     description: 'Apprendre les 26 lettres',
+
     content: [
       'L\'alphabet français compte 26 lettres, comme l\'alphabet anglais.',
       'Il se compose de 6 voyelles : A, E, I, O, U, Y.',
@@ -1795,6 +1814,7 @@ const lessonData: Record<string, Lesson> = {
       }
     ]
   },
+
   'islam-priere': {
     id: 'islam-priere',
     title: 'La prière',
@@ -1927,6 +1947,7 @@ const lessonData: Record<string, Lesson> = {
       }
     ]
   },
+
   'islam-pelerinage': {
     id: 'islam-pelerinage',
     title: 'Le pèlerinage',
