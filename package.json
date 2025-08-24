@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next build",
+    "static": "next build",
     "postinstall": "prisma generate",
     "db:push": "prisma db push",
     "db:reset": "prisma db push --force-reset && npm run db:seed:arabe",

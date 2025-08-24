@@ -249,7 +249,97 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-
+'arabe-alphabet': {
+  id: "7",
+  title: "Les lettres de l'alphabet arabe",
+  description: "Apprends les 28 lettres arabes, le sens d'écriture et les lettres qui ne se lient pas.",
+  content: [
+    "Bienvenue ! L'arabe s'écrit de droite à gauche et comporte 28 lettres.",
+    "Certaines lettres changent de forme selon leur position (début, milieu, fin).",
+    "6 lettres ne se lient PAS à la lettre suivante : ا ، د ، ذ ، ر ، ز ، و.",
+    "Alphabet complet (ordre) : ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي.",
+    "ا (Alif) — a long. Exemple : باب (baab).",
+    "ب (Bā) — b. Exemple : باب (porte).",
+    "ت (Tā) — t. Exemple : تمر (tamar, dattes).",
+    "ث (Thā) — th doux (think). Exemple : ثوب (thawb).",
+    "ج (Jīm) — dj. Exemple : جمل (jamal, chameau).",
+    "ح (Ḥā) — h profond (aspiré). Exemple : حب (hubb, amour).",
+    "خ (Khā) — kh. Exemple : خبز (khubz, pain).",
+    "د (Dāl) — d. Exemple : دار (daar, maison).",
+    "ذ (Dhāl) — dh doux (this). Exemple : ذهب (dhahab, or).",
+    "ر (Rā) — r roulé. Exemple : رأس (ra's, tête).",
+    "ز (Zāy) — z. Exemple : زهر (zahr, fleur).",
+    "س (Sīn) — s. Exemple : سمك (samak, poisson).",
+    "ش (Shīn) — ch. Exemple : شمس (shams, soleil).",
+    "ص (Ṣād) — s emphatique. Exemple : صلاة (salāt, prière).",
+    "ض (Ḍād) — d emphatique. Exemple : ضوء (daw', lumière).",
+    "ط (Ṭā) — t emphatique. Exemple : طعام (ta'ām, nourriture).",
+    "ظ (Ẓā) — z/dh emphatique. Exemple : ظرف (zarf, enveloppe).",
+    "ع ('Ayn) — consonne gutturale. Exemple : علم ('ilm, science).",
+    "غ (Ghayn) — gh. Exemple : غابة (ghābah, forêt).",
+    "ف (Fā) — f. Exemple : فم (fam, bouche).",
+    "ق (Qāf) — q profond. Exemple : قلب (qalb, cœur).",
+    "ك (Kāf) — k. Exemple : كتاب (kitāb, livre).",
+    "ل (Lām) — l. Exemple : لسان (lisān, langue).",
+    "م (Mīm) — m. Exemple : مسجد (masjid, mosquée).",
+    "ن (Nūn) — n. Exemple : نجم (najm, étoile).",
+    "ه (Hā) — h léger. Exemple : هلال (hilāl, croissant).",
+         "و (Wāw) — w / voyelle longue \"ou\". Exemple : ولد (walad, garçon).",
+     "ي (Yā) — y / voyelle longue \"ii\". Exemple : يد (yad, main).",
+    "Note : ء (hamza) représente un coup de glotte et peut s'écrire sur ا ، و ، ي ou seule.",
+    "Objectif : reconnaître chaque lettre, son son, et savoir lesquelles ne se lient pas."
+  ],
+  exercises: [
+    {
+      question: "Combien de lettres comporte l'alphabet arabe ?",
+      options: ["26", "27", "28", "29"],
+      correctAnswer: 2,
+      explanation: "Il y a 28 lettres (hamza est souvent traitée à part au début)."
+    },
+    {
+      question: "Dans quel sens s'écrit l'arabe ?",
+      options: ["De gauche à droite", "De droite à gauche", "De haut en bas", "De bas en haut"],
+      correctAnswer: 1,
+      explanation: "Toujours de droite vers la gauche."
+    },
+    {
+      question: "Quelles lettres ne se lient PAS à la lettre suivante ?",
+      options: ["ح ، س ، ش ، ص", "ا ، د ، ذ ، ر ، ز ، و", "ب ، ت ، ث ، ن"],
+      correctAnswer: 1,
+      explanation: "Les 6 coupantes sont : ا ، د ، ذ ، ر ، ز ، و."
+    },
+    {
+      question: "Quel est le son de la lettre خ (khā) ?",
+      options: ["h léger", "kh guttural", "dj"],
+      correctAnswer: 1,
+      explanation: "خ = kh, un son guttural."
+    },
+    {
+      question: "Laquelle est une lettre emphatique ?",
+      options: ["س", "ص", "ش", "ت"],
+      correctAnswer: 1,
+      explanation: "ص (ṣād) est emphatique (comme ط ، ظ ، ض)."
+    },
+    {
+      question: "Quel mot commence par ج (jīm) ?",
+      options: ["سمك", "جمل", "باب", "تمر"],
+      correctAnswer: 1,
+      explanation: "جمل (jamal) commence par ج."
+    },
+    {
+      question: "Quelle lettre a un r roulé ?",
+      options: ["ر", "ز", "ذ", "د"],
+      correctAnswer: 0,
+      explanation: "ر (rā) se roule."
+    },
+    {
+      question: "Quel est le son de ع ('ayn) ?",
+      options: ["gh", "coup de glotte", "consonne gutturale propre à l'arabe"],
+      correctAnswer: 2,
+      explanation: "'Ayn est une consonne gutturale, différente du ghayn."
+    }
+  ]
+},
   'arabe-voyelles': {
   id: "arabe-voyelles",
   title: "Les voyelles en arabe",
@@ -444,7 +534,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-naissance": {
+'prophete-naissance': {
   id: "prophete-naissance",
   title: "La naissance du Prophète ﷺ",
   description: "La nuit bénie de sa naissance et les circonstances entourant son enfance",
@@ -489,7 +579,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-famille": {
+'prophete-famille': {
   id: "prophete-famille",
   title: "Sa famille et ses ancêtres",
   description: "La noble lignée du Prophète ﷺ et son appartenance à Quraysh",
@@ -521,7 +611,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-enfance": {
+'prophete-enfance': {
   id: "prophete-enfance",
   title: "Son enfance et sa jeunesse",
   description: "Les étapes marquantes de son éducation et de sa jeunesse",
@@ -547,7 +637,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-mariage": {
+'prophete-mariage': {
   id: "prophete-mariage",
   title: "Son mariage avec Khadija رضي الله عنها",
   description: "Une union bénie qui marqua sa vie",
@@ -573,7 +663,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-hira": {
+'prophete-hira': {
   id: "prophete-hira",
   title: "La grotte de Hira",
   description: "Un lieu de méditation et de préparation spirituelle",
@@ -598,7 +688,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-revelation": {
+'prophete-revelation': {
   id: "prophete-revelation",
   title: "La première révélation",
   description: "Le début de la mission prophétique",
@@ -628,7 +718,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-premiers-musulmans": {
+'prophete-premiers-musulmans': {
   id: "prophete-premiers-musulmans",
   title: "Les premiers musulmans",
   description: "Les premiers compagnons qui embrassèrent l’Islam",
@@ -656,7 +746,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
-"prophete-persecution": {
+'prophete-persecution': {
   id: "prophete-persecution",
   title: "Les débuts de la persécution",
   description: "Les épreuves des premiers croyants à La Mecque",
@@ -891,126 +981,7 @@ const lessonData: Record<string, Lesson> = {
       }
     ]
   },
-  'arabe-alphabet': {
-    id: '7',
-    title: 'L\'alphabet arabe',
-    description: 'Apprenez les 28 lettres de l\'alphabet arabe',
-    content: [
-      'Bienvenue dans votre première leçon d\'arabe !',
-      'L\'alphabet arabe compte 28 lettres, contrairement à l\'alphabet français qui en a 26.',
-      'L\'arabe s\'écrit de droite à gauche.',
-      'Voici les premières lettres :',
-      'أ (Alif) - se prononce comme un "a" long',
-      'ب (Ba) - se prononce comme "b" en français',
-      'ت (Ta) - se prononce comme "t" en français',
-      'ث (Tha) - se prononce comme "th" en anglais',
-      'ج (Jim) - se prononce comme "dj" en français',
-      'ح (Ha) - se prononce comme un "h" aspiré',
-      'Chaque lettre a une forme différente selon sa position dans le mot.',
-      'Répétez après moi et n\'ayez pas peur de faire des erreurs !'
-    ],
-    exercises: [
-      {
-        question: 'Combien de lettres y a-t-il dans l\'alphabet arabe ?',
-        options: ['26', '27', '28', '29'],
-        correctAnswer: 2,
-        explanation: 'Exactement ! L\'alphabet arabe compte 28 lettres.'
-      },
-      {
-        question: 'Dans quel sens s\'écrit l\'arabe ?',
-        options: ['De gauche à droite', 'De droite à gauche', 'De haut en bas', 'De bas en haut'],
-        correctAnswer: 1,
-        explanation: 'Exactement ! L\'arabe s\'écrit de droite à gauche.'
-      },
-      {
-        question: 'Comment se prononce la lettre أ (Alif) ?',
-        options: ['Comme "b"', 'Comme "a" long', 'Comme "t"', 'Comme "h"'],
-        correctAnswer: 1,
-        explanation: 'Parfait ! أ (Alif) se prononce comme un "a" long.'
-      }
-    ]
-  },
-  'arabe-greetings': {
-    id: '8',
-    title: 'Salutations de base',
-    description: 'Assalamu alaykum, Marhaba, Ahlan wa sahlan',
-    content: [
-      'Aujourd\'hui, nous allons apprendre les salutations en arabe !',
-      'Les salutations sont très importantes dans la culture islamique.',
-      'Voici les salutations de base :',
-      'السلام عليكم (Assalamu alaykum) = Que la paix soit sur vous',
-      'وعليكم السلام (Wa alaykum assalam) = Et sur vous la paix (réponse)',
-      'مرحبا (Marhaba) = Bonjour (informel)',
-      'أهلا وسهلا (Ahlan wa sahlan) = Bienvenue',
-      'صباح الخير (Sabah al-khayr) = Bonjour (matin)',
-      'مساء الخير (Masa al-khayr) = Bonsoir',
-      'كيف حالك؟ (Kayfa haluk?) = Comment allez-vous ?',
-      'أنا بخير (Ana bi-khayr) = Je vais bien',
-      'الحمد لله (Alhamdulillah) = Louange à Allah'
-    ],
-    exercises: [
-      {
-        question: 'Que signifie "السلام عليكم" (Assalamu alaykum) ?',
-        options: ['Au revoir', 'Que la paix soit sur vous', 'Merci', 'Comment allez-vous ?'],
-        correctAnswer: 1,
-        explanation: 'Exactement ! "السلام عليكم" signifie "Que la paix soit sur vous".'
-      },
-      {
-        question: 'Comment répondre à "السلام عليكم" ?',
-        options: ['مرحبا', 'وعليكم السلام', 'أهلا وسهلا', 'صباح الخير'],
-        correctAnswer: 1,
-        explanation: 'Parfait ! On répond "وعليكم السلام" (Wa alaykum assalam).'
-      },
-      {
-        question: 'Que signifie "أهلا وسهلا" (Ahlan wa sahlan) ?',
-        options: ['Au revoir', 'Merci', 'Bienvenue', 'Comment allez-vous ?'],
-        correctAnswer: 2,
-        explanation: 'Exactement ! "أهلا وسهلا" signifie "Bienvenue".'
-      }
-    ]
-  },
-  'arabe-numbers': {
-    id: '9',
-    title: 'Compter de 1 à 10',
-    description: 'Wahid, ithnan, thalatha... jusqu\'à ashara',
-    content: [
-      'Aujourd\'hui, nous allons apprendre à compter en arabe !',
-      'Les nombres sont très utiles dans la vie quotidienne.',
-      'Voici les nombres de 1 à 10 :',
-      '١ = واحد (Wahid) = Un',
-      '٢ = اثنان (Ithnan) = Deux',
-      '٣ = ثلاثة (Thalatha) = Trois',
-      '٤ = أربعة (Arba\'a) = Quatre',
-      '٥ = خمسة (Khamsa) = Cinq',
-      '٦ = ستة (Sitta) = Six',
-      '٧ = سبعة (Sab\'a) = Sept',
-      '٨ = ثمانية (Thamaniya) = Huit',
-      '٩ = تسعة (Tis\'a) = Neuf',
-      '١٠ = عشرة (Ashara) = Dix',
-      'Répétez après moi : Wahid, Ithnan, Thalatha...'
-    ],
-    exercises: [
-      {
-        question: 'Comment dit-on "5" en arabe ?',
-        options: ['أربعة', 'خمسة', 'ستة', 'سبعة'],
-        correctAnswer: 1,
-        explanation: 'Exactement ! "5" se dit "خمسة" (Khamsa) en arabe.'
-      },
-      {
-        question: 'Que signifie "عشرة" (Ashara) ?',
-        options: ['Neuf', 'Dix', 'Onze', 'Douze'],
-        correctAnswer: 1,
-        explanation: 'Parfait ! "عشرة" (Ashara) signifie "dix".'
-      },
-      {
-        question: 'Comment dit-on "3" en arabe ?',
-        options: ['اثنان', 'ثلاثة', 'أربعة', 'خمسة'],
-        correctAnswer: 1,
-        explanation: 'Exactement ! "3" se dit "ثلاثة" (Thalatha) en arabe.'
-      }
-    ]
-  },
-  "francais-famille": {
+  'francais-famille': {
   id: "francais-famille",
   title: "Les membres de la famille",
   description: "Apprendre à nommer les membres de la famille en français",
