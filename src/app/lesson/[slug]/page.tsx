@@ -249,97 +249,7 @@ const lessonData: Record<string, Lesson> = {
     }
   ]
 },
- 'arabe-alphabet': {
-  id: "7",
-  title: "Les lettres de l'alphabet arabe",
-  description: "Apprends les 28 lettres arabes, le sens d'écriture et les lettres qui ne se lient pas.",
-  content: [
-    "Bienvenue ! L'arabe s'écrit de droite à gauche et comporte 28 lettres.",
-    "Certaines lettres changent de forme selon leur position (début, milieu, fin).",
-    "6 lettres ne se lient PAS à la lettre suivante : ا ، د ، ذ ، ر ، ز ، و.",
-    "Alphabet complet (ordre) : ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي.",
-    "ا (Alif) — a long. Exemple : باب (baab).",
-    "ب (Bā) — b. Exemple : باب (porte).",
-    "ت (Tā) — t. Exemple : تمر (tamar, dattes).",
-    "ث (Thā) — th doux (think). Exemple : ثوب (thawb).",
-    "ج (Jīm) — dj. Exemple : جمل (jamal, chameau).",
-    "ح (Ḥā) — h profond (aspiré). Exemple : حب (hubb, amour).",
-    "خ (Khā) — kh. Exemple : خبز (khubz, pain).",
-    "د (Dāl) — d. Exemple : دار (daar, maison).",
-    "ذ (Dhāl) — dh doux (this). Exemple : ذهب (dhahab, or).",
-    "ر (Rā) — r roulé. Exemple : رأس (ra's, tête).",
-    "ز (Zāy) — z. Exemple : زهر (zahr, fleur).",
-    "س (Sīn) — s. Exemple : سمك (samak, poisson).",
-    "ش (Shīn) — ch. Exemple : شمس (shams, soleil).",
-    "ص (Ṣād) — s emphatique. Exemple : صلاة (salāt, prière).",
-    "ض (Ḍād) — d emphatique. Exemple : ضوء (daw', lumière).",
-    "ط (Ṭā) — t emphatique. Exemple : طعام (ta'ām, nourriture).",
-    "ظ (Ẓā) — z/dh emphatique. Exemple : ظرف (zarf, enveloppe).",
-    "ع ('Ayn) — consonne gutturale. Exemple : علم ('ilm, science).",
-    "غ (Ghayn) — gh. Exemple : غابة (ghābah, forêt).",
-    "ف (Fā) — f. Exemple : فم (fam, bouche).",
-    "ق (Qāf) — q profond. Exemple : قلب (qalb, cœur).",
-    "ك (Kāf) — k. Exemple : كتاب (kitāb, livre).",
-    "ل (Lām) — l. Exemple : لسان (lisān, langue).",
-    "م (Mīm) — m. Exemple : مسجد (masjid, mosquée).",
-    "ن (Nūn) — n. Exemple : نجم (najm, étoile).",
-    "ه (Hā) — h léger. Exemple : هلال (hilāl, croissant).",
-         "و (Wāw) — w / voyelle longue \"ou\". Exemple : ولد (walad, garçon).",
-     "ي (Yā) — y / voyelle longue \"ii\". Exemple : يد (yad, main).",
-    "Note : ء (hamza) représente un coup de glotte et peut s'écrire sur ا ، و ، ي ou seule.",
-    "Objectif : reconnaître chaque lettre, son son, et savoir lesquelles ne se lient pas."
-  ],
-  exercises: [
-    {
-      question: "Combien de lettres comporte l'alphabet arabe ?",
-      options: ["26", "27", "28", "29"],
-      correctAnswer: 2,
-      explanation: "Il y a 28 lettres (hamza est souvent traitée à part au début)."
-    },
-    {
-      question: "Dans quel sens s'écrit l'arabe ?",
-      options: ["De gauche à droite", "De droite à gauche", "De haut en bas", "De bas en haut"],
-      correctAnswer: 1,
-      explanation: "Toujours de droite vers la gauche."
-    },
-    {
-      question: "Quelles lettres ne se lient PAS à la lettre suivante ?",
-      options: ["ح ، س ، ش ، ص", "ا ، د ، ذ ، ر ، ز ، و", "ب ، ت ، ث ، ن"],
-      correctAnswer: 1,
-      explanation: "Les 6 coupantes sont : ا ، د ، ذ ، ر ، ز ، و."
-    },
-    {
-      question: "Quel est le son de la lettre خ (khā) ?",
-      options: ["h léger", "kh guttural", "dj"],
-      correctAnswer: 1,
-      explanation: "خ = kh, un son guttural."
-    },
-    {
-      question: "Laquelle est une lettre emphatique ?",
-      options: ["س", "ص", "ش", "ت"],
-      correctAnswer: 1,
-      explanation: "ص (ṣād) est emphatique (comme ط ، ظ ، ض)."
-    },
-    {
-      question: "Quel mot commence par ج (jīm) ?",
-      options: ["سمك", "جمل", "باب", "تمر"],
-      correctAnswer: 1,
-      explanation: "جمل (jamal) commence par ج."
-    },
-    {
-      question: "Quelle lettre a un r roulé ?",
-      options: ["ر", "ز", "ذ", "د"],
-      correctAnswer: 0,
-      explanation: "ر (rā) se roule."
-    },
-    {
-      question: "Quel est le son de ع ('ayn) ?",
-      options: ["gh", "coup de glotte", "consonne gutturale propre à l'arabe"],
-      correctAnswer: 2,
-      explanation: "'Ayn est une consonne gutturale, différente du ghayn."
-    }
-  ]
-},
+
   'arabe-voyelles': {
   id: "arabe-voyelles",
   title: "Les voyelles en arabe",
@@ -978,8 +888,9 @@ const lessonData: Record<string, Lesson> = {
         options: ['Orange', 'Marron', 'Bleu', 'Kaki'],
         correctAnswer: 2,
         explanation: 'Bleu s\'accorde : bleu/bleue/bleus/bleues.'
-
-     // Leçons d'arabe - Niveau 1
+      }
+    ]
+  },
   'arabe-alphabet': {
     id: '7',
     title: 'L\'alphabet arabe',
