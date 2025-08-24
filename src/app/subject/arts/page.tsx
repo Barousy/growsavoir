@@ -2,263 +2,419 @@
 import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
-import LessonCard from '@/components/ui/LessonCard';
-import SubjectQuiz from '@/components/quiz/SubjectQuiz';
-import { artsQuiz } from '@/data/quizData';
+import LevelCard from '@/components/ui/LevelCard';
+import { Brain, Trophy, ArrowLeft } from 'lucide-react';
 
 export default function ArtsSubjectPage() {
-  const [showQuiz, setShowQuiz] = useState(false);
-  const [quizCompleted, setQuizCompleted] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState<'3-5' | '6-8' | '9-12'>('3-5');
+  const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
 
-  const lessons = {
-    '3-5': [
-      {
-        id: 'arts-dessin-basique',
-        title: 'Dessin de base',
-        description: 'Apprendre à dessiner des formes simples et des animaux',
-        duration: 15,
-        difficulty: 'beginner' as const,
-        color: 'from-pink-400 to-pink-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-couleurs-primaires',
-        title: 'Les couleurs primaires',
-        description: 'Découvrir et mélanger les couleurs de base',
-        duration: 20,
-        difficulty: 'beginner' as const,
-        color: 'from-blue-400 to-blue-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-papier-mache',
-        title: 'Papier mâché créatif',
-        description: 'Créer des objets en papier mâché coloré',
-        duration: 30,
-        difficulty: 'beginner' as const,
-        color: 'from-green-400 to-green-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '✂️'
-      }
-    ],
-    '6-8': [
-      {
-        id: 'arts-perspective',
-        title: 'Perspective et profondeur',
-        description: 'Apprendre les techniques de perspective en dessin',
-        duration: 25,
-        difficulty: 'intermediate' as const,
-        color: 'from-purple-400 to-purple-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-aquarelle',
-        title: 'Techniques d\'aquarelle',
-        description: 'Maîtriser la peinture à l\'eau et les dégradés',
-        duration: 35,
-        difficulty: 'intermediate' as const,
-        color: 'from-indigo-400 to-indigo-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-collage-artistique',
-        title: 'Collage artistique',
-        description: 'Créer des compositions avec différents matériaux',
-        duration: 40,
-        difficulty: 'intermediate' as const,
-        color: 'from-orange-400 to-orange-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '✂️'
-      }
-    ],
-    '9-12': [
-      {
-        id: 'arts-portrait',
-        title: 'Portrait réaliste',
-        description: 'Techniques avancées pour dessiner des visages',
-        duration: 45,
-        difficulty: 'advanced' as const,
-        color: 'from-red-400 to-red-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-peinture-digitale',
-        title: 'Peinture numérique',
-        description: 'Introduction aux outils de création numérique',
-        duration: 50,
-        difficulty: 'advanced' as const,
-        color: 'from-cyan-400 to-cyan-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '��'
-      },
-      {
-        id: 'arts-sculpture-argile',
-        title: 'Sculpture en argile',
-        description: 'Créer des formes 3D avec l\'argile',
-        duration: 60,
-        difficulty: 'advanced' as const,
-        color: 'from-amber-400 to-amber-600',
-        isLocked: false,
-        isCompleted: false,
-        emoji: '🏺'
-      }
-    ]
+  const handleLevelToggle = (levelId: number) => {
+    setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
-  const currentLessons = lessons[selectedLevel];
+  const handleQuizStart = () => {
+    console.log('Démarrage du quiz');
+  };
+
+  const handleDailyChallenge = () => {
+    console.log('Participation au défi quotidien');
+  };
+
+  const artsLevels = [
+    {
+      id: 1,
+      name: "Niveau 1 - Débutant",
+      description: "Fondamentaux des arts",
+      lessonCount: 6,
+      color: "bg-green-500",
+      lessons: [
+        {
+          id: "arts-dessin-base",
+          title: "Dessin de base",
+          description: "Lignes, formes et perspectives simples",
+          duration: 15,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "✏️"
+        },
+        {
+          id: "arts-couleurs-primaires",
+          title: "Couleurs primaires",
+          description: "Rouge, bleu, jaune et leurs mélanges",
+          duration: 12,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🎨"
+        },
+        {
+          id: "arts-papier-decoupe",
+          title: "Papier et découpage",
+          description: "Techniques de base du papier",
+          duration: 18,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "✂️"
+        },
+        {
+          id: "arts-peinture-au-doigt",
+          title: "Peinture au doigt",
+          description: "Créer avec ses mains",
+          duration: 14,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "👆"
+        },
+        {
+          id: "arts-collage-simple",
+          title: "Collage simple",
+          description: "Assembler des matériaux",
+          duration: 16,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "📎"
+        },
+        {
+          id: "arts-modelage-argile",
+          title: "Modelage d'argile",
+          description: "Sculpter des formes simples",
+          duration: 20,
+          difficulty: 'beginner' as const,
+          isCompleted: false,
+          isLocked: false,
+          emoji: "🧱"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Niveau 2 - Intermédiaire",
+      description: "Arts intermédiaires",
+      lessonCount: 6,
+      color: "bg-yellow-500",
+      lessons: [
+        {
+          id: "arts-aquarelle",
+          title: "Aquarelle",
+          description: "Peinture à l'eau et transparence",
+          duration: 25,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🌊"
+        },
+        {
+          id: "arts-perspective",
+          title: "Perspective",
+          description: "Créer l'illusion de profondeur",
+          duration: 22,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏗️"
+        },
+        {
+          id: "arts-portrait",
+          title: "Portrait",
+          description: "Dessiner le visage humain",
+          duration: 28,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👤"
+        },
+        {
+          id: "arts-paysage",
+          title: "Paysage",
+          description: "Représenter la nature",
+          duration: 24,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏞️"
+        },
+        {
+          id: "arts-impression",
+          title: "Techniques d'impression",
+          description: "Gravure et monotype",
+          duration: 30,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🖨️"
+        },
+        {
+          id: "arts-mosaique",
+          title: "Mosaïque",
+          description: "Art de l'assemblage coloré",
+          duration: 26,
+          difficulty: 'intermediate' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🧩"
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: "Niveau 3 - Avancé",
+      description: "Arts avancés",
+      lessonCount: 6,
+      color: "bg-red-500",
+      lessons: [
+        {
+          id: "arts-huile",
+          title: "Peinture à l'huile",
+          description: "Techniques traditionnelles",
+          duration: 35,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🖼️"
+        },
+        {
+          id: "arts-abstrait",
+          title: "Art abstrait",
+          description: "Formes et couleurs non figuratives",
+          duration: 32,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎭"
+        },
+        {
+          id: "arts-sculpture",
+          title: "Sculpture",
+          description: "Créer en trois dimensions",
+          duration: 40,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🗿"
+        },
+        {
+          id: "arts-numerique",
+          title: "Art numérique",
+          description: "Créer avec la technologie",
+          duration: 38,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "💻"
+        },
+        {
+          id: "arts-installation",
+          title: "Installation",
+          description: "Art dans l'espace",
+          duration: 45,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏛️"
+        },
+        {
+          id: "arts-performance",
+          title: "Performance",
+          description: "Art vivant et éphémère",
+          duration: 42,
+          difficulty: 'advanced' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎪"
+        }
+      ]
+    },
+    {
+      id: 4,
+      name: "Niveau 4 - Expert",
+      description: "Arts experts",
+      lessonCount: 6,
+      color: "bg-purple-500",
+      lessons: [
+        {
+          id: "arts-contemporain",
+          title: "Art contemporain",
+          description: "Tendances actuelles et concepts",
+          duration: 50,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🎨"
+        },
+        {
+          id: "arts-restauration",
+          title: "Restauration d'art",
+          description: "Préserver et restaurer les œuvres",
+          duration: 55,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🔧"
+        },
+        {
+          id: "arts-critique",
+          title: "Critique d'art",
+          description: "Analyser et évaluer les œuvres",
+          duration: 45,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "📝"
+        },
+        {
+          id: "arts-commissariat",
+          title: "Commissariat d'exposition",
+          description: "Organiser et présenter l'art",
+          duration: 60,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏛️"
+        },
+        {
+          id: "arts-enseignement",
+          title: "Enseignement artistique",
+          description: "Transmettre la passion de l'art",
+          duration: 48,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "👨‍🏫"
+        },
+        {
+          id: "arts-heritage",
+          title: "Héritage artistique",
+          description: "Créer pour la postérité",
+          duration: 65,
+          difficulty: 'expert' as const,
+          isCompleted: false,
+          isLocked: true,
+          emoji: "🏺"
+        }
+      ]
+    }
+  ];
 
   return (
     <>
       <Navigation />
-      <main className="pt-16">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-pink-50 via-white to-pink-100 py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Arts & Créativité
+      <main className="pt-16 pb-8 bg-gradient-to-br from-pink-50 to-purple-50 min-h-screen">
+        <div className="container mx-auto px-4 py-8">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full mb-6">
+              <span className="text-3xl font-bold text-white">��</span>
+            </div>
+            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+              Arts
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Développez votre créativité et votre expression artistique à travers le dessin, 
-              la peinture, le bricolage et bien plus encore !
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez les arts de manière ludique avec nos leçons interactives
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => setShowQuiz(true)}
-                className="btn-primary text-lg px-8 py-3"
-              >
-                Passer le quiz de créativité
-              </button>
-              <button className="btn-secondary text-lg px-8 py-3">
-                Voir la galerie d'art
-              </button>
-            </div>
           </div>
-        </section>
 
-        {/* Level Selection */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Choisissez votre niveau
-              </h2>
-              <p className="text-lg text-gray-600">
-                Des activités adaptées à chaque âge et niveau de compétence
-              </p>
-            </div>
-            
-            <div className="flex justify-center mb-12">
-              <div className="bg-gray-100 rounded-lg p-1">
-                {(['3-5', '6-8', '9-12'] as const).map((level) => (
-                  <button
-                    key={level}
-                    onClick={() => setSelectedLevel(level)}
-                    className={`px-6 py-3 rounded-md font-medium transition-all ${
-                      selectedLevel === level
-                        ? 'bg-white text-pink-600 shadow-md'
-                        : 'text-gray-600 hover:text-gray-900'
-                    }`}
-                  >
-                    {level === '3-5' ? '3-5 ans' : level === '6-8' ? '6-8 ans' : '9-12 ans'}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Lessons Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {currentLessons.map((lesson) => (
-                <LessonCard
-                  key={lesson.id}
-                  {...lesson}
-                  onStart={() => {
-                    console.log('Starting lesson:', lesson.id);
-                    // Ici vous pouvez ajouter la logique pour rediriger vers la leçon
-                  }}
-                />
-              ))}
-            </div>
+          {/* Vue d'ensemble du cours */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Vue d'ensemble du cours
+            </h2>
+            <p className="text-lg text-gray-600">
+              Un programme complet d'arts en 4 niveaux, de débutant à expert
+            </p>
           </div>
-        </section>
 
-        {/* Features Section */}
-        <section className="py-16 bg-gradient-to-br from-pink-50 to-purple-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Pourquoi choisir les arts ?
-              </h2>
-              <p className="text-lg text-gray-600">
-                Développez des compétences essentielles à travers la création artistique
-              </p>
+          {/* Niveaux interactifs */}
+          <div className="space-y-6 mb-12">
+            {artsLevels.map((level) => (
+              <LevelCard
+                key={level.id}
+                level={level}
+                isExpanded={expandedLevel === level.id}
+                onToggle={handleLevelToggle}
+              />
+            ))}
+          </div>
+
+          {/* Bouton pour voir toutes les leçons du niveau 1 */}
+          <div className="text-center mb-12">
+            <button
+              onClick={() => setExpandedLevel(1)}
+              className="bg-pink-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-pink-600 transition-colors shadow-lg hover:shadow-xl"
+            >
+              Voir toutes les leçons du niveau 1
+            </button>
+          </div>
+
+          {/* Section Quiz et Défis */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Testez vos connaissances
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Prenez notre quiz pour vérifier ce que vous avez appris
+            </p>
+          </div>
+
+          {/* Cartes Quiz et Défi */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            {/* Quiz */}
+            <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-8 border border-pink-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-4">
+                  <Brain className="w-8 h-8 text-pink-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Quiz Niveau 1
+                </h3>
+                <p className="text-gray-700 mb-6">
+                  Testez vos connaissances de base
+                </p>
+                <button
+                  onClick={handleQuizStart}
+                  className="bg-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors"
+                >
+                  Commencer le quiz
+                </button>
+              </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🎨</span>
+
+            {/* Défi quotidien */}
+            <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 border border-purple-200 hover:shadow-lg transition-shadow">
+              <div className="text-center">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
+                  <Trophy className="w-8 h-8 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Créativité
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  Défi quotidien
                 </h3>
-                <p className="text-gray-600">
-                  Stimulez votre imagination et développez votre pensée créative
+                <p className="text-gray-700 mb-6">
+                  Un nouveau défi chaque jour
                 </p>
-              </div>
-              
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">✋</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Motricité fine
-                </h3>
-                <p className="text-gray-600">
-                  Améliorez votre coordination et votre précision manuelle
-                </p>
-              </div>
-              
-              <div className="text-center p-6">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💭</span>
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  Expression
-                </h3>
-                <p className="text-gray-600">
-                  Apprenez à exprimer vos émotions et vos idées artistiquement
-                </p>
+                <button
+                  onClick={handleDailyChallenge}
+                  className="bg-purple-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors"
+                >
+                  Participer
+                </button>
               </div>
             </div>
           </div>
-        </section>
 
-        {/* Quiz Modal */}
-        {showQuiz && (
-          <SubjectQuiz
-          quiz={artsQuiz}
-          onClose={() => setShowQuiz(false)}
-          onComplete={(score) => {
-            setQuizCompleted(true);
-            setShowQuiz(false);
-            console.log('Quiz completed with score:', score);
-          }}
-        />
-        )}
+          {/* Bouton retour */}
+          <div className="text-center">
+            <a
+              href="/subjects"
+              className="inline-flex items-center bg-gray-500 text-white px-6 py-3 rounded-lg hover:bg-gray-600 transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5 mr-2" />
+              ← Retour aux matières
+            </a>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

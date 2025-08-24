@@ -3,29 +3,32 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
-import { englishLevels } from '@/data/levelData';
-import { Brain, Trophy, ArrowLeft, BookOpen, Clock, Star } from 'lucide-react';
+
+import { Brain, Trophy, ArrowLeft, Globe } from 'lucide-react';
+import { englishLevels } from '@/data/englishLevelData';
 
 export default function EnglishSubjectPage() {
-  const [expandedLevel, setExpandedLevel] = useState<number | null>(1); // Niveau 1 ouvert par défaut
+  const [expandedLevel, setExpandedLevel] = useState<number | null>(1);
+
 
   const handleLevelToggle = (levelId: number) => {
     setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
 
+
+  const handleQuizStart = () => {
+    console.log('Démarrage du quiz anglais');
+  };
+
+  const handleDailyChallenge = () => {
+    console.log('Participation au défi quotidien anglais');
+      
   const handleLessonStart = (lessonId: string) => {
     console.log(`Démarrage de la leçon: ${lessonId}`);
     // Ici vous pourriez naviguer vers la leçon ou ouvrir un modal
   };
 
-  const handleQuizStart = () => {
-    console.log('Démarrage du quiz');
-    // Ici vous pourriez ouvrir le quiz
-  };
-
-  const handleDailyChallenge = () => {
-    console.log('Participation au défi quotidien');
-    // Ici vous pourriez ouvrir le défi
+ 
   };
 
   return (
@@ -36,7 +39,9 @@ export default function EnglishSubjectPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mb-6">
-              <span className="text-3xl font-bold text-white">GB</span>
+
+              <Globe className="w-10 h-10 text-white" />
+
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
               Apprendre l'anglais

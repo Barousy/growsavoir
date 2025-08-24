@@ -1,6 +1,7 @@
 'use client';
 
-import { Star, Quote, Heart, ThumbsUp, Award } from 'lucide-react';
+import { Star, Quote, Heart, ThumbsUp, Award, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const testimonials = [
   {
@@ -89,8 +90,8 @@ export default function TestimonialsSection() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div key={index} className="text-center group">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-200">
                 <stat.icon className="w-8 h-8 text-blue-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900 mb-2">{stat.value}</div>
@@ -100,15 +101,15 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-6 border border-slate-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group"
             >
               {/* Quote icon */}
               <div className="flex justify-between items-start mb-4">
-                <Quote className="w-8 h-8 text-blue-400 opacity-60" />
+                <Quote className="w-8 h-8 text-blue-400 opacity-60 group-hover:scale-110 transition-transform duration-200" />
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
@@ -133,7 +134,7 @@ export default function TestimonialsSection() {
 
               {/* Author */}
               <div className="flex items-center">
-                <div className="text-2xl mr-3">{testimonial.avatar}</div>
+                <div className="text-2xl mr-3 group-hover:scale-110 transition-transform duration-200">{testimonial.avatar}</div>
                 <div>
                   <div className="font-semibold text-slate-900">{testimonial.name}</div>
                   <div className="text-sm text-slate-600">{testimonial.role}</div>
@@ -145,20 +146,33 @@ export default function TestimonialsSection() {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Rejoignez des milliers de familles satisfaites
-            </h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Commencez gratuitement et découvrez pourquoi GrowSavoir est la plateforme d&aposapprentissage préférée des parents
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-colors">
-                Commencer gratuitement
-              </button>
-              <button className="border-2 border-white/30 text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/10 transition-colors">
-                Voir plus de témoignages
-              </button>
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden">
+            {/* Background decoration */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
+            
+            <div className="relative z-10">
+              <h3 className="text-2xl font-bold mb-4">
+                Rejoignez des milliers de familles satisfaites
+              </h3>
+              <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+                Commencez gratuitement et découvrez pourquoi GrowSavoir est la plateforme d&aposapprentissage préférée des parents
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  href="/subjects"
+                  className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center"
+                >
+                  Commencer gratuitement
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+                <Link 
+                  href="/subjects"
+                  className="border-2 border-white/30 text-white px-8 py-3 rounded-xl font-semibold hover:bg-white/10 transition-all duration-200 transform hover:scale-105"
+                >
+                  Voir plus de témoignages
+                </Link>
+              </div>
             </div>
           </div>
         </div>

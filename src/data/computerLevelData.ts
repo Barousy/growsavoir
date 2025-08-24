@@ -1,296 +1,298 @@
 export interface Level {
-    id: number;
-    name: string;
+
+  id: number;
+  name: string;
+  description: string;
+  lessonCount: number;
+  color: string;
+  lessons: Array<{
+    id: string;
+    title: string;
     description: string;
-    lessonCount: number;
-    color: string;
-    lessons: Array<{
-      id: string;
-      title: string;
-      description: string;
-      duration: number;
-      difficulty: 'beginner' | 'intermediate' | 'advanced';
-      isCompleted?: boolean;
-      isLocked?: boolean;
-      emoji: string;
-    }>;
+    duration: number;
+    difficulty: 'beginner' | 'intermediate' | 'advanced';
+    isCompleted?: boolean;
+    isLocked?: boolean;
+    emoji: string;
+  }>;
+}
+
+export const computerLevels: Level[] = [
+  {
+    id: 1,
+    name: "Niveau 1 - Fondamentaux",
+    description: "Bases de l'informatique",
+    lessonCount: 6,
+    color: "bg-green-500",
+    lessons: [
+      {
+        id: "informatique-ordinateur",
+        title: "Qu'est-ce qu'un ordinateur ?",
+        description: "Composants de base et fonctionnement",
+        duration: 20,
+        difficulty: "beginner",
+        emoji: "💻",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "informatique-souris-clavier",
+        title: "Souris et clavier",
+        description: "Utilisation des périphériques d'entrée",
+        duration: 18,
+        difficulty: "beginner",
+        emoji: "🖱️",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "informatique-systeme-exploitation",
+        title: "Système d'exploitation",
+        description: "Windows, macOS, Linux - bases",
+        duration: 25,
+        difficulty: "beginner",
+        emoji: "🖥️",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "informatique-fichiers-dossiers",
+        title: "Fichiers et dossiers",
+        description: "Organisation et gestion des données",
+        duration: 22,
+        difficulty: "beginner",
+        emoji: "📁",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "informatique-internet-basique",
+        title: "Internet de base",
+        description: "Navigation web et recherche",
+        duration: 24,
+        difficulty: "beginner",
+        emoji: "🌐",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "informatique-securite-basique",
+        title: "Sécurité informatique",
+        description: "Virus, mots de passe, prudence en ligne",
+        duration: 26,
+        difficulty: "beginner",
+        emoji: "🔒",
+        isCompleted: false,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "Niveau 2 - Intermédiaire",
+    description: "Applications et logiciels",
+    lessonCount: 6,
+    color: "bg-blue-500",
+    lessons: [
+      {
+        id: "informatique-traitement-texte",
+        title: "Traitement de texte",
+        description: "Word, Google Docs - bases",
+        duration: 30,
+        difficulty: "intermediate",
+        emoji: "📝",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-tableur",
+        title: "Tableurs",
+        description: "Excel, Google Sheets - calculs",
+        duration: 32,
+        difficulty: "intermediate",
+        emoji: "📊",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-presentation",
+        title: "Présentations",
+        description: "PowerPoint, Google Slides",
+        duration: 28,
+        difficulty: "intermediate",
+        emoji: "📽️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-image",
+        title: "Traitement d'image",
+        description: "Paint, GIMP - bases du dessin numérique",
+        duration: 35,
+        difficulty: "intermediate",
+        emoji: "🎨",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-email",
+        title: "Email et communication",
+        description: "Gmail, Outlook, bonnes pratiques",
+        duration: 26,
+        difficulty: "intermediate",
+        emoji: "📧",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-reseaux-sociaux",
+        title: "Réseaux sociaux",
+        description: "Facebook, Instagram, TikTok - sécurité",
+        duration: 24,
+        difficulty: "intermediate",
+        emoji: "📱",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "Niveau 3 - Avancé",
+    description: "Programmation et création",
+    lessonCount: 6,
+    color: "bg-yellow-500",
+    lessons: [
+      {
+        id: "informatique-programmation-basique",
+        title: "Programmation de base",
+        description: "Scratch, logique algorithmique",
+        duration: 40,
+        difficulty: "advanced",
+        emoji: "🧩",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-html-css",
+        title: "HTML et CSS",
+        description: "Création de pages web simples",
+        duration: 45,
+        difficulty: "advanced",
+        emoji: "🌐",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-python",
+        title: "Python pour débutants",
+        description: "Premiers programmes en Python",
+        duration: 50,
+        difficulty: "advanced",
+        emoji: "🐍",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-base-donnees",
+        title: "Bases de données",
+        description: "Concepts et utilisation simple",
+        duration: 38,
+        difficulty: "advanced",
+        emoji: "🗄️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-robotique",
+        title: "Robotique éducative",
+        description: "Lego Mindstorms, Arduino",
+        duration: 42,
+        difficulty: "advanced",
+        emoji: "🤖",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-intelligence-artificielle",
+        title: "Intelligence artificielle",
+        description: "Machine learning, chatbots",
+        duration: 48,
+        difficulty: "advanced",
+        emoji: "🧠",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "Niveau 4 - Expert",
+    description: "Spécialisation et projets",
+    lessonCount: 6,
+    color: "bg-red-500",
+    lessons: [
+      {
+        id: "informatique-developpement-web",
+        title: "Développement web avancé",
+        description: "JavaScript, frameworks, APIs",
+        duration: 55,
+        difficulty: "advanced",
+        emoji: "💻",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-applications-mobiles",
+        title: "Applications mobiles",
+        description: "Développement pour Android/iOS",
+        duration: 60,
+        difficulty: "advanced",
+        emoji: "📱",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-jeux-video",
+        title: "Développement de jeux",
+        description: "Unity, GameMaker, logique de jeu",
+        duration: 58,
+        difficulty: "advanced",
+        emoji: "🎮",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-cybersecurite",
+        title: "Cybersécurité",
+        description: "Protection, éthique, hacking éthique",
+        duration: 52,
+        difficulty: "advanced",
+        emoji: "🛡️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-cloud",
+        title: "Cloud computing",
+        description: "AWS, Google Cloud, Azure",
+        duration: 50,
+        difficulty: "advanced",
+        emoji: "☁️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "informatique-projet-final",
+        title: "Projet final",
+        description: "Création d'une application complète",
+        duration: 65,
+        difficulty: "advanced",
+        emoji: "🚀",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
   }
-  
-  export const computerLevels: Level[] = [
-    {
-      id: 1,
-      name: "Niveau 1 - Découverte",
-      description: "Bases de l'informatique et outils",
-      lessonCount: 6,
-      color: "bg-purple-500",
-      lessons: [
-        {
-          id: "informatique-ordinateur-bases",
-          title: "Les bases de l'ordinateur",
-          description: "Composants et fonctionnement",
-          duration: 12,
-          difficulty: "beginner",
-          emoji: "💻",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "informatique-souris-clavier",
-          title: "Souris et clavier",
-          description: "Utiliser les périphériques",
-          duration: 10,
-          difficulty: "beginner",
-          emoji: "🖱️",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "informatique-systeme-exploitation",
-          title: "Système d'exploitation",
-          description: "Windows, Mac, Linux",
-          duration: 15,
-          difficulty: "beginner",
-          emoji: "🖥️",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "informatique-fichiers-dossiers",
-          title: "Fichiers et dossiers",
-          description: "Organiser ses documents",
-          duration: 11,
-          difficulty: "beginner",
-          emoji: "📁",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "informatique-internet-bases",
-          title: "Les bases d'Internet",
-          description: "Naviguer sur le web",
-          duration: 13,
-          difficulty: "beginner",
-          emoji: "🌐",
-          isCompleted: false,
-          isLocked: false
-        },
-        {
-          id: "informatique-securite-basique",
-          title: "Sécurité de base",
-          description: "Protéger son ordinateur",
-          duration: 9,
-          difficulty: "beginner",
-          emoji: "🔒",
-          isCompleted: false,
-          isLocked: false
-        }
-      ]
-    },
-    {
-      id: 2,
-      name: "Niveau 2 - Applications",
-      description: "Logiciels et outils numériques",
-      lessonCount: 6,
-      color: "bg-blue-500",
-      lessons: [
-        {
-          id: "informatique-traitement-texte",
-          title: "Traitement de texte",
-          description: "Word, Google Docs",
-          duration: 18,
-          difficulty: "intermediate",
-          emoji: "📝",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-tableurs",
-          title: "Tableurs et calculs",
-          description: "Excel, Google Sheets",
-          duration: 20,
-          difficulty: "intermediate",
-          emoji: "📊",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-presentations",
-          title: "Présentations",
-          description: "PowerPoint, Google Slides",
-          duration: 16,
-          difficulty: "intermediate",
-          emoji: "📽️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-image-numerique",
-          title: "Image numérique",
-          description: "Photos et retouche",
-          duration: 22,
-          difficulty: "intermediate",
-          emoji: "🖼️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-email-communication",
-          title: "Email et communication",
-          description: "Gmail, Outlook",
-          duration: 14,
-          difficulty: "intermediate",
-          emoji: "📧",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-reseaux-sociaux",
-          title: "Réseaux sociaux",
-          description: "Utilisation responsable",
-          duration: 12,
-          difficulty: "intermediate",
-          emoji: "📱",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 3,
-      name: "Niveau 3 - Programmation",
-      description: "Logique et langages de programmation",
-      lessonCount: 6,
-      color: "bg-green-500",
-      lessons: [
-        {
-          id: "informatique-logique-programmation",
-          title: "Logique de programmation",
-          description: "Algorithmes et résolution de problèmes",
-          duration: 25,
-          difficulty: "advanced",
-          emoji: "🧠",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-scratch",
-          title: "Programmation avec Scratch",
-          description: "Créer des jeux et animations",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "🐱",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-python-bases",
-          title: "Python - Bases",
-          description: "Premiers pas en programmation",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "🐍",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-html-css",
-          title: "HTML et CSS",
-          description: "Créer des pages web",
-          duration: 26,
-          difficulty: "advanced",
-          emoji: "🌐",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-bases-donnees",
-          title: "Bases de données",
-          description: "Organiser l'information",
-          duration: 24,
-          difficulty: "advanced",
-          emoji: "🗄️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-cybersecurite",
-          title: "Cybersécurité",
-          description: "Protection en ligne",
-          duration: 20,
-          difficulty: "advanced",
-          emoji: "🛡️",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 4,
-      name: "Niveau 4 - Innovation",
-      description: "Technologies avancées et projets",
-      lessonCount: 6,
-      color: "bg-red-500",
-      lessons: [
-        {
-          id: "informatique-intelligence-artificielle",
-          title: "Intelligence artificielle",
-          description: "Machine learning et IA",
-          duration: 32,
-          difficulty: "advanced",
-          emoji: "🤖",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-realite-virtuelle",
-          title: "Réalité virtuelle",
-          description: "VR et AR",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "🥽",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-iot",
-          title: "Internet des objets",
-          description: "Objets connectés",
-          duration: 26,
-          difficulty: "advanced",
-          emoji: "🔌",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-blockchain",
-          title: "Blockchain",
-          description: "Technologie décentralisée",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "⛓️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-projet-final",
-          title: "Projet final",
-          description: "Créer une application complète",
-          duration: 40,
-          difficulty: "advanced",
-          emoji: "🚀",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "informatique-futur-tech",
-          title: "Technologies du futur",
-          description: "Quantic, biotech, nanotech",
-          duration: 25,
-          difficulty: "advanced",
-          emoji: "🔮",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    }
-  ];
+];
+

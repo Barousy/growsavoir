@@ -1,416 +1,298 @@
 export interface Level {
-    id: number;
-    name: string;
+
+  id: number;
+  name: string;
+  description: string;
+  lessonCount: number;
+  color: string;
+  lessons: Array<{
+    id: string;
+    title: string;
     description: string;
-    lessonCount: number;
-    color: string;
-    lessons: Array<{
-      id: string;
-      title: string;
-      description: string;
-      duration: number;
-      difficulty: 'beginner' | 'intermediate' | 'advanced';
-      isCompleted?: boolean;
-      isLocked?: boolean;
-      emoji: string;
-    }>;
+    duration: number;
+    difficulty: 'beginner' | 'intermediate' | 'advanced';
+    isCompleted?: boolean;
+    isLocked?: boolean;
+    emoji: string;
+  }>;
+}
+
+export const arabicLevels: Level[] = [
+  {
+    id: 1,
+    name: "Niveau 1 - Fondamentaux",
+    description: "Bases de la langue arabe",
+    lessonCount: 6,
+    color: "bg-green-500",
+    lessons: [
+      {
+        id: "arabic-alphabet",
+        title: "الحروف الأبجدية",
+        description: "Les 28 lettres de l'alphabet arabe",
+        duration: 20,
+        difficulty: "beginner",
+        emoji: "🔤",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arabic-vowels",
+        title: "الحركات",
+        description: "Fatha, kasra, damma, soukoun",
+        duration: 18,
+        difficulty: "beginner",
+        emoji: "🔊",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arabic-numbers",
+        title: "الأرقام",
+        description: "Nombres de 1 à 20 en arabe",
+        duration: 16,
+        difficulty: "beginner",
+        emoji: "🔢",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arabic-greetings",
+        title: "التحيات",
+        description: "Marhaba, assalamu alaykum, etc.",
+        duration: 22,
+        difficulty: "beginner",
+        emoji: "👋",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arabic-family",
+        title: "أفراد العائلة",
+        description: "أب، أم، أخ، أخت",
+        duration: 24,
+        difficulty: "beginner",
+        emoji: "��‍��‍👧‍👦",
+        isCompleted: false,
+        isLocked: false
+      },
+      {
+        id: "arabic-colors",
+        title: "الألوان",
+        description: "أحمر، أزرق، أخضر، أصفر",
+        duration: 20,
+        difficulty: "beginner",
+        emoji: "🎨",
+        isCompleted: false,
+        isLocked: false
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: "Niveau 2 - Intermédiaire",
+    description: "Grammaire et conjugaison",
+    lessonCount: 6,
+    color: "bg-blue-500",
+    lessons: [
+      {
+        id: "arabic-verbs-present",
+        title: "الأفعال المضارعة",
+        description: "Conjugaison des verbes au présent",
+        duration: 30,
+        difficulty: "intermediate",
+        emoji: "🔄",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-nouns",
+        title: "الأسماء",
+        description: "Genre et nombre des noms",
+        duration: 28,
+        difficulty: "intermediate",
+        emoji: "📖",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-adjectives",
+        title: "الصفات",
+        description: "Accord des adjectifs",
+        duration: 26,
+        difficulty: "intermediate",
+        emoji: "✨",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-questions",
+        title: "الأسئلة",
+        description: "Comment poser des questions",
+        duration: 24,
+        difficulty: "intermediate",
+        emoji: "❓",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-time",
+        title: "الوقت",
+        description: "Dire l'heure en arabe",
+        duration: 32,
+        difficulty: "intermediate",
+        emoji: "🕐",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-weather",
+        title: "الطقس",
+        description: "Vocabulaire météorologique",
+        duration: 28,
+        difficulty: "intermediate",
+        emoji: "🌤️",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "Niveau 3 - Avancé",
+    description: "Grammaire avancée et expression",
+    lessonCount: 6,
+    color: "bg-yellow-500",
+    lessons: [
+      {
+        id: "arabic-verbs-past",
+        title: "الأفعال الماضية",
+        description: "Conjugaison des verbes au passé",
+        duration: 35,
+        difficulty: "advanced",
+        emoji: "⏰",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-verbs-future",
+        title: "الأفعال المستقبلية",
+        description: "Conjugaison des verbes au futur",
+        duration: 32,
+        difficulty: "advanced",
+        emoji: "🔮",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-grammar",
+        title: "قواعد النحو",
+        description: "Grammaire arabe avancée",
+        duration: 40,
+        difficulty: "advanced",
+        emoji: "📚",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-conversation",
+        title: "المحادثة",
+        description: "Conversations quotidiennes",
+        duration: 38,
+        difficulty: "advanced",
+        emoji: "💬",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-reading",
+        title: "القراءة",
+        description: "Lecture de textes arabes",
+        duration: 42,
+        difficulty: "advanced",
+        emoji: "📖",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-writing",
+        title: "الكتابة",
+        description: "Rédaction en arabe",
+        duration: 36,
+        difficulty: "advanced",
+        emoji: "✍️",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "Niveau 4 - Expert",
+    description: "Maîtrise et perfectionnement",
+    lessonCount: 6,
+    color: "bg-red-500",
+    lessons: [
+      {
+        id: "arabic-literature",
+        title: "الأدب العربي",
+        description: "Poésie et prose classiques",
+        duration: 45,
+        difficulty: "advanced",
+        emoji: "📚",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-calligraphy",
+        title: "الخط العربي",
+        description: "Art de la calligraphie",
+        duration: 50,
+        difficulty: "advanced",
+        emoji: "✒️",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-dialects",
+        title: "اللهجات العربية",
+        description: "Différents dialectes régionaux",
+        duration: 48,
+        difficulty: "advanced",
+        emoji: "🌍",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-media",
+        title: "الإعلام العربي",
+        description: "Presse, télévision, radio",
+        duration: 44,
+        difficulty: "advanced",
+        emoji: "📺",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-business",
+        title: "العربية التجارية",
+        description: "Arabe des affaires",
+        duration: 46,
+        difficulty: "advanced",
+        emoji: "💼",
+        isCompleted: false,
+        isLocked: true
+      },
+      {
+        id: "arabic-translation",
+        title: "الترجمة",
+        description: "Techniques de traduction",
+        duration: 52,
+        difficulty: "advanced",
+        emoji: "🌐",
+        isCompleted: false,
+        isLocked: true
+      }
+    ]
   }
-  
-  export const arabicLevels: Level[] = [
-    {
-      id: 1,
-      name: "Niveau 1 - Débutant",
-      description: "Débutant",
-      lessonCount: 6,
-      color: "bg-green-500",
-      lessons: [
-        {
-            id: "arabe-alphabet",  // ← Changé de "alphabet" à "arabe-alphabet"
-            title: "L'alphabet arabe",
-            description: "Apprenez les 28 lettres de l'alphabet arabe",
-            duration: 8,
-            difficulty: "beginner",
-            emoji: "🔤",
-            isCompleted: false,
-            isLocked: false
-          },
-          {
-            id: "arabe-greetings",  // ← Changé de "greetings" à "arabe-greetings"
-            title: "Salutations de base",
-            description: "Assalamu alaykum, Marhaba, Ahlan wa sahlan",
-            duration: 10,
-            difficulty: "beginner",
-            emoji: "👋",
-            isCompleted: false,
-            isLocked: false
-          },
-          {
-            id: "arabe-numbers",  // ← Changé de "numbers" à "arabe-numbers"
-            title: "Compter de 1 à 10",
-            description: "Wahid, ithnan, thalatha... jusqu'à ashara",
-            duration: 7,
-            difficulty: "beginner",
-            emoji: "🔢",
-            isCompleted: false,
-            isLocked: false
-          },
-          {
-            id: "arabe-colors",  // ← Changé de "colors" à "arabe-colors"
-            title: "Les couleurs",
-            description: "Ahmar, azraq, akhdar, asfar et plus",
-            duration: 6,
-            difficulty: "beginner",
-            emoji: "🎨",
-            isCompleted: false,
-            isLocked: false
-          },
-          {
-            id: "arabe-family",  // ← Changé de "family" à "arabe-family"
-            title: "La famille",
-            description: "Ab, umm, akh, ukht et autres membres",
-            duration: 9,
-            difficulty: "beginner",
-            emoji: "‍‍👧‍👦",
-            isCompleted: false,
-            isLocked: false
-          },
-          {
-            id: "arabe-animals",  // ← Changé de "animals" à "arabe-animals"
-            title: "Les animaux",
-            description: "Qalb, qitt, tayr, samak et autres animaux",
-            duration: 8,
-            difficulty: "beginner",
-            emoji: "🐾",
-            isCompleted: false,
-            isLocked: false
-          }
-      ]
-    },
-    {
-      id: 2,
-      name: "Niveau 2 - Intermédiaire",
-      description: "Intermédiaire",
-      lessonCount: 8,
-      color: "bg-yellow-500",
-      lessons: [
-        {
-          id: "grammar-basic",
-          title: "Grammaire de base",
-          description: "Articles, pluriels, verbes simples",
-          duration: 15,
-          difficulty: "intermediate",
-          emoji: "📚",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "conversation",
-          title: "Conversations simples",
-          description: "Dialogues de la vie quotidienne",
-          duration: 12,
-          difficulty: "intermediate",
-          emoji: "💬",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "stories",
-          title: "Histoires courtes",
-          description: "Contes et récits adaptés",
-          duration: 18,
-          difficulty: "intermediate",
-          emoji: "📖",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "songs",
-          title: "Chansons en arabe",
-          description: "Comptines et mélodies",
-          duration: 14,
-          difficulty: "intermediate",
-          emoji: "🎵",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "games",
-          title: "Jeux de mots",
-          description: "Devinettes et énigmes",
-          duration: 10,
-          difficulty: "intermediate",
-          emoji: "🎮",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "culture",
-          title: "Culture arabe",
-          description: "Traditions et coutumes",
-          duration: 16,
-          difficulty: "intermediate",
-          emoji: "🌍",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "writing",
-          title: "Écriture simple",
-          description: "Phrases et petits textes",
-          duration: 20,
-          difficulty: "intermediate",
-          emoji: "✍️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "listening",
-          title: "Compréhension orale",
-          description: "Écouter et comprendre",
-          duration: 15,
-          difficulty: "intermediate",
-          emoji: "👂",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 3,
-      name: "Niveau 3 - Avancé",
-      description: "Avancé",
-      lessonCount: 10,
-      color: "bg-orange-500",
-      lessons: [
-        {
-          id: "advanced-grammar",
-          title: "Grammaire avancée",
-          description: "Temps composés, conditionnels",
-          duration: 25,
-          difficulty: "advanced",
-          emoji: "🎓",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "literature",
-          title: "Littérature arabe",
-          description: "Extraits d'œuvres classiques",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "📚",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "debate",
-          title: "Débats et discussions",
-          description: "Exprimer son opinion",
-          duration: 22,
-          difficulty: "advanced",
-          emoji: "🎤",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "creative-writing",
-          title: "Écriture créative",
-          description: "Histoires et poèmes",
-          duration: 35,
-          difficulty: "advanced",
-          emoji: "✒️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "idioms",
-          title: "Expressions idiomatiques",
-          description: "Proverbes et métaphores",
-          duration: 18,
-          difficulty: "advanced",
-          emoji: "💡",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "academic-arabic",
-          title: "Arabe académique",
-          description: "Formalités et registre soutenu",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "🎯",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "media",
-          title: "Médias et actualités",
-          description: "Comprendre les informations",
-          duration: 24,
-          difficulty: "advanced",
-          emoji: "📰",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "technology",
-          title: "Technologie et innovation",
-          description: "Vocabulaire du numérique",
-          duration: 20,
-          difficulty: "advanced",
-          emoji: "💻",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "travel",
-          title: "Voyage et tourisme",
-          description: "Arabe pour voyager",
-          duration: 22,
-          difficulty: "advanced",
-          emoji: "✈️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "science",
-          title: "Sciences et découverte",
-          description: "Termes scientifiques",
-          duration: 26,
-          difficulty: "advanced",
-          emoji: "🔬",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    },
-    {
-      id: 4,
-      name: "Niveau 4 - Expert",
-      description: "Expert",
-      lessonCount: 12,
-      color: "bg-red-500",
-      lessons: [
-        {
-          id: "classical-arabic",
-          title: "Arabe classique",
-          description: "Langue du Coran et de la littérature",
-          duration: 40,
-          difficulty: "advanced",
-          emoji: "📖",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "poetry",
-          title: "Poésie arabe",
-          description: "Vers et rimes traditionnels",
-          duration: 35,
-          difficulty: "advanced",
-          emoji: "📝",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "calligraphy",
-          title: "Calligraphie arabe",
-          description: "Art de l'écriture arabe",
-          duration: 30,
-          difficulty: "advanced",
-          emoji: "✒️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "dialects",
-          title: "Dialectes arabes",
-          description: "Variations régionales",
-          duration: 32,
-          difficulty: "advanced",
-          emoji: "🗣️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "history",
-          title: "Histoire arabe",
-          description: "Civilisations et empires",
-          duration: 38,
-          difficulty: "advanced",
-          emoji: "🏛️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "philosophy",
-          title: "Philosophie arabe",
-          description: "Pensée et sagesse",
-          duration: 45,
-          difficulty: "advanced",
-          emoji: "🧠",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "medicine",
-          title: "Médecine arabe",
-          description: "Termes médicaux et santé",
-          duration: 28,
-          difficulty: "advanced",
-          emoji: "🏥",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "architecture",
-          title: "Architecture arabe",
-          description: "Bâtiments et monuments",
-          duration: 26,
-          difficulty: "advanced",
-          emoji: "🏗️",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "art",
-          title: "Art arabe",
-          description: "Peinture, sculpture, design",
-          duration: 24,
-          difficulty: "advanced",
-          emoji: "🎨",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-            id: "islamic-values",
-            title: "Valeurs islamiques",
-            description: "Principes et éthique de l'Islam",
-            duration: 22,
-            difficulty: "advanced",
-            emoji: "🕌",
-            isCompleted: false,
-            isLocked: true
-          },
-        {
-          id: "cooking",
-          title: "Cuisine arabe",
-          description: "Recettes et ingrédients",
-          duration: 20,
-          difficulty: "advanced",
-          emoji: "🍳",
-          isCompleted: false,
-          isLocked: true
-        },
-        {
-          id: "final-project",
-          title: "Projet final",
-          description: "Synthèse de tous les acquis",
-          duration: 60,
-          difficulty: "advanced",
-          emoji: "🏆",
-          isCompleted: false,
-          isLocked: true
-        }
-      ]
-    }
-  ];
+];
+
