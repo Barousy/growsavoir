@@ -55,6 +55,17 @@ const subjects = [
     duration: '25-45 min'
   },
   {
+    slug: 'prophete-muhammad',
+    title: 'Le Prophète Muhammad ﷺ',
+    desc: 'Vie complète du Messager d\'Allah et de Ses Compagnons',
+    emoji: '🕌',
+    icon: BookOpenCheck,
+    color: 'from-green-500 to-emerald-600',
+    bgColor: 'bg-emerald-50',
+    borderColor: 'border-emerald-200',
+    lessonCount: 32
+  },
+  {
     slug: 'francais',
     title: 'Français',
     desc: 'Grammaire, orthographe, lecture et expression',

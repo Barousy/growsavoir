@@ -18,6 +18,7 @@ interface Lesson {
 }
 
 const lessonData: Record<string, Lesson> = {
+
   'english-alphabet': {
   id: "english-alphabet",
   title: "The English Alphabet",
@@ -977,6 +978,124 @@ const lessonData: Record<string, Lesson> = {
         options: ['Orange', 'Marron', 'Bleu', 'Kaki'],
         correctAnswer: 2,
         explanation: 'Bleu s\'accorde : bleu/bleue/bleus/bleues.'
+
+     // Leçons d'arabe - Niveau 1
+  'arabe-alphabet': {
+    id: '7',
+    title: 'L\'alphabet arabe',
+    description: 'Apprenez les 28 lettres de l\'alphabet arabe',
+    content: [
+      'Bienvenue dans votre première leçon d\'arabe !',
+      'L\'alphabet arabe compte 28 lettres, contrairement à l\'alphabet français qui en a 26.',
+      'L\'arabe s\'écrit de droite à gauche.',
+      'Voici les premières lettres :',
+      'أ (Alif) - se prononce comme un "a" long',
+      'ب (Ba) - se prononce comme "b" en français',
+      'ت (Ta) - se prononce comme "t" en français',
+      'ث (Tha) - se prononce comme "th" en anglais',
+      'ج (Jim) - se prononce comme "dj" en français',
+      'ح (Ha) - se prononce comme un "h" aspiré',
+      'Chaque lettre a une forme différente selon sa position dans le mot.',
+      'Répétez après moi et n\'ayez pas peur de faire des erreurs !'
+    ],
+    exercises: [
+      {
+        question: 'Combien de lettres y a-t-il dans l\'alphabet arabe ?',
+        options: ['26', '27', '28', '29'],
+        correctAnswer: 2,
+        explanation: 'Exactement ! L\'alphabet arabe compte 28 lettres.'
+      },
+      {
+        question: 'Dans quel sens s\'écrit l\'arabe ?',
+        options: ['De gauche à droite', 'De droite à gauche', 'De haut en bas', 'De bas en haut'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! L\'arabe s\'écrit de droite à gauche.'
+      },
+      {
+        question: 'Comment se prononce la lettre أ (Alif) ?',
+        options: ['Comme "b"', 'Comme "a" long', 'Comme "t"', 'Comme "h"'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! أ (Alif) se prononce comme un "a" long.'
+      }
+    ]
+  },
+  'arabe-greetings': {
+    id: '8',
+    title: 'Salutations de base',
+    description: 'Assalamu alaykum, Marhaba, Ahlan wa sahlan',
+    content: [
+      'Aujourd\'hui, nous allons apprendre les salutations en arabe !',
+      'Les salutations sont très importantes dans la culture islamique.',
+      'Voici les salutations de base :',
+      'السلام عليكم (Assalamu alaykum) = Que la paix soit sur vous',
+      'وعليكم السلام (Wa alaykum assalam) = Et sur vous la paix (réponse)',
+      'مرحبا (Marhaba) = Bonjour (informel)',
+      'أهلا وسهلا (Ahlan wa sahlan) = Bienvenue',
+      'صباح الخير (Sabah al-khayr) = Bonjour (matin)',
+      'مساء الخير (Masa al-khayr) = Bonsoir',
+      'كيف حالك؟ (Kayfa haluk?) = Comment allez-vous ?',
+      'أنا بخير (Ana bi-khayr) = Je vais bien',
+      'الحمد لله (Alhamdulillah) = Louange à Allah'
+    ],
+    exercises: [
+      {
+        question: 'Que signifie "السلام عليكم" (Assalamu alaykum) ?',
+        options: ['Au revoir', 'Que la paix soit sur vous', 'Merci', 'Comment allez-vous ?'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "السلام عليكم" signifie "Que la paix soit sur vous".'
+      },
+      {
+        question: 'Comment répondre à "السلام عليكم" ?',
+        options: ['مرحبا', 'وعليكم السلام', 'أهلا وسهلا', 'صباح الخير'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! On répond "وعليكم السلام" (Wa alaykum assalam).'
+      },
+      {
+        question: 'Que signifie "أهلا وسهلا" (Ahlan wa sahlan) ?',
+        options: ['Au revoir', 'Merci', 'Bienvenue', 'Comment allez-vous ?'],
+        correctAnswer: 2,
+        explanation: 'Exactement ! "أهلا وسهلا" signifie "Bienvenue".'
+      }
+    ]
+  },
+  'arabe-numbers': {
+    id: '9',
+    title: 'Compter de 1 à 10',
+    description: 'Wahid, ithnan, thalatha... jusqu\'à ashara',
+    content: [
+      'Aujourd\'hui, nous allons apprendre à compter en arabe !',
+      'Les nombres sont très utiles dans la vie quotidienne.',
+      'Voici les nombres de 1 à 10 :',
+      '١ = واحد (Wahid) = Un',
+      '٢ = اثنان (Ithnan) = Deux',
+      '٣ = ثلاثة (Thalatha) = Trois',
+      '٤ = أربعة (Arba\'a) = Quatre',
+      '٥ = خمسة (Khamsa) = Cinq',
+      '٦ = ستة (Sitta) = Six',
+      '٧ = سبعة (Sab\'a) = Sept',
+      '٨ = ثمانية (Thamaniya) = Huit',
+      '٩ = تسعة (Tis\'a) = Neuf',
+      '١٠ = عشرة (Ashara) = Dix',
+      'Répétez après moi : Wahid, Ithnan, Thalatha...'
+    ],
+    exercises: [
+      {
+        question: 'Comment dit-on "5" en arabe ?',
+        options: ['أربعة', 'خمسة', 'ستة', 'سبعة'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "5" se dit "خمسة" (Khamsa) en arabe.'
+      },
+      {
+        question: 'Que signifie "عشرة" (Ashara) ?',
+        options: ['Neuf', 'Dix', 'Onze', 'Douze'],
+        correctAnswer: 1,
+        explanation: 'Parfait ! "عشرة" (Ashara) signifie "dix".'
+      },
+      {
+        question: 'Comment dit-on "3" en arabe ?',
+        options: ['اثنان', 'ثلاثة', 'أربعة', 'خمسة'],
+        correctAnswer: 1,
+        explanation: 'Exactement ! "3" se dit "ثلاثة" (Thalatha) en arabe.'
       }
     ]
   },

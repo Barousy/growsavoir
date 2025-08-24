@@ -3,14 +3,17 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
+
 import { Brain, Trophy, ArrowLeft, BookOpenCheck, Heart, Building2 } from 'lucide-react';
 
 export default function ProphetMuhammadSubjectPage() {
   const [expandedLevel, setExpandedLevel] = useState<number | null>(1);
 
+
   const handleLevelToggle = (levelId: number) => {
     setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
+
 
   const handleQuizStart = () => {
     console.log('Démarrage du quiz sur le Prophète Muhammad ﷺ');
@@ -368,12 +371,15 @@ export default function ProphetMuhammadSubjectPage() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full mb-6">
               <BookOpenCheck className="w-10 h-10 text-white" />
+
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
               Le Prophète Muhammad ﷺ
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+
               Découvrez la vie exemplaire du Messager d'Allah et ses enseignements pour l'humanité
+
             </p>
           </div>
 
@@ -383,13 +389,17 @@ export default function ProphetMuhammadSubjectPage() {
               Vue d'ensemble du cours
             </h2>
             <p className="text-lg text-gray-600">
+
               Un programme complet sur la vie du Prophète ﷺ en 4 niveaux, respectant les sources authentiques
+
             </p>
           </div>
 
           {/* Niveaux interactifs */}
           <div className="space-y-6 mb-12">
+
             {prophetLevels.map((level) => (
+
               <LevelCard
                 key={level.id}
                 level={level}
@@ -403,7 +413,9 @@ export default function ProphetMuhammadSubjectPage() {
           <div className="text-center mb-12">
             <button
               onClick={() => setExpandedLevel(1)}
+
               className="bg-emerald-500 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-emerald-600 transition-colors shadow-lg hover:shadow-xl"
+
             >
               Voir toutes les leçons du niveau 1
             </button>
@@ -415,27 +427,33 @@ export default function ProphetMuhammadSubjectPage() {
               Testez vos connaissances
             </h2>
             <p className="text-lg text-gray-600 mb-8">
+
               Prenez notre quiz pour vérifier ce que vous avez appris sur le Prophète ﷺ
+
             </p>
           </div>
 
           {/* Cartes Quiz et Défi */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {/* Quiz */}
+
             <div className="bg-gradient-to-br from-emerald-50 to-green-100 rounded-2xl p-8 border border-emerald-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-full mb-4">
                   <Brain className="w-8 h-8 text-emerald-600" />
+
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Quiz Niveau 1
                 </h3>
                 <p className="text-gray-700 mb-6">
+
                   Testez vos connaissances de base sur le Prophète ﷺ
                 </p>
                 <button
                   onClick={handleQuizStart}
                   className="bg-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors"
+
                 >
                   Commencer le quiz
                 </button>
@@ -443,7 +461,9 @@ export default function ProphetMuhammadSubjectPage() {
             </div>
 
             {/* Défi quotidien */}
+
             <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 border border-green-200 hover:shadow-lg transition-shadow">
+
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
                   <Trophy className="w-8 h-8 text-yellow-600" />
@@ -452,17 +472,20 @@ export default function ProphetMuhammadSubjectPage() {
                   Défi quotidien
                 </h3>
                 <p className="text-gray-700 mb-6">
+
                   Un nouveau défi chaque jour pour approfondir vos connaissances
                 </p>
                 <button
                   onClick={handleDailyChallenge}
                   className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors"
+
                 >
                   Participer
                 </button>
               </div>
             </div>
           </div>
+
 
           {/* Section spéciale sur l'amour du Prophète */}
           <div className="bg-gradient-to-br from-emerald-100 to-green-100 rounded-3xl p-8 mb-12 text-center">
@@ -487,6 +510,7 @@ export default function ProphetMuhammadSubjectPage() {
               </div>
             </div>
           </div>
+
 
           {/* Bouton retour */}
           <div className="text-center">

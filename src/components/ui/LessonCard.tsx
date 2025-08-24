@@ -27,6 +27,7 @@ export default function LessonCard({
   color,
   onStart
 }: LessonCardProps) {
+
   const [isHovered, setIsHovered] = useState(false);
 
   const getDifficultyColor = (difficulty: string) => {
@@ -168,6 +169,7 @@ export default function LessonCard({
           />
         </div>
       )}
+
     </div>
   );
 }

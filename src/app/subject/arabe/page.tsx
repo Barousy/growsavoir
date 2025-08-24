@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Navigation from '@/components/ui/Navigation';
 import Footer from '@/components/ui/Footer';
 import LevelCard from '@/components/ui/LevelCard';
+
 import { Brain, Trophy, ArrowLeft, BookOpen } from 'lucide-react';
 
 export default function ArabicSubjectPage() {
@@ -11,6 +12,7 @@ export default function ArabicSubjectPage() {
   const handleLevelToggle = (levelId: number) => {
     setExpandedLevel(expandedLevel === levelId ? null : levelId);
   };
+
 
   const handleQuizStart = () => {
     console.log('Démarrage du quiz arabe');
@@ -359,9 +361,11 @@ export default function ArabicSubjectPage() {
     }
   ];
 
+
   return (
     <>
       <Navigation />
+
       <main className="pt-16 pb-8 bg-gradient-to-br from-green-50 to-emerald-50 min-h-screen">
         <div className="container mx-auto px-4 py-8">
           {/* Header */}
@@ -374,6 +378,7 @@ export default function ArabicSubjectPage() {
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Découvrez la beauté de la langue arabe avec nos leçons interactives et authentiques
+
             </p>
           </div>
 
@@ -383,7 +388,9 @@ export default function ArabicSubjectPage() {
               Vue d'ensemble du cours
             </h2>
             <p className="text-lg text-gray-600">
+
               Un programme complet d'arabe en 4 niveaux, de débutant à expert, respectant les valeurs islamiques
+
             </p>
           </div>
 
@@ -412,10 +419,12 @@ export default function ArabicSubjectPage() {
           {/* Section Quiz et Défis */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
+
               Testez vos connaissances
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Prenez notre quiz pour vérifier ce que vous avez appris
+
             </p>
           </div>
 
@@ -424,14 +433,18 @@ export default function ArabicSubjectPage() {
             {/* Quiz */}
             <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 border border-green-200 hover:shadow-lg transition-shadow">
               <div className="text-center">
+
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
                   <Brain className="w-8 h-8 text-green-600" />
+
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   Quiz Niveau 1
                 </h3>
                 <p className="text-gray-700 mb-6">
+
                   Testez vos connaissances de base en arabe
+
                 </p>
                 <button
                   onClick={handleQuizStart}
@@ -443,7 +456,9 @@ export default function ArabicSubjectPage() {
             </div>
 
             {/* Défi quotidien */}
+
             <div className="bg-gradient-to-br from-emerald-50 to-emerald-100 rounded-2xl p-8 border border-emerald-200 hover:shadow-lg transition-shadow">
+
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-4">
                   <Trophy className="w-8 h-8 text-yellow-600" />
@@ -452,11 +467,13 @@ export default function ArabicSubjectPage() {
                   Défi quotidien
                 </h3>
                 <p className="text-gray-700 mb-6">
+
                   Un nouveau défi chaque jour pour progresser
                 </p>
                 <button
                   onClick={handleDailyChallenge}
                   className="bg-emerald-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors"
+
                 >
                   Participer
                 </button>
