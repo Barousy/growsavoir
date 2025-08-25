@@ -1309,6 +1309,18 @@ export const activitiesData: Activity[] = [
       "Analyser les preuves",
       "Comparer les avis des savants"
     ],
+    tips: [
+      "Commencez par des textes simples et courts",
+      "Prenez des notes détaillées pendant la lecture",
+      "Utilisez un dictionnaire de termes juridiques",
+      "Comparez plusieurs commentaires pour une compréhension complète"
+    ],
+    assessment: [
+      "L'élève peut-il identifier les règles principales ?",
+      "La compréhension des preuves est-elle claire ?",
+      "La comparaison des avis est-elle pertinente ?",
+      "L'analyse montre-t-elle une réflexion personnelle ?"
+    ],
     ageGroup: "12-14",
     isInteractive: false,
     canBeDoneAlone: true,
@@ -1332,6 +1344,18 @@ export const activitiesData: Activity[] = [
       "Analyser des questions complexes",
       "Argumenter avec des preuves",
       "Développer l'esprit critique"
+    ],
+    tips: [
+      "Préparez vos arguments à l'avance avec des sources fiables",
+      "Structurez votre intervention en introduction, développement, conclusion",
+      "Écoutez attentivement les arguments adverses",
+      "Restez respectueux et ouvert au dialogue"
+    ],
+    assessment: [
+      "L'argumentation est-elle structurée et claire ?",
+      "Les sources sont-elles citées correctement ?",
+      "L'élève écoute-t-il et répond-il aux arguments adverses ?",
+      "Le débat respecte-t-il les règles de courtoisie ?"
     ],
     ageGroup: "15+",
     isInteractive: true,
@@ -1359,6 +1383,18 @@ export const activitiesData: Activity[] = [
       "Identifier les événements clés",
       "Visualiser l'histoire"
     ],
+    tips: [
+      "Commencez par une période courte et bien documentée",
+      "Utilisez des couleurs différentes pour chaque type d'événement",
+      "Ajoutez des images pour rendre la frise plus attrayante",
+      "Vérifiez l'ordre chronologique avant de coller"
+    ],
+    assessment: [
+      "La frise est-elle chronologiquement correcte ?",
+      "Les événements importants sont-ils bien identifiés ?",
+      "Les illustrations sont-elles pertinentes et claires ?",
+      "L'élève peut-il expliquer sa frise oralement ?"
+    ],
     ageGroup: "6-8",
     isInteractive: true,
     canBeDoneAlone: true,
@@ -1382,6 +1418,18 @@ export const activitiesData: Activity[] = [
       "Comprendre l'impact historique",
       "Analyser les motivations",
       "Apprécier les réalisations"
+    ],
+    tips: [
+      "Choisissez un personnage qui vous intéresse personnellement",
+      "Prenez des notes détaillées pendant la lecture",
+      "Recherchez des images et des documents d'époque",
+      "Réfléchissez à l'impact de ce personnage sur l'histoire"
+    ],
+    assessment: [
+      "L'élève comprend-il l'importance historique du personnage ?",
+      "Les motivations sont-elles bien analysées ?",
+      "Le portrait créé reflète-t-il une compréhension approfondie ?",
+      "L'élève peut-il expliquer l'impact de ce personnage ?"
     ],
     ageGroup: "9-11",
     isInteractive: false,
@@ -1407,6 +1455,18 @@ export const activitiesData: Activity[] = [
       "Comprendre les stratégies",
       "Évaluer l'impact historique"
     ],
+    tips: [
+      "Commencez par des batailles bien documentées",
+      "Utilisez des cartes pour visualiser le terrain",
+      "Analysez le contexte politique et social",
+      "Comparez les stratégies des deux camps"
+    ],
+    assessment: [
+      "L'analyse du contexte est-elle complète ?",
+      "Les stratégies sont-elles bien comprises ?",
+      "L'impact historique est-il bien évalué ?",
+      "L'élève peut-il expliquer les causes et conséquences ?"
+    ],
     ageGroup: "12-14",
     isInteractive: false,
     canBeDoneAlone: true,
@@ -1430,6 +1490,18 @@ export const activitiesData: Activity[] = [
       "Conduire une recherche historique",
       "Analyser des sources",
       "Formuler des conclusions"
+    ],
+    tips: [
+      "Formulez une question de recherche claire et précise",
+      "Utilisez des sources primaires et secondaires",
+      "Prenez des notes détaillées et organisées",
+      "Vérifiez la fiabilité de vos sources"
+    ],
+    assessment: [
+      "La question de recherche est-elle claire et précise ?",
+      "Les sources sont-elles variées et fiables ?",
+      "L'analyse des documents est-elle approfondie ?",
+      "Les conclusions sont-elles bien argumentées ?"
     ],
     ageGroup: "15+",
     isInteractive: false,
@@ -1457,6 +1529,18 @@ export const activitiesData: Activity[] = [
       "Comprendre les enseignements",
       "Développer l'empathie"
     ],
+    tips: [
+      "Choisissez des histoires adaptées à l'âge de l'enfant",
+      "Utilisez des images pour illustrer l'histoire",
+      "Posez des questions pour vérifier la compréhension",
+      "Encouragez l'enfant à raconter l'histoire avec ses propres mots"
+    ],
+    assessment: [
+      "L'enfant peut-il identifier les personnages principaux ?",
+      "Le message principal est-il compris ?",
+      "L'enfant peut-il raconter l'histoire de manière cohérente ?",
+      "L'empathie envers les personnages est-elle développée ?"
+    ],
     ageGroup: "6-8",
     isInteractive: true,
     canBeDoneAlone: false,
@@ -1480,6 +1564,18 @@ export const activitiesData: Activity[] = [
       "Comprendre les qualités morales",
       "Identifier des exemples pratiques",
       "Appliquer les enseignements"
+    ],
+    tips: [
+      "Choisissez une qualité à la fois pour une étude approfondie",
+      "Recherchez des exemples concrets dans la vie du Prophète",
+      "Réfléchissez à l'application dans votre vie quotidienne",
+      "Notez vos observations et réflexions"
+    ],
+    assessment: [
+      "L'élève comprend-il la qualité étudiée ?",
+      "Peut-il identifier des exemples concrets ?",
+      "L'application personnelle est-elle réfléchie ?",
+      "L'élève peut-il expliquer l'importance de cette qualité ?"
     ],
     ageGroup: "9-11",
     isInteractive: false,
@@ -1505,6 +1601,18 @@ export const activitiesData: Activity[] = [
       "Identifier les principes pédagogiques",
       "Adapter aux contextes modernes"
     ],
+    tips: [
+      "Commencez par des hadiths courts et clairs",
+      "Analysez une méthode à la fois en détail",
+      "Identifiez les principes universels",
+      "Réfléchissez à l'adaptation moderne"
+    ],
+    assessment: [
+      "L'élève comprend-il les méthodes analysées ?",
+      "Les principes pédagogiques sont-ils bien identifiés ?",
+      "L'adaptation moderne est-elle pertinente ?",
+      "L'élève peut-il expliquer l'efficacité des méthodes ?"
+    ],
     ageGroup: "12-14",
     isInteractive: false,
     canBeDoneAlone: true,
@@ -1528,6 +1636,18 @@ export const activitiesData: Activity[] = [
       "Comprendre le leadership islamique",
       "Analyser les décisions stratégiques",
       "Appliquer les principes modernes"
+    ],
+    tips: [
+      "Étudiez des situations de leadership spécifiques et documentées",
+      "Analysez le contexte de chaque décision",
+      "Identifiez les principes universels du leadership",
+      "Comparez avec les théories modernes de manière objective"
+    ],
+    assessment: [
+      "L'élève comprend-il les situations de leadership analysées ?",
+      "L'analyse des décisions est-elle approfondie ?",
+      "Les principes sont-ils bien identifiés et expliqués ?",
+      "La comparaison avec les théories modernes est-elle pertinente ?"
     ],
     ageGroup: "15+",
     isInteractive: false,
