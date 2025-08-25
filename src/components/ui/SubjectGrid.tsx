@@ -11,7 +11,9 @@ import {
   History, 
   Palette,
   Heart,
-  BookOpenCheck
+  BookOpenCheck,
+  Target,
+  Users
 } from 'lucide-react';
 
 const subjects = [
@@ -133,32 +135,19 @@ const subjects = [
     duration: '25-45 min'
   },
   {
-    slug: 'arts',
-    title: 'Arts & Créativité',
-    desc: 'Dessin, peinture, bricolage et expression artistique',
-    emoji: '🎨',
-    icon: Palette,
-    color: 'from-pink-500 to-pink-600',
+    slug: 'developpement-personnel',
+    title: 'Développement Personnel',
+    desc: 'Conscience de soi, confiance, gestion des émotions et leadership',
+    emoji: '🧠',
+    icon: Heart,
+    color: 'from-pink-500 to-rose-600',
     bgColor: 'bg-pink-50',
     borderColor: 'border-pink-200',
-    lessonCount: 38,
+    lessonCount: 24,
     difficulty: 'Tous niveaux',
-    duration: '30-60 min'
-  },  
-  {
-    slug: 'bien-etre',
-    title: 'Bien-être',
-    desc: 'Méditation, relaxation et développement personnel',
-    emoji: '🧘',
-    icon: Heart,
-    color: 'from-teal-500 to-teal-600',
-    bgColor: 'bg-teal-50',
-    borderColor: 'border-teal-200',
-    lessonCount: 25,
-    difficulty: 'Tous niveaux',
-    duration: '15-30 min'
-  }
-];
+    duration: '20-50 min'
+  },
+  ];
 
 export default function SubjectGrid() {
   return (
@@ -242,6 +231,92 @@ export default function SubjectGrid() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
+        </div>
+
+        {/* Activités Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+              Activités Éducatives
+            </h2>
+            <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+              Des centaines d'activités interactives organisées par matière et niveau de difficulté pour enrichir votre apprentissage
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Activités par matière */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 border-2 border-green-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <BookOpen className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Activités par Matière</h3>
+                <p className="text-slate-600 mb-4">
+                  Découvrez des activités spécifiques à chaque matière, adaptées à votre niveau
+                </p>
+                <div className="text-sm text-slate-500 mb-4">
+                  <div className="flex items-center justify-center space-x-4">
+                    <span>9 matières</span>
+                    <span>•</span>
+                    <span>4 niveaux</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Activités par niveau */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border-2 border-blue-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Activités par Niveau</h3>
+                <p className="text-slate-600 mb-4">
+                  Des activités progressives du niveau débutant au niveau expert
+                </p>
+                <div className="text-sm text-slate-500 mb-4">
+                  <div className="flex items-center justify-center space-x-4">
+                    <span>Débutant</span>
+                    <span>•</span>
+                    <span>Expert</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Activités par âge */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Activités par Âge</h3>
+                <p className="text-slate-600 mb-4">
+                  Des activités adaptées à chaque tranche d'âge de 6 à 15+ ans
+                </p>
+                <div className="text-sm text-slate-500 mb-4">
+                  <div className="flex items-center justify-center space-x-4">
+                    <span>6-8 ans</span>
+                    <span>•</span>
+                    <span>15+ ans</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/activities"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-600 text-white font-semibold rounded-xl hover:from-green-700 hover:to-emerald-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+            >
+              Explorer toutes les activités
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
