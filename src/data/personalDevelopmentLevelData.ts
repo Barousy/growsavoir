@@ -1,9 +1,11 @@
 export interface Level {
   id: number;
   name: string;
+
   description: string;
   lessonCount: number;
   color: string;
+
   lessons: Lesson[];
 }
 
@@ -11,8 +13,10 @@ export interface Lesson {
   id: string;
   title: string;
   description: string;
+
   duration: number;
   difficulty: 'beginner' | 'intermediate' | 'advanced' | 'expert';
+
   emoji: string;
 }
 
@@ -20,56 +24,70 @@ export const personalDevelopmentLevels: Level[] = [
   {
     id: 1,
     name: "Débutant",
+
     description: "Niveau d'introduction aux concepts fondamentaux du développement personnel",
     lessonCount: 6,
     color: "from-blue-500 to-cyan-500",
+
     lessons: [
       {
         id: "developpement-personnel-conscience-soi",
         title: "Conscience de soi",
         description: "Découvrir qui vous êtes et comprendre vos valeurs fondamentales",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "🔍"
       },
       {
         id: "developpement-personnel-confiance-soi",
         title: "Confiance en soi",
         description: "Développer une confiance solide et une estime de soi positive",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "💪"
       },
       {
         id: "developpement-personnel-gestion-emotions",
         title: "Gestion des émotions",
         description: "Apprendre à reconnaître et gérer ses émotions de manière constructive",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "😊"
       },
       {
         id: "developpement-personnel-communication",
         title: "Communication efficace",
         description: "Améliorer ses compétences de communication et d'écoute",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "💬"
       },
       {
         id: "developpement-personnel-objectifs",
         title: "Fixation d'objectifs",
         description: "Apprendre à se fixer des objectifs clairs et réalisables",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "🎯"
       },
       {
         id: "developpement-personnel-organisation",
         title: "Organisation personnelle",
         description: "Développer des méthodes d'organisation efficaces au quotidien",
+
         duration: 20,
         difficulty: "beginner",
+
         emoji: "📋"
       }
     ]
@@ -77,45 +95,56 @@ export const personalDevelopmentLevels: Level[] = [
   {
     id: 2,
     name: "Intermédiaire",
+
     description: "Niveau intermédiaire pour approfondir les compétences de développement personnel",
     lessonCount: 6,
     color: "from-green-500 to-emerald-500",
+
     lessons: [
       {
         id: "developpement-personnel-intelligence-emotionnelle",
         title: "Intelligence émotionnelle",
         description: "Développer sa capacité à comprendre et gérer les émotions",
+
         duration: 30,
         difficulty: "intermediate",
+
         emoji: "🧠"
       },
       {
         id: "developpement-personnel-resilience",
         title: "Résilience et adaptation",
         description: "Renforcer sa capacité à surmonter les difficultés",
+
         duration: 30,
         difficulty: "intermediate",
+
         emoji: "🌱"
       },
       {
         id: "developpement-personnel-leadership",
         title: "Leadership personnel",
         description: "Développer ses qualités de leader et d'influenceur positif",
+
         duration: 30,
         difficulty: "intermediate",
+
         emoji: "⭐"
       },
       {
         id: "developpement-personnel-creativite",
         title: "Créativité et innovation",
+
         description: "Stimuler sa créativité et développer une pensée innovante",
         duration: 30,
         difficulty: "intermediate",
         emoji: "🎨"
+
       },
       {
         id: "developpement-personnel-gestion-temps",
         title: "Gestion du temps",
+
         description: "Optimiser son temps et améliorer sa productivité",
         duration: 30,
         difficulty: "intermediate",
@@ -128,12 +157,14 @@ export const personalDevelopmentLevels: Level[] = [
         duration: 30,
         difficulty: "intermediate",
         emoji: "🤔"
+
       }
     ]
   },
   {
     id: 3,
     name: "Avancé",
+
     description: "Niveau avancé pour maîtriser les techniques complexes de développement personnel",
     lessonCount: 6,
     color: "from-orange-500 to-red-500",
@@ -185,12 +216,14 @@ export const personalDevelopmentLevels: Level[] = [
         duration: 45,
         difficulty: "advanced",
         emoji: "🌟"
+
       }
     ]
   },
   {
     id: 4,
     name: "Expert",
+
     description: "Niveau expert pour devenir un spécialiste du développement personnel",
     lessonCount: 6,
     color: "from-purple-500 to-indigo-500",
@@ -242,6 +275,7 @@ export const personalDevelopmentLevels: Level[] = [
         duration: 60,
         difficulty: "expert",
         emoji: "🌍"
+
       }
     ]
   }
