@@ -2323,7 +2323,263 @@ const lessonData: Record<string, Lesson> = {
      ]
    
    },
-    };
+
+   // ===== LEÇONS DÉVELOPPEMENT PERSONNEL =====
+   'developpement-personnel-conscience-soi': {
+     id: 'developpement-personnel-conscience-soi',
+     title: 'Conscience de soi',
+     description: 'Découvrir qui vous êtes et comprendre vos valeurs fondamentales',
+     content: [
+       'La conscience de soi est la capacité de se connaître profondément, de comprendre ses pensées, ses émotions et ses comportements.',
+       'C\'est le premier pas vers le développement personnel et la croissance.',
+       'Pour développer sa conscience de soi, il faut :',
+       '• Prendre le temps de réfléchir sur soi-même',
+       '• Observer ses réactions dans différentes situations',
+       '• Identifier ses forces et ses faiblesses',
+       '• Comprendre ses valeurs et ses croyances',
+       '• Reconnaître ses émotions et leurs déclencheurs',
+       'La méditation et la réflexion sont des outils puissants pour développer la conscience de soi.',
+       'Tenir un journal personnel peut aider à mieux se comprendre.',
+       'Demander des retours aux autres peut révéler des aspects de nous-mêmes que nous ignorons.',
+       'La conscience de soi permet de faire des choix plus éclairés et d\'agir de manière plus authentique.'
+     ],
+     exercises: [
+       {
+         question: 'Qu\'est-ce que la conscience de soi ?',
+         options: ['Connaître les autres', 'Se connaître profondément', 'Être égoïste', 'Ignorer ses défauts'],
+         correctAnswer: 1,
+         explanation: 'La conscience de soi est la capacité de se connaître profondément.'
+       },
+       {
+         question: 'Quel outil peut aider à développer la conscience de soi ?',
+         options: ['Regarder la télévision', 'Tenir un journal personnel', 'Jouer aux jeux vidéo', 'Faire du shopping'],
+         correctAnswer: 1,
+         explanation: 'Tenir un journal personnel peut aider à mieux se comprendre.'
+       },
+       {
+         question: 'Pourquoi la conscience de soi est-elle importante ?',
+         options: ['Pour impressionner les autres', 'Pour faire des choix éclairés', 'Pour être populaire', 'Pour gagner de l\'argent'],
+         correctAnswer: 1,
+         explanation: 'La conscience de soi permet de faire des choix plus éclairés.'
+       }
+     ]
+   },
+
+   'developpement-personnel-confiance-soi': {
+     id: 'developpement-personnel-confiance-soi',
+     title: 'Confiance en soi',
+     description: 'Développer une confiance solide et une estime de soi positive',
+     content: [
+       'La confiance en soi est la croyance en ses capacités et en sa valeur personnelle.',
+       'Elle se développe progressivement à travers l\'expérience et la pratique.',
+       'Pour renforcer sa confiance en soi :',
+       '• Reconnaître ses réussites, même les plus petites',
+       '• Accepter ses erreurs comme des opportunités d\'apprentissage',
+       '• Se fixer des objectifs réalistes et les atteindre',
+       '• Pratiquer l\'auto-encouragement positif',
+       '• Sortir de sa zone de confort régulièrement',
+       'La confiance en soi n\'est pas de l\'arrogance, mais une juste appréciation de ses capacités.',
+       'Elle permet d\'oser, de prendre des risques calculés et de persévérer face aux difficultés.',
+       'Chaque petit succès renforce la confiance en soi.',
+       'Il est normal d\'avoir des moments de doute, mais la confiance se reconstruit avec la pratique.'
+     ],
+     exercises: [
+       {
+         question: 'Qu\'est-ce que la confiance en soi ?',
+         options: ['Être arrogant', 'Croire en ses capacités', 'Ignorer ses défauts', 'Être parfait'],
+         correctAnswer: 1,
+         explanation: 'La confiance en soi est la croyance en ses capacités et en sa valeur personnelle.'
+       },
+       {
+         question: 'Comment développer sa confiance en soi ?',
+         options: ['Ignorer ses erreurs', 'Reconnaître ses réussites', 'Éviter les défis', 'Se comparer aux autres'],
+         correctAnswer: 1,
+         explanation: 'Reconnaître ses réussites, même les plus petites, aide à développer la confiance en soi.'
+       },
+       {
+         question: 'La confiance en soi permet-elle de :',
+         options: ['Être arrogant', 'Oser et persévérer', 'Ignorer les autres', 'Être parfait'],
+         correctAnswer: 1,
+         explanation: 'La confiance en soi permet d\'oser, de prendre des risques calculés et de persévérer.'
+       }
+     ]
+   },
+
+   'developpement-personnel-gestion-emotions': {
+     id: 'developpement-personnel-gestion-emotions',
+     title: 'Gestion des émotions',
+     description: 'Apprendre à reconnaître et gérer ses émotions de manière constructive',
+     content: [
+       'Les émotions sont des réponses naturelles aux événements de la vie.',
+       'Savoir les reconnaître et les gérer est essentiel pour le bien-être et les relations.',
+       'Les émotions principales sont : joie, tristesse, colère, peur, surprise et dégoût.',
+       'Pour mieux gérer ses émotions :',
+       '• Identifier ce que l\'on ressent',
+       '• Comprendre ce qui déclenche ces émotions',
+       '• Accepter ses émotions sans les juger',
+       '• Exprimer ses émotions de manière appropriée',
+       '• Utiliser des techniques de respiration et de relaxation',
+       'Les émotions sont des messagers qui nous donnent des informations importantes.',
+       'La colère peut indiquer une injustice, la peur un danger, la tristesse une perte.',
+       'Apprendre à écouter ses émotions aide à mieux se comprendre et à prendre de meilleures décisions.',
+       'La gestion des émotions s\'apprend et se pratique tout au long de la vie.'
+     ],
+     exercises: [
+       {
+         question: 'Combien y a-t-il d\'émotions principales ?',
+         options: ['4', '6', '8', '10'],
+         correctAnswer: 1,
+         explanation: 'Il y a 6 émotions principales : joie, tristesse, colère, peur, surprise et dégoût.'
+       },
+       {
+         question: 'Que sont les émotions ?',
+         options: ['Des défauts', 'Des réponses naturelles', 'Des maladies', 'Des erreurs'],
+         correctAnswer: 1,
+         explanation: 'Les émotions sont des réponses naturelles aux événements de la vie.'
+       },
+       {
+         question: 'Comment mieux gérer ses émotions ?',
+         options: ['Les ignorer', 'Les identifier et les comprendre', 'Les réprimer', 'Les nier'],
+         correctAnswer: 1,
+         explanation: 'Identifier et comprendre ses émotions aide à mieux les gérer.'
+       }
+     ]
+   },
+
+   'developpement-personnel-communication': {
+     id: 'developpement-personnel-communication',
+     title: 'Communication efficace',
+     description: 'Améliorer ses compétences de communication et d\'écoute',
+     content: [
+       'La communication est l\'art de transmettre des informations et de comprendre les autres.',
+       'Une communication efficace repose sur plusieurs éléments :',
+       '• L\'écoute active : être vraiment présent et attentif',
+       '• L\'expression claire : dire ce que l\'on pense de manière compréhensible',
+       '• Le langage non-verbal : gestes, expressions faciales, posture',
+       '• L\'empathie : comprendre le point de vue de l\'autre',
+       '• Le respect : traiter l\'autre avec dignité',
+       'Pour bien communiquer, il faut :',
+       '• Regarder la personne dans les yeux',
+       '• Parler clairement et à un rythme approprié',
+       '• Écouter sans interrompre',
+       '• Poser des questions pour clarifier',
+       '• Valider ce que l\'on a compris',
+       'La communication est une compétence qui se développe avec la pratique.',
+       'Elle est essentielle dans tous les domaines de la vie : famille, amis, travail, études.'
+     ],
+     exercises: [
+       {
+         question: 'Qu\'est-ce que l\'écoute active ?',
+         options: ['Parler beaucoup', 'Être présent et attentif', 'Interrompre l\'autre', 'Ignorer l\'autre'],
+         correctAnswer: 1,
+         explanation: 'L\'écoute active consiste à être vraiment présent et attentif à ce que dit l\'autre.'
+       },
+       {
+         question: 'Quel élément est important pour bien communiquer ?',
+         options: ['Parler vite', 'Regarder la personne', 'Interrompre', 'Être distrait'],
+         correctAnswer: 1,
+         explanation: 'Regarder la personne dans les yeux est important pour une bonne communication.'
+       },
+       {
+         question: 'La communication efficace repose sur :',
+         options: ['Parler beaucoup', 'L\'écoute et l\'expression claire', 'Être silencieux', 'Ignorer les autres'],
+         correctAnswer: 1,
+         explanation: 'La communication efficace repose sur l\'écoute et l\'expression claire.'
+       }
+     ]
+   },
+
+   'developpement-personnel-objectifs': {
+     id: 'developpement-personnel-objectifs',
+     title: 'Fixation d\'objectifs',
+     description: 'Apprendre à se fixer des objectifs clairs et réalisables',
+     content: [
+       'Se fixer des objectifs est une étape essentielle pour réussir et progresser dans la vie.',
+       'Un bon objectif doit être SMART :',
+       '• Spécifique : clair et précis',
+       '• Mesurable : on peut vérifier s\'il est atteint',
+       '• Atteignable : réaliste et possible',
+       '• Réaliste : adapté à nos capacités',
+       '• Temporel : avec une échéance définie',
+       'Exemples d\'objectifs SMART :',
+       '• "Lire 20 pages par jour pendant 30 jours" (plutôt que "lire plus")',
+       '• "Faire 30 minutes d\'exercice 3 fois par semaine" (plutôt que "faire du sport")',
+       '• "Apprendre 10 nouveaux mots d\'anglais par semaine" (plutôt que "améliorer mon anglais")',
+       'Pour atteindre ses objectifs :',
+       '• Les diviser en étapes plus petites',
+       '• Suivre ses progrès régulièrement',
+       '• Célébrer les petites victoires',
+       '• Ajuster si nécessaire',
+       '• Rester motivé en se rappelant pourquoi c\'est important'
+     ],
+     exercises: [
+       {
+         question: 'Que signifie l\'acronyme SMART ?',
+         options: ['Simple, Moyen, Amusant, Rapide, Technique', 'Spécifique, Mesurable, Atteignable, Réaliste, Temporel', 'Sport, Musique, Art, Religion, Théâtre'],
+         correctAnswer: 1,
+         explanation: 'SMART signifie Spécifique, Mesurable, Atteignable, Réaliste, Temporel.'
+       },
+       {
+         question: 'Un bon objectif doit être :',
+         options: ['Vague et général', 'Spécifique et mesurable', 'Impossible à atteindre', 'Sans échéance'],
+         correctAnswer: 1,
+         explanation: 'Un bon objectif doit être spécifique et mesurable.'
+       },
+       {
+         question: 'Comment atteindre ses objectifs ?',
+         options: ['Les ignorer', 'Les diviser en étapes', 'Attendre qu\'ils se réalisent', 'Les oublier'],
+         correctAnswer: 1,
+         explanation: 'Diviser ses objectifs en étapes plus petites aide à les atteindre.'
+       }
+     ]
+   },
+
+   'developpement-personnel-organisation': {
+     id: 'developpement-personnel-organisation',
+     title: 'Organisation personnelle',
+     description: 'Développer des méthodes d\'organisation efficaces au quotidien',
+     content: [
+       'L\'organisation personnelle est la capacité de gérer son temps, son espace et ses priorités.',
+       'Elle permet d\'être plus efficace et moins stressé.',
+       'Les principes de base de l\'organisation :',
+       '• Planifier : prévoir ce que l\'on va faire',
+       '• Prioriser : identifier ce qui est important et urgent',
+       '• Structurer : organiser son espace et son temps',
+       '• Simplifier : éliminer le superflu',
+       '• Maintenir : entretenir son organisation',
+       'Outils d\'organisation utiles :',
+       '• Agenda ou calendrier pour planifier',
+       '• Liste de tâches pour ne rien oublier',
+       '• Espace de travail organisé et rangé',
+       '• Système de classement pour les documents',
+       '• Rituels quotidiens pour maintenir l\'ordre',
+       'L\'organisation libère l\'esprit pour se concentrer sur l\'essentiel.',
+       'Elle réduit le stress et augmente la productivité.',
+       'Chaque personne peut développer sa propre méthode d\'organisation.',
+       'L\'important est de commencer petit et d\'être constant.'
+     ],
+     exercises: [
+       {
+         question: 'Qu\'est-ce que l\'organisation personnelle ?',
+         options: ['Être désordonné', 'Gérer son temps et son espace', 'Ignorer ses responsabilités', 'Être stressé'],
+         correctAnswer: 1,
+         explanation: 'L\'organisation personnelle est la capacité de gérer son temps, son espace et ses priorités.'
+       },
+       {
+         question: 'Quel est le premier principe de l\'organisation ?',
+         options: ['Planifier', 'Ignorer', 'Attendre', 'Rêver'],
+         correctAnswer: 0,
+         explanation: 'Le premier principe est de planifier ce que l\'on va faire.'
+       },
+       {
+         question: 'L\'organisation permet de :',
+         options: ['Être plus stressé', 'Être plus efficace', 'Être plus désordonné', 'Ignorer ses responsabilités'],
+         correctAnswer: 1,
+         explanation: 'L\'organisation permet d\'être plus efficace et moins stressé.'
+       }
+     ]
+   }
+   };
 
 export default function LessonPage() {
   const params = useParams();
