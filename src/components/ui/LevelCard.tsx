@@ -29,13 +29,20 @@ interface LevelCardProps {
 }
 
 export default function LevelCard({ level, isExpanded, onToggle }: LevelCardProps) {
+  // Debug: afficher les informations du niveau
+  console.log('LevelCard render:', {
+    levelId: level.id,
+    levelName: level.name,
+    isExpanded,
+    lessonsCount: level.lessons.length,
+    lessons: level.lessons
+  });
+
   const difficultyColors = {
     beginner: 'bg-green-100 text-green-800',
     intermediate: 'bg-yellow-100 text-yellow-800',
-
     advanced: 'bg-red-100 text-red-800',
     expert: 'bg-purple-100 text-purple-800'
-
   };
 
   const difficultyLabels = {
@@ -83,49 +90,51 @@ export default function LevelCard({ level, isExpanded, onToggle }: LevelCardProp
 
       {/* Contenu des leçons (visible si étendu) */}
       {isExpanded && (
-
         <div className="p-6 bg-gray-50">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {level.lessons.map((lesson) => (
-              <div
-                key={lesson.id}
-                className="bg-white rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow cursor-pointer"
-                onClick={() => {
-                  // Navigation vers la leçon
-                  if (!lesson.isLocked) {
-                    window.location.href = `/lesson/${lesson.id}`;
-                  }
-                }}
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-2xl">{lesson.emoji}</span>
-                  {lesson.isCompleted && (
-                    <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  )}
+            {level.lessons.map((lesson, index) => {
+              console.log(`Rendu de la leçon ${index}:`, lesson);
+              return (
+                <div
+                  key={lesson.id}
+                  className="bg-white rounded-lg p-4 border border-gray-200 hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={() => {
+                    // Navigation vers la leçon
+                    if (!lesson.isLocked) {
+                      window.location.href = `/lesson/${lesson.id}`;
+                    }
+                  }}
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-2xl">{lesson.emoji}</span>
+                    {lesson.isCompleted && (
+                      <Star className="w-5 h-5 text-yellow-500 fill-current" />
+                    )}
+                    {lesson.isLocked && (
+                      <div className="w-5 h-5 text-gray-400">
+                        🔒
+                      </div>
+                    )}
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-2">{lesson.title}</h4>
+                  <p className="text-sm text-gray-600 mb-3">{lesson.description}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Clock className="w-4 h-4 mr-1" />
+                      {lesson.duration} min
+                    </div>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${difficultyColors[lesson.difficulty]}`}>
+                      {difficultyLabels[lesson.difficulty]}
+                    </span>
+                  </div>
                   {lesson.isLocked && (
-                    <div className="w-5 h-5 text-gray-400">
-                      🔒
+                    <div className="mt-3 text-center">
+                      <span className="text-xs text-gray-500">Niveau {level.id - 1} requis</span>
                     </div>
                   )}
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">{lesson.title}</h4>
-                <p className="text-sm text-gray-600 mb-3">{lesson.description}</p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-gray-500">
-                    <Clock className="w-4 h-4 mr-1" />
-                    {lesson.duration} min
-                  </div>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${difficultyColors[lesson.difficulty]}`}>
-                    {difficultyLabels[lesson.difficulty]}
-                  </span>
-                </div>
-                {lesson.isLocked && (
-                  <div className="mt-3 text-center">
-                    <span className="text-xs text-gray-500">Niveau {level.id - 1} requis</span>
-                  </div>
-                )}
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
