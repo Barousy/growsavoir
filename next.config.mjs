@@ -43,10 +43,11 @@ const csp = [
 /**
  * Redirections permanentes depuis les URL de l'ancien site.
  *
- * Elles sont présentes dans l'index de Google : sans redirection, chacune
- * deviendrait une 404 et le peu d'autorité accumulée serait perdu. Les
- * matières passent des slugs anglais aux slugs français, plus pertinents pour
- * un site francophone.
+ * Le site précédent n'a jamais été lancé, mais il a été déployé et exploré :
+ * quelques-unes de ces adresses sont connues des moteurs. Les rediriger coûte
+ * une ligne chacune et évite des 404 inutiles ; elles pourront disparaître le
+ * jour où le domaine repart de zéro. Au passage, les matières passent des
+ * slugs anglais aux slugs français, plus pertinents pour un site francophone.
  */
 const SUBJECT_SLUGS = {
   arabic: 'arabe',
