@@ -2,11 +2,11 @@
   "name": "growsavoir",
   "version": "1.0.0",
   "private": true,
-  "description": "Plateforme éducative GrowSavoir — rendu serveur, console d'administration, contenu et utilisateurs gérables.",
+  "description": "Plateforme éducative GrowSavoir — variante MySQL/MariaDB pour hébergement mutualisé (o2switch).",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
-    "start": "next start",
+    "start": "node server.js",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
@@ -14,7 +14,8 @@
     "db:seed": "node --experimental-strip-types prisma/seed.ts",
     "passe": "node --experimental-strip-types scripts/set-password.ts",
     "purge": "node --experimental-strip-types scripts/purge.ts",
-    "db:migrate": "prisma migrate deploy"
+    "db:migrate": "prisma migrate deploy",
+    "start:next": "next start"
   },
   "prisma": {
     "seed": "node --experimental-strip-types prisma/seed.ts"

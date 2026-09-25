@@ -1,15 +1,21 @@
-// Modèle de données GrowSavoir.
+// Modèle de données GrowSavoir — variante MySQL / MariaDB.
 //
-// PostgreSQL, comme l'infrastructure existante. Tout hébergeur gérant
-// Postgres convient — Neon, Supabase, Railway — et l'URL se règle par la
-// seule variable DATABASE_URL. Voir le README pour la mise en production.
+// Cette branche vise un hébergement mutualisé o2switch. Leur PostgreSQL est en
+// 9.6 et ils annoncent eux-mêmes qu'ils cesseront probablement de le proposer ;
+// MariaDB, en revanche, y est pleinement supporté. L'URL se règle par la seule
+// variable DATABASE_URL. Voir docs/o2switch.md pour la mise en production.
+//
+// Les types @db.Text et @db.LongText ne sont pas décoratifs : sur MySQL, Prisma
+// traduit un `String` par VARCHAR(191), alors que le corps d'une leçon fait
+// plusieurs milliers de caractères (4 259 pour la plus longue aujourd'hui).
+// Sans ces annotations, l'insertion échoue.
 
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -18,7 +24,7 @@ model Subject {
   id          String   @id @default(cuid())
   slug        String   @unique
   name        String
-  description String   @default("")
+  description String   @default("") @db.Text
   /// Emoji ou nom d'icône affiché sur la carte du catalogue.
   icon        String   @default("📘")
   /// Teinte de la matière, en hexadécimal, pour les cartes et les bandeaux.
@@ -38,7 +44,7 @@ model Lesson {
   id                String   @id @default(cuid())
   slug              String   @unique
   title             String
-  summary           String   @default("")
+  summary           String   @default("") @db.Text
   level             String   @default("n1-fondamentaux")
   ageGroup          String   @default("6-8 ans")
   estimatedMinutes  Int      @default(20)
@@ -46,12 +52,14 @@ model Lesson {
   published         Boolean  @default(true)
   /// Réservée aux comptes connectés.
   locked            Boolean  @default(false)
-  learningObjectives String  @default("[]")
-  keywords          String   @default("[]")
-  sources           String   @default("[]")
-  prerequisites     String   @default("[]")
-  body              String   @default("{}")
-  assessment        String   @default("{}")
+  learningObjectives String  @default("[]") @db.Text
+  keywords          String   @default("[]") @db.Text
+  sources           String   @default("[]") @db.Text
+  prerequisites     String   @default("[]") @db.Text
+  /// LongText plutôt que Text : la console n'impose aucune limite de taille à
+  /// une leçon, et une leçon très fournie dépasserait les 64 Ko d'un TEXT.
+  body              String   @default("{}") @db.LongText
+  assessment        String   @default("{}") @db.LongText
   author            String   @default("GrowSavoir")
   subject           Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
   subjectId         String
@@ -110,7 +118,7 @@ model Progress {
 model Feature {
   key         String   @id
   label       String
-  description String   @default("")
+  description String   @default("") @db.Text
   enabled     Boolean  @default(false)
   updatedAt   DateTime @updatedAt
 }
@@ -121,9 +129,11 @@ model Feature {
 model Message {
   id        String   @id @default(cuid())
   name      String
-  email     String
-  subject   String   @default("")
-  body      String
+  /// Non indexée : elle peut donc dépasser les 191 caractères d'un VARCHAR par
+  /// défaut sans poser de problème de longueur de clé.
+  email     String   @db.VarChar(255)
+  subject   String   @default("") @db.Text
+  body      String   @db.Text
   /// Marqué au lieu d'être jeté : un filtre anti-robot ne doit pas perdre le
   /// message d'une vraie personne.
   suspect   Boolean  @default(false)
@@ -140,18 +150,18 @@ model Activity {
   id                 String   @id @default(cuid())
   slug               String   @unique
   title              String
-  description        String   @default("")
+  description        String   @default("") @db.Text
   /// Durée annoncée, telle qu'elle est écrite : « 20 min », « 1 h ».
   duration           String   @default("")
   /// beginner | intermediate | advanced | expert
   difficulty         String   @default("beginner")
   /// Tranche d'âge visée : les activités vont au-delà des 6-8 ans des leçons.
   ageGroup           String   @default("6-8")
-  materials          String   @default("[]")
-  instructions       String   @default("[]")
-  learningObjectives String   @default("[]")
-  tips               String   @default("[]")
-  assessment         String   @default("[]")
+  materials          String   @default("[]") @db.Text
+  instructions       String   @default("[]") @db.Text
+  learningObjectives String   @default("[]") @db.Text
+  tips               String   @default("[]") @db.Text
+  assessment         String   @default("[]") @db.Text
   interactive        Boolean  @default(true)
   alone              Boolean  @default(false)
   supervised         Boolean  @default(false)

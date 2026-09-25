@@ -28,12 +28,15 @@ export default async function Lecons({ searchParams }: Search) {
   const creating = one(params.nouvelle) === '1';
 
   const where: Prisma.LessonWhereInput = {
+    // Pas de `mode: 'insensitive'` ici : c'est une option PostgreSQL, que
+    // Prisma refuse sur MySQL. La collation utf8mb4_unicode_ci des tables rend
+    // déjà la comparaison insensible à la casse et aux accents.
     ...(query
       ? {
           OR: [
-            { title: { contains: query, mode: 'insensitive' as const } },
-            { slug: { contains: query, mode: 'insensitive' as const } },
-            { summary: { contains: query, mode: 'insensitive' as const } },
+            { title: { contains: query } },
+            { slug: { contains: query } },
+            { summary: { contains: query } },
           ],
         }
       : {}),

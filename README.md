@@ -7,6 +7,14 @@ comptes et les fonctionnalités.
 Cette version est une reconstruction. Elle reprend le contenu du site précédent
 et change la façon dont il est servi.
 
+> **Cette branche est la variante MySQL / MariaDB**, destinée à un hébergement
+> mutualisé o2switch. La branche `claude/refonte-growsavoir` est la même
+> application sur PostgreSQL, pour un hébergement de type Vercel, Netlify ou
+> Neon. Les deux ne diffèrent que par cinq points, listés plus bas : tout
+> développement se fait sur la branche PostgreSQL, puis se reporte ici.
+>
+> Mise en ligne chez o2switch : **[docs/o2switch.md](docs/o2switch.md)**.
+
 ---
 
 ## Pourquoi une reconstruction
@@ -36,7 +44,7 @@ le reste en découle.
 ## Ce que c’est, techniquement
 
 - **Next.js 15** (App Router), **React 19**, **TypeScript**.
-- **PostgreSQL** via **Prisma**. Une seule variable, `DATABASE_URL`.
+- **MySQL / MariaDB** via **Prisma**. Une seule variable, `DATABASE_URL`.
 - **143 pages de contenu générées au build** (11 matières, 132 leçons) plus les
   43 activités : elles existent en HTML avant la première visite.
 - **Aucune dépendance d’authentification** : `scrypt` et `timingSafeEqual` de la
@@ -65,7 +73,14 @@ scripts/                   mot de passe, purge planifiable
 ## Démarrer en local
 
 Node ≥ 22.6 (les scripts importent des fichiers `.ts` directement) et un
-PostgreSQL accessible.
+MySQL 8+ ou MariaDB 10.4+ accessible. En local :
+
+```sql
+CREATE DATABASE growsavoir CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+La collation compte : c'est elle qui rend la recherche de la console insensible
+à la casse et aux accents.
 
 ```bash
 npm install
@@ -151,26 +166,27 @@ nom, parce que cela emporte ses leçons.
 
 ## Mise en production
 
-### 1. Une base PostgreSQL
+### 1. Une base MySQL ou MariaDB
 
-N’importe quel fournisseur gérant Postgres : Neon, Supabase, Railway, ou une
-base gérée chez un hébergeur européen. Récupérer l’URL de connexion et la mettre
-dans `DATABASE_URL`.
+Sur o2switch, elle se crée depuis cPanel en trois clics ; la procédure complète
+est dans [docs/o2switch.md](docs/o2switch.md). Ailleurs, n’importe quel MySQL 8+
+ou MariaDB 10.4+ convient. Récupérer l’URL de connexion et la mettre dans
+`DATABASE_URL`.
 
 ### 2. L’application
 
 Le site a besoin d’un serveur Node : il rend des pages à la demande (console,
 connexion, contact) en plus des pages générées.
 
-- **Vercel** — support natif de Next.js, rien à configurer au-delà des variables
-  d’environnement.
-- **Netlify** — l’hébergeur actuel du site ; le runtime Next.js officiel y
-  fonctionne. Supprimer l’ancien `netlify.toml` s’il reste.
-- **Un serveur à soi** (VPS, Docker) — `npm run build` puis `npm start`
-  derrière un reverse proxy.
+- **o2switch** — outil cPanel « Setup Node.js App » (Phusion Passenger), Node 22
+  ou 24. Procédure détaillée : [docs/o2switch.md](docs/o2switch.md).
+- **Un serveur à soi** (VPS, Docker) — `npm run build` puis `npm start` derrière
+  un reverse proxy.
+- **Vercel / Netlify** — possible, mais la base MySQL devra être hébergée
+  ailleurs ; dans ce cas la branche PostgreSQL est mieux adaptée.
 
-L’hébergement mutualisé classique (GoDaddy, OVH mutualisé) ne convient pas : il
-sert des fichiers PHP ou statiques, pas une application Node.
+Un mutualisé sans Node (GoDaddy, OVH mutualisé classique) ne convient pas : il
+sert du PHP ou des fichiers statiques, pas une application Node.
 
 Variables à définir : `DATABASE_URL`, `SITE_URL`, et les `LEGAL_*` (voir
 `.env.example`).
@@ -200,6 +216,27 @@ réservé au développement local.
    durée annoncée doit être appliquée).
 
 ---
+
+## Différences avec la branche PostgreSQL
+
+Cinq points, et rien d'autre. Un correctif écrit sur `claude/refonte-growsavoir`
+se reporte ici par `git cherry-pick` sans conflit, sauf s'il touche à l'un d'eux.
+
+1. **`prisma/schema.prisma`** : `provider = "mysql"`, et les champs longs
+   annotés `@db.Text` / `@db.LongText`. Sur MySQL, Prisma traduit un `String`
+   par `VARCHAR(191)` : sans ces annotations, l'insertion d'une leçon échoue —
+   la plus longue fait aujourd'hui 4 180 caractères.
+2. **`prisma/migrations/`** : migration initiale régénérée en SQL MySQL, tables
+   en `utf8mb4` / `utf8mb4_unicode_ci` (l'arabe, les emojis et les accents
+   passent sans perte — vérifié).
+3. **`src/app/admin/lecons/page.tsx`** : `mode: 'insensitive'` retiré, car
+   c'est une option PostgreSQL que Prisma refuse sur MySQL. La collation rend
+   déjà la recherche insensible à la casse — et, en prime, aux accents :
+   « harakat » trouve « Harakât », ce que la version PostgreSQL ne fait pas.
+4. **`server.js`** : fichier de démarrage pour Passenger, qui charge un script
+   au lieu de lancer `next start`. `npm start` l'utilise.
+5. **`docs/o2switch.md`**, `.env.example` et ce README : la documentation de
+   déploiement.
 
 ## Ce qui reste à faire
 
