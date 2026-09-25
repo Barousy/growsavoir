@@ -1,0 +1,47 @@
+{
+  "id": "sci-simple-experiments",
+  "title": "Expériences scientifiques guidées",
+  "description": "Développer la démarche scientifique à travers la conduite d'expériences simples et l'observation méthodique des phénomènes",
+  "duration": "35 min",
+  "difficulty": "intermediate",
+  "subject": "sciences",
+  "materials": [
+    "Matériaux d'expérience spécifiques selon le protocole",
+    "Protocole expérimental détaillé avec schémas",
+    "Carnet de laboratoire avec grilles d'observation",
+    "Équipements de sécurité (gants, lunettes si nécessaire)",
+    "Instruments de mesure (thermomètre, balance, chronomètre)",
+    "Fiches de résultats et graphiques",
+    "Matériel de nettoyage et rangement",
+    "Fiches de sécurité et consignes"
+  ],
+  "instructions": [
+    "Lecture et compréhension du protocole (8 min) : Lisez attentivement le protocole expérimental. Identifiez les objectifs et les étapes. Vérifiez que vous avez tout le matériel nécessaire.",
+    "Préparation et sécurité (10 min) : Préparez votre espace de travail. Organisez le matériel selon l'ordre d'utilisation. Vérifiez les consignes de sécurité. Préparez vos outils de mesure.",
+    "Conduite de l'expérience (12 min) : Suivez le protocole étape par étape. Mesurez et notez chaque observation. Respectez les temps et les quantités indiqués. Soyez attentif aux changements.",
+    "Documentation et analyse (5 min) : Notez vos observations détaillées dans le carnet. Dessinez ou photographiez les résultats. Formulez des hypothèses sur les phénomènes observés."
+  ],
+  "learningObjectives": [
+    "Suivre rigoureusement un protocole expérimental étape par étape",
+    "Observer méthodiquement des phénomènes scientifiques avec précision",
+    "Formuler des hypothèses basées sur les observations réalisées",
+    "Utiliser correctement les instruments de mesure et les outils scientifiques",
+    "Développer la rigueur et la méthode dans l'approche expérimentale"
+  ],
+  "tips": [
+    "Lisez le protocole plusieurs fois avant de commencer",
+    "Notez tout, même ce qui semble évident",
+    "Respectez scrupuleusement les consignes de sécurité",
+    "Prenez le temps d'observer chaque étape"
+  ],
+  "assessment": [
+    "Le protocole est-il suivi correctement ?",
+    "Les observations sont-elles détaillées et précises ?",
+    "L'élève formule-t-il des hypothèses pertinentes ?",
+    "La sécurité est-elle respectée à chaque étape ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

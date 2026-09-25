@@ -1,0 +1,41 @@
+{
+  "id": "his-timeline-creation",
+  "title": "Création de frise chronologique",
+  "description": "Créer une frise de l'histoire islamique",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "histoire-islam",
+  "materials": [
+    "Papier",
+    "Stylos",
+    "Images",
+    "Colle"
+  ],
+  "instructions": [
+    "Choisissez une période historique",
+    "Identifiez les événements importants",
+    "Placez-les sur la frise",
+    "Ajoutez des illustrations"
+  ],
+  "learningObjectives": [
+    "Comprendre la chronologie",
+    "Identifier les événements clés",
+    "Visualiser l'histoire"
+  ],
+  "tips": [
+    "Commencez par une période courte et bien documentée",
+    "Utilisez des couleurs différentes pour chaque type d'événement",
+    "Ajoutez des images pour rendre la frise plus attrayante",
+    "Vérifiez l'ordre chronologique avant de coller"
+  ],
+  "assessment": [
+    "La frise est-elle chronologiquement correcte ?",
+    "Les événements importants sont-ils bien identifiés ?",
+    "Les illustrations sont-elles pertinentes et claires ?",
+    "L'élève peut-il expliquer sa frise oralement ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

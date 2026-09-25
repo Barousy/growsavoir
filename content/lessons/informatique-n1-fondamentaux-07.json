@@ -1,0 +1,92 @@
+{
+  "slug": "informatique-n1-fondamentaux-07",
+  "title": "Conditions simples — si … alors … (débranché)",
+  "summary": "Introduire la logique conditionnelle : SI carte rouge ALORS stop, SINON avance ; choisir une action selon une situation.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Comprendre SI/ALORS",
+    "Choisir une action selon une condition",
+    "Combiner condition + séquence"
+  ],
+  "keywords": [
+    "condition",
+    "si alors",
+    "logique"
+  ],
+  "sources": [
+    {
+      "title": "code.org — If/Else (débutants)",
+      "url": "https://code.org",
+      "type": "website",
+      "description": "Cours visuels"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Décider selon la situation",
+      "content": "**SI** carte **rouge** → **stop** ; **SINON** → **avance**. "
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Feu tricolore",
+        "content": "Rouge = stop ; Vert = avance ; Orange = avance **doucement**."
+      },
+      {
+        "type": "exercise",
+        "title": "Labyrinthe",
+        "content": "**SI** mur **ALORS** tourne à gauche **SINON** avance."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Condition = **choisir** une action."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais utiliser une condition simple.",
+      "keyTakeaways": [
+        "Si/Alors"
+      ],
+      "nextSteps": [
+        "Passer au **codage par blocs** (leçon 8)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "SI rouge ALORS…",
+        "type": "multiple-choice",
+        "options": [
+          "Avancer",
+          "Stop"
+        ],
+        "correctAnswer": "Stop",
+        "explanation": "Règle du feu",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "conditions"
+    ]
+  }
+}

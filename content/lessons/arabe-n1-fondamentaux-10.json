@@ -1,0 +1,168 @@
+{
+  "slug": "arabe-n1-fondamentaux-10",
+  "title": "Lecture guidée — thèmes : famille, école, objets",
+  "summary": "Lire des mots et mini-phrases autour de la famille, de l’école et des objets en réutilisant toutes les règles N1.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06",
+    "arabe-n1-fondamentaux-07",
+    "arabe-n1-fondamentaux-08",
+    "arabe-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Lire couramment des mots thématiques avec harakât, madd, sukûn, shadda, tanwîn",
+    "Appliquer correctement ال (solaires/lunaires) dans des mini-phrases",
+    "Renforcer la compréhension globale par de courtes lectures"
+  ],
+  "keywords": [
+    "arabe",
+    "lecture",
+    "famille",
+    "école",
+    "objets",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Harakât — rappels utiles pour la lecture",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Diacritiques et lecture syllabique"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Objectif : lire des mots du quotidien",
+      "content": "\nOn réutilise **toutes les bases N1** dans des thèmes proches de l’enfant :  \n**famille**, **école**, **objets**. Lis **lentement**, repère les **signes**, puis relis **plus vite**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Vocabulaire — Famille 👨‍👩‍👧‍👦",
+        "content": "\n- **أَبٌ** (*abun*) — **أُمٌّ** (*ummun*, shadda) — **أَخٌ** (*akhun*) — **أُخْتٌ** (*ukhtun*)  \n- **جَدٌّ** (*jaddun*, shadda) — **جَدَّةٌ** (*jaddatun*, shadda) — **أُسْرَةٌ** (*usratun*)  \n- **وَلَدٌ** (*waladun*) — **بِنْتٌ** (*bintun*) — **طِفْلٌ** (*tiflun*)\n        "
+      },
+      {
+        "type": "concept",
+        "title": "Vocabulaire — École 🏫",
+        "content": "\n- **مُعَلِّمٌ** (*mu‘allimun*, shadda) — **تِلْمِيذٌ** (*tilmīdhun*)  \n- **مَدْرَسَةٌ** (*madrasatun*) — **فَصْلٌ** (*faṣlun*) — **سَبُّورَةٌ** (*sabbūratun*, shadda + madd)  \n- **كِتَابٌ** (*kitābun*) — **قَلَمٌ** (*qalamun*) — **دَفْتَرٌ** (*daftarun*) — **مَكْتَبٌ** (*maktabun*)\n        "
+      },
+      {
+        "type": "concept",
+        "title": "Vocabulaire — Objets 🧰",
+        "content": "\n- **بَابٌ** (*bābun*, ā) — **نُورٌ** (*nūrun*, ū) — **مِفْتَاحٌ** (*miftāḥun*, sukûn + ā)  \n- **سَاعَةٌ** (*sā‘atun*, ā) — **كُرْسِيٌّ** (*kursiyyun*, yّ) — **مِصْبَاحٌ** (*miṣbāḥun*)\n        "
+      },
+      {
+        "type": "example",
+        "title": "Mini-phrases (solaires / lunaires, shadda, tanwîn)",
+        "content": "\n- **الأُمُّ فِي البَيْتِ.** → *al-ummu fī al-bayti.*  \n- **الأَبُ يَقْرَأُ الكِتَابَ.** → *al-abu yaqra’u al-kitāba.*  \n- **المُعَلِّمُ فِي الفَصْلِ.** → *al-mu‘allimu fī al-faṣli.*  \n- **السَّبُّورَةُ كَبِيرَةٌ.** → *as-sabbūratu kabīratun.* (solaire + shadda)  \n- **القَلَمُ عَلَى المَكْتَبِ.** → *al-qalamu ‘alā al-maktabi.*\n        ",
+        "examples": [
+          {
+            "code": "السَّبُّورَةُ كَبِيرَةٌ",
+            "title": "as-sabbūratu kabīratun",
+            "description": "Lettre solaire + shadda",
+            "explanation": "Assimilation du lâm dans **ال**."
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Vrai / Faux (lecture & règle)",
+        "content": "\n- [x] **المُعَلِّمُ** contient une **shadda**.  \n- [ ] **السَّبُّورَة** se lit **al-sabbūra** (on prononce le **l**).  \n- [x] **كِتَابٌ** a un **tanwîn**.  \n- [x] **القَلَم** commence par une **lettre lunaire**.\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée (progression)",
+        "content": "\n**1) Mots isolés (lis puis relis vite) :**  \n**أُمٌّ** — **جَدٌّ** — **مُعَلِّمٌ** — **فَصْلٌ** — **كِتَابٌ** — **مِفْتَاحٌ** — **كُرْسِيٌّ**\n\n**2) Groupes nominaux :**  \n**القَلَمُ الجَدِيدُ** — **الكِتَابُ المُفِيدُ** — **المَكْتَبُ النَّظِيفُ**\n\n**3) Phrases courtes :**  \n- **الأَبُ فِي المَدْرَسَةِ.**  \n- **البِنْتُ تَقْرَأُ الكِتَابَ.**  \n- **نُورٌ فِي الفَصْلِ.**\n\n> Astuce : repère d’abord **shadda / tanwîn / madd / sukûn / ال** puis lis **d’un seul souffle**."
+      },
+      {
+        "type": "summary",
+        "title": "Récapitulatif",
+        "content": "\n- Lecture de mots fréquents (famille/école/objets)  \n- Application de **toutes** les règles N1 en contexte  \n- Phrases simples pour consolider la fluidité"
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu lis maintenant des mots et phrases **du quotidien** avec les règles N1.  \nOn continue avec plus de lecture et de petites compréhensions.",
+      "keyTakeaways": [
+        "Repérer les signes avant de lire",
+        "Appliquer solaire/lunaire sur ال",
+        "Conserver des voyelles courtes… courtes"
+      ],
+      "nextSteps": [
+        "Relire chaque liste 2 fois par jour",
+        "Passer à la leçon 11 : lecture guidée — petites scènes"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakât — révisions",
+          "description": "Rappels de base pour la lecture",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **السَّبُّورَة**, le lâm de **ال** est…",
+        "type": "multiple-choice",
+        "options": [
+          "prononcé",
+          "assimilé (non prononcé) avec shadda"
+        ],
+        "correctAnswer": "assimilé (non prononcé) avec shadda",
+        "explanation": "Solaire **س** → assimilation + shadda.",
+        "points": 10
+      },
+      {
+        "question": "Le mot **مُعَلِّمٌ** contient…",
+        "type": "multiple-choice",
+        "options": [
+          "une voyelle longue uniquement",
+          "une shadda",
+          "un sukûn uniquement",
+          "rien de spécial"
+        ],
+        "correctAnswer": "une shadda",
+        "explanation": "Sur **لّ** (lām doublé).",
+        "points": 10
+      },
+      {
+        "question": "Choisis la lecture correcte : **القَلَمُ عَلَى المَكْتَبِ**",
+        "type": "multiple-choice",
+        "options": [
+          "al-qalamu ‘alā al-maktabi",
+          "al-qalamu ‘alā l-maktabi",
+          "al-qalamu ‘alā am-maktabi"
+        ],
+        "correctAnswer": "al-qalamu ‘alā al-maktabi",
+        "explanation": "Lunaire **ق** → lâm prononcé.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.904Z",
+    "updatedAt": "2025-08-30T06:37:37.904Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "lecture",
+      "famille",
+      "école",
+      "objets"
+    ]
+  }
+}

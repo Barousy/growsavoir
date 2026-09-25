@@ -1,0 +1,96 @@
+{
+  "slug": "sira-n1-fondamentaux-02",
+  "title": "Naissance et enfance — Amina, ʿAbd al-Muṭṭalib, Ḥalîma",
+  "summary": "Connaître des éléments simples de la naissance et de l’enfance : famille proche et nourrice Ḥalîma.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Citer le nom de sa maman (Amina)",
+    "Dire qu’il a été allaité par Ḥalîma",
+    "Situer la Mecque comme lieu de naissance"
+  ],
+  "keywords": [
+    "naissance",
+    "enfance",
+    "Amina",
+    "Halima",
+    "Mecque"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Enfance",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Notions adaptées enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Ses débuts",
+      "content": "Le Prophète ﷺ est né à **La Mecque**. Sa maman s’appelait **Amina**. Sa famille s’occupait bien de lui. Il a été allaité par **Ḥalîma**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Entourage",
+        "content": "Son grand-père **ʿAbd al-Muṭṭalib** aimait beaucoup l’enfant."
+      },
+      {
+        "type": "activity",
+        "title": "Je relie",
+        "content": "Relie : **Amina** → maman ; **Ḥalîma** → nourrice ; **Mecque** → ville."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Naissance à **La Mecque** ; maman **Amina** ; nourrice **Ḥalîma**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais l’enfance du Prophète ﷺ (version N1).",
+      "keyTakeaways": [
+        "Mecque",
+        "Amina",
+        "Ḥalîma"
+      ],
+      "nextSteps": [
+        "La **jeunesse** et le surnom **al-Amîn** (leçon 3)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le Prophète ﷺ est né à…",
+        "type": "multiple-choice",
+        "options": [
+          "Médine",
+          "La Mecque"
+        ],
+        "correctAnswer": "La Mecque",
+        "explanation": "Ville de naissance",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "naissance"
+    ]
+  }
+}

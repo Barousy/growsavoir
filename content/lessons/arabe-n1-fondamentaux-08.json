@@ -1,0 +1,171 @@
+{
+  "slug": "arabe-n1-fondamentaux-08",
+  "title": "Hamza (ء), Alif Madda (آ) & Hamzat al-Wasl (ٱ)",
+  "summary": "Savoir lire la coupure glottale (hamza), distinguer آ et ٱ, et prononcer correctement en début/liaison.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06",
+    "arabe-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Reconnaître la hamza (ء) et ses sièges : أ / إ / ؤ / ئ / ء",
+    "Comprendre آ (alif madda) = hamza + voyelle longue ā",
+    "Distinguer hamzat al-qaṭ‘ (toujours prononcée) et hamzat al-waṣl (ٱ)",
+    "Lire correctement au début du mot et en liaison"
+  ],
+  "keywords": [
+    "arabe",
+    "hamza",
+    "alif madda",
+    "hamzat al-wasl",
+    "lecture",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Hamza — présentation synthétique",
+      "url": "https://fr.wikipedia.org/wiki/Hamza",
+      "type": "website",
+      "description": "Rappels sur hamza, ses positions et signes associés"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "La hamza : petite « coupure » de voix",
+      "content": "\nLa **hamza** (ء) représente une **coupure** de la voix.  \nElle peut apparaître **au début**, **au milieu** ou **à la fin** du mot, portée par une « chaise » (أ / إ / ؤ / ئ) ou **seule** (ء).\n\n> Deux types utiles :  \n> **Hamzat al-qaṭ‘** (coupure **toujours prononcée**) et **hamzat al-waṣl** (ٱ) prononcée **seulement en début d’énoncé**.\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Hamza initiale (toujours prononcée)",
+        "content": "\n- **أَ… / إِ… / أُ…** selon la **voyelle courte** :  \n  **أَمَل** (*amal*), **إِمَام** (*imām*), **أُمّ** (*umm*).\n\n> Au **début du mot**, on **voit** et on **prononce** la hamza (hamzat al-qaṭ‘).\n        "
+      },
+      {
+        "type": "concept",
+        "title": "Hamza au milieu / à la fin : sièges",
+        "content": "\n- **ؤ** (sur **wâw**) : souvent après **damma** → **سُؤَال** (*su’āl*).  \n- **ئ** (sur **yâ’**) : souvent après **kasra** → **سَائِل** (*sā’il*).  \n- **ء** (sur la ligne) : en **fin** ou sans siège → **شيء** (*shay’*).\n\n> Pour N1, retiens des **exemples modèles** plutôt que toutes les règles détaillées.\n        "
+      },
+      {
+        "type": "concept",
+        "title": "آ = alif madda (hamza + ā)",
+        "content": "\nLe signe **آ** combine **hamza + alif long** → **ā** prolongé.  \nExemples : **آدَم** (*Ādam*), **آباء** (*ābā’*).\n\n> On **entend ā** d’emblée ; visuellement, c’est un **alif** avec un **madd** au-dessus.\n        "
+      },
+      {
+        "type": "concept",
+        "title": "Hamzat al-Wasl (ٱ) : prononcée seulement au début",
+        "content": "\n**ٱ** (souvent écrit **ا** sans signe) se **prononce** seulement si on **commence** par ce mot ;  \nen **liaison**, on **ne la prononce pas**.\n\nExemples :\n- **ٱسْم** (*ism*) → en liaison : **بِسْمِ الله** (*bismi-llāh*)  \n- **ٱبْن** (*ibn*) → **مُحَمَّدُ بْنُ…** (la hamza disparaît en liaison)  \n- **الـ** (article) : on ne prononce pas de hamza en liaison → **بِاسمِ**/**بالكتاب**.\n\n> Indice courant : sur les livres de lecture, on voit parfois le petit signe **waṣla** sur l’alif initial.\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau récapitulatif",
+        "content": "\n| Cas | Graphie | Exemple | Lecture |\n|---|---|---|---|\n| Début (qaṭ‘) | **أَ / إِ / أُ** | **إِمَام** | *imām* |\n| Milieu (wâw) | **ؤ** | **سُؤَال** | *su’āl* |\n| Milieu (yâ’) | **ئ** | **سَائِل** | *sā’il* |\n| Fin | **ء** | **شيء** | *shay’* |\n| Alif madda | **آ** | **آدَم** | *Ādam* |\n| Hamzat al-waṣl | **ٱ** | **ٱسْم / بِسْمِ** | *ism / bismi* |\n        ",
+        "examples": [
+          {
+            "code": "آدَم / سُؤَال / سَائِل / شيء",
+            "title": "Ādam / su’āl / sā’il / shay’",
+            "description": "Hamza : différents sièges",
+            "explanation": "Repère la chaise : أ/إ/ؤ/ئ/ء"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Coche la bonne catégorie",
+        "content": "\n- **إِمَام** → ☐ waṣl ☐ madda ☑ **qaṭ‘**  \n- **بِسْمِ** (…الله) → ☑ **waṣl** ☐ qaṭ‘ ☐ madda  \n- **آدَم** → ☐ waṣl ☑ **madda** ☐ qaṭ‘  \n- **سُؤَال** → ☑ **hamza sur wâw (ؤ)** ☐ hamza sur yâ’ (ئ)\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée début vs liaison",
+        "content": "\nLis **en début** puis **en liaison** :\n\n- **ٱسْم** → *ism* ; **بِسْمِ الله** → *bismi-llāh*  \n- **ٱبْن** → *ibn* ; **مُحَمَّدُ بْنُ…** → *muḥammadu bnu…*  \n- **الْكِتَاب** → *al-kitāb* ; **بِالْكِتَاب** → *bi-l-kitāb*\n\n> Astuce : si un mot **précède**, la **hamzat al-waṣl tombe**.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- **Hamza** = coupure **prononcée** ; plusieurs **sièges** (أ / إ / ؤ / ئ / ء)  \n- **آ** = **hamza + ā** (alif madda)  \n- **ٱ** = hamzat al-**waṣl** : **prononcée seulement au début**, **muette en liaison**\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu distingues **hamza**, **alif madda** et **hamzat al-waṣl**.  \nTu peux désormais lire des mots plus variés en respectant la **prononciation en début** et **en liaison**.\n      ",
+      "keyTakeaways": [
+        "Hamza = coupure prononcée",
+        "آ = madda (ā long)",
+        "ٱ = waṣl (tombe en liaison)"
+      ],
+      "nextSteps": [
+        "S’entraîner sur un court texte contenant آ / ٱ / ؤ / ئ",
+        "Passer à la leçon 9 : lecture guidée de mots/phrases (révision globale N1)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Hamza — repères (Wikipédia)",
+          "description": "Détails et exemples supplémentaires",
+          "url": "https://fr.wikipedia.org/wiki/Hamza"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La hamzat al-waṣl (ٱ) est prononcée…",
+        "type": "multiple-choice",
+        "options": [
+          "toujours",
+          "jamais",
+          "seulement en début d’énoncé"
+        ],
+        "correctAnswer": "seulement en début d’énoncé",
+        "explanation": "En liaison, la hamza de waṣl **disparaît**.",
+        "points": 10
+      },
+      {
+        "question": "Le signe **آ** correspond à…",
+        "type": "multiple-choice",
+        "options": [
+          "voyelle courte a",
+          "hamza sur yâ’",
+          "alif madda (hamza + ā)"
+        ],
+        "correctAnswer": "alif madda (hamza + ā)",
+        "explanation": "On lit **ā** long dès le début.",
+        "points": 10
+      },
+      {
+        "question": "Dans **سَائِل**, la hamza est portée par…",
+        "type": "multiple-choice",
+        "options": [
+          "wâw (ؤ)",
+          "yâ’ (ئ)",
+          "sans siège (ء)"
+        ],
+        "correctAnswer": "yâ’ (ئ)",
+        "explanation": "On voit **ئ** (hamza sur yâ’).",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.902Z",
+    "updatedAt": "2025-08-30T06:37:37.902Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "hamza",
+      "alif madda",
+      "hamzat al-wasl"
+    ]
+  }
+}

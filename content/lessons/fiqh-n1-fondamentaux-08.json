@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-08",
+  "title": "La mosquée & l’adhân — respect et bonnes manières",
+  "summary": "Découvrir la **mosquée**, l’**appel à la prière** (adhân) et les **bonnes manières** du lieu.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Dire ce qu’est l’adhân",
+    "Lister 4 adab de la mosquée",
+    "Respecter le calme du lieu"
+  ],
+  "keywords": [
+    "mosquée",
+    "adhan",
+    "adab"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Mosquée",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Adab niveau enfant"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Un lieu de paix",
+      "content": "À la **mosquée**, on reste **propre**, on parle **doucement**, on **écoute**, on **range** ses chaussures. L’**adhân** appelle à la prière."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Adab",
+        "content": "Arriver **calmement**, couper le **téléphone**, **ne pas courir** dans la salle de prière."
+      },
+      {
+        "type": "activity",
+        "title": "Je prépare mon sac",
+        "content": "Mettre un petit **tapis**, un **sac à chaussures**, une **bouteille** d’eau (à l’extérieur de la salle)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Mosquée = **respect** et **écoute**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les adab de la mosquée.",
+      "keyTakeaways": [
+        "Calme",
+        "Propreté",
+        "Respect"
+      ],
+      "nextSteps": [
+        "Partage & aumône (leçon 9)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans la mosquée, je…",
+        "type": "multiple-choice",
+        "options": [
+          "Cours et crie",
+          "Reste calme et parle doucement"
+        ],
+        "correctAnswer": "Reste calme et parle doucement",
+        "explanation": "Adab du lieu",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "mosquée"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "slug": "arabe-n1-fondamentaux-03",
+  "title": "Les voyelles longues (madd)",
+  "summary": "Maîtriser les voyelles longues ā / ī / ū formées avec alif, yâ’ et wâw.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Reconnaître les lettres de prolongement : ا ، و ، ي",
+    "Associer a/i/u aux longues ā/ī/ū",
+    "Lire des syllabes longues (CVV) et des mots simples",
+    "Identifier l’alif maqṣūra (ى) en fin de mot"
+  ],
+  "keywords": [
+    "arabe",
+    "voyelles longues",
+    "madd",
+    "alif",
+    "waw",
+    "ya",
+    "alif maqṣūra",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Harakât & Madd — aperçu",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Rappels sur les signes vocaliques et le prolongement"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Prolonger le son : ā / ī / ū",
+      "content": "\nLes **voyelles longues** s’écrivent avec des **lettres de prolongement** (حروف المدّ) :\n- **ا** (*alif*) → **ā**\n- **ي** (*yâ’* sans points phonétiques) → **ī**\n- **و** (*wâw*) → **ū**\n\n> Règle clé : la **voyelle courte** précède et **correspond** à la lettre de prolongement :\n> **fatha + ا = ā**, **kasra + ي = ī**, **damma + و = ū**.\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Lettres de prolongement (حروف المدّ)",
+        "content": "\nOn obtient une **voyelle longue** quand :\n- la consonne porte la voyelle courte correspondante (**ـَ / ـِ / ـُ**),\n- puis vient **ا / ي / و** **sans voyelle** (sukûn implicite).\n\nEx. **بَ + ا → بَ ا = بَا (bā)**, **بِ + ي → بِـي = بِـي (bī)**, **بُ + و → بُو (bū)**.\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau de correspondance",
+        "content": "\n| Courte | + Lettre | Longue | Exemple | Lecture |\n|---|---|---|---|---|\n| **a** (ـَ) | **ا** | **ā** | بَا | **bā** |\n| **i** (ـِ) | **ي** | **ī** | بِـي | **bī** |\n| **u** (ـُ) | **و** | **ū** | بُو | **bū** |\n        ",
+        "examples": [
+          {
+            "code": "بَا / بِـي / بُو",
+            "title": "bā / bī / bū",
+            "description": "Même consonne ب avec 3 voyelles longues",
+            "explanation": "La lettre qui suit prolonge le son."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "ā en fin de mot : l’alif maqṣūra (ى)",
+        "content": "\nLa **lettre ى** (alif maqṣūra) se lit **ā** en fin de mot :\n- **هُدَى** (*hudā*), **فَتَى** (*fatā*).\n> Graphie différente, **même son** que **ا** long.\n        "
+      },
+      {
+        "type": "activity",
+        "title": "Coche la bonne réponse",
+        "content": "\n- [x] **فَ + ا** → **فَا = fā**  \n- [ ] **كِ + و** → **كُو = kū**  \n- [x] **نِ + ي** → **نِي = nī**  \n- [x] **هُ + و** → **هُو = hū**  \n- [ ] **رَ + ي** → **رُو = rū**\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lis puis écris",
+        "content": "\n**Lecture :**\n- بَا — تِي — مُو — سَابَا — كِتَاب — نُور\n\n**Écriture (transforme la courte en longue) :**\n- **بَ** → **بَا**  \n- **مِ** → **مِي**  \n- **رُ** → **رُو**\n\n> Astuce : allonge **doucement** la voix sur la voyelle longue (1 temps complet).\n        "
+      },
+      {
+        "type": "summary",
+        "title": "Récapitulatif",
+        "content": "\n- **ا / ي / و** servent de **prolongement**  \n- Correspondances : **a→ā**, **i→ī**, **u→ū**  \n- **ى** en fin de mot = **ā**\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo 🎉 Tu sais former et lire les **voyelles longues**.  \nProchaine étape : le **sukûn** (ـْ) pour lire les syllabes **CVC**.\n      ",
+      "keyTakeaways": [
+        "fatha+ا → ā",
+        "kasra+ي → ī",
+        "damma+و → ū",
+        "ى final = ā"
+      ],
+      "nextSteps": [
+        "Passer à la leçon 4 : le sukûn",
+        "Relire 10 mots simples avec voyelles longues"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakat — Wikipédia (rappels)",
+          "description": "Contexte sur les signes et le prolongement",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quelle combinaison donne **ī** ?",
+        "type": "multiple-choice",
+        "options": [
+          "fatha + ا",
+          "kasra + ي",
+          "damma + و",
+          "kasra + و"
+        ],
+        "correctAnswer": "kasra + ي",
+        "explanation": "Courte **i** + **yâ’** (sans voyelle) → **ī**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.896Z",
+    "updatedAt": "2025-08-30T06:37:37.896Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "voyelles longues",
+      "madd"
+    ]
+  }
+}

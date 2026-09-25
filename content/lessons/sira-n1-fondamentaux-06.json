@@ -1,0 +1,94 @@
+{
+  "slug": "sira-n1-fondamentaux-06",
+  "title": "Les premiers musulmans — Khadîja, Abû Bakr, ʿAlî, Zayd",
+  "summary": "Découvrir les premiers croyants qui ont soutenu le Prophète ﷺ et cru en son message.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Citer 3 premiers croyants",
+    "Dire qu’ils ont soutenu le Prophète ﷺ",
+    "Imiter leur courage par de bonnes actions"
+  ],
+  "keywords": [
+    "premiers musulmans",
+    "abubakr",
+    "ali",
+    "zayd"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Premiers croyants",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Repères simples"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Les premiers soutiens",
+      "content": "**Khadîja**, **Abû Bakr**, **ʿAlî**, **Zayd** ont cru au message. Ils ont **aidé** et **soutenu** le Prophète ﷺ."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Aider la vérité",
+        "content": "Parler gentiment, encourager, **partager** le bien."
+      },
+      {
+        "type": "activity",
+        "title": "Je m’inspire",
+        "content": "Écris le nom d’un **premier croyant** et une **qualité**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Ils ont été **courageux** et **fidèles**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les premiers croyants.",
+      "keyTakeaways": [
+        "Soutien",
+        "Courage"
+      ],
+      "nextSteps": [
+        "Patience à La Mecque (leçon 7)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Faisait-il partie des premiers croyants ?",
+        "type": "multiple-choice",
+        "options": [
+          "Abû Bakr",
+          "Pharaon"
+        ],
+        "correctAnswer": "Abû Bakr",
+        "explanation": "Compagnon proche",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "premiers"
+    ]
+  }
+}

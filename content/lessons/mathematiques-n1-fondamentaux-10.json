@@ -1,0 +1,106 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-10",
+  "title": "Lire l’heure : heures pleines et demi-heures",
+  "summary": "Reconnaître les heures sur l’horloge (aiguilles) : « … heures », « … heures et demie ». Séquences de la journée.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Lire heures pleines",
+    "Lire demi-heures",
+    "Associer moments de la journée"
+  ],
+  "keywords": [
+    "heure",
+    "horloge",
+    "demi-heure"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Lire l’heure",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Apprendre l’horloge"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Deux aiguilles",
+      "content": "Grande aiguille = **minutes**, Petite aiguille = **heures**.\n**3 h** : petite sur 3, grande sur 12. **3 h 30** : petite entre 3 et 4, grande sur 6."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "7 h ; 10 h ; 1 h 30 ; 6 h 30.",
+        "examples": [
+          {
+            "code": "🕒",
+            "title": "Lecture",
+            "description": "Heure/demi-heure",
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je place les aiguilles",
+        "content": "Dessine **8 h** puis **8 h 30**."
+      },
+      {
+        "type": "exercise",
+        "title": "J’associe",
+        "content": "Petit déjeuner → **7 h 30** ; École → **8 h 30** ; Dodo → **20 h** (exemples)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Heures **pleines** et **et demie**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu lis les heures simples.",
+      "keyTakeaways": [
+        "aiguilles",
+        "heures & demi"
+      ],
+      "nextSteps": [
+        "Monnaie en euros"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Grande aiguille sur 12, petite sur 4 →",
+        "type": "multiple-choice",
+        "options": [
+          "4 h",
+          "4 h 30"
+        ],
+        "correctAnswer": "4 h",
+        "explanation": "Heure pleine",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "heure"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "sira-n1-fondamentaux-09",
+  "title": "La Hijra — partir à Médine",
+  "summary": "Comprendre simplement la migration (Hijra) vers Médine : nouvelle ville, frères et sœurs en foi (Anṣâr).",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 17,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Dire que la Hijra mène à Médine",
+    "Connaître les Anṣâr (accueillants)",
+    "Apprécier l’entraide"
+  ],
+  "keywords": [
+    "hijra",
+    "medine",
+    "ansar",
+    "entraide"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Hijra",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Migration vers Médine"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Changer de ville",
+      "content": "Le Prophète ﷺ a quitté **La Mecque** pour **Médine**. Les **Anṣâr** (habitants) ont **accueilli** les nouveaux arrivants."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Fraternité",
+        "content": "Partager **repas**, **maison**, **sourire** : entraide."
+      },
+      {
+        "type": "activity",
+        "title": "Je partage",
+        "content": "Aujourd’hui, je partage quelque chose avec un(e) camarade."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "**Hijra** = nouvelles **opportunités** et **fraternité**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais ce qu’est la Hijra.",
+      "keyTakeaways": [
+        "Médine",
+        "Anṣâr",
+        "Partage"
+      ],
+      "nextSteps": [
+        "Vie à **Médine** (leçon 10)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La Hijra, c’est aller de La Mecque à…",
+        "type": "multiple-choice",
+        "options": [
+          "Riyad",
+          "Médine"
+        ],
+        "correctAnswer": "Médine",
+        "explanation": "Nouvelle ville",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "hijra"
+    ]
+  }
+}

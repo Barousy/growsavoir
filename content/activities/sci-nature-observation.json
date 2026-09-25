@@ -1,0 +1,47 @@
+{
+  "id": "sci-nature-observation",
+  "title": "Exploration et observation de la nature",
+  "description": "Développer le sens de l'observation et la curiosité scientifique en explorant l'environnement naturel et en documentant les découvertes",
+  "duration": "30 min",
+  "difficulty": "beginner",
+  "subject": "sciences",
+  "materials": [
+    "Loupe de poche (grossissement 5x-10x)",
+    "Carnet d'observation avec pages lignées",
+    "Crayons de couleur et stylos",
+    "Appareil photo ou smartphone",
+    "Fiches d'identification des espèces",
+    "Règle pour mesurer les objets",
+    "Sac en tissu pour collecter des échantillons",
+    "Chapeau et protection solaire"
+  ],
+  "instructions": [
+    "Préparation et choix du site (8 min) : Choisissez un endroit naturel à explorer (jardin, parc, forêt). Préparez votre matériel d'observation. Identifiez les zones d'intérêt.",
+    "Exploration guidée (12 min) : Utilisez la loupe pour observer les détails des plantes, insectes ou roches. Prenez des photos des éléments intéressants. Mesurez la taille des objets observés.",
+    "Documentation détaillée (8 min) : Dessinez ce que vous observez dans votre carnet. Notez la date, l'heure et les conditions météo. Décrivez les couleurs, formes et textures.",
+    "Collecte et analyse (2 min) : Collectez quelques échantillons (feuilles, cailloux) pour étude ultérieure. Organisez vos observations par catégorie."
+  ],
+  "learningObjectives": [
+    "Développer l'observation attentive et la curiosité scientifique",
+    "Documenter méthodiquement des découvertes naturelles",
+    "Apprécier la biodiversité et la richesse de l'environnement",
+    "Utiliser des outils d'observation appropriés (loupe, appareil photo)",
+    "Organiser et classer les informations collectées"
+  ],
+  "tips": [
+    "Prenez votre temps pour observer chaque détail",
+    "Utilisez tous vos sens (vue, toucher, odorat)",
+    "Dessinez ce que vous voyez, pas ce que vous pensez voir",
+    "Respectez la nature et ne prélevez que ce qui est nécessaire"
+  ],
+  "assessment": [
+    "Les observations sont-elles détaillées et précises ?",
+    "La documentation est-elle organisée et complète ?",
+    "L'élève utilise-t-il correctement les outils d'observation ?",
+    "L'élève montre-t-il de la curiosité et de l'émerveillement ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

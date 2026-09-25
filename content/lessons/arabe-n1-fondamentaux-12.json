@@ -1,0 +1,173 @@
+{
+  "slug": "arabe-n1-fondamentaux-12",
+  "title": "Évaluation finale N1 — lecture & règles",
+  "summary": "Évaluer la lecture (mots/mini-texte) et l’application des règles : harakât, madd, sukûn, shadda, tanwîn, hamza, et ال (solaires/lunaires).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 30,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06",
+    "arabe-n1-fondamentaux-07",
+    "arabe-n1-fondamentaux-08",
+    "arabe-n1-fondamentaux-09",
+    "arabe-n1-fondamentaux-10",
+    "arabe-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Valider la lecture de syllabes CV/CVC et de mots fréquents",
+    "Identifier correctement shadda, tanwîn, hamza, madd, sukûn",
+    "Appliquer la règle des lettres solaires/lunaires avec ال",
+    "Comprendre un mini-texte et répondre à 2–3 questions"
+  ],
+  "keywords": [
+    "arabe",
+    "évaluation",
+    "lecture",
+    "n1",
+    "diacritiques"
+  ],
+  "sources": [
+    {
+      "title": "Harakât — synthèse",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Rappels utiles pour l’examen"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Comment passer l’évaluation",
+      "content": "\nLis **calmement**, repère les **signes**, puis relis **plus vite**.  \nRéponds aux questions **sans te précipiter**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Rappel express (checklist)",
+        "content": "\n- **Harakât** : a / i / ou  \n- **Madd** : ā / ī / ū  \n- **Sukûn** : pas de voyelle (CVC)  \n- **Shadda** : consonne doublée  \n- **Tanwîn** : an / in / un (indéfini, fin de mot)  \n- **ال** : solaire (assimilation) / lunaire (lâm prononcé)  \n- **Hamza** : أ / إ / ؤ / ئ / ء ; **ٱ** tombe en liaison"
+      },
+      {
+        "type": "example",
+        "title": "Texte de lecture (mini-paragraphe)",
+        "content": "\n**الأَخُ** فِي **البَيْتِ**. **الأُمُّ** تَطْبُخُ **الطَّعَامَ**، **والأَبُ** يَقْرَأُ **الكِتَابَ**.  \n**الأُخْتُ** فِي **الغُرْفَةِ**، وَ**النُّورُ** **قَوِيٌّ**. **القَلَمُ** **عَلَى المَكْتَبِ**.\n\n**Questions :**  \n1) Qui lit le livre ?  \n2) Où est la sœur ?  \n3) Que peut-on dire de la lumière ?"
+      },
+      {
+        "type": "activity",
+        "title": "Repérage (coche si trouvé dans le texte)",
+        "content": "\n- [ ] **Shadda**  \n- [ ] **Tanwîn**  \n- [ ] **Lettre solaire** après **ال**  \n- [ ] **Lettre lunaire** après **ال**  \n- [ ] **Sukûn**  \n- [ ] **Hamza** (début/milieu/fin)"
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture des mots (précision)",
+        "content": "\nLis ces mots en indiquant **la règle principale** mise en jeu :\n\n- **رَبّ** ( … ) — **كِتَابٌ** ( … ) — **مَدْرَسَةٍ** ( … ) — **الشَّمْس** ( … ) — **القَمَر** ( … ) — **إِمَام** ( … )\n\n> Exemple de réponse : **رَبّ** → *shadda* ; **كِتَابٌ** → *madd + tanwîn* ; etc."
+      },
+      {
+        "type": "summary",
+        "title": "Fin de l’évaluation — vérifie",
+        "content": "\n- Ai-je **lu clairement** les mots/phrases ?  \n- Ai-je **repéré** shadda/tanwîn/hamza/madd/sukûn ?  \n- Ai-je appliqué **solaire/lunaire** correctement ?"
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo 🎉 Tu as terminé l’**évaluation finale N1**.  \nTu peux passer au **N2** ou consolider encore 1–2 semaines avec des lectures courtes.",
+      "keyTakeaways": [
+        "Lecture de base acquise",
+        "Règles N1 appliquées en contexte",
+        "Capable de répondre à des questions simples"
+      ],
+      "nextSteps": [
+        "Passer au programme **n2-intermediaire**",
+        "Continuer 5–10 min de lecture quotidienne"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakât — récapitulatif",
+          "description": "Pour réviser en autonomie",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **الطَّعَامَ**, après **ال** on a une lettre…",
+        "type": "multiple-choice",
+        "options": [
+          "lunaire (l prononcé)",
+          "solaire (assimilation + shadda)"
+        ],
+        "correctAnswer": "solaire (assimilation + shadda)",
+        "explanation": "ط est **solaire** → assimilation + shadda.",
+        "points": 10
+      },
+      {
+        "question": "Quel mot contient **tanwîn** dans le texte ?",
+        "type": "multiple-choice",
+        "options": [
+          "قَوِيٌّ",
+          "الكِتَابَ",
+          "الأَبُ"
+        ],
+        "correctAnswer": "قَوِيٌّ",
+        "explanation": "Dammatan **ٌ** à la fin.",
+        "points": 10
+      },
+      {
+        "question": "Dans **مَدْرَسَةٍ**, la caractéristique principale est…",
+        "type": "multiple-choice",
+        "options": [
+          "shadda",
+          "sukûn + tanwîn",
+          "madd"
+        ],
+        "correctAnswer": "sukûn + tanwîn",
+        "explanation": "On voit **دْ** puis **…ةٍ**.",
+        "points": 10
+      },
+      {
+        "question": "La **hamza** est présente dans…",
+        "type": "multiple-choice",
+        "options": [
+          "الأَبُ",
+          "القَلَمُ",
+          "النُّورُ"
+        ],
+        "correctAnswer": "الأَبُ",
+        "explanation": "Hamza **أ** initiale (qaṭ‘).",
+        "points": 10
+      },
+      {
+        "question": "Le lâm de **القَمَر** est…",
+        "type": "multiple-choice",
+        "options": [
+          "assimilé (lettre solaire)",
+          "prononcé (lettre lunaire)"
+        ],
+        "correctAnswer": "prononcé (lettre lunaire)",
+        "explanation": "ق est **lunaire**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.906Z",
+    "updatedAt": "2025-08-30T06:37:37.906Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "évaluation",
+      "lecture",
+      "diacritiques"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "isl-hadith-study",
+  "title": "Étude approfondie des hadiths prophétiques",
+  "description": "Développer une compréhension profonde des hadiths à travers l'analyse de leur contexte, de leur signification et de leur application pratique",
+  "duration": "35 min",
+  "difficulty": "intermediate",
+  "subject": "sciences-islamiques",
+  "materials": [
+    "Recueil de hadiths authentiques (Sahih Bukhari, Sahih Muslim, etc.)",
+    "Commentaires et explications des savants reconnus",
+    "Carnet de notes et de réflexions personnelles",
+    "Fiches d'analyse des hadiths",
+    "Dictionnaire des termes islamiques",
+    "Grille d'évaluation de la compréhension",
+    "Matériel de recherche sur le contexte historique",
+    "Fiches de synthèse des enseignements"
+  ],
+  "instructions": [
+    "Lecture attentive et première approche (10 min) : Lisez le hadith attentivement plusieurs fois. Identifiez les mots-clés et les concepts importants. Notez vos premières impressions et questions.",
+    "Analyse du contexte historique (12 min) : Recherchez et comprenez le contexte historique du hadith. Identifiez les circonstances de sa transmission. Comprenez la situation qui a motivé cette parole prophétique.",
+    "Analyse approfondie du message (10 min) : Analysez le message principal et les enseignements du hadith. Identifiez les principes islamiques énoncés. Reliez ce hadith à d'autres enseignements similaires.",
+    "Application et réflexion personnelle (3 min) : Notez vos réflexions personnelles sur l'application de ce hadith dans votre vie quotidienne. Identifiez les actions concrètes que vous pouvez entreprendre."
+  ],
+  "learningObjectives": [
+    "Comprendre les hadiths prophétiques dans leur profondeur et leur signification",
+    "Analyser le contexte historique et les circonstances de transmission",
+    "Appliquer les enseignements des hadiths dans la vie quotidienne",
+    "Développer la capacité d'analyse critique des sources islamiques",
+    "Renforcer la foi et la pratique religieuse à travers l'étude"
+  ],
+  "tips": [
+    "Commencez par des hadiths courts et simples",
+    "Utilisez des commentaires reconnus pour la compréhension",
+    "Reliez toujours le hadith à sa pratique concrète",
+    "Prenez le temps de méditer sur le message"
+  ],
+  "assessment": [
+    "L'élève comprend-il le sens principal du hadith ?",
+    "Le contexte historique est-il bien assimilé ?",
+    "L'élève peut-il expliquer l'application pratique ?",
+    "Les réflexions personnelles montrent-elles une compréhension profonde ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "devperso-n1-fondamentaux-06",
+  "title": "Mon objectif en 3 étapes",
+  "summary": "Se fixer un objectif simple et le découper en 3 petites actions réalisables.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Choisir un objectif simple",
+    "Découper en 3 étapes",
+    "Cocher l’avancée"
+  ],
+  "keywords": [
+    "objectif",
+    "plan",
+    "étapes",
+    "motivation"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Objectifs",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Méthode 3 étapes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je choisis un but",
+      "content": "Exemple: **lire 10 minutes** ce soir. Étapes: **préparer le livre**, **mettre un sablier**, **lire au calme**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Mon mini-plan",
+        "content": "J’écris **mon objectif** et **3 étapes**. Je coche quand c’est fait."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Un **petit plan** aide à **réussir**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais te fixer un petit objectif.",
+      "keyTakeaways": [
+        "3 étapes",
+        "Coche"
+      ],
+      "nextSteps": [
+        "**Persévérance** (leçon 7)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche objectif",
+          "description": "Gabarit simple",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour atteindre un but, je peux…",
+        "type": "multiple-choice",
+        "options": [
+          "Le rêver seulement",
+          "Le découper en étapes"
+        ],
+        "correctAnswer": "Le découper en étapes",
+        "explanation": "Planifier",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "objectif"
+    ]
+  }
+}

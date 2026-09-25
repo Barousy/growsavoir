@@ -1,0 +1,47 @@
+{
+  "id": "math-geometry-exploration",
+  "title": "Exploration géométrique et construction",
+  "description": "Découvrir les propriétés des formes géométriques à travers l'observation, la mesure et la construction avec des outils appropriés",
+  "duration": "30 min",
+  "difficulty": "intermediate",
+  "subject": "mathematiques",
+  "materials": [
+    "Formes géométriques en plastique ou carton (carré, rectangle, triangle, cercle)",
+    "Règle graduée et équerre",
+    "Compass et rapporteur",
+    "Papier quadrillé et papier blanc",
+    "Crayons et stylos de différentes couleurs",
+    "Fiches avec exercices de construction",
+    "Objets du quotidien pour identifier les formes",
+    "Grille d'évaluation des constructions"
+  ],
+  "instructions": [
+    "Découverte des formes (8 min) : Identifiez les formes géométriques dans votre environnement. Classez-les par famille (triangles, quadrilatères, cercles). Notez leurs caractéristiques.",
+    "Mesure et analyse (12 min) : Mesurez les côtés et angles des formes. Comparez les mesures pour identifier les propriétés (côtés égaux, angles droits, symétrie).",
+    "Construction guidée (8 min) : Construisez des formes géométriques avec les outils appropriés. Respectez les mesures et angles donnés. Vérifiez la précision.",
+    "Création de motifs (2 min) : Créez des motifs géométriques en répétant et combinant les formes. Expérimentez avec la symétrie et la rotation."
+  ],
+  "learningObjectives": [
+    "Reconnaître et classer les formes géométriques de base et leurs propriétés",
+    "Mesurer avec précision des longueurs et angles en utilisant les outils appropriés",
+    "Construire des figures géométriques en respectant les contraintes données",
+    "Comprendre les concepts de symétrie, de périmètre et d'aire",
+    "Développer la vision spatiale et la logique géométrique"
+  ],
+  "tips": [
+    "Vérifiez toujours vos mesures avant de tracer définitivement",
+    "Utilisez l'équerre pour tracer des angles droits précis",
+    "Commencez par des constructions simples avant de progresser",
+    "Vérifiez la symétrie en pliant le papier"
+  ],
+  "assessment": [
+    "Les formes sont-elles correctement identifiées et classées ?",
+    "Les mesures sont-elles précises et cohérentes ?",
+    "Les constructions respectent-elles les contraintes données ?",
+    "L'élève peut-il expliquer les propriétés des formes créées ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

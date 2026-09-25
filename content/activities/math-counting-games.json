@@ -1,0 +1,47 @@
+{
+  "id": "math-counting-games",
+  "title": "Jeux de comptage et numération",
+  "description": "Développer le sens du nombre et la maîtrise de la comptine numérique à travers des jeux interactifs et des manipulations concrètes",
+  "duration": "20 min",
+  "difficulty": "beginner",
+  "subject": "mathematiques",
+  "materials": [
+    "Objets variés à compter (jetons, cubes, boutons, perles)",
+    "Dés à 6 et 10 faces",
+    "Cartes numérotées de 1 à 20",
+    "Tableau blanc ou grande feuille",
+    "Marqueurs colorés",
+    "Bacs de tri et de classement",
+    "Fiches avec collections d'objets à compter",
+    "Timer pour les défis chronométrés"
+  ],
+  "instructions": [
+    "Préparation et exploration (5 min) : Organisez les objets par catégories. Identifiez les différentes formes et couleurs. Préparez l'espace de jeu.",
+    "Jeux de comptage guidé (8 min) : Comptez ensemble les objets de chaque catégorie. Utilisez le pointage pour associer le mot-nombre à l'objet. Créez des collections de 1 à 10.",
+    "Jeux avec dés et cartes (5 min) : Lancez les dés et comptez les points. Associez le nombre obtenu à la quantité d'objets correspondante. Jouez avec les cartes numérotées.",
+    "Création de séquences (2 min) : Créez des séquences numériques croissantes et décroissantes. Identifiez les nombres manquants dans une suite."
+  ],
+  "learningObjectives": [
+    "Maîtriser la comptine numérique de 1 à 20 avec fluidité et précision",
+    "Associer correctement le mot-nombre à la quantité d'objets correspondante",
+    "Développer le sens du nombre et la compréhension de la cardinalité",
+    "Reconnaître et écrire les chiffres de 1 à 20",
+    "Comprendre les relations d'ordre (plus que, moins que, égal à)"
+  ],
+  "tips": [
+    "Utilisez des objets de couleurs différentes pour faciliter le comptage",
+    "Encouragez l'enfant à pointer chaque objet en comptant",
+    "Félicitez chaque bonne réponse pour renforcer la confiance",
+    "Variez les types d'objets pour maintenir l'intérêt"
+  ],
+  "assessment": [
+    "L'élève peut-il compter jusqu'à 20 sans erreur ?",
+    "L'association nombre-quantité est-elle correcte ?",
+    "L'élève peut-il identifier le nombre d'objets d'un coup d'œil ?",
+    "La reconnaissance des chiffres écrits est-elle acquise ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

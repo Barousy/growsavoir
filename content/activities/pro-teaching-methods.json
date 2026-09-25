@@ -1,0 +1,40 @@
+{
+  "id": "pro-teaching-methods",
+  "title": "Méthodes d'enseignement",
+  "description": "Analyser les méthodes du Prophète",
+  "duration": "45 min",
+  "difficulty": "advanced",
+  "subject": "prophete-muhammad",
+  "materials": [
+    "Hadiths",
+    "Commentaires",
+    "Analyses"
+  ],
+  "instructions": [
+    "Lisez les hadiths pertinents",
+    "Analysez les méthodes utilisées",
+    "Identifiez les principes",
+    "Appliquez aux situations modernes"
+  ],
+  "learningObjectives": [
+    "Comprendre les méthodes d'enseignement",
+    "Identifier les principes pédagogiques",
+    "Adapter aux contextes modernes"
+  ],
+  "tips": [
+    "Commencez par des hadiths courts et clairs",
+    "Analysez une méthode à la fois en détail",
+    "Identifiez les principes universels",
+    "Réfléchissez à l'adaptation moderne"
+  ],
+  "assessment": [
+    "L'élève comprend-il les méthodes analysées ?",
+    "Les principes pédagogiques sont-ils bien identifiés ?",
+    "L'adaptation moderne est-elle pertinente ?",
+    "L'élève peut-il expliquer l'efficacité des méthodes ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

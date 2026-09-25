@@ -1,0 +1,88 @@
+{
+  "slug": "histoire-n1-fondamentaux-07",
+  "title": "L'Année de l’Éléphant — Protection de la Ka‘ba",
+  "summary": "Une armée a voulu attaquer La Mecque, mais Allah a protégé la Ka‘ba.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Dire « Ka‘ba protégée »",
+    "Retenir la confiance en Allah",
+    "Raconter en 2 phrases l’épisode"
+  ],
+  "keywords": [
+    "éléphant",
+    "Ka‘ba",
+    "protection"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Année de l’Éléphant)",
+      "url": "#",
+      "type": "book",
+      "description": "Épisode célèbre"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Protection",
+      "content": "Une armée avec des **éléphants** voulait attaquer **La Mecque**. Allah a **protégé** la **Ka‘ba**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je retiens",
+        "content": "Mot-clé : **protection**. Colle un **autocollant** en forme de **bouclier** sur ta fiche."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Année de l’**Éléphant** : Ka‘ba **protégée**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais cet événement.",
+      "keyTakeaways": [
+        "Protection",
+        "Ka‘ba"
+      ],
+      "nextSteps": [
+        "**Naissance du Prophète ﷺ** (leçon 8)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui a protégé la Ka‘ba ?",
+        "type": "multiple-choice",
+        "options": [
+          "Allah",
+          "Une statue"
+        ],
+        "correctAnswer": "Allah",
+        "explanation": "Protection divine",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "elephant"
+    ]
+  }
+}

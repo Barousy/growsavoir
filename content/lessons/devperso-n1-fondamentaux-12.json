@@ -1,0 +1,116 @@
+{
+  "slug": "devperso-n1-fondamentaux-12",
+  "title": "Projet & Évaluation — « Je progresse chaque jour »",
+  "summary": "Créer un mini‑portfolio (émotions, respiration, routine, objectif, entraide) et passer le quiz final.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-01",
+    "devperso-n1-fondamentaux-02",
+    "devperso-n1-fondamentaux-03",
+    "devperso-n1-fondamentaux-04",
+    "devperso-n1-fondamentaux-05",
+    "devperso-n1-fondamentaux-06",
+    "devperso-n1-fondamentaux-07",
+    "devperso-n1-fondamentaux-08",
+    "devperso-n1-fondamentaux-09",
+    "devperso-n1-fondamentaux-10",
+    "devperso-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Assembler ses outils",
+    "Présenter 2 min",
+    "Réussir le quiz final"
+  ],
+  "keywords": [
+    "projet",
+    "portfolio",
+    "évaluation"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Projet",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Clôture du niveau"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Mon portfolio",
+      "content": "Je rassemble **5 fiches**: **émotions**, **respiration**, **routine**, **objectif**, **entraide**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "En **2 minutes**, je montre **2 outils** que j’utilise le plus et **pourquoi**."
+      },
+      {
+        "type": "summary",
+        "title": "Bravo 🎉",
+        "content": "Tu valides **Développement Personnel N1** !"
+      }
+    ],
+    "conclusion": {
+      "summary": "Niveau terminé.",
+      "keyTakeaways": [
+        "Calme",
+        "Organisation",
+        "Coopération"
+      ],
+      "nextSteps": [
+        "Passer à **N2** (projets plus longs, responsabilités)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Modèle de portfolio",
+          "description": "Couverture + sommaire",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quand je suis en colère, je peux…",
+        "type": "multiple-choice",
+        "options": [
+          "Crier plus fort",
+          "Respirer 4–4"
+        ],
+        "correctAnswer": "Respirer 4–4",
+        "explanation": "Retour au calme",
+        "points": 10
+      },
+      {
+        "question": "Pour atteindre un but, je fais…",
+        "type": "multiple-choice",
+        "options": [
+          "Un grand saut sans plan",
+          "3 petites étapes"
+        ],
+        "correctAnswer": "3 petites étapes",
+        "explanation": "Planification",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 12
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "projet"
+    ]
+  }
+}

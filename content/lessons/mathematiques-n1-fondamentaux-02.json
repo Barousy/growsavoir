@@ -1,0 +1,103 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-02",
+  "title": "Nombres de 11 à 20 — groupements et décompositions",
+  "summary": "Construire 11–20 avec un paquet de 10 + quelques unités ; lire, écrire et représenter.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Composer 11–20 comme 10 + unités",
+    "Lire/écrire 11–20",
+    "Comparer des quantités simples jusqu’à 20"
+  ],
+  "keywords": [
+    "11-20",
+    "dizaine + unités",
+    "représentations"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Dizaine/Unité",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Premiers groupements par 10"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "10 et encore…",
+      "content": "**11** = **10** + **1** ; **17** = **10** + **7**. Utilise un **paquet de 10** et des **unités**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Représenter 14",
+        "content": "\n- 📦 de 10 + ⚫⚫⚫⚫ (4 unités)\n- Écriture : **14**\n- Mots : **quatorze**"
+      },
+      {
+        "type": "activity",
+        "title": "Fabrique 18",
+        "content": "Prends un paquet de 10, ajoute 8 unités. Écris, lis, représente."
+      },
+      {
+        "type": "exercise",
+        "title": "Décomposer",
+        "content": "15 = 10 + __ ; 12 = 10 + __ ; 19 = 10 + __"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "11–20 = **10 + unités**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu manipules 11–20.",
+      "keyTakeaways": [
+        "10 + u"
+      ],
+      "nextSteps": [
+        "Comparer et ordonner 0–20"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes D/U",
+          "description": "Dizaine & unités",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "17 = 10 + __",
+        "type": "multiple-choice",
+        "options": [
+          "5",
+          "7"
+        ],
+        "correctAnswer": "7",
+        "explanation": "10+7",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "11-20"
+    ]
+  }
+}

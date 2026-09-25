@@ -1,0 +1,40 @@
+{
+  "id": "isl-fiqh-analysis",
+  "title": "Analyse du fiqh",
+  "description": "Analyser les règles juridiques",
+  "duration": "45 min",
+  "difficulty": "advanced",
+  "subject": "sciences-islamiques",
+  "materials": [
+    "Textes de fiqh",
+    "Commentaires",
+    "Sources"
+  ],
+  "instructions": [
+    "Lisez le texte juridique",
+    "Identifiez les règles",
+    "Analysez les preuves",
+    "Comparez les avis"
+  ],
+  "learningObjectives": [
+    "Comprendre les règles juridiques",
+    "Analyser les preuves",
+    "Comparer les avis des savants"
+  ],
+  "tips": [
+    "Commencez par des textes simples et courts",
+    "Prenez des notes détaillées pendant la lecture",
+    "Utilisez un dictionnaire de termes juridiques",
+    "Comparez plusieurs commentaires pour une compréhension complète"
+  ],
+  "assessment": [
+    "L'élève peut-il identifier les règles principales ?",
+    "La compréhension des preuves est-elle claire ?",
+    "La comparaison des avis est-elle pertinente ?",
+    "L'analyse montre-t-elle une réflexion personnelle ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

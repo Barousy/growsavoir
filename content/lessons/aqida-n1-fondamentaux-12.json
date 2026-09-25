@@ -1,0 +1,120 @@
+{
+  "slug": "aqida-n1-fondamentaux-12",
+  "title": "Projet & Évaluation N1 — Mon livret de croyance",
+  "summary": "Réaliser un petit livret : Allah Unique, Noms, Anges, Livres, Prophètes, 6 piliers, Jour dernier, Qadar, Ikhlâṣ, Shahâda ; quiz final.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-01",
+    "aqida-n1-fondamentaux-02",
+    "aqida-n1-fondamentaux-03",
+    "aqida-n1-fondamentaux-04",
+    "aqida-n1-fondamentaux-05",
+    "aqida-n1-fondamentaux-06",
+    "aqida-n1-fondamentaux-07",
+    "aqida-n1-fondamentaux-08",
+    "aqida-n1-fondamentaux-09",
+    "aqida-n1-fondamentaux-10",
+    "aqida-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Réviser toutes les notions",
+    "Présenter un livret clair",
+    "Répondre au quiz final"
+  ],
+  "keywords": [
+    "projet",
+    "évaluation",
+    "livret"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Synthèse et évaluation"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes du livret",
+      "content": "Chaque page : un **titre**, une **phrase**, un **dessin**. Ex. « Allah est **Unique** » ; « Je crois aux **Anges** »…"
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Checklist",
+        "content": "Tawḥîd — 5 Noms — Anges — Livres — Prophètes — 6 piliers — Jour dernier — Qadar — Ikhlâṣ — Shahâda."
+      },
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "Explique ton livret en **2 minutes** à quelqu’un."
+      },
+      {
+        "type": "summary",
+        "title": "Bravo 🎉",
+        "content": "Tu termines **Aqîda N1** !"
+      }
+    ],
+    "conclusion": {
+      "summary": "Niveau N1 validé.",
+      "keyTakeaways": [
+        "Unicité",
+        "Piliers de la foi"
+      ],
+      "nextSteps": [
+        "Passer au **N2** (approfondir)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Modèle de livret",
+          "description": "Gabarit à imprimer",
+          "url": "https://example.com/aqida-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien y a-t-il de piliers de la foi ?",
+        "type": "multiple-choice",
+        "options": [
+          "5",
+          "6"
+        ],
+        "correctAnswer": "6",
+        "explanation": "Liste : Allah, Anges, Livres, Messagers, Jour dernier, Destin",
+        "points": 10
+      },
+      {
+        "question": "La prière doit être adressée…",
+        "type": "multiple-choice",
+        "options": [
+          "À Allah seul",
+          "À des objets"
+        ],
+        "correctAnswer": "À Allah seul",
+        "explanation": "Unicité de l’adoration",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "évaluation"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-11",
+  "title": "Vendredi (Jumu‘a) — un jour spécial",
+  "summary": "Découvrir le **vendredi** : prière en groupe à la mosquée pour les grands, bonnes manières et propreté particulière.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Dire que le vendredi est spécial",
+    "Citer 2 adab du vendredi",
+    "Se préparer proprement"
+  ],
+  "keywords": [
+    "vendredi",
+    "jumu‘a",
+    "adab"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Jumu‘a",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Rappels N1"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le jour béni",
+      "content": "Le **vendredi**, on se **prépare** bien : propreté, beaux **vêtements**, prière à la **mosquée** pour les grands."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Adab du vendredi",
+        "content": "Être **propre**, arriver **à l’heure**, écouter **calmement**."
+      },
+      {
+        "type": "activity",
+        "title": "Je me prépare",
+        "content": "Prépare tes **vêtements propres** la veille."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Vendredi = **respect** et **joie**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la Jumu‘a.",
+      "keyTakeaways": [
+        "Propreté",
+        "Ponctualité",
+        "Écoute"
+      ],
+      "nextSteps": [
+        "Projet N1 (leçon 12)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le vendredi, on…",
+        "type": "multiple-choice",
+        "options": [
+          "Fait du bruit à la mosquée",
+          "Écoute calmement"
+        ],
+        "correctAnswer": "Écoute calmement",
+        "explanation": "Adab du vendredi",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "vendredi"
+    ]
+  }
+}

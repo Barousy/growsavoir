@@ -1,0 +1,98 @@
+{
+  "slug": "aqida-n1-fondamentaux-03",
+  "title": "Les Anges — serviteurs d’Allah",
+  "summary": "Croire aux Anges : ils obéissent à Allah ; quelques rôles connus (Jibrîl, Mîkâ’îl…).",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Dire que les Anges existent",
+    "Citer 2 rôles",
+    "Respecter cette croyance"
+  ],
+  "keywords": [
+    "anges",
+    "malâika",
+    "jibril"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Notions enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui sont les Anges ?",
+      "content": "Les **Anges** sont des créatures d’Allah. Ils **obéissent** toujours. **Jibrîl** transmet la Révélation ; d’autres **protègent** et **écrivent** nos actions."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples de rôles",
+        "content": "Jibrîl (révélation), Mikâ’îl (pluie), Anges qui **écrivent** (droite/gauche)."
+      },
+      {
+        "type": "activity",
+        "title": "Vrai ou Faux",
+        "content": "Les Anges **désobéissent** ? (Faux)"
+      },
+      {
+        "type": "exercise",
+        "title": "Je complète",
+        "content": "Les Anges sont des **serviteurs** d’Allah."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je **crois** aux Anges d’Allah."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la croyance aux Anges.",
+      "keyTakeaways": [
+        "Obéissance",
+        "Rôles"
+      ],
+      "nextSteps": [
+        "Les **Livres** révélés (leçon 4)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Jibrîl est connu pour…",
+        "type": "multiple-choice",
+        "options": [
+          "La Révélation",
+          "La pêche"
+        ],
+        "correctAnswer": "La Révélation",
+        "explanation": "Il a transmis la Révélation aux Prophètes.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "anges"
+    ]
+  }
+}

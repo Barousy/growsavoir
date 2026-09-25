@@ -1,0 +1,105 @@
+{
+  "slug": "sciences-n1-fondamentaux-07",
+  "title": "Météo et saisons : observer le temps qu’il fait",
+  "summary": "Nommer des phénomènes météo simples (pluie, vent, soleil, nuages), lire un thermomètre simple, relier aux saisons.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Décrire la météo du jour",
+    "Lire la température entière",
+    "Associer activités/saisons"
+  ],
+  "keywords": [
+    "météo",
+    "saisons",
+    "thermomètre"
+  ],
+  "sources": [
+    {
+      "title": "Météo-France — Météo des enfants",
+      "url": "https://meteofrance.com",
+      "type": "website",
+      "description": "Découvrir la météo"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Quel temps fait-il ?",
+      "content": "Météo : **ensoleillé**, **nuageux**, **pluvieux**, **venteux** ; Température : nombre de **degrés** (°C)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Thermomètre",
+        "content": "Lecture **entières** : 0°C (très froid), 10°C (frais), 20°C (doux), 30°C (chaud)."
+      },
+      {
+        "type": "activity",
+        "title": "Journal météo",
+        "content": "Sur 5 jours : dessine le **pictogramme** du temps et note la température."
+      },
+      {
+        "type": "exercise",
+        "title": "Saisons",
+        "content": "Associe **neige** → hiver ; **fleurs** → printemps ; **plage** → été ; **feuilles qui tombent** → automne."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Décrire, mesurer, relier aux saisons."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais décrire la météo simplement.",
+      "keyTakeaways": [
+        "Pictogrammes",
+        "°C",
+        "Saisons"
+      ],
+      "nextSteps": [
+        "États de la matière & eau (leçon 8)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Roue des saisons",
+          "description": "Activité à fabriquer",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "20°C correspond à…",
+        "type": "multiple-choice",
+        "options": [
+          "Très froid",
+          "Plutôt doux"
+        ],
+        "correctAnswer": "Plutôt doux",
+        "explanation": "Température modérée",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "météo"
+    ]
+  }
+}

@@ -1,12 +1,14 @@
+/**
+ * Client Prisma partagé.
+ *
+ * En développement, Next recharge les modules à chaque modification : sans
+ * ce cache sur globalThis, chaque rechargement ouvrirait une connexion de
+ * plus jusqu'à saturer la base.
+ */
 import { PrismaClient } from '@prisma/client';
 
-// Singleton pour éviter les multiples connexions en dev
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
-export const prisma =
-  globalForPrisma.prisma ??
-  new PrismaClient({
-    log: ['warn', 'error'], // tu peux mettre ['query','info','warn','error'] si tu veux tout voir
-  });
+export const db = globalForPrisma.prisma ?? new PrismaClient();
 
-if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = db;

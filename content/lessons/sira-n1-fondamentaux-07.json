@@ -1,0 +1,88 @@
+{
+  "slug": "sira-n1-fondamentaux-07",
+  "title": "Patience et confiance — difficultés à La Mecque",
+  "summary": "Comprendre que le Prophète ﷺ a rencontré des difficultés, mais il a été patient et confiant en Allah.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Dire que la patience est importante",
+    "Donner un exemple de patience",
+    "Chercher l’aide d’Allah par la prière"
+  ],
+  "keywords": [
+    "patience",
+    "mecque",
+    "confiance"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Patience",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Approche bienveillante"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Face aux difficultés",
+      "content": "À **La Mecque**, certaines personnes ont refusé le message. Le Prophète ﷺ a été **patient** et a mis sa **confiance** en Allah."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je pratique",
+        "content": "Quand je suis **frustré**, je respire et je dis : « **Astaghfirullah** » (je demande pardon) et je **prie**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "**Patience** + **confiance** = force du croyant."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu peux appliquer la patience dans ta vie.",
+      "keyTakeaways": [
+        "Sabr",
+        "Confiance"
+      ],
+      "nextSteps": [
+        "Voyage à **Ṭâ’if** et bienveillance (leçon 8)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Que faire quand c’est difficile ?",
+        "type": "multiple-choice",
+        "options": [
+          "Se décourager",
+          "Être patient et demander l’aide d’Allah"
+        ],
+        "correctAnswer": "Être patient et demander l’aide d’Allah",
+        "explanation": "Sabr + tawakkul",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "patience"
+    ]
+  }
+}

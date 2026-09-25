@@ -1,0 +1,47 @@
+{
+  "id": "info-ai-project",
+  "title": "Projet d'intelligence artificielle avancé",
+  "description": "Développer un projet d'IA complet en maîtrisant les concepts fondamentaux et les outils pratiques de l'intelligence artificielle",
+  "duration": "150 min",
+  "difficulty": "expert",
+  "subject": "informatique",
+  "materials": [
+    "Framework IA approprié (TensorFlow, PyTorch, ou plateforme en ligne)",
+    "Données d'entraînement et de test de qualité",
+    "Documentation et tutoriels du framework choisi",
+    "Ordinateur avec capacités de calcul suffisantes",
+    "Fiches de concepts d'IA et de machine learning",
+    "Grille d'évaluation des modèles d'IA",
+    "Matériel de documentation et d'analyse des résultats",
+    "Outils de visualisation des données et des performances"
+  ],
+  "instructions": [
+    "Définition et planification du projet (30 min) : Définissez clairement votre projet d'IA en identifiant l'objectif et le type de problème à résoudre. Planifiez les étapes de développement et les ressources nécessaires. Choisissez l'approche algorithmique appropriée.",
+    "Préparation et nettoyage des données (45 min) : Préparez vos données en les nettoyant et en les formatant correctement. Divisez vos données en ensembles d'entraînement et de test. Analysez la qualité et la distribution de vos données.",
+    "Entraînement et optimisation du modèle (45 min) : Entraînez votre modèle en ajustant les hyperparamètres. Surveillez les métriques de performance et évitez le surapprentissage. Optimisez votre modèle pour de meilleures performances.",
+    "Évaluation et amélioration (30 min) : Évaluez votre modèle sur les données de test. Analysez les erreurs et identifiez les axes d'amélioration. Documentez vos résultats et vos conclusions."
+  ],
+  "learningObjectives": [
+    "Comprendre les concepts fondamentaux de l'intelligence artificielle et du machine learning",
+    "Traiter et préparer des données pour l'entraînement de modèles d'IA",
+    "Évaluer et optimiser des modèles d'IA avec des métriques appropriées",
+    "Développer une approche méthodique et critique des projets d'IA",
+    "Maîtriser les outils et frameworks modernes de développement d'IA"
+  ],
+  "tips": [
+    "Commencez par des projets simples avant de complexifier",
+    "Prenez le temps de bien comprendre vos données",
+    "Documentez chaque étape de votre processus",
+    "Testez votre modèle sur des données variées"
+  ],
+  "assessment": [
+    "Le projet d'IA est-il clairement défini et réalisable ?",
+    "Les données sont-elles bien préparées et analysées ?",
+    "Le modèle est-il entraîné et optimisé correctement ?",
+    "L'évaluation du modèle est-elle rigoureuse et documentée ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

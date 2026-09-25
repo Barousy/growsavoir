@@ -1,0 +1,47 @@
+{
+  "id": "info-basic-programming",
+  "title": "Programmation de base et premiers pas en code",
+  "description": "Découvrir les concepts fondamentaux de la programmation à travers des exercices pratiques et des projets simples",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "informatique",
+  "materials": [
+    "Ordinateur avec accès internet",
+    "Logiciel de programmation adapté (Scratch, Python, ou éditeur en ligne)",
+    "Tutoriel interactif et progressif",
+    "Fiches de concepts de programmation",
+    "Exemples de code simples",
+    "Grille d'évaluation des programmes",
+    "Matériel de prise de notes",
+    "Fichiers de sauvegarde pour les projets"
+  ],
+  "instructions": [
+    "Installation et découverte (8 min) : Installez le logiciel de programmation. Explorez l'interface et les outils disponibles. Familiarisez-vous avec l'environnement de développement.",
+    "Suivi du tutoriel guidé (10 min) : Suivez le tutoriel pas à pas en écoutant attentivement les explications. Reproduisez chaque exemple. Posez des questions si nécessaire.",
+    "Premier programme personnel (5 min) : Écrivez votre premier programme simple en appliquant les concepts appris. Testez votre code et corrigez les erreurs qui apparaissent.",
+    "Modification et personnalisation (2 min) : Modifiez votre programme pour ajouter des fonctionnalités personnelles. Expérimentez avec les paramètres et les variables."
+  ],
+  "learningObjectives": [
+    "Comprendre les concepts de base de la programmation (variables, boucles, conditions)",
+    "Écrire du code simple et fonctionnel dans un langage approprié",
+    "Déboguer des programmes en identifiant et corrigeant les erreurs",
+    "Développer la logique algorithmique et la pensée computationnelle",
+    "Gagner en confiance dans l'utilisation des outils de programmation"
+  ],
+  "tips": [
+    "Commencez par des programmes très simples",
+    "Testez votre code à chaque étape",
+    "N'ayez pas peur de faire des erreurs, c'est normal",
+    "Sauvegardez régulièrement votre travail"
+  ],
+  "assessment": [
+    "L'élève comprend-il les concepts de base expliqués ?",
+    "Le premier programme fonctionne-t-il correctement ?",
+    "L'élève peut-il identifier et corriger des erreurs simples ?",
+    "Le programme modifié montre-t-il une compréhension des concepts ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

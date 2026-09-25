@@ -1,0 +1,100 @@
+{
+  "slug": "fiqh-n1-fondamentaux-03",
+  "title": "Wudû’ — les ablutions étape par étape",
+  "summary": "Apprendre les étapes simples du wudû’ pour les enfants et savoir quand le faire.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Citer les étapes du wudû’ en version courte",
+    "Exécuter le geste correctement avec un adulte",
+    "Dire quand refaire le wudû’ (notion)"
+  ],
+  "keywords": [
+    "wudu",
+    "ablutions",
+    "prière"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — wudû’",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Fiche étapes simplifiées"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Se préparer à prier",
+      "content": "Le **wudû’** est une **ablution** avec de l’eau : on **lave** certaines parties du corps avant de **prier**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Étapes (version N1)",
+        "content": "1) Intention 2) Mains 3) Bouche & nez 4) Visage 5) Bras jusqu’aux coudes 6) Tête/oreilles (passer la main mouillée) 7) Pieds jusqu’aux chevilles."
+      },
+      {
+        "type": "activity",
+        "title": "Je m’entraîne",
+        "content": "Refais les étapes **doucement**, avec l’aide d’un adulte et **sans gaspiller l’eau**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Wudû’ = **propreté rituelle** avant la prière."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais faire le wudû’ (niveau enfant).",
+      "keyTakeaways": [
+        "Étapes",
+        "Calme",
+        "Économie d’eau"
+      ],
+      "nextSteps": [
+        "Ce qui **annule** le wudû’ (leçon 4)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Poster Wudû’ enfants",
+          "description": "Étapes illustrées",
+          "url": "https://example.com/fiqh-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Laver les **pieds** fait-il partie du wudû’ ?",
+        "type": "multiple-choice",
+        "options": [
+          "Non",
+          "Oui"
+        ],
+        "correctAnswer": "Oui",
+        "explanation": "Étape N1",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "wudu"
+    ]
+  }
+}

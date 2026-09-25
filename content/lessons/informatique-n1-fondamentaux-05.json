@@ -1,0 +1,93 @@
+{
+  "slug": "informatique-n1-fondamentaux-05",
+  "title": "Pensée algorithmique — séquences (débranché)",
+  "summary": "Comprendre qu’un programme est une **suite ordonnée** d’instructions ; créer des séquences pour un « robot ». ",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Ordonner des étapes",
+    "Décrire un trajet sur quadrillage",
+    "Exécuter une séquence simple"
+  ],
+  "keywords": [
+    "algorithme",
+    "séquence",
+    "débranché"
+  ],
+  "sources": [
+    {
+      "title": "code.org — CS Unplugged (débutants)",
+      "url": "https://code.org",
+      "type": "website",
+      "description": "Activités sans écran"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Un programme = une recette",
+      "content": "Comme une recette de cuisine : **d’abord**, **ensuite**, **puis**. L’ordre compte !"
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Robot en classe",
+        "content": "Donne des ordres **Avance / Tourne à droite / Tourne à gauche** pour atteindre un autocollant."
+      },
+      {
+        "type": "exercise",
+        "title": "Je code sur quadrillage",
+        "content": "Depuis (0,0) jusqu’à (2,1) : **Avance, Avance, Droite, Avance**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Séquence = **ordre d’actions**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais écrire une petite séquence.",
+      "keyTakeaways": [
+        "Ordre",
+        "Instructions"
+      ],
+      "nextSteps": [
+        "Ajouter des **boucles** (leçon 6)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans un programme, l’**ordre** est-il important ?",
+        "type": "multiple-choice",
+        "options": [
+          "Non",
+          "Oui"
+        ],
+        "correctAnswer": "Oui",
+        "explanation": "Séquence = ordre",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "algorithmes"
+    ]
+  }
+}

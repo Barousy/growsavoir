@@ -1,0 +1,113 @@
+{
+  "slug": "francais-n1-fondamentaux-08",
+  "title": "Nom, article, adjectif — première approche",
+  "summary": "Identifier nom, article et adjectif dans des GN simples (le petit chat).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Repérer le nom",
+    "Associer l'article (défini/indéfini)",
+    "Ajouter un adjectif d'aspect/couleur",
+    "Produire 3 GN"
+  ],
+  "keywords": [
+    "grammaire",
+    "GN",
+    "adjectif"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Grammaire GN",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Groupe nominal simple"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le groupe nominal (GN)",
+      "content": "Un **GN** peut contenir : **article + nom (+ adjectif)** : **le chat noir**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "**le** chien **blanc** / **une** robe **rouge** / **les** fleurs **jaunes**.",
+        "examples": [
+          {
+            "code": "le chat noir",
+            "title": "GN modèle",
+            "description": "article + nom + adjectif",
+            "explanation": "Ordre stable"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je souligne",
+        "content": "Souligne l’**article**, entoure le **nom**, surligne l’**adjectif**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis 3 GN",
+        "content": "Écris 3 GN avec **article + nom + adjectif**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Tu sais construire des **GN simples**."
+      }
+    ],
+    "conclusion": {
+      "summary": "GN repéré et produit.",
+      "keyTakeaways": [
+        "Article + nom (+ adjectif)"
+      ],
+      "nextSteps": [
+        "Phrase minimale : Sujet + Verbe + Complément"
+      ],
+      "additionalResources": [
+        {
+          "title": "Mémo GN",
+          "description": "Schéma simple",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **la petite maison**, quel est le **nom** ?",
+        "type": "multiple-choice",
+        "options": [
+          "la",
+          "petite",
+          "maison"
+        ],
+        "correctAnswer": "maison",
+        "explanation": "Nom noyau du GN",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "GN"
+    ]
+  }
+}

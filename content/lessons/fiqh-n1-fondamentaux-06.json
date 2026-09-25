@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-06",
+  "title": "Gestes & positions — se tenir, s’incliner, se prosterner",
+  "summary": "Apprendre les **positions principales** de la prière avec calme et respect (version enfant).",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Adopter les positions principales",
+    "Se déplacer en douceur entre les positions",
+    "Garder le calme et la concentration"
+  ],
+  "keywords": [
+    "gestes",
+    "rukû‘",
+    "sujûd",
+    "qiyâm"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Gestes",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Fiche gestuelle N1"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Prière avec sérénité",
+      "content": "On prie **calmement** : debout (**qiyâm**), **inclinaison** (**rukû‘**), **prosternation** (**sujûd**), position **assise**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Entraînement doux",
+        "content": "Avec un adulte, **mime** les positions lentement (sans paroles)."
+      },
+      {
+        "type": "exercise",
+        "title": "Je retiens",
+        "content": "Donne l’ordre : debout → inclinaison → prosternation → assis."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Des **gestes** respectueux et **calmes**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les gestes principaux.",
+      "keyTakeaways": [
+        "Calme",
+        "Ordre des positions"
+      ],
+      "nextSteps": [
+        "Dire des **formules** simples (leçon 7)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quelle position correspond à « mettre le front au sol » ?",
+        "type": "multiple-choice",
+        "options": [
+          "Rukû‘ (inclinaison)",
+          "Sujûd (prosternation)"
+        ],
+        "correctAnswer": "Sujûd (prosternation)",
+        "explanation": "Front au sol",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "gestes"
+    ]
+  }
+}

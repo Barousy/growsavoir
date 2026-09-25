@@ -1,0 +1,159 @@
+{
+  "slug": "arabe-n1-fondamentaux-07",
+  "title": "Lettres solaires & lunaires (ال)",
+  "summary": "Assimilation du lâm de l’article (al-) avec les lettres solaires ; prononciation claire avec les lettres lunaires.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Connaître la liste des lettres solaires et lunaires (14 + 14)",
+    "Prononcer correctement l’article défini ال devant chaque groupe",
+    "Repérer la shadda sur les lettres solaires (assimilation du lâm)",
+    "Lire et classer des mots simples : الشمس / القمر / النور / الكتاب …"
+  ],
+  "keywords": [
+    "arabe",
+    "lettres solaires",
+    "lettres lunaires",
+    "assimilation",
+    "article défini",
+    "al",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Lettres solaires et lunaires — aperçu",
+      "url": "https://fr.wikipedia.org/wiki/Consonnes_solaires_et_lunaires",
+      "type": "website",
+      "description": "Règle de l’assimilation du lâm de l’article"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "ال : article défini et deux comportements",
+      "content": "\nL’article **ال** (*al-*) se place **avant** un nom pour le rendre **défini**.  \nSelon la première lettre du mot, on distingue :\n\n- **Lettres solaires (شمسية)** : le **lâm** s’**assimile** → on **n’entend pas** `l` et on met **shadda** sur la lettre suivante. Ex. **الشَّمْس** (*ash-shams*).\n- **Lettres lunaires (قمرية)** : le **lâm** se **prononce** clairement. Ex. **القَمَر** (*al-qamar*).\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Les 14 lettres solaires (assimilation + shadda)",
+        "content": "\n**ت ث د ذ ر ز س ش ص ض ط ظ ل ن**\n\nExemples :  \n- **النُّور** (*an-nūr*)  \n- **السَّلام** (*as-salām*)  \n- **الرَّجُل** (*ar-rajul*)  \n- **الدَّرْس** (*ad-dars*)  \n\n> Indice visuel : on voit souvent une **shadda** sur la première lettre du mot après **ال**.\n        "
+      },
+      {
+        "type": "concept",
+        "title": "Les 14 lettres lunaires (lâm prononcé)",
+        "content": "\n**ا ب ج ح خ ع غ ف ق ك م هـ و ي**\n\nExemples :  \n- **القَلَم** (*al-qalam*)  \n- **الكِتاب** (*al-kitāb*)  \n- **الهاتِف** (*al-hātif*)  \n- **اليوم** (*al-yawm*)\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau comparatif",
+        "content": "\n| Type | Mot | Lecture | Règle |\n|---|---|---|---|\n| Solaire | **الشَّمْس** | *ash-shams* | Assimilation + **shadda** |\n| Solaire | **النُّور** | *an-nūr* | Assimilation + **shadda** |\n| Lunaire | **القَمَر** | *al-qamar* | Lâm **prononcé** |\n| Lunaire | **الكِتاب** | *al-kitāb* | Lâm **prononcé** |\n        ",
+        "examples": [
+          {
+            "code": "الشَّمْس / القَمَر",
+            "title": "ash-shams / al-qamar",
+            "description": "Solaire vs lunaire",
+            "explanation": "Shadda visible pour la solaire ; lâm audible pour la lunaire."
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Classe les mots (S = solaire / L = lunaire)",
+        "content": "\n- **النُّور** ☐ S ☐ L  \n- **القَلَم** ☐ S ☐ L  \n- **الرَّجُل** ☐ S ☐ L  \n- **اليوم** ☐ S ☐ L\n\n> Corrigé attendu : S, L, S, L.\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lis correctement ال + mot",
+        "content": "\nLis à voix haute en appliquant la bonne règle :\n\n- **السَّلام** → *as-salām*  \n- **الكتاب** → *al-kitāb*  \n- **الزَّهْر** → *az-zahr*  \n- **المَدْرَسَة** → *al-madrasa*\n\n> Astuce : si tu vois **shadda** juste après **ال**, pense **lettre solaire**.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- **ال** + **solaire** → **assimilation** du lâm + **shadda**  \n- **ال** + **lunaire** → **lâm prononcé**  \n- 14 lettres dans chaque groupe\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu sais distinguer **lettres solaires** et **lunaires** et lire l’article **ال** correctement.  \nTu peux maintenant lire des phrases simples avec des mots définis.\n      ",
+      "keyTakeaways": [
+        "Solaire : assimilation + shadda",
+        "Lunaire : lâm prononcé",
+        "14 lettres par groupe"
+      ],
+      "nextSteps": [
+        "S’exercer avec 10 mots de chaque groupe",
+        "Passer à la leçon 8 (selon ton plan : alif madda / hamzat al-wasl / petite lecture guidée)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Consonnes solaires et lunaires — repères",
+          "description": "Table et explications détaillées",
+          "url": "https://fr.wikipedia.org/wiki/Consonnes_solaires_et_lunaires"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **الشَّمْس**, le lâm de **ال** est…",
+        "type": "multiple-choice",
+        "options": [
+          "prononcé clairement",
+          "assimilé (non prononcé) avec shadda"
+        ],
+        "correctAnswer": "assimilé (non prononcé) avec shadda",
+        "explanation": "Lettre solaire ش → assimilation.",
+        "points": 10
+      },
+      {
+        "question": "Le mot **القَلَم** commence par une lettre…",
+        "type": "multiple-choice",
+        "options": [
+          "solaire",
+          "lunaire"
+        ],
+        "correctAnswer": "lunaire",
+        "explanation": "ق fait partie des lettres lunaires → on prononce **al-qalam**.",
+        "points": 10
+      },
+      {
+        "question": "Coche la liste correcte des **lettres solaires** :",
+        "type": "multiple-choice",
+        "options": [
+          "ا ب ج ح خ ع غ ف ق ك م هـ و ي",
+          "ت ث د ذ ر ز س ش ص ض ط ظ ل ن"
+        ],
+        "correctAnswer": "ت ث د ذ ر ز س ش ص ض ط ظ ل ن",
+        "explanation": "Ce sont les 14 lettres solaires.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.901Z",
+    "updatedAt": "2025-08-30T06:37:37.901Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "lettres solaires",
+      "lettres lunaires",
+      "assimilation",
+      "al"
+    ]
+  }
+}

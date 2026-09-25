@@ -1,0 +1,119 @@
+{
+  "slug": "anglais-n1-fondamentaux-01",
+  "title": "Alphabet & Phonics — A to Z",
+  "summary": "Découvrir les 26 lettres (noms) et les sons de base (phonics) pour lire des syllabes simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Connaître les 26 lettres (noms A–Z)",
+    "Associer quelques sons de base (a/e/i/o/u, consonnes fréquentes)",
+    "Lire des syllabes simples (CVC : cat, bed, sit, dog, sun)"
+  ],
+  "keywords": [
+    "anglais",
+    "alphabet",
+    "phonics",
+    "CVC",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "British Council Kids — Alphabet",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "type": "website",
+      "description": "Activités pour découvrir l’alphabet"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Welcome to English! — Alphabet & Phonics",
+      "content": "En anglais, on lit de **gauche à droite**. L’alphabet compte **26 lettres**. On apprend le **nom** de la lettre (A, B, C…) et un **son de base** (a /æ/ comme **cat**)."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Letter names & basic sounds",
+        "content": "A /eɪ/ (a — **/æ/**), B /biː/, C /siː/…\nVoyelles courtes : **a /æ/** (cat), **e /ɛ/** (bed), **i /ɪ/** (sit), **o /ɒ/** (UK; dog), **u /ʌ/** (sun)."
+      },
+      {
+        "type": "example",
+        "title": "CVC de référence",
+        "content": "**cat, bed, sit, dog, sun** (C = consonne, V = voyelle)",
+        "examples": [
+          {
+            "code": "cat",
+            "title": "CVC",
+            "description": "c-a-t",
+            "explanation": "Fusion des sons"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "I spy… (Je repère)",
+        "content": "Entoure la lettre initiale : **(c)**at, **(d)**og, **(s)**un, **(b)**ed."
+      },
+      {
+        "type": "exercise",
+        "title": "Blend the sounds",
+        "content": "Lis **/k/ + /æ/ + /t/** → **cat** ; **/d/ + /ɒ/ + /g/** → **dog**."
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "26 lettres. Phonics = **sons**. Lecture **CVC** de base."
+      }
+    ],
+    "conclusion": {
+      "summary": "Bravo ! Tu connais l’alphabet et tu lis des CVC simples.",
+      "keyTakeaways": [
+        "Letter names",
+        "Voyelles courtes",
+        "CVC"
+      ],
+      "nextSteps": [
+        "Approfondir les voyelles courtes (plus de CVC)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Alphabet poster",
+          "description": "Affiche A–Z à imprimer",
+          "url": "https://learnenglishkids.britishcouncil.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel mot est **CVC** ?",
+        "type": "multiple-choice",
+        "options": [
+          "cat",
+          "tea"
+        ],
+        "correctAnswer": "cat",
+        "explanation": "CVC = consonne-voyelle-consonne",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "alphabet",
+      "phonics"
+    ]
+  }
+}

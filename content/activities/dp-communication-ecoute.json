@@ -1,0 +1,47 @@
+{
+  "id": "dp-communication-ecoute",
+  "title": "Communication efficace et écoute active",
+  "description": "Développer des compétences de communication claires et une écoute attentive et empathique",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Fiches de techniques de communication",
+    "Exercices de communication en binôme",
+    "Fiches d'écoute active",
+    "Matériel de jeux de rôle",
+    "Grille d'évaluation de la communication",
+    "Fiches de feedback constructif",
+    "Matériel d'enregistrement pour les exercices",
+    "Fiches de vocabulaire émotionnel"
+  ],
+  "instructions": [
+    "Apprentissage des techniques (8 min) : Étudiez les techniques de communication claire et d'écoute active. Identifiez les éléments clés de chaque technique. Préparez-vous à les pratiquer.",
+    "Exercices pratiques en binôme (12 min) : Pratiquez les techniques avec un partenaire. Alternez les rôles de locuteur et d'écoutant. Utilisez les jeux de rôle pour simuler des situations réelles.",
+    "Feedback et amélioration (3 min) : Donnez et recevez du feedback constructif. Identifiez les points forts et les axes d'amélioration. Notez vos observations pour la pratique future.",
+    "Intégration dans le quotidien (2 min) : Identifiez des situations quotidiennes où appliquer ces techniques. Planifiez leur utilisation. Engagez-vous à pratiquer régulièrement."
+  ],
+  "learningObjectives": [
+    "Développer des compétences de communication claire et efficace",
+    "Maîtriser les techniques d'écoute active et empathique",
+    "Améliorer la qualité des interactions interpersonnelles",
+    "Développer la capacité de feedback constructif",
+    "Cultiver l'empathie et la compréhension mutuelle"
+  ],
+  "tips": [
+    "Pratiquez régulièrement avec différents partenaires",
+    "Soyez patient dans l'apprentissage de ces compétences",
+    "Observez les améliorations dans vos relations",
+    "N'ayez pas peur de faire des erreurs, c'est normal"
+  ],
+  "assessment": [
+    "La communication est-elle plus claire et efficace ?",
+    "L'écoute active est-elle bien pratiquée ?",
+    "Les interactions interpersonnelles s'améliorent-elles ?",
+    "L'élève peut-il donner du feedback constructif ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

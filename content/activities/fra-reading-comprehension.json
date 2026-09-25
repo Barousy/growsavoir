@@ -1,0 +1,47 @@
+{
+  "id": "fra-reading-comprehension",
+  "title": "Compréhension de lecture guidée",
+  "description": "Développer la compréhension de lecture à travers des textes adaptés avec un accompagnement personnalisé et des activités d'exploration",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "francais",
+  "materials": [
+    "Livre adapté au niveau de l'élève",
+    "Crayons de couleur et surligneurs",
+    "Fiches de questions de compréhension",
+    "Dictionnaire illustré pour enfants",
+    "Marqueurs pour tableau ou feuille",
+    "Images illustrant le texte",
+    "Fiches de vocabulaire",
+    "Grille d'évaluation de la compréhension"
+  ],
+  "instructions": [
+    "Préparation et découverte (5 min) : Feuilletez le livre ensemble. Observez les illustrations. Prédisez le contenu à partir du titre et des images. Préparez l'espace de lecture.",
+    "Lecture guidée (10 min) : Lisez le texte à voix haute en alternant les paragraphes. Marquez les pauses aux points et virgules. Expliquez les mots difficiles au fur et à mesure.",
+    "Exploration du vocabulaire (5 min) : Identifiez ensemble les mots nouveaux ou difficiles. Utilisez le dictionnaire illustré. Créez des associations avec des images ou des gestes.",
+    "Questions de compréhension (5 min) : Répondez aux questions simples sur l'histoire. Discutez des personnages et des événements. Reliez l'histoire à l'expérience personnelle."
+  ],
+  "learningObjectives": [
+    "Améliorer la fluidité de lecture avec une prononciation claire et une intonation appropriée",
+    "Comprendre le sens global du texte et identifier les informations principales",
+    "Enrichir le vocabulaire en découvrant de nouveaux mots et expressions",
+    "Développer la capacité de prédiction et d'inférence",
+    "Établir des liens entre le texte lu et l'expérience personnelle"
+  ],
+  "tips": [
+    "Lisez avec expression pour maintenir l'intérêt",
+    "Posez des questions pendant la lecture pour vérifier la compréhension",
+    "Encouragez l'enfant à faire des prédictions sur la suite",
+    "Reliez le vocabulaire nouveau à des situations familières"
+  ],
+  "assessment": [
+    "L'élève peut-il lire le texte avec fluidité ?",
+    "La compréhension des informations principales est-elle correcte ?",
+    "Le vocabulaire nouveau est-il mémorisé et utilisé ?",
+    "L'élève peut-il faire des liens avec son expérience ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

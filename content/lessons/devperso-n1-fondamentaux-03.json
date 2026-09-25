@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-03",
+  "title": "Respiration calme et retour au calme",
+  "summary": "S’entraîner à respirer profondément pour revenir au calme en 1 minute.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 10,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Pratiquer une respiration 4–4",
+    "Utiliser la main comme guide",
+    "Revenir au calme en classe"
+  ],
+  "keywords": [
+    "respiration",
+    "calme",
+    "auto-régulation"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Outils de retour au calme",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Techniques brèves"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je souffle",
+      "content": "J’inspire **4** temps, je souffle **4** temps. Je trace les **doigts** de ma main en respirant."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "1 minute zen",
+        "content": "Un **sablier** d’1 min : je respire doucement jusqu’au bout."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Respirer aide mon **cerveau** à **se poser**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais une technique rapide.",
+      "keyTakeaways": [
+        "4–4",
+        "Sablier"
+      ],
+      "nextSteps": [
+        "**Routines** (leçon 4)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche Respiration",
+          "description": "Pas à pas visuel",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La respiration 4–4 veut dire…",
+        "type": "multiple-choice",
+        "options": [
+          "Respirer au hasard",
+          "Inspire 4, souffle 4"
+        ],
+        "correctAnswer": "Inspire 4, souffle 4",
+        "explanation": "Routine simple",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "respiration"
+    ]
+  }
+}

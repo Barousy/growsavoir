@@ -1,0 +1,40 @@
+{
+  "id": "pro-character-traits",
+  "title": "Traits de caractère",
+  "description": "Étudier les qualités du Prophète",
+  "duration": "30 min",
+  "difficulty": "intermediate",
+  "subject": "prophete-muhammad",
+  "materials": [
+    "Textes sur les qualités",
+    "Exemples",
+    "Notes"
+  ],
+  "instructions": [
+    "Lisez sur une qualité spécifique",
+    "Identifiez des exemples",
+    "Analysez l'importance",
+    "Appliquez à votre vie"
+  ],
+  "learningObjectives": [
+    "Comprendre les qualités morales",
+    "Identifier des exemples pratiques",
+    "Appliquer les enseignements"
+  ],
+  "tips": [
+    "Choisissez une qualité à la fois pour une étude approfondie",
+    "Recherchez des exemples concrets dans la vie du Prophète",
+    "Réfléchissez à l'application dans votre vie quotidienne",
+    "Notez vos observations et réflexions"
+  ],
+  "assessment": [
+    "L'élève comprend-il la qualité étudiée ?",
+    "Peut-il identifier des exemples concrets ?",
+    "L'application personnelle est-elle réfléchie ?",
+    "L'élève peut-il expliquer l'importance de cette qualité ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

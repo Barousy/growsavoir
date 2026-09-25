@@ -1,0 +1,121 @@
+{
+  "slug": "sira-n1-fondamentaux-12",
+  "title": "Projet & Évaluation N1 — Frise de la sîra",
+  "summary": "Construire une petite frise : naissance → jeunesse → révélation → premiers croyants → patience → Hijra → Médine → qualités ; puis quiz final.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-01",
+    "sira-n1-fondamentaux-02",
+    "sira-n1-fondamentaux-03",
+    "sira-n1-fondamentaux-04",
+    "sira-n1-fondamentaux-05",
+    "sira-n1-fondamentaux-06",
+    "sira-n1-fondamentaux-07",
+    "sira-n1-fondamentaux-08",
+    "sira-n1-fondamentaux-09",
+    "sira-n1-fondamentaux-10",
+    "sira-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Ordonner les étapes principales",
+    "Présenter la frise en 2 minutes",
+    "Valider les notions de base"
+  ],
+  "keywords": [
+    "projet",
+    "frise",
+    "évaluation"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Synthèse",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Checklist finale"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes",
+      "content": "Sur une **feuille**, dessine une **frise** avec 6 à 8 étapes de la sîra. Ajoute un **mot-clé** à chaque étape."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Étapes possibles",
+        "content": "Naissance — Jeunesse (al-Amîn) — Révélation — Premiers croyants — Patience — Ṭâ’if — **Hijra** — **Médine** — Qualités."
+      },
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "Explique ta frise en **2 minutes** à quelqu’un."
+      },
+      {
+        "type": "summary",
+        "title": "Bravo 🎉",
+        "content": "Tu valides **Sîra N1** !"
+      }
+    ],
+    "conclusion": {
+      "summary": "Niveau N1 terminé.",
+      "keyTakeaways": [
+        "Révélation",
+        "Hijra",
+        "Qualités"
+      ],
+      "nextSteps": [
+        "Passer au **N2** (approfondir)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Modèle de frise",
+          "description": "Gabarit à imprimer",
+          "url": "https://example.com/sira-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La Révélation a commencé dans…",
+        "type": "multiple-choice",
+        "options": [
+          "La grotte de Ḥirâ’",
+          "Une école"
+        ],
+        "correctAnswer": "La grotte de Ḥirâ’",
+        "explanation": "Début du Coran",
+        "points": 10
+      },
+      {
+        "question": "La Hijra mène à…",
+        "type": "multiple-choice",
+        "options": [
+          "Damas",
+          "Médine"
+        ],
+        "correctAnswer": "Médine",
+        "explanation": "Migration",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 18
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "projet"
+    ]
+  }
+}

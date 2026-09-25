@@ -1,0 +1,111 @@
+{
+  "slug": "francais-n1-fondamentaux-07",
+  "title": "Mots outils (le, la, les, un, une, et, est, à, dans, sur)",
+  "summary": "Lire et employer des mots-outils très fréquents dans de petites phrases.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Lire des mots-outils",
+    "Construire de courtes phrases correctes",
+    "Repérer prépositions simples"
+  ],
+  "keywords": [
+    "mots-outils",
+    "lecture",
+    "phrases"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Étude de la langue",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Grammaire de phrase"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des mots très utiles",
+      "content": "Ces mots aident à **former des phrases** : **le, la, les, un, une, et, est, à, dans, sur**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mini-phrases",
+        "content": "**Le** chat **est** sur **la** table. / **Une** pomme **dans** **le** sac. / Paul **et** Lila.",
+        "examples": [
+          {
+            "code": "Le chat est sur la table.",
+            "title": "Phrase modèle",
+            "description": "mots-outils",
+            "explanation": "Préposition **sur**"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je choisis le bon mot",
+        "content": "__ chat est sur __ chaise. (Le / la)"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris 3 phrases avec **à / dans / sur**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Mots-outils lus et employés dans des phrases."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu emploies les mots-outils.",
+      "keyTakeaways": [
+        "Fonctions simples des mots-outils"
+      ],
+      "nextSteps": [
+        "Nom/Article/Adjectif : première approche"
+      ],
+      "additionalResources": [
+        {
+          "title": "Liste mots-outils CP",
+          "description": "Fréquence élevée",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Choisis : __ chat est sur __ table.",
+        "type": "multiple-choice",
+        "options": [
+          "Le / la",
+          "La / le"
+        ],
+        "correctAnswer": "Le / la",
+        "explanation": "Genre des noms",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "mots-outils"
+    ]
+  }
+}

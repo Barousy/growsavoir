@@ -1,0 +1,107 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-04",
+  "title": "Additionner jusqu’à 10 — « mettre ensemble »",
+  "summary": "Comprendre l’addition comme réunion de collections ; utiliser + et = ; stratégies avec 10-frame et doigts.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Modéliser l’addition (réunion/ajout)",
+    "Calculer jusqu’à 10",
+    "Écrire une égalité a + b = c"
+  ],
+  "keywords": [
+    "addition",
+    "+",
+    "="
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Additions au CP",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Situations d’ajout et de réunion"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Addition = ajouter",
+      "content": "Ex.: 3 bonbons + 2 bonbons = 5 bonbons."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Modèles",
+        "content": "**4 + 1 = 5**, **2 + 3 = 5**, **5 + 0 = 5**",
+        "examples": [
+          {
+            "code": "10-frame",
+            "title": "Compléter à 5",
+            "description": "Stratégie visuelle",
+            "explanation": "Remplir les cases"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je complète",
+        "content": "__ + 3 = 5 ; 4 + __ = 7 ; 0 + 6 = __"
+      },
+      {
+        "type": "exercise",
+        "title": "Calcul mental",
+        "content": "2+2, 3+1, 4+3, 5+4, 6+1 (résultats ≤ 10)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Addition = **+** ; total avec **=**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Addition jusqu’à 10 acquise.",
+      "keyTakeaways": [
+        "Réunion/ajout",
+        "10-frame"
+      ],
+      "nextSteps": [
+        "Soustraction jusqu’à 10"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "4 + 3 = __",
+        "type": "multiple-choice",
+        "options": [
+          "6",
+          "7",
+          "8"
+        ],
+        "correctAnswer": "7",
+        "explanation": "4+3=7",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "addition"
+    ]
+  }
+}

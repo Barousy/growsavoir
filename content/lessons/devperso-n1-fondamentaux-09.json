@@ -1,0 +1,95 @@
+{
+  "slug": "devperso-n1-fondamentaux-09",
+  "title": "Travail en équipe et entraide",
+  "summary": "Comprendre les rôles simples (porte‑parole, gardien du temps) et s’entraider.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Choisir un rôle",
+    "Aider un camarade",
+    "Respecter les tours"
+  ],
+  "keywords": [
+    "équipe",
+    "entraide",
+    "rôle",
+    "coopération"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Coopération",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Rôles simples"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "On réussit ensemble",
+      "content": "En équipe, chacun a un **rôle** et on **s’entraide**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Mission minute",
+        "content": "En **3 minutes**, on construit une **tour** de cubes. Un **gardien du temps** aide à finir."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Coopérer = **parler**, **écouter**, **aider**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais coopérer.",
+      "keyTakeaways": [
+        "Rôles",
+        "Aide"
+      ],
+      "nextSteps": [
+        "**Gérer le temps** (leçon 10)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes de rôles",
+          "description": "À découper",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Un gardien du temps sert à…",
+        "type": "multiple-choice",
+        "options": [
+          "Décorer",
+          "Aider l’équipe à finir à temps"
+        ],
+        "correctAnswer": "Aider l’équipe à finir à temps",
+        "explanation": "Gestion simple",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "coopération"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-11",
+  "title": "Résoudre un petit conflit — messages « je »",
+  "summary": "Utiliser un message « je » et 3 étapes pour régler un désaccord simple.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Dire un message « je »",
+    "Proposer une solution",
+    "Dire merci en fin d’échange"
+  ],
+  "keywords": [
+    "conflit",
+    "communication",
+    "message je"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Communication bienveillante",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Étapes simples"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Parler sans blesser",
+      "content": "Étapes : 1) **Je ressens**… 2) **Quand** tu… 3) **Je propose**…"
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Jeu de rôle court",
+        "content": "Ex. « Je me **sens** triste **quand** on me coupe la parole. **Je propose** de lever la main. »"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Parler **calmement** aide à **se comprendre**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais exprimer un message « je ».",
+      "keyTakeaways": [
+        "Je ressens",
+        "Je propose"
+      ],
+      "nextSteps": [
+        "**Projet N1** (leçon 12)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche Message Je",
+          "description": "Modèle à trous",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans un message « je », on dit d’abord…",
+        "type": "multiple-choice",
+        "options": [
+          "Tu es méchant",
+          "Je ressens…"
+        ],
+        "correctAnswer": "Je ressens…",
+        "explanation": "Langage responsable",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "conflit"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "slug": "histoire-n1-fondamentaux-04",
+  "title": "Ibrâhîm عليه السلام — Adorer Allah seul",
+  "summary": "Ibrâhîm refuse les idoles et choisit d'adorer Allah seul ; modèle de courage.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Dire « adorer Allah seul »",
+    "Donner un exemple de courage",
+    "Respecter la vérité"
+  ],
+  "keywords": [
+    "Ibrâhîm",
+    "tawḥîd",
+    "courage"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Ibrâhîm)",
+      "url": "#",
+      "type": "book",
+      "description": "Histoires des prophètes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le choix de la vérité",
+      "content": "**Ibrâhîm** a compris que seul **Allah** mérite l’adoration. Il a **refusé** les idoles."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je dis la vérité",
+        "content": "Trouve une **bonne parole** à dire aujourd’hui (remercier, excuser)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Ibrâhîm : **tawḥîd**, **courage**, **vérité**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais Ibrâhîm عليه السلام.",
+      "keyTakeaways": [
+        "Tawḥîd",
+        "Courage"
+      ],
+      "nextSteps": [
+        "**Ismâʿîl** et la **Ka‘ba** (leçon 5)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui mérite l’adoration ?",
+        "type": "multiple-choice",
+        "options": [
+          "Seules des statues",
+          "Allah seul"
+        ],
+        "correctAnswer": "Allah seul",
+        "explanation": "Unicité",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "ibrahim"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "slug": "arabe-n1-fondamentaux-09",
+  "title": "Lecture guidée — révision N1",
+  "summary": "Lire des mots et mini-phrases en combinant harakât, madd, sukûn, shadda, tanwîn, hamza et ال (solaires/lunaires).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06",
+    "arabe-n1-fondamentaux-07",
+    "arabe-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Appliquer toutes les notions N1 en lecture de mots",
+    "Lire des mini-phrases simples avec ال (solaire/lunaire)",
+    "Repérer et prononcer correctement hamza, shadda, tanwîn",
+    "Gagner en fluidité (CV, CVC, longues ā/ī/ū)"
+  ],
+  "keywords": [
+    "arabe",
+    "lecture",
+    "révision",
+    "débutant",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Récap diacritiques (harakât, shadda, tanwîn)",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Rappels utiles pour la lecture"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Objectif : lire avec fluidité",
+      "content": "\nNous allons **réviser en lisant** : syllabes **CV/CVC**, **voyelles longues**, **sukûn**, **shadda**, **tanwîn**, **lettres solaires/lunaires** et **hamza**.  \nLis **calmement**, puis **un peu plus vite** en gardant une **prononciation claire**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Échauffement — syllabes & mots",
+        "content": "\nLis à voix haute (CV → CVC → longues) :\n\n- **بَ / بِ / بُ** — **تَ / تِ / تُ** — **مَ / مِ / مُ**  \n- **بَم / مِن / تُبْ / سَكْ / لِبْ**  \n- **بَا / بِـي / بُو** — **تَا / تِي / تُو** — **مَا / مِي / مُو**"
+      },
+      {
+        "type": "example",
+        "title": "Mots fréquents (mélange de règles)",
+        "content": "\n| Mot | Lecture | Règle mise en jeu |\n|---|---|---|\n| **كِتَابٌ** | kitābun | madd + tanwîn (un) |\n| **نُور** | nūr | madd (ū) |\n| **رَبّ** | rab-b | shadda |\n| **مَدْرَسَةً** | madrasatan | sukûn + tanwîn (an, sans alif après ة) |\n| **الشَّمْس** | ash-shams | solaire + shadda |\n| **القَمَر** | al-qamar | lunaire (lâm prononcé) |\n| **إِمَام** | imām | hamza initiale (qaṭ‘) |\n| **بِسْمِ** | bismi | waṣl en liaison |\n        ",
+        "examples": [
+          {
+            "code": "كِتَابٌ / رَبّ / الشَّمْس",
+            "title": "kitābun / rab-b / ash-shams",
+            "description": "madd+tanwîn, shadda, solaire",
+            "explanation": "Vérifie les signes avant de lire."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "Mini-phrases avec ال (solaire / lunaire)",
+        "content": "\n- **السَّلامُ نُورٌ.** → *as-salāmu nūrun.*  \n- **القَلَمُ فِي الكِتَابِ.** → *al-qalamu fī al-kitābi.*  \n- **النُّورُ جَمِيلٌ.** → *an-nūru jamīlun.*  \n- **الهَاتِفُ قَرِيبٌ.** → *al-hātifu qarībun.*"
+      },
+      {
+        "type": "activity",
+        "title": "Vrai / Faux (compréhension rapide)",
+        "content": "\n- [x] Dans **الشَّمْس**, on **n’entend pas** le **l** de **ال**.  \n- [ ] **القَلَم** est un mot à **lettre solaire**.  \n- [x] **رَبّ** contient une **consonne doublée**.  \n- [x] **مَدْرَسَةً** s’écrit **sans alif** après **ة**."
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée (progression)",
+        "content": "\n**1) Mots isolés :**  \n**مُدَرِّسٌ** — **مَدْرَسَةٌ** — **كِتَابٌ** — **نُورٌ** — **رَجُلٌ** — **إِمَامٌ**\n\n**2) Groupes nominaux :**  \n**الرَّجُلُ الصَّالِحُ** — **القَلَمُ الجَدِيدُ** — **الكِتَابُ المُهِمُّ**\n\n**3) Phrases courtes :**  \n- **الكِتَابُ مُفِيدٌ.**  \n- **الشَّمْسُ سَاطِعَةٌ.**  \n- **بِسْمِ اللهِ نَقْرَأُ.**\n\n> Astuce : repère d’abord les **signes** (shadda, tanwîn, hamza…), puis lis **sans t’arrêter**."
+      },
+      {
+        "type": "summary",
+        "title": "Récapitulatif",
+        "content": "\nTu as révisé **toutes les bases** : harakât, **ā/ī/ū**, **sukûn**, **shadda**, **tanwîn**, **solaires/lunaires**, **hamza/waṣl**.  \nObjectif : **fluidité** et **précision**."
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu sais lire des **mots** et **mini-phrases** en combinant toutes les règles N1.  \nOn continue avec plus de lecture guidée et quelques règles d’orthographe simples.",
+      "keyTakeaways": [
+        "Toujours repérer les signes avant de lire",
+        "Appliquer solaire/lunaire sur ال",
+        "Garder les voyelles courtes vraiment courtes"
+      ],
+      "nextSteps": [
+        "S’entraîner 5 minutes/jour à voix haute",
+        "Passer à la leçon 10 : Lecture guidée thématique (famille/école/objets)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakât — rappels",
+          "description": "Révisions des signes vocaliques",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **الشَّمْس**, le lâm de **ال** est…",
+        "type": "multiple-choice",
+        "options": [
+          "prononcé clairement",
+          "assimilé (non prononcé) avec shadda"
+        ],
+        "correctAnswer": "assimilé (non prononcé) avec shadda",
+        "explanation": "Lettre solaire ش → assimilation + shadda.",
+        "points": 10
+      },
+      {
+        "question": "Lisez **رَبّ**. Quelle analyse est correcte ?",
+        "type": "multiple-choice",
+        "options": [
+          "ra-b",
+          "rab-b",
+          "ra-bu",
+          "rib-bu"
+        ],
+        "correctAnswer": "rab-b",
+        "explanation": "Shadda sur ب → consonne doublée.",
+        "points": 10
+      },
+      {
+        "question": "**مَدْرَسَةً** s’écrit…",
+        "type": "multiple-choice",
+        "options": [
+          "…ةًا",
+          "…ةً",
+          "…ةٍا",
+          "…ةٌا"
+        ],
+        "correctAnswer": "…ةً",
+        "explanation": "Après **ة**, le tanwîn fatḥ **sans alif** ajouté.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.903Z",
+    "updatedAt": "2025-08-30T06:37:37.903Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "lecture",
+      "révision"
+    ]
+  }
+}

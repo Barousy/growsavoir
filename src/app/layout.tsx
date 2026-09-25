@@ -1,93 +1,59 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { featureEnabled } from '@/lib/content';
+import { SITE_URL } from '@/lib/site';
+import './globals.css';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: 'GrowSavoir — apprendre l’arabe, les langues, les sciences et les sciences islamiques',
+    template: '%s — GrowSavoir',
+  },
+  description:
+    'Cours structurés pour les 6-8 ans : langue arabe, français, anglais, mathématiques, sciences, informatique, aqîda, fiqh, sîra et histoire de l’Islam.',
+  authors: [{ name: 'GrowSavoir' }],
+  openGraph: { type: 'website', siteName: 'GrowSavoir', locale: 'fr_FR' },
+  twitter: { card: 'summary_large_image' },
+  robots: { index: true, follow: true },
+};
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  // Une seule lecture indexée : le lien ne doit pas mener à une page éteinte.
+  const activities = await featureEnabled('activities');
 
-export const metadata = {
-  title: "GrowSavoir - Apprentissage ludique pour enfants de 3 à 16 ans",
-  description: "Découvrez des milliers de leçons interactives, quiz et activités pour enfants. Langues, mathématiques, sciences et plus encore, adaptés à chaque niveau.",
-  keywords: "éducation, apprentissage, enfants, leçons, quiz, langues, mathématiques, sciences, arabe, français, anglais",
-  authors: [{ name: "GrowSavoir Team" }],
-  creator: "GrowSavoir",
-  publisher: "GrowSavoir",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://growsavoir.com'),
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    title: "GrowSavoir - Apprentissage ludique pour enfants",
-    description: "Plateforme d'apprentissage innovante avec des leçons interactives et des quiz amusants",
-    url: 'https://growsavoir.com',
-    siteName: 'GrowSavoir',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'GrowSavoir - Apprentissage pour enfants',
-      },
-    ],
-    locale: 'fr_FR',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'GrowSavoir - Apprentissage ludique pour enfants',
-    description: 'Plateforme d\'apprentissage innovante avec des leçons interactives et des quiz amusants',
-    images: ['/og-image.jpg'],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  verification: {
-    google: 'your-google-verification-code',
-  },
-} satisfies import("next").Metadata;
-
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
   return (
-
-    <html lang="fr" className="scroll-smooth">
-
-      <head>
-        <meta name="color-scheme" content="light" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-      </head>
-
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-slate-900`}
-      >
-        {children}
+    <html lang="fr">
+      <body>
+        <a className="skip-link" href="#contenu">Aller au contenu</a>
+        <header className="site-header">
+          <div className="container site-header__inner">
+            <Link className="brand" href="/">
+              <span className="brand__mark" aria-hidden="true">GS</span> GrowSavoir
+            </Link>
+            <nav className="site-nav" aria-label="Navigation principale">
+              <Link href="/catalogue">Catalogue</Link>
+              {activities ? <Link href="/activites">Activités</Link> : null}
+              <Link href="/a-propos">À propos</Link>
+              <Link href="/contact">Contact</Link>
+              <Link className="btn btn--primary" href="/connexion">Se connecter</Link>
+            </nav>
+          </div>
+        </header>
+        <main id="contenu">{children}</main>
+        <footer className="site-footer">
+          <div className="container">
+            <p>© {new Date().getUTCFullYear()} GrowSavoir. Tous droits réservés.</p>
+            <nav aria-label="Liens de pied de page">
+              <Link href="/catalogue">Catalogue</Link>
+              {activities ? <Link href="/activites">Activités</Link> : null}
+              <Link href="/a-propos">À propos</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/mentions-legales">Mentions légales</Link>
+              <Link href="/confidentialite">Confidentialité</Link>
+            </nav>
+          </div>
+        </footer>
       </body>
     </html>
   );

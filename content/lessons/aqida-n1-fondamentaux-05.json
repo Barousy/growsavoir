@@ -1,0 +1,98 @@
+{
+  "slug": "aqida-n1-fondamentaux-05",
+  "title": "Les Prophètes et Messagers — exemples à suivre",
+  "summary": "Croire aux Prophètes et Messagers ; citer quelques noms et qualités (vérité, patience).",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Dire que les Prophètes transmettent le message",
+    "Citer 3 Prophètes",
+    "Imiter une qualité"
+  ],
+  "keywords": [
+    "prophètes",
+    "messagers",
+    "sunna"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Notions enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui sont-ils ?",
+      "content": "Des hommes choisis par Allah : **Nûḥ**, **Ibrâhîm**, **Mûsâ**, **‘Îsâ**, et **Muhammad ﷺ** le **dernier** des Messagers."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Qualités",
+        "content": "Vérité, patience, confiance en Allah."
+      },
+      {
+        "type": "activity",
+        "title": "Je m’inspire",
+        "content": "Choisis une **qualité** et donne un **exemple** aujourd’hui."
+      },
+      {
+        "type": "exercise",
+        "title": "Je cite",
+        "content": "Écris **3** noms de Prophètes."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je crois aux **Prophètes** et j’essaie d’**imiter** leurs belles qualités."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais quelques Prophètes.",
+      "keyTakeaways": [
+        "Message",
+        "Qualités"
+      ],
+      "nextSteps": [
+        "Les **piliers de la foi** (leçon 6)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le dernier Messager est…",
+        "type": "multiple-choice",
+        "options": [
+          "Mûsâ",
+          "Muhammad ﷺ"
+        ],
+        "correctAnswer": "Muhammad ﷺ",
+        "explanation": "Sceau des Prophètes",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "prophètes"
+    ]
+  }
+}

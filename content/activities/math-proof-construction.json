@@ -1,0 +1,47 @@
+{
+  "id": "math-proof-construction",
+  "title": "Construction de preuves mathématiques",
+  "description": "Développer la capacité à construire des démonstrations mathématiques rigoureuses en utilisant la logique formelle et les théorèmes appropriés",
+  "duration": "60 min",
+  "difficulty": "expert",
+  "subject": "mathematiques",
+  "materials": [
+    "Énoncés à démontrer variés (géométrie, algèbre, analyse)",
+    "Recueil de théorèmes et propriétés",
+    "Papier brouillon et papier de rédaction",
+    "Fiches de méthodes de démonstration",
+    "Exemples de preuves complètes",
+    "Grille d'évaluation de la rigueur logique",
+    "Dictionnaire des termes mathématiques",
+    "Timer pour gérer le temps de réflexion"
+  ],
+  "instructions": [
+    "Analyse de l'énoncé (15 min) : Lisez attentivement l'énoncé à démontrer. Identifiez les hypothèses et la conclusion. Notez les définitions et propriétés utiles.",
+    "Recherche de théorèmes (20 min) : Identifiez les théorèmes et propriétés qui pourraient être utiles. Organisez vos connaissances en un plan logique. Préparez les étapes de votre démonstration.",
+    "Construction de la preuve (20 min) : Construisez votre démonstration étape par étape. Justifiez chaque étape par un théorème ou une propriété. Vérifiez la cohérence logique.",
+    "Vérification et rédaction (5 min) : Vérifiez que votre preuve est complète et rigoureuse. Rédigez clairement votre démonstration finale. Vérifiez qu'elle répond à l'énoncé initial."
+  ],
+  "learningObjectives": [
+    "Construire des raisonnements logiques rigoureux et cohérents",
+    "Utiliser les théorèmes et propriétés appropriés dans les démonstrations",
+    "Rédiger des preuves mathématiques claires et structurées",
+    "Développer la pensée logique et la rigueur mathématique",
+    "Analyser et critiquer des démonstrations existantes"
+  ],
+  "tips": [
+    "Commencez par des cas simples avant de généraliser",
+    "Vérifiez chaque étape de votre raisonnement",
+    "Utilisez des schémas pour visualiser les concepts",
+    "Relisez votre preuve comme si vous la découvriez"
+  ],
+  "assessment": [
+    "La démonstration est-elle logiquement cohérente ?",
+    "Tous les théorèmes utilisés sont-ils correctement appliqués ?",
+    "La preuve est-elle complète et rigoureuse ?",
+    "La rédaction est-elle claire et structurée ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

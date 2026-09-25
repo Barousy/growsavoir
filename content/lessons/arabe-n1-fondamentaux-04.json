@@ -1,0 +1,140 @@
+{
+  "slug": "arabe-n1-fondamentaux-04",
+  "title": "Le sukûn (ـْ) — syllabes fermées CVC",
+  "summary": "Lire les syllabes fermées grâce au sukûn : de CV → CVC (ex. بَ + مْ = بَم / bam).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Reconnaître le signe du sukûn (ـْ) : absence de voyelle",
+    "Lire des structures CVC en combinant voyelle courte + consonne muette",
+    "Différencier voyelles courtes (CV) vs. syllabes fermées (CVC)",
+    "Appliquer le sukûn dans des mots simples (ex. نُور، كِتَاب، سَمْك)"
+  ],
+  "keywords": [
+    "arabe",
+    "sukûn",
+    "CVC",
+    "lecture",
+    "débutant",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Syllabe — notion générale",
+      "url": "https://fr.wikipedia.org/wiki/Syllabe",
+      "type": "website",
+      "description": "Rappel sur syllabes ouvertes/fermées"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qu’est-ce que le sukûn ?",
+      "content": "\nLe **sukûn** (ـْ) indique **l’absence de voyelle** sur une consonne.  \nIl permet de lire des **syllabes fermées** de type **CVC**.\n\nExemples rapides :\n- **بْ** = `b` (arrêt, pas de voyelle)\n- **مْ** = `m`\n- **بَ + مْ = بَم** → **bam**\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "De CV vers CVC",
+        "content": "\nRappels :\n- **CV** : consonne + **voyelle courte** → **بَ = ba**\n- **CVC** : **voyelle courte** + **consonne avec sukûn** → **بَم = bam**\n\nSchéma :\n1) on lit la voyelle courte (**a / i / ou**) sur la première consonne,\n2) on **ferme** la syllabe avec une consonne portant **sukûn (ـْ)**.\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau de combinaisons fréquentes",
+        "content": "\n| Base (CV) | + Consonne (sukûn) | Résultat CVC | Lecture |\n|---|---|---|---|\n| **بَ** | **مْ** | **بَم** | **bam** |\n| **مِ** | **نْ** | **مِن** | **min** |\n| **تُ** | **بْ** | **تُبْ** | **toub** |\n| **سَ** | **كْ** | **سَكْ** | **sak** |\n| **لِ** | **بْ** | **لِبْ** | **lib** |\n        ",
+        "examples": [
+          {
+            "code": "بَم / مِن / تُبْ",
+            "title": "bam / min / toub",
+            "description": "CVC simples",
+            "explanation": "On ferme la syllabe par une consonne muette."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "Position et lecture naturelle",
+        "content": "\n- Le **sukûn** se place **au-dessus** de la consonne (ـْ).\n- On **n’allonge pas** la voyelle courte : *ba* ≠ *bā*.\n- On enchaîne `CV` → `CVC` en **un seul souffle** : `ba` → `bam`.\n        "
+      },
+      {
+        "type": "activity",
+        "title": "Vrai / Faux",
+        "content": "\n- [x] Le **sukûn** signifie **absence de voyelle**.  \n- [ ] **بْ** se lit **bou**.  \n- [x] **مِ + نْ = مِن** (*min*).  \n- [ ] **CVC** signifie **consonne + voyelle longue**.\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée",
+        "content": "\nLis à voix haute puis écris en translittération (bam / min / toub) :\n\n- **بَم** — **مِن** — **تُبْ**  \n- **سَكْ** — **لِبْ** — **حَبْ**\n\n> Astuce : ne pas ajouter de voyelle après la consonne en **sukûn**.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- **Sukûn (ـْ)** = pas de voyelle  \n- Passage **CV → CVC** grâce au **sukûn**  \n- Ne pas confondre **courtes** (a/i/ou) et **longues** (ā/ī/ū)\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu sais fermer une syllabe avec le **sukûn** et lire **CVC**.  \nProchaine étape : **shadda (ّ)** pour lire les **consonnes doublées**.\n      ",
+      "keyTakeaways": [
+        "Sukûn = absence de voyelle",
+        "Structure CVC maîtrisée",
+        "Attention à ne pas allonger la voyelle courte"
+      ],
+      "nextSteps": [
+        "S’entraîner à lire 10 mots contenant un sukûn",
+        "Passer à la leçon 5 : **shadda (ّ)**"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Que signifie le signe **ـْ** posé sur une consonne ?",
+        "type": "multiple-choice",
+        "options": [
+          "Voyelle a",
+          "Voyelle i",
+          "Absence de voyelle",
+          "Voyelle ou"
+        ],
+        "correctAnswer": "Absence de voyelle",
+        "explanation": "Le sukûn marque l’absence de voyelle.",
+        "points": 10
+      },
+      {
+        "question": "Comment lit-on **بَ + مْ** ?",
+        "type": "multiple-choice",
+        "options": [
+          "bām",
+          "bam",
+          "bima",
+          "boum"
+        ],
+        "correctAnswer": "bam",
+        "explanation": "CV (ba) + consonne muette (m) → **bam**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.897Z",
+    "updatedAt": "2025-08-30T06:37:37.897Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "sukûn",
+      "CVC"
+    ]
+  }
+}

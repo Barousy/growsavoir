@@ -1,0 +1,106 @@
+{
+  "slug": "aqida-n1-fondamentaux-02",
+  "title": "Les plus beaux Noms (al-Asmâ’ al-Ḥusnâ) — 5 noms à retenir",
+  "summary": "Connaître et aimer quelques Noms d’Allah : ar-Raḥmân, ar-Raḥîm, al-Khâliq, as-Samî‘, al-Baṣîr.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Citer 5 Noms",
+    "Relier Nom ↔ sens simple",
+    "Utiliser les Noms dans une invocation courte"
+  ],
+  "keywords": [
+    "asma al-husna",
+    "noms d’Allah"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Sélection pédagogique"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Allah a de beaux Noms",
+      "content": "Exemples : **ar-Raḥmân** (Le Tout-Miséricordieux), **ar-Raḥîm** (Le Très-Miséricordieux), **al-Khâliq** (Le Créateur), **as-Samî‘** (Il entend tout), **al-Baṣîr** (Il voit tout)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Cartes Nom → sens",
+        "content": "al-Khâliq → Créateur ; as-Samî‘ → Il **entend** ; al-Baṣîr → Il **voit**."
+      },
+      {
+        "type": "activity",
+        "title": "Invocation courte",
+        "content": "Dis : « **Yâ Raḥmân**, aide-moi à être gentil. »"
+      },
+      {
+        "type": "exercise",
+        "title": "Je relie",
+        "content": "Entendre → **as-Samî‘** ; Voir → **al-Baṣîr** ; Miséricordieux → **ar-Raḥmân/ar-Raḥîm**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Apprendre des **Noms** pour mieux aimer Allah."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais 5 Noms importants.",
+      "keyTakeaways": [
+        "Raḥmân",
+        "Raḥîm",
+        "Khâliq",
+        "Samî‘",
+        "Baṣîr"
+      ],
+      "nextSteps": [
+        "Découvrir les **Anges** (leçon 3)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes des Noms",
+          "description": "À colorier",
+          "url": "https://example.com/aqida-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel Nom signifie qu’Allah **voit** tout ?",
+        "type": "multiple-choice",
+        "options": [
+          "al-Baṣîr",
+          "al-Khâliq"
+        ],
+        "correctAnswer": "al-Baṣîr",
+        "explanation": "al-Baṣîr = Le Clairvoyant",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "asma"
+    ]
+  }
+}

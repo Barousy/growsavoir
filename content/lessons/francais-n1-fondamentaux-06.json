@@ -1,0 +1,111 @@
+{
+  "slug": "francais-n1-fondamentaux-06",
+  "title": "Accents (é/è/ê) et signes (ç, ï, ë)",
+  "summary": "Lire et écrire correctement les accents et quelques signes.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Reconnaître é/è/ê",
+    "Utiliser ç, ï, ë dans quelques mots",
+    "Appliquer en dictée flash"
+  ],
+  "keywords": [
+    "accents",
+    "orthographe"
+  ],
+  "sources": [
+    {
+      "title": "Académie française — Accents",
+      "url": "https://www.academie-francaise.fr",
+      "type": "website",
+      "description": "Rappels orthographiques"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Pourquoi des accents ?",
+      "content": "Les **accents** aident à **prononcer** et parfois **différencier** des mots : **é/è/ê** ; la **cédille** (ç) donne le son [s]."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mots modèles",
+        "content": "**été, père, tête, garçon, maïs, Noël**.",
+        "examples": [
+          {
+            "code": "tête / été / garçon",
+            "title": "Accents & cédille",
+            "description": "é/è/ê/ç",
+            "explanation": "Repérage visuel"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je place le bon accent",
+        "content": "Complète : t__te (tête), p__re (père), __té (été)."
+      },
+      {
+        "type": "exercise",
+        "title": "Dictée flash",
+        "content": "Écris : **tête, été, garçon, Noël, maïs**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "é aigu, è grave, ê circonflexe ; ç pour [s]."
+      }
+    ],
+    "conclusion": {
+      "summary": "Accents repérés et utilisés.",
+      "keyTakeaways": [
+        "é/è/ê",
+        "ç, ï, ë"
+      ],
+      "nextSteps": [
+        "Mots-outils fréquents"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche accents",
+          "description": "Mémo visuel",
+          "url": "https://www.academie-francaise.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le **ç** de garçon sert à…",
+        "type": "multiple-choice",
+        "options": [
+          "[k]",
+          "[s]"
+        ],
+        "correctAnswer": "[s]",
+        "explanation": "cédille = [s]",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "accents"
+    ]
+  }
+}

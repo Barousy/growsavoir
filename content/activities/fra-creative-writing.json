@@ -1,0 +1,47 @@
+{
+  "id": "fra-creative-writing",
+  "title": "Écriture créative et narrative",
+  "description": "Développer la créativité et les compétences d'écriture en créant des histoires et des poèmes personnels avec une structure narrative claire",
+  "duration": "35 min",
+  "difficulty": "intermediate",
+  "subject": "francais",
+  "materials": [
+    "Cahier d'écriture ou feuilles lignées",
+    "Stylos et crayons de couleur",
+    "Images d'inspiration variées",
+    "Fiches de planification d'histoire",
+    "Liste de mots de liaison et connecteurs",
+    "Dictionnaire des synonymes",
+    "Grille d'évaluation de l'écrit",
+    "Timer pour gérer le temps d'écriture"
+  ],
+  "instructions": [
+    "Inspiration et choix du thème (8 min) : Choisissez un thème ou un personnage qui vous inspire. Observez les images d'inspiration. Notez vos idées principales et vos émotions.",
+    "Planification structurée (12 min) : Utilisez la fiche de planification pour organiser votre histoire : personnages, décor, intrigue, début, développement, fin. Créez un plan détaillé.",
+    "Rédaction créative (10 min) : Écrivez votre histoire en respectant le plan établi. Utilisez des descriptions vivantes et des mots de liaison. Développez vos personnages.",
+    "Révision et amélioration (5 min) : Relisez votre texte. Corrigez les erreurs d'orthographe et de grammaire. Améliorez les descriptions et la fluidité du récit."
+  ],
+  "learningObjectives": [
+    "Développer l'imagination créative et la capacité d'invention narrative",
+    "Améliorer l'expression écrite avec un vocabulaire riche et varié",
+    "Structurer un récit complet avec introduction, développement et conclusion",
+    "Utiliser les techniques de description et de caractérisation des personnages",
+    "Développer la conscience linguistique et l'auto-correction"
+  ],
+  "tips": [
+    "Commencez par des histoires courtes avant de progresser",
+    "Utilisez vos cinq sens pour enrichir les descriptions",
+    "Laissez libre cours à votre imagination sans vous censurer",
+    "Relisez à haute voix pour vérifier la fluidité"
+  ],
+  "assessment": [
+    "L'histoire a-t-elle une structure claire et cohérente ?",
+    "Les descriptions sont-elles vivantes et engageantes ?",
+    "L'orthographe et la grammaire sont-elles correctes ?",
+    "L'élève peut-il expliquer ses choix narratifs ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

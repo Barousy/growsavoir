@@ -1,0 +1,45 @@
+{
+  "id": "eng-simple-conversation",
+  "title": "Conversation anglaise de base",
+  "description": "Développer la fluidité orale en pratiquant des conversations simples du quotidien avec des scripts guidés et des objets concrets",
+  "duration": "30 min",
+  "difficulty": "intermediate",
+  "subject": "anglais",
+  "materials": [
+    "Script de conversation imprimé (questions-réponses)",
+    "Objets du quotidien (livre, stylo, téléphone, clés)",
+    "Enregistreur ou smartphone",
+    "Tableau avec phrases modèles",
+    "Cartes avec situations de conversation",
+    "Timer pour les tours de parole"
+  ],
+  "instructions": [
+    "Préparation (5 min) : Lisez le script ensemble. Identifiez les mots difficiles. Préparez les objets nécessaires.",
+    "Pratique guidée (10 min) : Lisez le script à haute voix en alternant les rôles. Concentrez-vous sur l'intonation et la prononciation.",
+    "Conversation libre (10 min) : Utilisez les objets pour créer des situations réelles. Adaptez le script selon le contexte.",
+    "Enregistrement et écoute (5 min) : Enregistrez une conversation complète. Écoutez ensemble pour identifier les points d'amélioration."
+  ],
+  "learningObjectives": [
+    "Construire des phrases simples et correctes grammaticalement",
+    "Poser et répondre à des questions de base avec fluidité",
+    "Améliorer la prononciation et l'intonation anglaise",
+    "Développer la confiance en soi à l'oral",
+    "Adapter le langage selon le contexte de la conversation"
+  ],
+  "tips": [
+    "Parlez lentement et clairement au début",
+    "Utilisez des gestes pour renforcer le sens",
+    "Répétez les phrases difficiles plusieurs fois",
+    "Encouragez l'élève à improviser avec le vocabulaire connu"
+  ],
+  "assessment": [
+    "L'élève peut-il maintenir une conversation de 2-3 minutes ?",
+    "Les phrases sont-elles grammaticalement correctes ?",
+    "La prononciation est-elle claire et compréhensible ?",
+    "L'élève peut-il adapter le langage au contexte ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

@@ -1,0 +1,93 @@
+{
+  "slug": "fiqh-n1-fondamentaux-10",
+  "title": "Ramadan & jeûne (ṣiyâm) — découvrir le mois béni",
+  "summary": "Connaître le mois de **Ramadan**, le **jeûne** (pour les grands) et ce que l’enfant peut faire : bonnes actions, suḥûr/iftâr en famille.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Dire que le jeûne est pour les grands",
+    "Participer avec de bonnes actions",
+    "Connaître suḥûr/iftâr (repas)"
+  ],
+  "keywords": [
+    "ramadan",
+    "jeûne",
+    "siyam"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Ramadan",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Notions enfantines"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Un mois spécial",
+      "content": "En **Ramadan**, les grands **jeûnent** du lever au coucher du soleil. L’enfant **apprend** et fait **beaucoup de bonnes actions**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Moments du jour",
+        "content": "**Suḥûr** (avant l’aube) — **Iftâr** (rupture du jeûne au coucher du soleil)."
+      },
+      {
+        "type": "activity",
+        "title": "Calendrier de bonnes actions",
+        "content": "Chaque jour : **prière**, **aide**, **lecture**, **sourire**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Ramadan = **efforts** + **joie** en famille."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais ce qu’on fait en Ramadan.",
+      "keyTakeaways": [
+        "Jeûne (pour grands)",
+        "Bonnes actions"
+      ],
+      "nextSteps": [
+        "Vendredi & Jumu‘a (leçon 11)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui doit jeûner le Ramadan ?",
+        "type": "multiple-choice",
+        "options": [
+          "Tous les enfants",
+          "Les grands (adultes)"
+        ],
+        "correctAnswer": "Les grands (adultes)",
+        "explanation": "L’enfant apprend et participe autrement",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "ramadan"
+    ]
+  }
+}

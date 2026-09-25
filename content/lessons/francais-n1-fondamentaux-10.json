@@ -1,0 +1,116 @@
+{
+  "slug": "francais-n1-fondamentaux-10",
+  "title": "Présent — être/avoir & 1er groupe (je/tu/il/elle)",
+  "summary": "Conjuguer être/avoir et deux verbes du 1er groupe au présent (formes JE/TU/IL/ELLE).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 26,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Mémoriser être/avoir (JE/TU/IL/ELLE)",
+    "Conjuguer 1er groupe : parler/aimer",
+    "Produire des phrases conjuguées"
+  ],
+  "keywords": [
+    "conjugaison",
+    "présent",
+    "être",
+    "avoir",
+    "1er groupe"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Conjugaison de base",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Fiches de mémorisation"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Formes à connaître",
+      "content": "**Être** : je **suis**, tu **es**, il/elle **est**.\n**Avoir** : j’**ai**, tu **as**, il/elle **a**.\n**Parler** : je **parle**, tu **parles**, il/elle **parle**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**Je suis** content. **Tu as** un livre. **Elle parle** doucement.",
+        "examples": [
+          {
+            "code": "Je parle / Tu parles / Elle parle",
+            "title": "1er groupe",
+            "description": "Présent",
+            "explanation": "Terminaisons -e / -es / -e"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je choisis",
+        "content": "Complète : **Tu __ un stylo.** (as / es)"
+      },
+      {
+        "type": "exercise",
+        "title": "Mini-conjugaison",
+        "content": "Conjugue **aimer** (je/tu/il/elle). Écris 4 phrases."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Être/Avoir + 1er groupe au présent (formes de base)."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu conjugues au présent (formes JE/TU/IL/ELLE).",
+      "keyTakeaways": [
+        "suis/es/est",
+        "ai/as/a",
+        "-e/-es/-e"
+      ],
+      "nextSteps": [
+        "Compréhension écrite courte"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes Conjugaison",
+          "description": "Être/Avoir + 1er groupe",
+          "url": "https://www.cned.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Choisis la bonne forme : **Il __ un chat.**",
+        "type": "multiple-choice",
+        "options": [
+          "a",
+          "as",
+          "ai"
+        ],
+        "correctAnswer": "a",
+        "explanation": "Il/elle **a**",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "conjugaison"
+    ]
+  }
+}

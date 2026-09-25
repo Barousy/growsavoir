@@ -1,0 +1,94 @@
+{
+  "slug": "sira-n1-fondamentaux-03",
+  "title": "Jeunesse — « al-Amîn » le digne de confiance",
+  "summary": "Découvrir la jeunesse du Prophète ﷺ : honnêteté, travail, aide aux gens ; surnom « al-Amîn ». ",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Expliquer le sens de « al-Amîn »",
+    "Donner un exemple d’honnêteté",
+    "Imiter une bonne action"
+  ],
+  "keywords": [
+    "jeunesse",
+    "al-amin",
+    "honnêteté",
+    "travail"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Jeunesse",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Exemples accessibles"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Digne de confiance",
+      "content": "On appelait le Prophète ﷺ **al-Amîn** : le **digne de confiance**. Il **disait la vérité** et **gardait les dépôts**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Bon comportement",
+        "content": "Aider les voisins, ne pas **tricher**, rendre ce qu’on te confie."
+      },
+      {
+        "type": "activity",
+        "title": "Je m’engage",
+        "content": "Aujourd’hui, je fais une action **honnête** (ex. rendre un objet prêté)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Être **fiable** et **véridique** comme le Prophète ﷺ."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais le surnom « al-Amîn ».",
+      "keyTakeaways": [
+        "Vérité",
+        "Confiance"
+      ],
+      "nextSteps": [
+        "Mariage avec **Khadîja** (leçon 4)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "« al-Amîn » veut dire…",
+        "type": "multiple-choice",
+        "options": [
+          "Fort",
+          "Digne de confiance"
+        ],
+        "correctAnswer": "Digne de confiance",
+        "explanation": "Qualité du Prophète ﷺ",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "al-amin"
+    ]
+  }
+}

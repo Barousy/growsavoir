@@ -1,0 +1,90 @@
+{
+  "slug": "sira-n1-fondamentaux-11",
+  "title": "Qualités du Prophète ﷺ — miséricorde, justice, douceur",
+  "summary": "Mettre en avant des qualités à imiter dans la vie de tous les jours : miséricorde, justice, douceur, vérité.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 17,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Citer 3 qualités du Prophète ﷺ",
+    "Donner un exemple concret",
+    "S’engager à imiter une qualité"
+  ],
+  "keywords": [
+    "qualités",
+    "miséricorde",
+    "justice",
+    "douceur"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Qualités",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Éducation du caractère"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Un caractère magnifique",
+      "content": "Le Prophète ﷺ était **miséricordieux**, **juste**, **doux**, et **véridique**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je choisis une qualité",
+        "content": "Aujourd’hui, j’imite la **douceur** : je parle calmement et j’aide."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Imiter les **qualités** du Prophète ﷺ chaque jour."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu as choisi une qualité à imiter.",
+      "keyTakeaways": [
+        "Douceur",
+        "Justice",
+        "Vérité"
+      ],
+      "nextSteps": [
+        "Projet & évaluation (leçon 12)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Parmi ces qualités du Prophète ﷺ :",
+        "type": "multiple-choice",
+        "options": [
+          "Égoïsme",
+          "Miséricorde"
+        ],
+        "correctAnswer": "Miséricorde",
+        "explanation": "Exemple à suivre",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "qualites"
+    ]
+  }
+}

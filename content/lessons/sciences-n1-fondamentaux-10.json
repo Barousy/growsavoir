@@ -1,0 +1,104 @@
+{
+  "slug": "sciences-n1-fondamentaux-10",
+  "title": "Forces et mouvements : pousser, tirer, frotter",
+  "summary": "Comprendre qu’un mouvement change avec une force (pousser/tirer) et que le frottement peut ralentir.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Identifier pousser/tirer",
+    "Relier force ↔ changement de mouvement",
+    "Comprendre le rôle du frottement"
+  ],
+  "keywords": [
+    "forces",
+    "mouvement",
+    "frottement"
+  ],
+  "sources": [
+    {
+      "title": "Cité des sciences — Mouvement",
+      "url": "https://www.cite-sciences.fr",
+      "type": "website",
+      "description": "Ressources jeunes publics"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Mettre en mouvement",
+      "content": "Une **force** (pousser/tirer) peut **démarrer**, **arrêter** ou **changer** la direction d’un objet."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Pousser vs tirer",
+        "content": "Tirer un chariot / pousser une boîte."
+      },
+      {
+        "type": "activity",
+        "title": "Course de billes",
+        "content": "Fais rouler une bille sur **table**, **serviette**, **herbe** : où va-t-elle le plus loin ? (moins de **frottement**)."
+      },
+      {
+        "type": "exercise",
+        "title": "Je prévois",
+        "content": "Sur glace lisse, la bille ira **plus loin**/**moins loin** ? (plus loin)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Force → mouvement ; **frottement** ralentit."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu manipules la notion de force.",
+      "keyTakeaways": [
+        "Pousser/Tirer",
+        "Frottement"
+      ],
+      "nextSteps": [
+        "Terre et ciel (leçon 11)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche expériences mouvement",
+          "description": "Protocoles simples",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le frottement fait…",
+        "type": "multiple-choice",
+        "options": [
+          "Accélérer",
+          "Ralentir"
+        ],
+        "correctAnswer": "Ralentir",
+        "explanation": "Opposition au mouvement",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "forces"
+    ]
+  }
+}

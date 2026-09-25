@@ -1,0 +1,122 @@
+{
+  "slug": "fiqh-n1-fondamentaux-12",
+  "title": "Projet & Évaluation N1 — « Je me prépare à prier »",
+  "summary": "Réaliser une **affiche** : propreté, wudû’, qibla, gestes, formules. Puis quiz final sur les notions-clés.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-01",
+    "fiqh-n1-fondamentaux-02",
+    "fiqh-n1-fondamentaux-03",
+    "fiqh-n1-fondamentaux-04",
+    "fiqh-n1-fondamentaux-05",
+    "fiqh-n1-fondamentaux-06",
+    "fiqh-n1-fondamentaux-07",
+    "fiqh-n1-fondamentaux-08",
+    "fiqh-n1-fondamentaux-09",
+    "fiqh-n1-fondamentaux-10",
+    "fiqh-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Organiser les étapes",
+    "Expliquer son affiche",
+    "Réussir le quiz final"
+  ],
+  "keywords": [
+    "projet",
+    "évaluation",
+    "prière"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Synthèse",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Checklist finale"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consigne du projet",
+      "content": "Crée une **affiche** : 1) **Propreté** 2) **Wudû’** 3) **Qibla** 4) **Gestes** 5) **Formules**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Checklist",
+        "content": "Tout cocher : ✔ Propreté ✔ Wudû’ ✔ Qibla ✔ Gestes ✔ Formules."
+      },
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "Explique ton affiche en **2 minutes** à quelqu’un."
+      },
+      {
+        "type": "summary",
+        "title": "Bravo 🎉",
+        "content": "Tu valides **Fiqh N1** !"
+      }
+    ],
+    "conclusion": {
+      "summary": "Niveau N1 terminé.",
+      "keyTakeaways": [
+        "Ṭahâra",
+        "Wudû’",
+        "Ṣalât",
+        "Adab"
+      ],
+      "nextSteps": [
+        "Passer au **N2** (approfondir la prière et la purification)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Modèle d’affiche",
+          "description": "Gabarit à imprimer",
+          "url": "https://example.com/fiqh-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La **qibla** est…",
+        "type": "multiple-choice",
+        "options": [
+          "La direction de la Ka‘ba",
+          "Le tapis de prière"
+        ],
+        "correctAnswer": "La direction de la Ka‘ba",
+        "explanation": "Orientation de la prière",
+        "points": 10
+      },
+      {
+        "question": "Avant de prier, je fais…",
+        "type": "multiple-choice",
+        "options": [
+          "Rien",
+          "Le wudû’ si besoin"
+        ],
+        "correctAnswer": "Le wudû’ si besoin",
+        "explanation": "Préparation",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 18
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "évaluation"
+    ]
+  }
+}

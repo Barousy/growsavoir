@@ -1,0 +1,140 @@
+{
+  "slug": "arabe-n1-fondamentaux-05",
+  "title": "La shadda (ّ) — consonne doublée",
+  "summary": "Comprendre et lire la consonne doublée (gemination) avec shadda : rab-b, mud-da…",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Reconnaître le signe shadda (ّ)",
+    "Comprendre que shadda = consonne doublée (C + C)",
+    "Lire des syllabes et mots avec shadda (CV + C doublée)",
+    "Savoir placer shadda avec fatha/ kasra/ damma"
+  ],
+  "keywords": [
+    "arabe",
+    "shadda",
+    "consonne doublée",
+    "gemination",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Diacritiques arabes — aperçu pédagogique",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Rappels sur les signes et la gemination"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qu’indique la shadda (ّ) ?",
+      "content": "\nLa **shadda** ( ّ ) indique que la **consonne est doublée** (on l’entend **deux fois**).  \nOn peut la voir comme : **première consonne avec sukûn** + **même consonne avec voyelle**.\n\nExemples :\n- **رَبّ** = *rab-b*  \n- **مُدَّ** = *mud-da*  \n- **حَبّ** = *ḥabb*\n\n> Visuellement, la **shadda** se place au-dessus de la lettre.  \n> Avec **kasra**, la kasra reste **en dessous** et la shadda **au-dessus**.\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Principe = C + C (doublée)",
+        "content": "\nLecture pas à pas :\n\n- **بَّ** = **بْ + بَ** → *bba*  \n- **بِّ** = **بْ + بِ** → *bbi*  \n- **بُّ** = **بْ + بُ** → *bbu*\n\n> On **colle** la première consonne (sukûn) à la seconde vocalisée.\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau de lecture avec shadda",
+        "content": "\n| Graphie | Lecture | Décomposition |\n|---|---|---|\n| **رَبّ** | **rab-b** | رَ + **بْ** + **بَ** |\n| **مُدَّ** | **mud-da** | مُ + **دْ** + **دَ** |\n| **حَبّ** | **ḥabb** | حَ + **بْ** + **بَ** |\n| **شَدَّ** | **shad-da** | شَ + **دْ** + **دَ** |\n        ",
+        "examples": [
+          {
+            "code": "رَبّ / مُدَّ / حَبّ",
+            "title": "rab-b / mud-da / ḥabb",
+            "description": "Exemples fréquents",
+            "explanation": "On entend bien **deux fois** la consonne avec shadda."
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Coche la bonne décomposition",
+        "content": "\n- [x] **مُدَّ** = مُ + **دْ** + **دَ**  \n- [ ] **رَبّ** = رَ + **بَ** (une seule fois)  \n- [x] **حَبّ** = حَ + **بْ** + **بَ**\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lis puis écris",
+        "content": "\n**Lecture** :  \n- **شَدَّ** — **وَدّ** — **حَقّ** — **حَبّ**  \n\n**Écriture** (transforme sans shadda → avec shadda) :  \n- **مُدَ** → **مُدَّ**  \n- **رَبَ** → **رَبَّ** (puis **رَبّ** selon mot)  \n- **حَبَ** → **حَبَّ / حَبّ**\n\n> Astuce : marque une **micro-pause** entre les deux consonnes identiques.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- **Shadda (ّ)** = **consonne doublée**  \n- On lit comme **CØ + CV** (sukûn implicite puis voyelle)  \n- Shadda coexiste avec **fatha/ kasra/ damma**\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nExcellent 💪 Tu sais lire et écrire la **shadda**.  \nProchaine étape recommandée : **tanwîn** (an/ in/ oun) ou **lettres solaires & lunaires** selon ton programme.\n      ",
+      "keyTakeaways": [
+        "Shadda = C doublée",
+        "Lecture collée : CØ + CV",
+        "Compatible avec a / i / ou"
+      ],
+      "nextSteps": [
+        "S’entraîner sur 10 mots avec shadda",
+        "Passer à la leçon 6 (tanwîn) si elle suit dans ton programme"
+      ],
+      "additionalResources": [
+        {
+          "title": "Rappels sur les diacritiques",
+          "description": "Vue d’ensemble utile pour réviser",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Que signifie la shadda (ّ) posée sur une lettre ?",
+        "type": "multiple-choice",
+        "options": [
+          "Voyelle longue",
+          "Consonne doublée",
+          "Absence de voyelle",
+          "Pause de lecture"
+        ],
+        "correctAnswer": "Consonne doublée",
+        "explanation": "Shadda = même consonne lue deux fois (CØ + CV).",
+        "points": 10
+      },
+      {
+        "question": "La bonne décomposition de **مُدَّ** est…",
+        "type": "multiple-choice",
+        "options": [
+          "مُ + دَ",
+          "مُ + دْ + دَ",
+          "مَ + دَ",
+          "مُ + دُ"
+        ],
+        "correctAnswer": "مُ + دْ + دَ",
+        "explanation": "Shadda sur **د** = **دْ + دَ** avec damma sur **م**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.899Z",
+    "updatedAt": "2025-08-30T06:37:37.899Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "shadda",
+      "gemination"
+    ]
+  }
+}

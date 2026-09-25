@@ -1,0 +1,95 @@
+{
+  "slug": "informatique-n1-fondamentaux-11",
+  "title": "Événements clavier/souris — interactions",
+  "summary": "Réagir à une touche du clavier (flèche droite/gauche) et au clic de la souris ; créer une mini-interaction.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Utiliser événements clavier",
+    "Utiliser événement clic",
+    "Créer une mini-interaction"
+  ],
+  "keywords": [
+    "événements",
+    "clavier",
+    "souris",
+    "interaction"
+  ],
+  "sources": [
+    {
+      "title": "Scratch — Events",
+      "url": "https://scratch.mit.edu",
+      "type": "website",
+      "description": "Réagir aux entrées"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je joue avec mon programme",
+      "content": "**Quand touche →** le sprite **bouge** ; **Quand clic →** il **parle**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Scripts",
+        "content": "Quand **touche droite pressée** → **x = x + 10** ; Quand **sprite cliqué** → **dire \"Salut !\"**"
+      },
+      {
+        "type": "activity",
+        "title": "Mini-jeu",
+        "content": "Déplace le personnage pour **attraper** une étoile."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Interactions = **événements utilisateurs**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Ton projet réagit à toi ✨",
+      "keyTakeaways": [
+        "Clavier",
+        "Souris",
+        "Événements"
+      ],
+      "nextSteps": [
+        "Projet final (leçon 12)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour réagir à la flèche droite, on utilise…",
+        "type": "multiple-choice",
+        "options": [
+          "Un décor",
+          "Un événement clavier"
+        ],
+        "correctAnswer": "Un événement clavier",
+        "explanation": "Entrée utilisateur",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "événements"
+    ]
+  }
+}

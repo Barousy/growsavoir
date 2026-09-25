@@ -1,0 +1,94 @@
+{
+  "slug": "histoire-n1-fondamentaux-05",
+  "title": "Ismâʿîl عليه السلام et la Ka‘ba — Zamzam et construction",
+  "summary": "Découvrir la source Zamzam et la construction de la Ka‘ba par Ibrâhîm et Ismâʿîl.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 17,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Citer Zamzam",
+    "Dire que la Ka‘ba a été élevée",
+    "Apprécier la coopération père-fils"
+  ],
+  "keywords": [
+    "Ismâʿîl",
+    "Zamzam",
+    "Ka‘ba"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Ismâʿîl, Zamzam, Ka‘ba)",
+      "url": "#",
+      "type": "book",
+      "description": "Épisodes fondateurs à La Mecque"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Une ville bénie",
+      "content": "À **La Mecque**, Allah a fait jaillir **Zamzam**. **Ibrâhîm** et **Ismâʿîl** ont **élevé** les bases de la **Ka‘ba**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Ensemble",
+        "content": "**Aide** et **coopération** pour une œuvre de **bien**."
+      },
+      {
+        "type": "activity",
+        "title": "Je coopère",
+        "content": "Réalise une **petite tâche** en **équipe** (ranger une table)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Zamzam et **Ka‘ba** à la Mecque."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais Zamzam et la Ka‘ba.",
+      "keyTakeaways": [
+        "Mecque",
+        "Zamzam",
+        "Ka‘ba"
+      ],
+      "nextSteps": [
+        "**Quraysh** et La Mecque préislamique (leçon 6)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui a élevé les bases de la Ka‘ba ?",
+        "type": "multiple-choice",
+        "options": [
+          "Ibrâhîm et Ismâʿîl",
+          "Nûḥ et Mûsâ"
+        ],
+        "correctAnswer": "Ibrâhîm et Ismâʿîl",
+        "explanation": "Récit connu",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "kaaba"
+    ]
+  }
+}

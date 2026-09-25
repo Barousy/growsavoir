@@ -1,0 +1,152 @@
+{
+  "slug": "anglais-n1-fondamentaux-12",
+  "title": "Final Assessment N1 — Phonics & Reading",
+  "summary": "Valider phonics (CVC, voyelles courtes), vocabulaire de base, prépositions, be/can, compréhension de mini-texte.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 30,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-01",
+    "anglais-n1-fondamentaux-02",
+    "anglais-n1-fondamentaux-03",
+    "anglais-n1-fondamentaux-04",
+    "anglais-n1-fondamentaux-05",
+    "anglais-n1-fondamentaux-06",
+    "anglais-n1-fondamentaux-07",
+    "anglais-n1-fondamentaux-08",
+    "anglais-n1-fondamentaux-09",
+    "anglais-n1-fondamentaux-10",
+    "anglais-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Lire des CVC et phrases courtes",
+    "Identifier sight words et prépositions",
+    "Utiliser be/can",
+    "Comprendre un mini-paragraphe"
+  ],
+  "keywords": [
+    "assessment",
+    "phonics",
+    "reading",
+    "N1"
+  ],
+  "sources": [
+    {
+      "title": "Phonics & Early Reading — overview",
+      "url": "https://www.bbc.co.uk/bitesize",
+      "type": "website",
+      "description": "Révisions"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes",
+      "content": "Lis calmement. Repère les **sons** et **mots outils**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Part 1 — Phonics",
+        "content": "Lis 10 CVC : **cat, pen, pig, box, sun, map, bed, fish (fi-sh), dog, bus**."
+      },
+      {
+        "type": "concept",
+        "title": "Part 2 — Phrases",
+        "content": "**The cat is under the chair.** **It is rainy. I wear a coat.** **I can jump.**"
+      },
+      {
+        "type": "example",
+        "title": "Mini-texte",
+        "content": "It is Saturday. Anna is at home. She can read a book. The cat is on the bed.",
+        "examples": [
+          {
+            "code": "Saturday / home / read / on the bed",
+            "title": "Mots clés",
+            "description": "Aide à répondre",
+            "explanation": ""
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Questions",
+        "content": "1) Where is Anna? 2) What can she do? 3) Where is the cat?"
+      },
+      {
+        "type": "summary",
+        "title": "Vérifie",
+        "content": "CVC, sight words, prépositions, be/can, compréhension."
+      }
+    ],
+    "conclusion": {
+      "summary": "Bravo 🎉 Tu termines le niveau **N1** en anglais.",
+      "keyTakeaways": [
+        "Phonics",
+        "Phrases simples",
+        "Compréhension"
+      ],
+      "nextSteps": [
+        "Passer à **N2** : lectures un peu plus longues"
+      ],
+      "additionalResources": [
+        {
+          "title": "Révisions N1 (pack)",
+          "description": "Listes CVC + phrases",
+          "url": "https://sightwords.com"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Choisis le CVC :",
+        "type": "multiple-choice",
+        "options": [
+          "tea",
+          "cat"
+        ],
+        "correctAnswer": "cat",
+        "explanation": "CVC",
+        "points": 10
+      },
+      {
+        "question": "It is cold. I wear a…",
+        "type": "multiple-choice",
+        "options": [
+          "coat",
+          "T-shirt"
+        ],
+        "correctAnswer": "coat",
+        "explanation": "Vêtement chaud",
+        "points": 10
+      },
+      {
+        "question": "Where is the cat (texte) ?",
+        "type": "multiple-choice",
+        "options": [
+          "under the chair",
+          "on the bed"
+        ],
+        "correctAnswer": "on the bed",
+        "explanation": "Mini-texte",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "assessment"
+    ]
+  }
+}

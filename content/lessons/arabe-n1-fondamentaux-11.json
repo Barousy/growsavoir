@@ -1,0 +1,154 @@
+{
+  "slug": "arabe-n1-fondamentaux-11",
+  "title": "Lecture guidée — petites scènes & mini-dialogues",
+  "summary": "Lire des scènes très courtes (maison/école) en réutilisant toutes les règles N1, avec questions de compréhension.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05",
+    "arabe-n1-fondamentaux-06",
+    "arabe-n1-fondamentaux-07",
+    "arabe-n1-fondamentaux-08",
+    "arabe-n1-fondamentaux-09",
+    "arabe-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Lire des mini-scènes et dialogues simples avec fluidité",
+    "Appliquer harakât, madd, sukûn, shadda, tanwîn, hamza, et ال (solaires/lunaires)",
+    "Comprendre l’essentiel d’une situation simple (qui ? où ? quoi ?)",
+    "Repérer les signes clés dans un texte court"
+  ],
+  "keywords": [
+    "arabe",
+    "lecture",
+    "dialogue",
+    "compréhension",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Harakât — rappels",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Révision des signes pour la lecture"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Lire en contexte",
+      "content": "\nOn va lire des **situations très courtes** (maison/école).  \nLis **d’abord lentement** en repérant les signes (shadda, tanwîn…), puis **relis plus vite**.\n> Ponctuation utile : **،** (virgule), **؟** (question), **.** (point)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Scène 1 — À la maison",
+        "content": "\n**الأُمُّ** فِي **البَيْتِ**. **الوَلَدُ** يَقْرَأُ **الكِتَابَ**.  \n**الأَبُ** يَكْتُبُ **الدَّرْسَ**. **النُّورُ** فِي **الغُرْفَةِ**.\n\n**Questions :**  \n1) Qui lit le livre ?  \n2) Où est la lumière ?  \n3) Que fait le père ?"
+      },
+      {
+        "type": "example",
+        "title": "Scène 2 — À l’école",
+        "content": "\n**المُعَلِّمُ** فِي **الفَصْلِ**. **التِّلْمِيذُ** كِتَابُهُ **عَلَى المَكْتَبِ**.  \n**السَّبُّورَةُ** كَبِيرَةٌ، **والقَلَمُ** جَدِيدٌ.\n\n**Questions :**  \n1) Où est le livre de l’élève ?  \n2) Comment est le tableau ?  \n3) Le stylo est-il ancien ou nouveau ?"
+      },
+      {
+        "type": "activity",
+        "title": "Vrai / Faux (compréhension rapide)",
+        "content": "\n- [x] Dans la scène 1, **le père écrit la leçon**.  \n- [ ] Dans la scène 2, **le livre est sous la table**.  \n- [x] **السَّبُّورَةُ** montre une **lettre solaire** avec **shadda**."
+      },
+      {
+        "type": "concept",
+        "title": "Repérage des signes dans la scène",
+        "content": "\nCherche et souligne :\n- 1 **shadda** (ex. المُعَلِّمُ)  \n- 1 **tanwîn** (ex. كَبِيرَةٌ)  \n- 1 **madd** (ex. كِتَاب)  \n- 1 **sukûn** (ex. المَكْتَبِ)"
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée (rôle A / rôle B)",
+        "content": "\n**Dialogue court :**  \n— **الأُمُّ:** هَلِ الكِتَابُ فِي الغُرْفَةِ؟  \n— **الوَلَدُ:** نَعَمْ، الكِتَابُ فِي الغُرْفَةِ.\n\nLis le rôle **A**, puis **B** — ensuite inversez les rôles.  \n> Astuce : marque bien la **question ؟** et la **réponse**."
+      },
+      {
+        "type": "summary",
+        "title": "Récapitulatif",
+        "content": "\n- Tu sais lire des **mini-scènes** avec **toutes les règles N1**  \n- Tu vérifies la **compréhension** par des questions simples  \n- Tu repères visuellement les **signes** dans un texte"
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu lis maintenant des **situations courtes** en appliquant les règles.  \nOn termine N1 avec une **évaluation finale** (leçon 12).",
+      "keyTakeaways": [
+        "Lecture contextualisée",
+        "Compréhension de base (qui/où/quoi)",
+        "Repérage des signes dans le texte"
+      ],
+      "nextSteps": [
+        "Relire chaque scène 2 fois",
+        "Passer à la leçon 12 : évaluation finale N1"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakât — révisions rapides",
+          "description": "Rappels utiles avant le test",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans la scène 2, le mot **السَّبُّورَةُ** contient :",
+        "type": "multiple-choice",
+        "options": [
+          "une lettre lunaire",
+          "une lettre solaire avec shadda"
+        ],
+        "correctAnswer": "une lettre solaire avec shadda",
+        "explanation": "س fait partie des **solaires** → assimilation + shadda.",
+        "points": 10
+      },
+      {
+        "question": "Où est le **livre de l’élève** dans la scène 2 ?",
+        "type": "multiple-choice",
+        "options": [
+          "Sous la table",
+          "Sur le bureau",
+          "Dans le cartable"
+        ],
+        "correctAnswer": "Sur le bureau",
+        "explanation": "« كِتَابُهُ عَلَى المَكْتَبِ ».",
+        "points": 10
+      },
+      {
+        "question": "Dans la scène 1, que fait **le père** ?",
+        "type": "multiple-choice",
+        "options": [
+          "Il lit",
+          "Il écrit la leçon",
+          "Il dort"
+        ],
+        "correctAnswer": "Il écrit la leçon",
+        "explanation": "« الأَبُ يَكْتُبُ الدَّرْسَ ».",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.905Z",
+    "updatedAt": "2025-08-30T06:37:37.905Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "lecture",
+      "dialogue",
+      "compréhension"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-09",
+  "title": "Partage & aumône (ṣadaqa) — aider et donner",
+  "summary": "Comprendre la **ṣadaqa** : donner, partager, aider ; exemples adaptés aux enfants.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Donner un exemple de ṣadaqa",
+    "Partager avec sincérité",
+    "Aider à la maison/école"
+  ],
+  "keywords": [
+    "sadaqa",
+    "partage",
+    "entraide"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Ṣadaqa",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Idées de partage"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Donner avec le sourire",
+      "content": "La **ṣadaqa** = donner **de bon cœur** : un jouet, un vêtement, un sourire, une **aide**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Boîte de partage",
+        "content": "Prépare une petite **boîte** pour rassembler ce que tu veux **donner**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je liste",
+        "content": "Note **3 façons** d’aider aujourd’hui."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Donner = **faire plaisir** à Allah et aux gens."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais ce qu’est la ṣadaqa.",
+      "keyTakeaways": [
+        "Donner",
+        "Aider",
+        "Sincérité"
+      ],
+      "nextSteps": [
+        "Découvrir **Ramadan** (leçon 10)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une forme de ṣadaqa peut être…",
+        "type": "multiple-choice",
+        "options": [
+          "Crier",
+          "Aider un camarade"
+        ],
+        "correctAnswer": "Aider un camarade",
+        "explanation": "Aide = sadaqa",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "sadaqa"
+    ]
+  }
+}

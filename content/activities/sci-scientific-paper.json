@@ -1,0 +1,47 @@
+{
+  "id": "sci-scientific-paper",
+  "title": "Rédaction d'article scientifique professionnel",
+  "description": "Maîtriser la rédaction scientifique en créant un article structuré selon les standards académiques internationaux",
+  "duration": "120 min",
+  "difficulty": "expert",
+  "subject": "sciences",
+  "materials": [
+    "Résultats de recherche complets et analysés",
+    "Modèles d'articles scientifiques de référence",
+    "Logiciel de traitement de texte et de graphiques",
+    "Guide de rédaction scientifique",
+    "Fiches de structure d'article (résumé, introduction, méthodes, résultats, discussion)",
+    "Base de données de références bibliographiques",
+    "Grille d'évaluation de la qualité scientifique",
+    "Matériel de relecture et correction"
+  ],
+  "instructions": [
+    "Structuration et planification (25 min) : Analysez les modèles d'articles de référence. Structurez votre article selon le format standard (résumé, introduction, méthodes, résultats, discussion, conclusion, références). Créez un plan détaillé.",
+    "Rédaction des sections principales (60 min) : Rédigez chaque section en respectant les conventions scientifiques. Utilisez un langage précis et objectif. Intégrez vos résultats avec des graphiques et tableaux appropriés.",
+    "Citations et références (20 min) : Citez correctement toutes vos sources selon le format requis. Vérifiez l'exactitude des références bibliographiques. Créez une bibliographie complète et organisée.",
+    "Relecture et finalisation (15 min) : Relisez votre article pour la cohérence et la clarté. Vérifiez la grammaire et l'orthographe. Demandez un avis extérieur si possible. Finalisez la mise en forme."
+  ],
+  "learningObjectives": [
+    "Structurer un article scientifique selon les standards internationaux",
+    "Rédiger de manière académique avec précision et objectivité",
+    "Citer correctement les sources et créer une bibliographie rigoureuse",
+    "Présenter des résultats scientifiques de manière claire et convaincante",
+    "Maîtriser les conventions de la communication scientifique"
+  ],
+  "tips": [
+    "Commencez par la section méthodes, plus facile à rédiger",
+    "Utilisez des phrases courtes et directes",
+    "Vérifiez toujours l'exactitude de vos citations",
+    "Demandez à un collègue de relire votre article"
+  ],
+  "assessment": [
+    "La structure de l'article respecte-t-elle les standards ?",
+    "Le langage est-il académique et précis ?",
+    "Les citations et références sont-elles correctes ?",
+    "L'article est-il clair et convaincant ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "anglais-n1-fondamentaux-06",
+  "title": "Family & Possessives — my / your",
+  "summary": "Parler de la famille proche et utiliser my/your correctement.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Vocabulaire famille (mother, father, sister, brother…)",
+    "Utiliser my/your",
+    "Phrases simples be/have"
+  ],
+  "keywords": [
+    "family",
+    "possessives",
+    "my",
+    "your"
+  ],
+  "sources": [
+    {
+      "title": "Kids ESL — Family words",
+      "url": "https://www.eslkidslab.com",
+      "type": "website",
+      "description": "Jeux et affiches famille"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "My family",
+      "content": "mother, father, sister, brother, grandma, grandpa.\n**My** = mon/ma ; **Your** = ton/ta."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**This is my sister.** **Your father is nice.** **I have a brother.**"
+      },
+      {
+        "type": "activity",
+        "title": "Je choisis",
+        "content": "__ mother (my/your) — __ brother (my/your)"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris 4 phrases sur ta famille avec **my/your**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Famille + **my/your** + be/have simples."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu présentes ta famille.",
+      "keyTakeaways": [
+        "Family words",
+        "my/your"
+      ],
+      "nextSteps": [
+        "Days & routines (present simple)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Complète : This is __ mother.",
+        "type": "multiple-choice",
+        "options": [
+          "my",
+          "your"
+        ],
+        "correctAnswer": "my",
+        "explanation": "mon/ma",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "family",
+      "possessives"
+    ]
+  }
+}

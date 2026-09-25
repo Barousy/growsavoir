@@ -1,0 +1,103 @@
+{
+  "slug": "sciences-n1-fondamentaux-09",
+  "title": "Matières et matériaux : propriétés simples",
+  "summary": "Reconnaître quelques matériaux (bois, métal, plastique, verre, tissu) et leurs propriétés (dur, souple, étanche, transparent).",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Nommer 5 matériaux",
+    "Associer objets ↔ matériau",
+    "Choisir un matériau selon une propriété"
+  ],
+  "keywords": [
+    "matériaux",
+    "propriétés",
+    "objets"
+  ],
+  "sources": [
+    {
+      "title": "La main à la pâte — Matériaux",
+      "url": "https://www.fondation-lamap.org",
+      "type": "website",
+      "description": "Ateliers de tri et tests"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "De quoi est fait l’objet ?",
+      "content": "**Bois**, **métal**, **plastique**, **verre**, **tissu** : chaque matériau a des **propriétés**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Propriétés",
+        "content": "Dur (métal), **souple** (tissu), **étanche** (plastique), **transparent** (verre), **isolant** (bois)."
+      },
+      {
+        "type": "activity",
+        "title": "Test d’étanchéité",
+        "content": "Quel gobelet retient l’eau ? (plastique vs carton)."
+      },
+      {
+        "type": "exercise",
+        "title": "Bon choix",
+        "content": "Pour une **fenêtre**, je choisis : **verre** (transparent)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "On **choisit** un matériau selon l’usage."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu relis objets et matériaux.",
+      "keyTakeaways": [
+        "Propriétés utiles"
+      ],
+      "nextSteps": [
+        "Forces et mouvements (leçon 10)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche tri matériaux",
+          "description": "Tableau à cocher",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel matériau est transparent ?",
+        "type": "multiple-choice",
+        "options": [
+          "Verre",
+          "Bois"
+        ],
+        "correctAnswer": "Verre",
+        "explanation": "On voit à travers.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "matériaux"
+    ]
+  }
+}

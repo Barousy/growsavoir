@@ -1,0 +1,93 @@
+{
+  "slug": "aqida-n1-fondamentaux-08",
+  "title": "Le Destin (al-Qadar) — Allah sait tout, je choisis et j’agis",
+  "summary": "Aborder simplement : Allah sait, écrit et veut ; nous choisissons et sommes responsables.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Dire « Allah sait tout »",
+    "Agir et faire des choix",
+    "Accepter ce qui arrive avec patience"
+  ],
+  "keywords": [
+    "qadar",
+    "destin",
+    "sagesse"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Notions débutantes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Confiance en Allah",
+      "content": "Allah **sait** tout et Il **écrit** tout. Nous **choisissons** le bien et nous **agissons**. On fait **des efforts** et on a **confiance** en Allah."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Deux idées ensemble",
+        "content": "Je révise **et** je demande à Allah de m’aider."
+      },
+      {
+        "type": "activity",
+        "title": "Patience",
+        "content": "Raconte une situation où tu as été **patient**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Qadar = **science** d’Allah + **nos choix**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu comprends le Qadar de manière simple.",
+      "keyTakeaways": [
+        "Effort",
+        "Confiance"
+      ],
+      "nextSteps": [
+        "Adorer Allah **seul** (leçon 9)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Doit-on agir ou attendre sans rien faire ?",
+        "type": "multiple-choice",
+        "options": [
+          "Attendre",
+          "Agir et demander l’aide d’Allah"
+        ],
+        "correctAnswer": "Agir et demander l’aide d’Allah",
+        "explanation": "Effort + confiance",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "qadar"
+    ]
+  }
+}

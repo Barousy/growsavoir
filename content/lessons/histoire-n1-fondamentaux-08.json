@@ -1,0 +1,90 @@
+{
+  "slug": "histoire-n1-fondamentaux-08",
+  "title": "Naissance du Prophète Muhammad ﷺ — Mecque",
+  "summary": "Situer la naissance à La Mecque ; connaître Amina, ʿAbd al-Muṭṭalib et Ḥalîma (nourrice).",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Dire que le Prophète ﷺ est né à La Mecque",
+    "Citer Amina et Ḥalîma",
+    "Respecter la famille et les aînés"
+  ],
+  "keywords": [
+    "naissance",
+    "Amina",
+    "Halima",
+    "Mecque"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Naissance du Prophète ﷺ)",
+      "url": "#",
+      "type": "book",
+      "description": "Repères de naissance"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Une naissance bénie",
+      "content": "Le Prophète **Muhammad ﷺ** est né à **La Mecque**. Sa maman : **Amina**. Sa nourrice : **Ḥalîma**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je relie",
+        "content": "Relie : **Amina** → maman ; **Ḥalîma** → nourrice ; **Mecque** → ville."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Naissance à **La Mecque**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la naissance du Prophète ﷺ.",
+      "keyTakeaways": [
+        "Mecque",
+        "Amina",
+        "Ḥalîma"
+      ],
+      "nextSteps": [
+        "**Jeunesse (al-Amîn)** (leçon 9)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Où est né le Prophète ﷺ ?",
+        "type": "multiple-choice",
+        "options": [
+          "La Mecque",
+          "Médine"
+        ],
+        "correctAnswer": "La Mecque",
+        "explanation": "Repère clé",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "naissance"
+    ]
+  }
+}

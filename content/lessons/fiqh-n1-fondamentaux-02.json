@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-02",
+  "title": "Ṭahâra — être propre pour plaire à Allah",
+  "summary": "Découvrir la pureté rituelle et l’hygiène : propreté du corps, des vêtements et du lieu de prière ; gestes simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Dire que la propreté fait partie de la foi",
+    "Lister 3 gestes d’hygiène",
+    "Préparer un endroit propre pour prier"
+  ],
+  "keywords": [
+    "tahara",
+    "propreté",
+    "hygiène"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — ṭahâra",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Notions adaptées enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Propre = prêt",
+      "content": "Être **propre** du corps, des **vêtements** et du **lieu** : on se lave les mains, on change de vêtements sales, on nettoie l’endroit de prière."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Avant la prière",
+        "content": "Vérifier : mains propres, vêtements **propres**, sol **propre**."
+      },
+      {
+        "type": "activity",
+        "title": "Checklist propreté",
+        "content": "Je coche : [ ] mains [ ] visage [ ] vêtements [ ] tapis propre."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "La **propreté** plaît à Allah."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais te préparer proprement.",
+      "keyTakeaways": [
+        "Corps",
+        "Vêtements",
+        "Lieu"
+      ],
+      "nextSteps": [
+        "Les **ablutions** (leçon 3)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour prier, mes vêtements doivent être…",
+        "type": "multiple-choice",
+        "options": [
+          "Propres",
+          "Sales"
+        ],
+        "correctAnswer": "Propres",
+        "explanation": "Condition simple",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "tahara"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "slug": "sciences-n1-fondamentaux-04",
+  "title": "Les plantes : racine, tige, feuilles, fleur",
+  "summary": "Identifier les parties d’une plante et leurs rôles ; comprendre les besoins (eau, lumière) via une germination simple.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Nommer 4 parties",
+    "Associer rôle ↔ partie",
+    "Observer une germination"
+  ],
+  "keywords": [
+    "plantes",
+    "parties",
+    "germination"
+  ],
+  "sources": [
+    {
+      "title": "La main à la pâte — Plantes",
+      "url": "https://www.fondation-lamap.org",
+      "type": "website",
+      "description": "Séquences cycle 2"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Découvrir la plante",
+      "content": "**Racine** (boire), **tige** (tenir/transport), **feuilles** (fabriquer avec la lumière), **fleur** (reproduction)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Schéma légendé",
+        "content": "Racine ↓ — Tige | — Feuilles 🌿 — Fleur ✿."
+      },
+      {
+        "type": "activity",
+        "title": "Germination du haricot",
+        "content": "Place un **haricot** dans un coton humide près d’une fenêtre. Observe 5 jours : **racine** puis **tige**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je relie",
+        "content": "Rôle → Partie : « Boire l’eau du sol » → **racine** ; « Tenir la plante » → **tige** …"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Chaque partie a un **rôle**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les parties de la plante.",
+      "keyTakeaways": [
+        "Racine/tige/feuille/fleur"
+      ],
+      "nextSteps": [
+        "Découvrir les **animaux** (leçon 5)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche schéma plante",
+          "description": "Légender une plante",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quelle partie absorbe l’eau ?",
+        "type": "multiple-choice",
+        "options": [
+          "Feuille",
+          "Racine"
+        ],
+        "correctAnswer": "Racine",
+        "explanation": "La racine puise l’eau.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 12
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "plantes"
+    ]
+  }
+}

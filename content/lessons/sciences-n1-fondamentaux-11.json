@@ -1,0 +1,106 @@
+{
+  "slug": "sciences-n1-fondamentaux-11",
+  "title": "Terre et ciel : jour/nuit, Soleil, Lune et ombres",
+  "summary": "Comprendre l’alternance jour/nuit, repérer le Soleil comme source de lumière et d’ombre ; découvrir la Lune.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Distinguer jour/nuit",
+    "Comprendre ombre/lumière",
+    "Observer la Lune"
+  ],
+  "keywords": [
+    "Terre",
+    "Soleil",
+    "Lune",
+    "ombre"
+  ],
+  "sources": [
+    {
+      "title": "NASA Space Place (FR) — Soleil & Lune",
+      "url": "https://spaceplace.nasa.gov",
+      "type": "website",
+      "description": "Ressources enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Lumière et ombres",
+      "content": "Le **Soleil** éclaire la Terre : c’est le **jour**. Quand il n’éclaire plus notre région : c’est la **nuit**. Un objet **bloque** la lumière → **ombre**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Ombres portées",
+        "content": "Au soleil, observe l’ombre d’un bâton le matin et l’après-midi : la **longueur** change."
+      },
+      {
+        "type": "example",
+        "title": "La Lune",
+        "content": "La Lune **ne brille pas** par elle-même : elle **réfléchit** la lumière du Soleil."
+      },
+      {
+        "type": "exercise",
+        "title": "Vrai/Faux",
+        "content": "La nuit, il n’y a plus de Soleil dans le ciel de la Terre (Vrai, pour notre côté)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Jour/nuit, ombre, Lune éclairée par le Soleil."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu comprends les cycles simples Terre-ciel.",
+      "keyTakeaways": [
+        "Jour/Nuit",
+        "Ombres",
+        "Lune"
+      ],
+      "nextSteps": [
+        "Hygiène et santé (leçon 12)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Carte d’observation de la Lune",
+          "description": "Suivi sur un mois",
+          "url": "https://spaceplace.nasa.gov"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une ombre apparaît quand…",
+        "type": "multiple-choice",
+        "options": [
+          "La lumière passe à travers",
+          "La lumière est bloquée"
+        ],
+        "correctAnswer": "La lumière est bloquée",
+        "explanation": "Ombre = absence de lumière",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "terre-ciel"
+    ]
+  }
+}

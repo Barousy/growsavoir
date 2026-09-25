@@ -1,0 +1,100 @@
+{
+  "slug": "anglais-n1-fondamentaux-09",
+  "title": "Animals & Abilities — can / can’t",
+  "summary": "Vocabulaire des animaux et verbes d’action avec can/can’t.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Nommer 10 animaux",
+    "Utiliser can/can’t avec verbes simples (run, jump, swim)",
+    "Produire phrases affirmatives/négatives"
+  ],
+  "keywords": [
+    "animals",
+    "can",
+    "can’t",
+    "verbs"
+  ],
+  "sources": [
+    {
+      "title": "ESL Games — Animals & can",
+      "url": "https://www.eslgamesplus.com",
+      "type": "website",
+      "description": "Jeux pour can/can’t"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Animals & actions",
+      "content": "cat, dog, bird, fish, horse, duck, frog, lion, elephant, monkey.\nVerbes : run, jump, swim, fly."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**A bird can fly.** **A fish can swim.** **A cat can’t fly.**"
+      },
+      {
+        "type": "activity",
+        "title": "Vrai/Faux",
+        "content": "A fish can fly. (F) ; A duck can swim. (T)"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "3 phrases avec **can** et 2 phrases avec **can’t**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "can/can’t + verbe (forme de base)."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais exprimer une capacité.",
+      "keyTakeaways": [
+        "can = capacité",
+        "can’t = impossibilité"
+      ],
+      "nextSteps": [
+        "Reading practice (phrases courtes)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "A bird __ fly.",
+        "type": "multiple-choice",
+        "options": [
+          "can",
+          "can’t"
+        ],
+        "correctAnswer": "can",
+        "explanation": "Capacité",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "animals",
+      "can"
+    ]
+  }
+}

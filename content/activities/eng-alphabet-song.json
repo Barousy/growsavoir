@@ -1,0 +1,45 @@
+{
+  "id": "eng-alphabet-song",
+  "title": "Chanson de l'alphabet anglais",
+  "description": "Apprendre l'alphabet anglais de manière ludique et interactive en chantant et en créant des gestes associés",
+  "duration": "20 min",
+  "difficulty": "beginner",
+  "subject": "anglais",
+  "materials": [
+    "Feuille imprimée avec l'alphabet anglais (A-Z)",
+    "Stylos colorés (rouge, bleu, vert, jaune)",
+    "Haut-parleur ou enceinte",
+    "Fichier audio de la chanson de l'alphabet",
+    "Tableau blanc ou grande feuille",
+    "Marqueurs pour tableau"
+  ],
+  "instructions": [
+    "Préparation (5 min) : Installez-vous dans un espace calme avec tous les matériaux. Colorez chaque lettre de l'alphabet avec une couleur différente pour faciliter la mémorisation.",
+    "Écoute active (5 min) : Écoutez la chanson de l'alphabet 2-3 fois sans interruption. Concentrez-vous sur la mélodie et le rythme.",
+    "Répétition guidée (5 min) : Chantez ensemble en pointant chaque lettre sur votre feuille. Faites des pauses entre chaque lettre pour bien articuler.",
+    "Création de gestes (5 min) : Inventez un geste simple pour chaque lettre (ex: A = triangle avec les mains, B = deux doigts levés). Répétez en chantant avec les gestes."
+  ],
+  "learningObjectives": [
+    "Mémoriser l'ordre complet de l'alphabet anglais (A-Z)",
+    "Prononcer correctement chaque lettre avec l'accent anglais",
+    "Associer le son à la forme écrite de chaque lettre",
+    "Développer la coordination entre chant et gestes",
+    "Renforcer la mémoire auditive et visuelle"
+  ],
+  "tips": [
+    "Chantez lentement au début pour bien articuler chaque lettre",
+    "Utilisez des couleurs différentes pour chaque groupe de 5 lettres",
+    "Pratiquez les gestes devant un miroir pour vérifier la clarté",
+    "Répétez l'activité 2-3 fois par jour pendant une semaine"
+  ],
+  "assessment": [
+    "L'élève peut-il réciter l'alphabet dans l'ordre sans aide ?",
+    "La prononciation est-elle claire et compréhensible ?",
+    "Les gestes sont-ils cohérents et mémorisés ?",
+    "L'élève peut-il identifier une lettre quand on la prononce ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

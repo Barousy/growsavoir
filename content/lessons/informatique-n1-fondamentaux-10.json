@@ -1,0 +1,93 @@
+{
+  "slug": "informatique-n1-fondamentaux-10",
+  "title": "Débogage — trouver et corriger les erreurs",
+  "summary": "Tester étape par étape, repérer où ça bloque, modifier un bloc ; stratégie « essayer → observer → corriger ». ",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Tester un script",
+    "Repérer une erreur",
+    "Corriger et retester"
+  ],
+  "keywords": [
+    "débogage",
+    "erreur",
+    "tester"
+  ],
+  "sources": [
+    {
+      "title": "code.org — Debugging basics",
+      "url": "https://code.org",
+      "type": "website",
+      "description": "Essayer, observer, corriger"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Tout le monde se trompe, et c’est normal !",
+      "content": "Le **débogage** sert à **corriger** les erreurs. On **essaie**, on **observe**, on **corrige**, on **réessaie**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Où est l’erreur ?",
+        "content": "Le personnage ne bouge pas : le bloc **événement** manque. Ajoute **Quand drapeau cliqué**."
+      },
+      {
+        "type": "exercise",
+        "title": "Étapes",
+        "content": "1) Lancer 2) Observer 3) Changer un bloc 4) Relancer 5) Valider."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Déboguer = **améliorer**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais déboguer un petit script.",
+      "keyTakeaways": [
+        "Tester",
+        "Corriger"
+      ],
+      "nextSteps": [
+        "Événements clavier/souris (leçon 11)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le script ne démarre pas. Il manque souvent…",
+        "type": "multiple-choice",
+        "options": [
+          "Un décor",
+          "Un bloc événement"
+        ],
+        "correctAnswer": "Un bloc événement",
+        "explanation": "Ex: quand drapeau cliqué",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "debug"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-04",
+  "title": "Routines du matin et du soir",
+  "summary": "Comprendre l’utilité de petites routines pour bien commencer et terminer la journée.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Lister 3 tâches du matin",
+    "Lister 3 tâches du soir",
+    "Cocher une routine sur 5 jours"
+  ],
+  "keywords": [
+    "routine",
+    "habitudes",
+    "organisation"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Routines",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Grille simple"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des petits pas",
+      "content": "Matin : **réveil, toilette, cartable**. Soir : **rangement, pyjama, histoire**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Checklist 5 jours",
+        "content": "Je coche mes **3 tâches** matin/soir pendant **5 jours**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Des **habitudes** donnent du **rythme**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu crées ta routine.",
+      "keyTakeaways": [
+        "Matin/Soir",
+        "Checklist"
+      ],
+      "nextSteps": [
+        "**Mes affaires en ordre** (leçon 5)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche Routine",
+          "description": "Tableau à cocher",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une routine aide à…",
+        "type": "multiple-choice",
+        "options": [
+          "Se perdre",
+          "S’organiser"
+        ],
+        "correctAnswer": "S’organiser",
+        "explanation": "Pouvoir d’habitude",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "routine"
+    ]
+  }
+}

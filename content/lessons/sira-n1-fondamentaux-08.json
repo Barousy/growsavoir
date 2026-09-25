@@ -1,0 +1,88 @@
+{
+  "slug": "sira-n1-fondamentaux-08",
+  "title": "Voyage à Ṭâ’if — répondre par la douceur",
+  "summary": "Apprendre que le Prophète ﷺ a répondu avec douceur et invocation, même quand les gens étaient durs.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Citer Ṭâ’if comme épisode de la sîra",
+    "Dire que le Prophète ﷺ a invoqué pour le bien",
+    "Imiter la douceur"
+  ],
+  "keywords": [
+    "taif",
+    "douceur",
+    "invocation"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Ṭâ’if",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Épisode niveau enfant"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Douceur et pardon",
+      "content": "À **Ṭâ’if**, des gens ont été **durs**. Le Prophète ﷺ a **invoqué** Allah et a montré de la **douceur**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je choisis la douceur",
+        "content": "Quand quelqu’un est dur, je **réponds calmement** et je dis une **bonne parole**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "La **douceur** change les cœurs."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais l’épisode de Ṭâ’if.",
+      "keyTakeaways": [
+        "Douceur",
+        "Invocation"
+      ],
+      "nextSteps": [
+        "La **Hijra** vers Médine (leçon 9)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "À Ṭâ’if, le Prophète ﷺ a répondu avec…",
+        "type": "multiple-choice",
+        "options": [
+          "Colère",
+          "Douceur et invocation"
+        ],
+        "correctAnswer": "Douceur et invocation",
+        "explanation": "Exemple de patience",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "taif"
+    ]
+  }
+}

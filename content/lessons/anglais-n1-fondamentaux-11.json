@@ -1,0 +1,97 @@
+{
+  "slug": "anglais-n1-fondamentaux-11",
+  "title": "Mini-scenes & Short Dialogues",
+  "summary": "Lire 2 mini-scènes du quotidien et répondre à 3 questions.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Lire 2 scènes (home/school)",
+    "Répondre who/where/what",
+    "Repérer prépositions et be/can"
+  ],
+  "keywords": [
+    "dialogues",
+    "comprehension",
+    "reading"
+  ],
+  "sources": [
+    {
+      "title": "Kids dialogues — routines",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "type": "website",
+      "description": "Scènes très courtes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Reading in context",
+      "content": "Lis **lentement**, repère **mots utiles** (be, can, in/on/under), puis **relis plus vite**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Home",
+        "content": "Tom is in the kitchen. The cat is on the chair. Tom can drink water."
+      },
+      {
+        "type": "example",
+        "title": "School",
+        "content": "The pen is on the desk. Anna is in the classroom. She can read."
+      },
+      {
+        "type": "activity",
+        "title": "Questions",
+        "content": "Home : 1) Where is Tom? 2) Where is the cat? 3) What can Tom do?\nSchool : 1) Where is the pen? 2) Where is Anna? 3) What can she do?"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Lecture **en contexte** + compréhension simple."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu comprends des scènes courtes.",
+      "keyTakeaways": [
+        "Who/Where/What"
+      ],
+      "nextSteps": [
+        "Final test (N1)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Where is the pen?",
+        "type": "multiple-choice",
+        "options": [
+          "in the bag",
+          "on the desk"
+        ],
+        "correctAnswer": "on the desk",
+        "explanation": "Phrase du texte",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "dialogues"
+    ]
+  }
+}

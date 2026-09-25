@@ -1,0 +1,46 @@
+{
+  "id": "eng-story-creation",
+  "title": "Création d'histoire en anglais",
+  "description": "Développer la créativité et les compétences d'écriture en créant des histoires complètes en anglais avec une structure narrative claire",
+  "duration": "45 min",
+  "difficulty": "advanced",
+  "subject": "anglais",
+  "materials": [
+    "Papier ligné ou cahier d'écriture",
+    "Stylos et crayons de couleur",
+    "Dictionnaire anglais-français",
+    "Images d'inspiration variées",
+    "Fiche de planification d'histoire",
+    "Liste de connecteurs logiques",
+    "Grille d'évaluation de l'histoire"
+  ],
+  "instructions": [
+    "Préparation et inspiration (10 min) : Choisissez 3-4 images d'inspiration. Créez une liste de personnages et lieux possibles. Définissez le genre de l'histoire.",
+    "Planification structurée (15 min) : Utilisez la fiche de planification pour organiser l'intrigue : introduction, développement, climax, résolution. Notez les mots-clés en anglais.",
+    "Rédaction guidée (15 min) : Écrivez l'histoire en respectant la structure planifiée. Utilisez le vocabulaire acquis et le dictionnaire pour les mots manquants.",
+    "Révision et illustration (5 min) : Relisez votre texte. Corrigez les erreurs. Ajoutez des illustrations pour enrichir l'histoire."
+  ],
+  "learningObjectives": [
+    "Utiliser activement le vocabulaire anglais acquis dans un contexte créatif",
+    "Structurer un récit complet avec introduction, développement et conclusion",
+    "Pratiquer l'écriture créative en respectant les règles de base",
+    "Développer la capacité à planifier et organiser ses idées",
+    "Enrichir le vocabulaire en utilisant le dictionnaire de manière autonome"
+  ],
+  "tips": [
+    "Commencez par des histoires simples avec 2-3 personnages maximum",
+    "Utilisez des connecteurs logiques (then, after, finally) pour structurer",
+    "Dessinez d'abord votre histoire avant de l'écrire",
+    "Relisez à haute voix pour vérifier la fluidité"
+  ],
+  "assessment": [
+    "L'histoire a-t-elle une structure claire (début, milieu, fin) ?",
+    "Le vocabulaire anglais est-il utilisé correctement ?",
+    "L'histoire est-elle cohérente et logique ?",
+    "L'élève peut-il expliquer son histoire en anglais ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

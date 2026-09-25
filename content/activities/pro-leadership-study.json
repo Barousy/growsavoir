@@ -1,0 +1,40 @@
+{
+  "id": "pro-leadership-study",
+  "title": "Étude du leadership",
+  "description": "Analyser le leadership du Prophète",
+  "duration": "60 min",
+  "difficulty": "expert",
+  "subject": "prophete-muhammad",
+  "materials": [
+    "Sources historiques",
+    "Analyses",
+    "Théories"
+  ],
+  "instructions": [
+    "Étudiez les situations de leadership",
+    "Analysez les décisions prises",
+    "Identifiez les principes",
+    "Comparez avec les théories modernes"
+  ],
+  "learningObjectives": [
+    "Comprendre le leadership islamique",
+    "Analyser les décisions stratégiques",
+    "Appliquer les principes modernes"
+  ],
+  "tips": [
+    "Étudiez des situations de leadership spécifiques et documentées",
+    "Analysez le contexte de chaque décision",
+    "Identifiez les principes universels du leadership",
+    "Comparez avec les théories modernes de manière objective"
+  ],
+  "assessment": [
+    "L'élève comprend-il les situations de leadership analysées ?",
+    "L'analyse des décisions est-elle approfondie ?",
+    "Les principes sont-ils bien identifiés et expliqués ?",
+    "La comparaison avec les théories modernes est-elle pertinente ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

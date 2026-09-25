@@ -1,0 +1,47 @@
+{
+  "id": "ara-literary-analysis",
+  "title": "Analyse littéraire de textes arabes classiques",
+  "description": "Développer une compréhension approfondie de la littérature arabe classique en analysant les techniques littéraires et le contexte historique",
+  "duration": "75 min",
+  "difficulty": "expert",
+  "subject": "arabe",
+  "materials": [
+    "Textes arabes classiques (poésie, prose, hadiths)",
+    "Dictionnaire arabe-français complet",
+    "Notes et commentaires sur les textes",
+    "Fiches d'analyse littéraire",
+    "Ouvrages de référence sur la littérature arabe",
+    "Carte du monde arabe médiéval",
+    "Grille d'analyse des figures de style",
+    "Carnet de notes pour observations personnelles"
+  ],
+  "instructions": [
+    "Lecture approfondie (20 min) : Lisez le texte plusieurs fois. Identifiez les mots difficiles et utilisez le dictionnaire. Notez vos premières impressions et questions.",
+    "Analyse technique (25 min) : Identifiez les figures de style (métaphores, comparaisons, allitérations). Analysez la structure narrative et les techniques de composition.",
+    "Contexte historique (20 min) : Recherchez le contexte historique et culturel. Comprenez l'époque, l'auteur et les circonstances de création. Reliez le texte à son époque.",
+    "Synthèse et interprétation (10 min) : Rédigez une analyse personnelle. Formulez votre interprétation du texte. Identifiez les thèmes universels et leur pertinence actuelle."
+  ],
+  "learningObjectives": [
+    "Comprendre en profondeur la littérature arabe classique et ses spécificités",
+    "Analyser les techniques littéraires et les procédés stylistiques arabes",
+    "Apprécier la richesse culturelle et historique de la civilisation arabe",
+    "Développer l'esprit critique et la capacité d'analyse littéraire",
+    "Établir des liens entre la littérature classique et les enjeux contemporains"
+  ],
+  "tips": [
+    "Prenez le temps de comprendre chaque mot et expression",
+    "Reliez le texte à vos connaissances historiques",
+    "N'ayez pas peur de formuler des interprétations personnelles",
+    "Comparez avec d'autres textes de la même époque"
+  ],
+  "assessment": [
+    "L'analyse technique est-elle complète et précise ?",
+    "Le contexte historique est-il bien intégré ?",
+    "L'interprétation personnelle est-elle argumentée ?",
+    "L'élève peut-il expliquer la pertinence actuelle du texte ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

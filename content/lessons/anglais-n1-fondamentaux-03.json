@@ -1,0 +1,106 @@
+{
+  "slug": "anglais-n1-fondamentaux-03",
+  "title": "Greetings & Introductions + Sight Words",
+  "summary": "Dire bonjour/au revoir, se présenter, et lire les mots outils the, a/an, I, and, is.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Saluer et se présenter",
+    "Employer to be (I am / You are)",
+    "Lire 5 sight words"
+  ],
+  "keywords": [
+    "greetings",
+    "introductions",
+    "sight words",
+    "to be"
+  ],
+  "sources": [
+    {
+      "title": "British Council Kids — Greetings",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "type": "website",
+      "description": "Salutations et dialogues"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Hello!",
+      "content": "**Hello! Hi! Goodbye!** — **I am** Adam. **I am 7.** **You are** my friend."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mini-dialogue",
+        "content": "— Hello! What is your name? — **I am** Lina. — **I am** Adam. — Nice to meet you!"
+      },
+      {
+        "type": "concept",
+        "title": "Sight words",
+        "content": "**the, a/an, I, and, is**"
+      },
+      {
+        "type": "activity",
+        "title": "Je coche",
+        "content": "Coche les sight words dans : **I am Adam and this is a cat.**"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris 3 phrases : **I am …** / **This is …**"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Salutations + **to be** (I am), sight words lus."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais te présenter en anglais.",
+      "keyTakeaways": [
+        "Hello/Goodbye",
+        "I am",
+        "Sight words"
+      ],
+      "nextSteps": [
+        "Numbers & Colours"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Complète : **I __ Adam.**",
+        "type": "multiple-choice",
+        "options": [
+          "is",
+          "am"
+        ],
+        "correctAnswer": "am",
+        "explanation": "I **am**",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "greetings",
+      "sight words"
+    ]
+  }
+}

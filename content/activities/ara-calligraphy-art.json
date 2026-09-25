@@ -1,0 +1,47 @@
+{
+  "id": "ara-calligraphy-art",
+  "title": "Art de la calligraphie arabe",
+  "description": "Découvrir et pratiquer l'art traditionnel de la calligraphie arabe en créant des compositions artistiques avec des outils authentiques",
+  "duration": "40 min",
+  "difficulty": "intermediate",
+  "subject": "arabe",
+  "materials": [
+    "Calame (plume de roseau) ou stylo calligraphique",
+    "Encre noire traditionnelle ou encre d'art",
+    "Papier spécial pour calligraphie (papier de riz ou bristol)",
+    "Modèles de lettres calligraphiques",
+    "Règle et compas pour tracer les lignes de base",
+    "Palette pour mélanger l'encre",
+    "Chiffons pour nettoyer les outils",
+    "Support incliné pour une meilleure posture"
+  ],
+  "instructions": [
+    "Préparation des outils (10 min) : Préparez votre calame en taillant la pointe selon l'angle désiré. Mélangez l'encre à la bonne consistance. Testez sur un papier d'essai.",
+    "Pratique des traits fondamentaux (15 min) : Tracez les traits de base : ligne horizontale, verticale, diagonale, courbe. Concentrez-vous sur la régularité et l'épaisseur.",
+    "Copie de modèles (10 min) : Choisissez un modèle simple. Tracez d'abord au crayon les lignes de base. Repassez au calame en respectant les proportions.",
+    "Création personnelle (5 min) : Créez une composition simple avec 2-3 lettres. Expérimentez avec l'espacement et l'équilibre visuel."
+  ],
+  "learningObjectives": [
+    "Maîtriser les techniques de base de la calligraphie arabe",
+    "Apprécier l'esthétique et l'harmonie de l'écriture arabe",
+    "Développer la patience, la précision et la concentration",
+    "Comprendre l'importance de la posture et de la tenue des outils",
+    "Créer des compositions calligraphiques équilibrées et harmonieuses"
+  ],
+  "tips": [
+    "Maintenez une posture droite et détendue",
+    "Tenez le calame à 45 degrés pour un trait optimal",
+    "Respirez calmement pendant l'exécution des traits",
+    "Commencez par des modèles simples avant de progresser"
+  ],
+  "assessment": [
+    "Les traits sont-ils réguliers et proportionnés ?",
+    "La composition est-elle équilibrée visuellement ?",
+    "L'élève respecte-t-il les règles de la calligraphie ?",
+    "L'œuvre finale montre-t-elle une progression technique ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

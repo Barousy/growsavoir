@@ -1,0 +1,121 @@
+{
+  "slug": "informatique-n1-fondamentaux-01",
+  "title": "Découvrir l'ordinateur : à quoi ça sert ?",
+  "summary": "Identifier les parties d'un ordinateur (écran, clavier, souris/tablette) et adopter les bons gestes (allumer/éteindre, posture).",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Nommer écran, unité centrale/tablette, clavier, souris/touchpad",
+    "Allumer / éteindre correctement",
+    "Adopter une posture confortable et sûre"
+  ],
+  "keywords": [
+    "ordinateur",
+    "écran",
+    "clavier",
+    "souris",
+    "posture"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Premiers pas numériques",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Découverte du matériel"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Bienvenue dans l'univers de l'informatique !",
+      "content": "Un **ordinateur** sert à **écrire**, **dessiner**, **apprendre**, **jouer**, et **communiquer**. Il se compose d’un **écran**, d’un **clavier**, et d’une **souris** (ou d’un **écran tactile**)."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Les parties principales",
+        "content": "Écran = ce que l’on **voit** ; Clavier = on **écrit** ; Souris/touchpad = on **pointe** et **clique**."
+      },
+      {
+        "type": "example",
+        "title": "Gestes sûrs",
+        "content": "On **allume** avec le bouton, on **éteint** via **Quitter/Arrêter** (pas en débranchant). Posture : dos droit, écran à distance d’un bras."
+      },
+      {
+        "type": "activity",
+        "title": "Je repère",
+        "content": "Entoure sur une photo : **écran / clavier / souris**."
+      },
+      {
+        "type": "exercise",
+        "title": "Routine",
+        "content": "Allume → Ouvre le programme « Dessin » → Ferme → Éteins correctement."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je nomme les **parties** et j’adopte les **bons gestes**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais identifier l'ordinateur et l'utiliser en sécurité.",
+      "keyTakeaways": [
+        "Écran/Clavier/Souris",
+        "Allumer/Éteindre",
+        "Posture"
+      ],
+      "nextSteps": [
+        "Maîtriser la **souris et le clavier** (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche matériel",
+          "description": "Parts of a computer",
+          "url": "https://www.cned.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "À quoi sert le clavier ?",
+        "type": "multiple-choice",
+        "options": [
+          "À voir",
+          "À écrire"
+        ],
+        "correctAnswer": "À écrire",
+        "explanation": "Le clavier sert à saisir du texte.",
+        "points": 10
+      },
+      {
+        "question": "Comment éteindre correctement ?",
+        "type": "multiple-choice",
+        "options": [
+          "Débrancher",
+          "Menu Arrêter/Éteindre"
+        ],
+        "correctAnswer": "Menu Arrêter/Éteindre",
+        "explanation": "On arrête via le système.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "découverte"
+    ]
+  }
+}

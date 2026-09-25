@@ -1,0 +1,98 @@
+{
+  "slug": "anglais-n1-fondamentaux-10",
+  "title": "Reading Practice — sight words + CVC sentences",
+  "summary": "Lire des phrases courtes combinant sight words et CVC.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Lire 10 phrases simples",
+    "Repérer sight words",
+    "Comprendre qui/quoi/où"
+  ],
+  "keywords": [
+    "reading",
+    "sight words",
+    "CVC"
+  ],
+  "sources": [
+    {
+      "title": "Dolch/Fry Sight Words (intro)",
+      "url": "https://sightwords.com",
+      "type": "website",
+      "description": "Listes de base"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je lis des phrases",
+      "content": "Sight words : **the, a, I, and, is, to, it**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**I am Tom.** **The cat is on the bed.** **It is hot.** **I can run.**"
+      },
+      {
+        "type": "activity",
+        "title": "Repérage",
+        "content": "Surligne les **sight words** dans 4 phrases."
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée",
+        "content": "Lis 8 phrases et réponds **qui/quoi/où**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Lecture fluide de **phrases courtes**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu lis des phrases simples.",
+      "keyTakeaways": [
+        "Sight words",
+        "CVC + sens"
+      ],
+      "nextSteps": [
+        "Mini-scènes & dialogues"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **The cat is on the bed.**, « on » signifie…",
+        "type": "multiple-choice",
+        "options": [
+          "dans",
+          "sur"
+        ],
+        "correctAnswer": "sur",
+        "explanation": "on = sur",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "reading"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "fiqh-n1-fondamentaux-04",
+  "title": "Ce qui annule le wudû’ — rester prêt pour la prière",
+  "summary": "Connaître quelques situations qui demandent de refaire les ablutions (niveau enfant) et apprendre la discrétion et l’hygiène.",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Citer 2-3 annulatifs simples",
+    "Agir avec discrétion et propreté",
+    "Refaire les ablutions calmement"
+  ],
+  "keywords": [
+    "wudu",
+    "annulatifs",
+    "hygiène"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Annulatifs",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Notions adaptées enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Rester en état de wudû’",
+      "content": "Parfois, on doit **refaire** le wudû’. On reste **discret** et on garde une **bonne hygiène**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Situations courantes",
+        "content": "Aller aux **toilettes** ; **gaz** ; **sommeil profond**."
+      },
+      {
+        "type": "activity",
+        "title": "Je récapitule",
+        "content": "Quand cela arrive → je **refais** mes ablutions avec **calme**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je connais quand **refaire** le wudû’."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais quand refaire les ablutions.",
+      "keyTakeaways": [
+        "Annulatifs",
+        "Discrétion",
+        "Hygiène"
+      ],
+      "nextSteps": [
+        "Découvrir la **prière** (leçon 5)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Après être allé aux toilettes, je…",
+        "type": "multiple-choice",
+        "options": [
+          "Ne fais rien",
+          "Refais le wudû’"
+        ],
+        "correctAnswer": "Refais le wudû’",
+        "explanation": "Annulatif courant",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "annulatifs"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "eng-debate-session",
+  "title": "Session de débat en anglais",
+  "description": "Développer les compétences d'argumentation et d'expression orale en participant à des débats structurés sur des sujets d'actualité",
+  "duration": "60 min",
+  "difficulty": "expert",
+  "subject": "anglais",
+  "materials": [
+    "Sujet de débat avec contexte détaillé",
+    "Arguments préparés pour et contre",
+    "Timer ou chronomètre",
+    "Fiche de préparation d'argument",
+    "Liste de connecteurs logiques avancés",
+    "Grille d'évaluation du débat",
+    "Enregistreur pour analyse post-débat"
+  ],
+  "instructions": [
+    "Préparation et recherche (20 min) : Étudiez le sujet en profondeur. Préparez 3-4 arguments solides avec exemples. Anticipez les contre-arguments possibles.",
+    "Structure de l'argument (15 min) : Organisez vos arguments selon la méthode PEEL (Point, Evidence, Explanation, Link). Préparez votre introduction et conclusion.",
+    "Débat structuré (20 min) : Respectez le format : introduction (2 min), arguments principaux (3 min chacun), réponses aux contre-arguments (5 min), conclusion (2 min).",
+    "Analyse et feedback (5 min) : Écoutez l'enregistrement. Identifiez les points forts et les axes d'amélioration. Notez le vocabulaire nouveau utilisé."
+  ],
+  "learningObjectives": [
+    "Exprimer des opinions complexes et nuancées en anglais avec précision",
+    "Argumenter et contre-argumenter de manière logique et convaincante",
+    "Maîtriser le vocabulaire académique et les expressions de débat",
+    "Développer la pensée critique et l'analyse des arguments",
+    "Améliorer la fluidité orale et la confiance en soi dans des situations complexes"
+  ],
+  "tips": [
+    "Utilisez des exemples concrets pour illustrer vos arguments",
+    "Écoutez activement les arguments adverses pour y répondre efficacement",
+    "Maintenez un ton respectueux même en désaccord",
+    "Pratiquez votre intervention à haute voix avant le débat"
+  ],
+  "assessment": [
+    "L'argumentation est-elle logique et bien structurée ?",
+    "Le vocabulaire académique est-il utilisé correctement ?",
+    "L'élève peut-il répondre aux contre-arguments ?",
+    "La présentation est-elle claire et convaincante ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

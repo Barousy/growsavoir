@@ -1,0 +1,99 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-05",
+  "title": "Soustraire jusqu’à 10 — « enlever »",
+  "summary": "Comprendre la soustraction comme retrait ; utiliser − et = ; compléter des faits jusqu’à 10.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Modéliser la soustraction (enlever/comparer)",
+    "Calculer jusqu’à 10",
+    "Écrire a − b = c"
+  ],
+  "keywords": [
+    "soustraction",
+    "-",
+    "="
+  ],
+  "sources": [
+    {
+      "title": "CNED — Soustractions CP",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Retrait et complément à"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Soustraction = enlever",
+      "content": "Ex.: 7 pommes **− 2** = 5 pommes."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Modèles",
+        "content": "**5 − 0 = 5**, **5 − 2 = 3**, **7 − 3 = 4**"
+      },
+      {
+        "type": "activity",
+        "title": "Je complète",
+        "content": "__ − 3 = 2 ; 9 − __ = 1 ; 6 − 6 = __"
+      },
+      {
+        "type": "exercise",
+        "title": "Calcul mental",
+        "content": "5−1, 6−2, 8−3, 9−4, 10−5."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Soustraction = **−** ; résultat avec **=**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Soustractions jusqu’à 10 maîtrisées.",
+      "keyTakeaways": [
+        "Retrait",
+        "Complément"
+      ],
+      "nextSteps": [
+        "Stratégies jusqu’à 20"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "8 − 3 = __",
+        "type": "multiple-choice",
+        "options": [
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": "5",
+        "explanation": "8-3=5",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "soustraction"
+    ]
+  }
+}

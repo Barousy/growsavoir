@@ -1,0 +1,47 @@
+{
+  "id": "ara-poetry-recitation",
+  "title": "Récitation de poésie arabe",
+  "description": "Découvrir la richesse de la poésie arabe classique en apprenant à réciter avec la bonne prononciation et le rythme approprié",
+  "duration": "45 min",
+  "difficulty": "advanced",
+  "subject": "arabe",
+  "materials": [
+    "Recueil de poèmes arabes classiques",
+    "Audio des récitations par des récitants professionnels",
+    "Fiches avec transcription phonétique",
+    "Dictionnaire arabe-français",
+    "Enregistreur pour pratiquer",
+    "Notes sur la métrique arabe",
+    "Images illustrant le contexte historique",
+    "Grille d'analyse poétique"
+  ],
+  "instructions": [
+    "Découverte et analyse (15 min) : Lisez le poème plusieurs fois. Identifiez le thème principal et les figures de style. Analysez la structure métrique (bayt, qafiya).",
+    "Écoute et imitation (15 min) : Écoutez la récitation professionnelle 3-4 fois. Notez l'intonation, les pauses et le rythme. Imitez la prononciation.",
+    "Pratique guidée (10 min) : Récitez le poème en respectant la métrique. Concentrez-vous sur la prononciation des lettres difficiles (ع، ح، خ).",
+    "Mémorisation et performance (5 min) : Mémorisez le poème par sections. Récitez-le avec expression et émotion. Enregistrez-vous pour évaluer."
+  ],
+  "learningObjectives": [
+    "Améliorer la prononciation arabe avec une attention particulière aux lettres gutturales",
+    "Comprendre et respecter la métrique arabe traditionnelle (arud)",
+    "Apprécier la beauté et la richesse de la littérature arabe classique",
+    "Développer la mémoire auditive et la capacité de récitation",
+    "Analyser les figures de style et les techniques poétiques arabes"
+  ],
+  "tips": [
+    "Écoutez attentivement les sons gutturaux caractéristiques de l'arabe",
+    "Pratiquez la respiration pour maintenir le rythme",
+    "Utilisez des gestes pour renforcer l'expression",
+    "Commencez par des poèmes courts avant de progresser vers des œuvres plus longues"
+  ],
+  "assessment": [
+    "La prononciation est-elle claire et fidèle à l'original ?",
+    "Le rythme et la métrique sont-ils respectés ?",
+    "L'élève peut-il expliquer le sens du poème ?",
+    "La récitation montre-t-elle une compréhension émotionnelle ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

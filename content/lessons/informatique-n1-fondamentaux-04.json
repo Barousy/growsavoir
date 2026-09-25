@@ -1,0 +1,106 @@
+{
+  "slug": "informatique-n1-fondamentaux-04",
+  "title": "Internet et sécurité : règles d’or",
+  "summary": "Découvrir le navigateur, un lien, un onglet ; connaître 3 règles de sécurité (infos perso, demande à un adulte, mots de passe).",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Ouvrir un site depuis un favori",
+    "Reconnaître un lien",
+    "Dire 3 règles de sécurité"
+  ],
+  "keywords": [
+    "internet",
+    "navigateur",
+    "sécurité",
+    "CNIL"
+  ],
+  "sources": [
+    {
+      "title": "CNIL — Internet sans crainte",
+      "url": "https://www.cnil.fr",
+      "type": "website",
+      "description": "Règles simples pour les enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Naviguer en sécurité",
+      "content": "**Navigateur** = application pour aller sur le **Web**. **Lien** = texte/image qui mène vers une page. **Onglet** = nouvelle page."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "3 règles d’or",
+        "content": "1) Ne jamais partager **nom/adresse/téléphone** ; 2) **Demander** à un adulte si un message te gêne ; 3) Utiliser des **mots de passe** forts avec un adulte."
+      },
+      {
+        "type": "activity",
+        "title": "Je repère un lien",
+        "content": "Sur une capture, entoure **les liens** (mots soulignés)."
+      },
+      {
+        "type": "exercise",
+        "title": "Vrai/Faux",
+        "content": "Donner son adresse à un inconnu en ligne : **Faux**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Découvrir le Web en **sécurité**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les règles essentielles.",
+      "keyTakeaways": [
+        "Infos perso",
+        "Demander aide",
+        "Mot de passe"
+      ],
+      "nextSteps": [
+        "Penser **algorithmes** (leçon 5)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Internet Sans Crainte (jeune public)",
+          "description": "Supports pédagogiques",
+          "url": "https://www.internetsanscrainte.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "On partage son adresse à un inconnu ?",
+        "type": "multiple-choice",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "correctAnswer": "Non",
+        "explanation": "Règle de sécurité",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "internet-sécurité"
+    ]
+  }
+}

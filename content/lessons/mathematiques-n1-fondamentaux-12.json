@@ -1,0 +1,122 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-12",
+  "title": "Données & Problèmes — lire un petit tableau/diagramme",
+  "summary": "Lire un tableau de 2–3 lignes/colonnes ; compter des occurrences ; résoudre 3 problèmes additifs/soustractifs simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-01",
+    "mathematiques-n1-fondamentaux-04",
+    "mathematiques-n1-fondamentaux-05",
+    "mathematiques-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Lire un tableau/diagramme barres très simple",
+    "Compter et comparer des effectifs",
+    "Résoudre 3 petits problèmes"
+  ],
+  "keywords": [
+    "données",
+    "tableau",
+    "problèmes"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Organisation et gestion de données",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Premières lectures de tableaux"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Lire pour décider",
+      "content": "On **compte**, on **compare**, on **conclut**. Puis on résout des **problèmes** en une étape."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Tableau (préférences)",
+        "content": "| Fruit | Enfants |\n|---|---|\n| Pomme | 6 |\n| Banane | 4 |\n| Orange | 2 |"
+      },
+      {
+        "type": "activity",
+        "title": "Questions",
+        "content": "Quel fruit est préféré ? Combien d’enfants au total ?"
+      },
+      {
+        "type": "exercise",
+        "title": "Problèmes",
+        "content": "1) Il y a 6 pommes et 3 bananes. Combien de fruits ? 2) J’ai 9 billes, j’en donne 2. Combien reste-t-il ? 3) Pour aller à 10, combien manque-t-il à 7 ?"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Lire un tableau, additionner/soustraire en **1 étape**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Évaluation de fin de **N1** Maths — réussi 🎉",
+      "keyTakeaways": [
+        "nombres",
+        "calcul",
+        "mesures/données"
+      ],
+      "nextSteps": [
+        "Passer au **N2**"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche révision N1",
+          "description": "Synthèse à imprimer",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans le tableau, le fruit le plus choisi est…",
+        "type": "multiple-choice",
+        "options": [
+          "Banane",
+          "Pomme",
+          "Orange"
+        ],
+        "correctAnswer": "Pomme",
+        "explanation": "Effectif le plus grand",
+        "points": 10
+      },
+      {
+        "question": "9 − 2 = __",
+        "type": "multiple-choice",
+        "options": [
+          "6",
+          "7",
+          "8"
+        ],
+        "correctAnswer": "7",
+        "explanation": "Retrait",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 25
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "données",
+      "évaluation"
+    ]
+  }
+}

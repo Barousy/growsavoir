@@ -1,0 +1,93 @@
+{
+  "slug": "sira-n1-fondamentaux-04",
+  "title": "Mariage avec Khadîja رضي الله عنها — une famille aimante",
+  "summary": "Découvrir le mariage avec Khadîja, la confiance et le soutien ; construire une famille sur la bonté.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Nommer Khadîja",
+    "Dire qu’elle a soutenu le Prophète ﷺ",
+    "Citer une valeur familiale : bonté/entraide"
+  ],
+  "keywords": [
+    "khadija",
+    "famille",
+    "soutien"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Famille",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Notions familiales"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Une épouse fidèle",
+      "content": "**Khadîja** a **épousé** le Prophète ﷺ. Elle était **bienveillante** et l’a **soutenu** toute sa vie."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Soutien",
+        "content": "Écouter, encourager, **aider** : de belles valeurs dans une famille."
+      },
+      {
+        "type": "activity",
+        "title": "Je remercie",
+        "content": "Écris un petit **merci** à quelqu’un qui t’aide."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Khadîja : un **grand soutien** pour le Prophète ﷺ."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais Khadîja رضي الله عنها.",
+      "keyTakeaways": [
+        "Bienveillance",
+        "Soutien"
+      ],
+      "nextSteps": [
+        "La **Révélation** (leçon 5)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Khadîja était…",
+        "type": "multiple-choice",
+        "options": [
+          "Indifférente",
+          "Un grand soutien"
+        ],
+        "correctAnswer": "Un grand soutien",
+        "explanation": "Qualité de Khadîja",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "khadija"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "fra-literary-criticism",
+  "title": "Critique littéraire et analyse d'œuvres",
+  "description": "Développer l'esprit critique et les compétences d'analyse littéraire en étudiant des œuvres variées et en formulant des jugements argumentés",
+  "duration": "60 min",
+  "difficulty": "expert",
+  "subject": "francais",
+  "materials": [
+    "Œuvre littéraire complète ou extraits significatifs",
+    "Critiques existantes et analyses universitaires",
+    "Carnet de notes et stylos",
+    "Fiches d'analyse littéraire",
+    "Dictionnaire des termes littéraires",
+    "Grille d'évaluation critique",
+    "Exemples de critiques modèles",
+    "Timer pour gérer le temps d'analyse"
+  ],
+  "instructions": [
+    "Lecture attentive et première approche (20 min) : Lisez l'œuvre attentivement en prenant des notes. Identifiez vos premières impressions et questions. Marquez les passages importants.",
+    "Analyse thématique et stylistique (25 min) : Identifiez les thèmes principaux et secondaires. Analysez le style de l'auteur, ses techniques narratives et ses choix esthétiques. Notez les procédés littéraires utilisés.",
+    "Recherche et confrontation (10 min) : Consultez les critiques existantes pour confronter vos analyses. Identifiez les points de convergence et de divergence. Enrichissez votre compréhension.",
+    "Rédaction de la critique personnelle (5 min) : Rédigez votre critique en structurant vos arguments. Exprimez un jugement personnel argumenté. Justifiez vos appréciations par des exemples précis."
+  ],
+  "learningObjectives": [
+    "Développer l'esprit critique et la capacité d'analyse littéraire approfondie",
+    "Analyser les techniques littéraires et les procédés stylistiques avec précision",
+    "Exprimer un jugement argumenté et personnel sur les œuvres étudiées",
+    "Confronter différentes approches critiques et enrichir sa compréhension",
+    "Développer la sensibilité esthétique et la culture littéraire"
+  ],
+  "tips": [
+    "Prenez le temps de bien comprendre l'œuvre avant de la critiquer",
+    "Appuyez toujours vos jugements sur des exemples précis du texte",
+    "N'ayez pas peur d'exprimer des opinions personnelles argumentées",
+    "Reliez l'œuvre à son contexte historique et culturel"
+  ],
+  "assessment": [
+    "L'analyse thématique et stylistique est-elle complète ?",
+    "Les techniques littéraires sont-elles bien identifiées ?",
+    "La critique personnelle est-elle argumentée et justifiée ?",
+    "L'élève peut-il confronter différents points de vue ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

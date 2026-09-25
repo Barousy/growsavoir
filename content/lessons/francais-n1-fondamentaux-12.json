@@ -1,0 +1,159 @@
+{
+  "slug": "francais-n1-fondamentaux-12",
+  "title": "Évaluation finale N1 — lecture & langue",
+  "summary": "Valider les compétences : lecture de mots/phrases, sons fréquents, GN simple, phrase S+V+C, présent être/avoir.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 30,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-01",
+    "francais-n1-fondamentaux-02",
+    "francais-n1-fondamentaux-03",
+    "francais-n1-fondamentaux-04",
+    "francais-n1-fondamentaux-05",
+    "francais-n1-fondamentaux-06",
+    "francais-n1-fondamentaux-07",
+    "francais-n1-fondamentaux-08",
+    "francais-n1-fondamentaux-09",
+    "francais-n1-fondamentaux-10",
+    "francais-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Lire mots et phrases courtes",
+    "Identifier sons/digrammes vus",
+    "Reconnaître GN simple",
+    "Former une phrase S+V+C",
+    "Conjuguer être/avoir (je/tu/il/elle)"
+  ],
+  "keywords": [
+    "évaluation",
+    "lecture",
+    "grammaire",
+    "conjugaison"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Maîtrise de la langue : attendus",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères de fin de cycle (adaptés N1)"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes",
+      "content": "Lis **calmement** ; réponds **sans te précipiter**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Partie 1 — Lecture de mots",
+        "content": "Lis : **classe, garçon, chat, loup, roi, maison, lapin** (sons ch/ou/oi, c/ç, nasales)."
+      },
+      {
+        "type": "concept",
+        "title": "Partie 2 — Phrases",
+        "content": "Lis puis ajoute **majuscule/point** : **leo parle au chat**"
+      },
+      {
+        "type": "example",
+        "title": "Texte court",
+        "content": "Paul **a** un **livre**. **Il** **lit** dans le **salon**. Le **chat** **est** **sur** la chaise.",
+        "examples": [
+          {
+            "code": "Paul a un livre.",
+            "title": "Phrase 1",
+            "description": "Lecture",
+            "explanation": "Sujet + verbe + complément"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Questions",
+        "content": "1) Qui a un livre ?\n2) Où est Paul ?\n3) Où est le chat ?"
+      },
+      {
+        "type": "exercise",
+        "title": "Grammaire & conjugaison",
+        "content": "1) Souligne l’**article** et entoure le **nom** : **le petit chat**.\n2) Conjugue **être** (je/tu/il/elle).\n3) Écris 1 phrase S+V+C avec **aimer**."
+      },
+      {
+        "type": "summary",
+        "title": "Vérifie",
+        "content": "Majuscule/point, sons corrects, GN, conjugaison."
+      }
+    ],
+    "conclusion": {
+      "summary": "Bravo ! Tu valides le niveau **N1** en français 🎉",
+      "keyTakeaways": [
+        "Lecture de base",
+        "GN simple",
+        "Présent être/avoir"
+      ],
+      "nextSteps": [
+        "Passer à **N2** (textes un peu plus longs)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Révisions N1 — fiche",
+          "description": "Tout-en-un",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **garçon**, la lettre **ç** se lit…",
+        "type": "multiple-choice",
+        "options": [
+          "[k]",
+          "[s]"
+        ],
+        "correctAnswer": "[s]",
+        "explanation": "cédille",
+        "points": 10
+      },
+      {
+        "question": "Complète : **Elle __ un livre.**",
+        "type": "multiple-choice",
+        "options": [
+          "a",
+          "as",
+          "ai"
+        ],
+        "correctAnswer": "a",
+        "explanation": "Elle **a**",
+        "points": 10
+      },
+      {
+        "question": "Un **GN** simple contient…",
+        "type": "multiple-choice",
+        "options": [
+          "Nom seul",
+          "Article + nom (+ adjectif)"
+        ],
+        "correctAnswer": "Article + nom (+ adjectif)",
+        "explanation": "Structure GN",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "évaluation"
+    ]
+  }
+}

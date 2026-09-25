@@ -1,0 +1,99 @@
+{
+  "slug": "devperso-n1-fondamentaux-01",
+  "title": "Je me présente et j’écoute",
+  "summary": "Apprendre à dire son prénom, écouter les autres et respecter les tours de parole.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Se présenter en une phrase",
+    "Écouter activement (regard, silence, reformulation)",
+    "Respecter les tours de parole"
+  ],
+  "keywords": [
+    "présentation",
+    "écoute",
+    "respect",
+    "tour de parole"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne — DP N1",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Progression N1"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui suis‑je ?",
+      "content": "Je dis **mon prénom** et **ce que j’aime** (un jeu, un fruit). J’**écoute** les autres sans couper la parole."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Écoute active",
+        "content": "1) Je **regarde**. 2) Je **me tais**. 3) Je **reformule** : « Tu as dit que… ». "
+      },
+      {
+        "type": "activity",
+        "title": "Ronde des prénoms",
+        "content": "Chaque élève se présente en **1 phrase**. Les autres **reformulent**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Se présenter + **écouter** = **bien vivre ensemble**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais te présenter et écouter.",
+      "keyTakeaways": [
+        "Regard",
+        "Silence",
+        "Reformulation"
+      ],
+      "nextSteps": [
+        "Découvrir mes **émotions** (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche Écoute Active",
+          "description": "Mémo 3 étapes",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Écouter activement, c’est…",
+        "type": "multiple-choice",
+        "options": [
+          "Regarder et reformuler",
+          "Parler fort"
+        ],
+        "correctAnswer": "Regarder et reformuler",
+        "explanation": "Règle de base",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "écoute"
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "arabe-n1-fondamentaux-02",
+  "title": "Les voyelles courtes (Harakât)",
+  "summary": "Comprendre fatha, kasra, damma et lire des syllabes simples (CV).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Reconnaître les 3 voyelles courtes : fatha (a), kasra (i), damma (ou)",
+    "Savoir où se placent les signes (au-dessus / en-dessous)",
+    "Lire des syllabes simples de type CV (ba / bi / bou…)",
+    "Différencier clairement les sons a / i / ou"
+  ],
+  "keywords": [
+    "arabe",
+    "harakat",
+    "fatha",
+    "kasra",
+    "damma",
+    "voyelles courtes",
+    "CV",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Harakat — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Présentation des voyelles brèves en arabe"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Les harakât : la vie des lettres",
+      "content": "\nLes **voyelles courtes** (الحركات) permettent de **prononcer** les lettres :\n\n- **Fatha** ( ـَ ) → son **a**\n- **Kasra** ( ـِ ) → son **i**\n- **Damma** ( ـُ ) → son **ou**\n\n> Exemple clé : **بَ / بِ / بُ** = **ba / bi / bou**.\n      ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Arabic_harakat.png/320px-Arabic_harakat.png"
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Où se placent les signes ?",
+        "content": "\n- **Fatha** se place **au-dessus** de la lettre : بَ  \n- **Kasra** se place **en-dessous** : بِ  \n- **Damma** se place **au-dessus** (petit wāw) : بُ\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau de lecture (CV)",
+        "content": "\n| Lettre | + Fatha | Son | + Kasra | Son | + Damma | Son |\n|---|---|---|---|---|---|---|\n| ب | بَ | **ba** | بِ | **bi** | بُ | **bou** |\n| ت | تَ | **ta** | تِ | **ti** | تُ | **tou** |\n| م | مَ | **ma** | مِ | **mi** | مُ | **mou** |\n        ",
+        "examples": [
+          {
+            "code": "بَ / بِ / بُ",
+            "title": "ba / bi / bou",
+            "description": "3 sons avec la même consonne",
+            "explanation": "Le signe vocalique change le son."
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Coche le bon son",
+        "content": "\n- [ ] **تِ** = ta  \n- [x] **تَ** = ta  \n- [ ] **تُ** = ti\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture syllabique guidée",
+        "content": "\nLis à voix haute :\n\n- **بَ** — **بِ** — **بُ**  \n- **مَ** — **مِ** — **مُ**  \n- **تَ** — **تِ** — **تُ**\n\n> Astuce : garde la voyelle **courte** (un tout petit temps), sans l’allonger.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- 3 voyelles courtes : **a / i / ou**  \n- Placement : **fatha** (haut), **kasra** (bas), **damma** (haut)  \n- Lecture **CV** : ba, bi, bou…\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nParfait ! Tu sais lire des **syllabes CV** grâce aux harakât.  \nProchaine étape : les **voyelles longues (madd)** pour allonger les sons.\n      ",
+      "keyTakeaways": [
+        "Fatha → a",
+        "Kasra → i",
+        "Damma → ou",
+        "Lecture CV acquise"
+      ],
+      "nextSteps": [
+        "Passer à la leçon 3 : voyelles longues (madd)",
+        "Relire 10 combinaisons CV différentes"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakat — Wikipédia",
+          "description": "Détails sur les voyelles brèves",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel signe donne le son **i** ?",
+        "type": "multiple-choice",
+        "options": [
+          "Fatha (ـَ)",
+          "Kasra (ـِ)",
+          "Damma (ـُ)",
+          "Sukûn (ـْ)"
+        ],
+        "correctAnswer": "Kasra (ـِ)",
+        "explanation": "Kasra se place **en-dessous** et donne le son **i**.",
+        "points": 10
+      },
+      {
+        "question": "Comment lit-on **بُ** ?",
+        "type": "multiple-choice",
+        "options": [
+          "ba",
+          "bi",
+          "bou",
+          "bé"
+        ],
+        "correctAnswer": "bou",
+        "explanation": "Damma (ـُ) produit le son **ou**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.896Z",
+    "updatedAt": "2025-08-30T06:37:37.896Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "harakat",
+      "voyelles courtes"
+    ]
+  }
+}

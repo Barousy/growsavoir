@@ -1,0 +1,47 @@
+{
+  "id": "dp-fixation-objectifs",
+  "title": "Fixation d'objectifs SMART et planification",
+  "description": "Apprendre à se fixer des objectifs clairs, mesurables et réalisables avec un plan d'action concret",
+  "duration": "30 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Fiches de méthode SMART",
+    "Carnet de planification et de suivi",
+    "Matériel de visualisation (post-its, feutres)",
+    "Fiches de planification d'action",
+    "Grille d'évaluation des objectifs",
+    "Matériel de motivation et de récompenses",
+    "Fiches de suivi des progrès",
+    "Calendrier et planificateur"
+  ],
+  "instructions": [
+    "Compréhension de la méthode SMART (8 min) : Étudiez la méthode SMART (Spécifique, Mesurable, Atteignable, Réaliste, Temporel). Identifiez les éléments de chaque critère. Comprenez l'importance de chaque aspect.",
+    "Définition d'objectifs personnels (12 min) : Appliquez la méthode SMART à vos objectifs personnels. Formulez des objectifs clairs et précis. Vérifiez qu'ils respectent tous les critères SMART.",
+    "Planification d'action (8 min) : Créez un plan d'action détaillé pour chaque objectif. Décomposez les étapes en actions concrètes. Établissez un calendrier et des échéances.",
+    "Suivi et ajustement (2 min) : Mettez en place un système de suivi de vos progrès. Prévoyez des moments de révision et d'ajustement. Engagez-vous dans un suivi régulier."
+  ],
+  "learningObjectives": [
+    "Maîtriser la méthode SMART pour la fixation d'objectifs",
+    "Développer des compétences de planification et d'organisation",
+    "Créer des plans d'action concrets et réalisables",
+    "Mettre en place un système de suivi et d'évaluation",
+    "Cultiver la discipline et la persévérance dans l'atteinte d'objectifs"
+  ],
+  "tips": [
+    "Commencez par des objectifs simples et progressifs",
+    "Soyez réaliste dans vos ambitions initiales",
+    "Célébrez chaque étape accomplie",
+    "N'hésitez pas à ajuster vos objectifs si nécessaire"
+  ],
+  "assessment": [
+    "Les objectifs respectent-ils la méthode SMART ?",
+    "Le plan d'action est-il concret et réalisable ?",
+    "Le système de suivi est-il en place et utilisé ?",
+    "L'élève progresse-t-il vers ses objectifs ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

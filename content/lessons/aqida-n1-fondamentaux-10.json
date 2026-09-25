@@ -1,0 +1,93 @@
+{
+  "slug": "aqida-n1-fondamentaux-10",
+  "title": "La Shahâda — sens et implications",
+  "summary": "Comprendre « Lâ ilâha illa-llâh, Muhammadun rasûlullâh » : un seul Dieu, et Muhammad est Son Messager.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Dire la Shahâda correctement",
+    "Expliquer son sens simple",
+    "Donner 2 conséquences dans la vie quotidienne"
+  ],
+  "keywords": [
+    "shahada",
+    "tawhid",
+    "messager"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Formulation et sens"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Deux phrases importantes",
+      "content": "**Lâ ilâha illa-llâh** (il n’y a de dieu digne d’adoration qu’Allah) ; **Muhammadun rasûlullâh** (Muhammad est le Messager d’Allah)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Dans ma vie",
+        "content": "J’**obéis** à Allah, je **suis** la voie du Prophète ﷺ."
+      },
+      {
+        "type": "activity",
+        "title": "Je répète correctement",
+        "content": "Apprends la phrase avec un adulte, calmement."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Shahâda = **unicité** + **message**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la Shahâda et son sens.",
+      "keyTakeaways": [
+        "Un Dieu",
+        "Messager"
+      ],
+      "nextSteps": [
+        "Protéger sa foi (leçon 11)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La Shahâda affirme…",
+        "type": "multiple-choice",
+        "options": [
+          "Plusieurs dieux",
+          "Un seul Dieu et le Message de Muhammad"
+        ],
+        "correctAnswer": "Un seul Dieu et le Message de Muhammad",
+        "explanation": "Sens de la Shahâda",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "shahada"
+    ]
+  }
+}

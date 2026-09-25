@@ -1,0 +1,40 @@
+{
+  "id": "his-historical-research",
+  "title": "Recherche historique",
+  "description": "Conduire une recherche historique",
+  "duration": "90 min",
+  "difficulty": "expert",
+  "subject": "histoire-islam",
+  "materials": [
+    "Sources primaires",
+    "Ouvrages de référence",
+    "Notes"
+  ],
+  "instructions": [
+    "Formulez votre question de recherche",
+    "Consultez les sources",
+    "Analysez les documents",
+    "Rédigez votre conclusion"
+  ],
+  "learningObjectives": [
+    "Conduire une recherche historique",
+    "Analyser des sources",
+    "Formuler des conclusions"
+  ],
+  "tips": [
+    "Formulez une question de recherche claire et précise",
+    "Utilisez des sources primaires et secondaires",
+    "Prenez des notes détaillées et organisées",
+    "Vérifiez la fiabilité de vos sources"
+  ],
+  "assessment": [
+    "La question de recherche est-elle claire et précise ?",
+    "Les sources sont-elles variées et fiables ?",
+    "L'analyse des documents est-elle approfondie ?",
+    "Les conclusions sont-elles bien argumentées ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

@@ -1,0 +1,104 @@
+{
+  "slug": "aqida-n1-fondamentaux-04",
+  "title": "Les Livres révélés — le Coran et autres écrits",
+  "summary": "Croire aux Livres révélés par Allah : le **Coran** est le dernier et préservé.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Nommer le Coran",
+    "Citer qu’il existe d’autres livres révélés",
+    "Respecter le Coran (adab)"
+  ],
+  "keywords": [
+    "livres",
+    "coran",
+    "révélation"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Repères enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le Livre d’Allah",
+      "content": "Le **Coran** est la Parole d’Allah, révélée au Prophète **Muhammad ﷺ**. D’autres livres : **Tawrah**, **Injîl**, **Zabûr**…"
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Adab avec le Coran",
+        "content": "Propres **mains**, écouter avec **respect**, ranger avec **soin**."
+      },
+      {
+        "type": "example",
+        "title": "Révélations précédentes",
+        "content": "Nous **respectons** tous les Livres révélés d’Allah."
+      },
+      {
+        "type": "exercise",
+        "title": "Je coche",
+        "content": "Le Coran est : [ ] un roman [x] la Parole d’Allah."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je crois aux **Livres** ; le Coran est **dernier** et **préservé**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais nommer et respecter le Coran.",
+      "keyTakeaways": [
+        "Coran",
+        "Adab"
+      ],
+      "nextSteps": [
+        "Les **Prophètes** (leçon 5)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche adab du Coran",
+          "description": "Rappels visuels",
+          "url": "https://example.com/aqida-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le Coran est…",
+        "type": "multiple-choice",
+        "options": [
+          "La Parole d’Allah",
+          "Un conte"
+        ],
+        "correctAnswer": "La Parole d’Allah",
+        "explanation": "Livre révélé",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "livres"
+    ]
+  }
+}

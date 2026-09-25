@@ -1,0 +1,47 @@
+{
+  "id": "math-problem-solving",
+  "title": "Résolution de problèmes mathématiques",
+  "description": "Développer la capacité à analyser, comprendre et résoudre des problèmes mathématiques complexes en utilisant des stratégies appropriées",
+  "duration": "40 min",
+  "difficulty": "advanced",
+  "subject": "mathematiques",
+  "materials": [
+    "Problèmes écrits variés (arithmétique, géométrie, algèbre)",
+    "Calculatrice scientifique",
+    "Papier brouillon et papier de réponse",
+    "Fiches de stratégies de résolution",
+    "Dictionnaire mathématique",
+    "Grille d'analyse des problèmes",
+    "Exemples de solutions détaillées",
+    "Timer pour gérer le temps de résolution"
+  ],
+  "instructions": [
+    "Lecture et analyse (10 min) : Lisez l'énoncé plusieurs fois. Identifiez les informations données et les questions posées. Soulignez les mots-clés mathématiques.",
+    "Planification de la résolution (15 min) : Choisissez la méthode appropriée (schéma, équation, calcul direct). Organisez vos étapes de résolution. Estimez le temps nécessaire.",
+    "Exécution et calculs (10 min) : Effectuez les calculs étape par étape. Vérifiez chaque calcul intermédiaire. Utilisez la calculatrice pour les opérations complexes.",
+    "Vérification et conclusion (5 min) : Vérifiez la cohérence de votre réponse. Relisez l'énoncé pour confirmer que vous avez répondu à la question. Présentez clairement votre solution."
+  ],
+  "learningObjectives": [
+    "Comprendre et analyser des énoncés de problèmes mathématiques complexes",
+    "Choisir et appliquer les bonnes opérations et méthodes de résolution",
+    "Vérifier la cohérence et la pertinence des résultats obtenus",
+    "Développer la logique mathématique et le raisonnement déductif",
+    "Organiser et présenter clairement les étapes de résolution"
+  ],
+  "tips": [
+    "Dessinez un schéma pour visualiser le problème",
+    "Vérifiez vos unités de mesure",
+    "Relisez l'énoncé après avoir trouvé la réponse",
+    "Utilisez des valeurs d'essai pour vérifier votre logique"
+  ],
+  "assessment": [
+    "L'analyse du problème est-elle complète et précise ?",
+    "La méthode de résolution choisie est-elle appropriée ?",
+    "Les calculs sont-ils corrects et vérifiés ?",
+    "La réponse finale est-elle cohérente avec l'énoncé ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

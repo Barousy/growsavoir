@@ -1,0 +1,93 @@
+{
+  "slug": "aqida-n1-fondamentaux-07",
+  "title": "Le Jour dernier — rendre des comptes (niveau enfant)",
+  "summary": "Comprendre simplement que nous répondrons de nos actions ; encourager les bonnes œuvres et le repentir.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Dire que nos actes comptent",
+    "Citer 3 bonnes actions",
+    "Comprendre le repentir"
+  ],
+  "keywords": [
+    "jour dernier",
+    "jugement",
+    "bonnes actions"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Approche bienveillante"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Mes actions comptent",
+      "content": "Un jour, Allah nous **demandera** ce que nous avons fait. Faisons de **bonnes actions** et demandons **pardon** quand on se trompe."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Bonnes actions",
+        "content": "Dire **salam**, aider, dire **merci**, partager."
+      },
+      {
+        "type": "activity",
+        "title": "Mon carnet de bien",
+        "content": "Écris 3 bonnes actions faites aujourd’hui."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je me prépare par les **bonnes œuvres**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais que nos actes sont importants.",
+      "keyTakeaways": [
+        "Responsabilité",
+        "Pardon"
+      ],
+      "nextSteps": [
+        "Destin (leçon 8)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Que faire si on se trompe ?",
+        "type": "multiple-choice",
+        "options": [
+          "Ignorer",
+          "Demander pardon"
+        ],
+        "correctAnswer": "Demander pardon",
+        "explanation": "Repentir",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "jour-dernier"
+    ]
+  }
+}

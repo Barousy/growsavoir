@@ -1,0 +1,47 @@
+{
+  "id": "dp-journal-reflexion",
+  "title": "Journal de réflexion personnelle",
+  "description": "Développer la conscience de soi à travers l'écriture réflexive et l'auto-observation quotidienne",
+  "duration": "20 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Carnet de journal personnel",
+    "Stylos et crayons de couleur",
+    "Fiches de questions de réflexion",
+    "Timer ou chronomètre",
+    "Espace calme et confortable",
+    "Fiches de suivi des émotions",
+    "Grille d'évaluation de la réflexion",
+    "Matériel de décoration (stickers, dessins)"
+  ],
+  "instructions": [
+    "Préparation de l'espace (3 min) : Installez-vous dans un endroit calme et confortable. Préparez votre carnet et vos outils d'écriture. Créez une atmosphère propice à la réflexion.",
+    "Moment de centrage (5 min) : Prenez quelques respirations profondes pour vous centrer. Posez-vous la question : 'Comment je me sens aujourd'hui ?' Notez vos premières impressions.",
+    "Réflexion guidée (10 min) : Utilisez les fiches de questions pour approfondir votre réflexion. Écrivez librement sans vous censurer. Explorez vos pensées, émotions et expériences.",
+    "Synthèse et planification (2 min) : Résumez vos découvertes principales. Identifiez une action concrète à entreprendre demain. Notez vos observations pour le suivi."
+  ],
+  "learningObjectives": [
+    "Développer la conscience de soi et la connaissance de ses émotions",
+    "Améliorer la capacité d'auto-observation et de réflexion",
+    "Cultiver l'habitude de l'écriture réflexive quotidienne",
+    "Identifier des patterns dans ses pensées et comportements",
+    "Développer la capacité d'expression personnelle authentique"
+  ],
+  "tips": [
+    "Écrivez sans jugement, laissez couler vos pensées",
+    "Soyez régulier dans votre pratique quotidienne",
+    "Relisez vos anciennes entrées pour observer votre évolution",
+    "Utilisez des couleurs et des dessins pour enrichir votre journal"
+  ],
+  "assessment": [
+    "L'élève écrit-il régulièrement dans son journal ?",
+    "La réflexion montre-t-elle une conscience de soi croissante ?",
+    "L'élève peut-il identifier ses émotions et pensées ?",
+    "Le journal reflète-t-il une évolution personnelle ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

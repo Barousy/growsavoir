@@ -1,0 +1,99 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-08",
+  "title": "Formes 2D et 3D — reconnaître et décrire",
+  "summary": "Identifier cercle, triangle, carré, rectangle ; reconnaître cube, boule, cylindre, pyramide ; décrire avec des mots simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Nommer 4 formes 2D et 4 solides 3D",
+    "Décrire côtés/coins (2D)",
+    "Relier objets du quotidien"
+  ],
+  "keywords": [
+    "géométrie",
+    "formes",
+    "2D",
+    "3D"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Géométrie au CP",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Formes usuelles"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "2D vs 3D",
+      "content": "**2D**: plat (cercle, triangle, carré, rectangle). **3D**: en volume (cube, **sphere**/boule, cylindre, pyramide)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Objets du quotidien",
+        "content": "Roue → **cercle**, boîte → **cube**, canette → **cylindre**."
+      },
+      {
+        "type": "activity",
+        "title": "Je classe",
+        "content": "Découpe des images et classe en **2D** / **3D**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je décris",
+        "content": "Le carré a **4 côtés égaux** et **4 sommets**. Le rectangle a 4 côtés, 4 sommets."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Noms et propriétés simples."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu reconnais les formes courantes.",
+      "keyTakeaways": [
+        "2D plats",
+        "3D volumes"
+      ],
+      "nextSteps": [
+        "Grandeurs : longueurs non standard"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une canette est proche de quel solide ?",
+        "type": "multiple-choice",
+        "options": [
+          "Cube",
+          "Cylindre"
+        ],
+        "correctAnswer": "Cylindre",
+        "explanation": "Forme cylindrique",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "formes"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-10",
+  "title": "Gérer le temps avec un sablier",
+  "summary": "Découvrir les blocs de 5/10 minutes et utiliser un sablier pour rester concentré.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Choisir un bloc 5/10 min",
+    "Rester concentré jusqu’à la fin",
+    "Évaluer « facile/moyen/difficile »"
+  ],
+  "keywords": [
+    "temps",
+    "sablier",
+    "concentration"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Gestion du temps",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Blocs courts"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des blocs de temps",
+      "content": "Je choisis **5** ou **10 minutes** avec un **sablier**. Je reste **focus** jusqu’à la fin."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Focus 10",
+        "content": "Je lis/calcule **10 min** sans m’arrêter. Puis je note : **facile/moyen/difficile**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Un **sablier** m’aide à **finir**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu utilises le sablier.",
+      "keyTakeaways": [
+        "5/10 min",
+        "Focus"
+      ],
+      "nextSteps": [
+        "**Conflit : je-messages** (leçon 11)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Sablier papier",
+          "description": "Patron à découper",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pendant un bloc de 10 min, je…",
+        "type": "multiple-choice",
+        "options": [
+          "Change d’activité souvent",
+          "Reste concentré jusqu’à la fin"
+        ],
+        "correctAnswer": "Reste concentré jusqu’à la fin",
+        "explanation": "Bloc unique",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "temps"
+    ]
+  }
+}

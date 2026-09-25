@@ -1,0 +1,93 @@
+{
+  "slug": "aqida-n1-fondamentaux-11",
+  "title": "Protéger sa foi — éviter le shirk et les superstitions (niveau enfant)",
+  "summary": "Expliquer simplement qu’on n’adore rien ni personne d’autre qu’Allah ; éviter les superstitions et chercher protection auprès d’Allah.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Dire que toute adoration est pour Allah",
+    "Reconnaître quelques superstitions",
+    "Apprendre une courte invocation de protection"
+  ],
+  "keywords": [
+    "shirk",
+    "protection",
+    "invocation"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Approche simple et bienveillante"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Ma foi, je la protège",
+      "content": "Je n’**adore** que **Allah** : je ne demande pas à des objets, je ne crois pas aux **porte-bonheurs**. Je cherche **protection** auprès d’Allah."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "Ne pas croire qu’un bracelet **protège** ; on dit : « **A‘ûdhu billâh** » (Je cherche refuge auprès d’Allah)."
+      },
+      {
+        "type": "activity",
+        "title": "Je choisis la bonne action",
+        "content": "Quand j’ai peur : [ ] parler à un objet magique [x] faire une **invocation**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Adoration = pour **Allah seul** ; je **rejette** les superstitions."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais protéger ta foi.",
+      "keyTakeaways": [
+        "Allah seul",
+        "Rejeter superstition"
+      ],
+      "nextSteps": [
+        "Bilan **N1** (leçon 12)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Un porte-bonheur protège-t-il vraiment ?",
+        "type": "multiple-choice",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "correctAnswer": "Non",
+        "explanation": "La protection vient d'Allah",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "protéger-foi"
+    ]
+  }
+}

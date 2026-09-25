@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-07",
+  "title": "Effort et persévérance — le pouvoir du « encore »",
+  "summary": "Comprendre que l’on progresse avec des efforts répétés : « Je ne sais pas **encore** ». ",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Donner un exemple d’effort",
+    "Employer « encore »",
+    "Célébrer une petite victoire"
+  ],
+  "keywords": [
+    "persévérance",
+    "effort",
+    "état d’esprit"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Esprit de progression",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Growth mindset adapté"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je progresse",
+      "content": "Dire « **encore** » au lieu de « Je n’y arrive pas ». Chaque jour, un **petit effort**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Victoire du jour",
+        "content": "J’écris une **petite réussite** d’aujourd’hui."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Efforts **répétés** = **progrès**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu adoptes le mot « encore ».",
+      "keyTakeaways": [
+        "Encore",
+        "Petits pas"
+      ],
+      "nextSteps": [
+        "**Politesse** (leçon 8)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Carnet des progrès",
+          "description": "1 ligne par jour",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Je n’y arrive pas…",
+        "type": "multiple-choice",
+        "options": [
+          "et j’abandonne",
+          "encore (je continue)"
+        ],
+        "correctAnswer": "encore (je continue)",
+        "explanation": "État d’esprit",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "persévérance"
+    ]
+  }
+}

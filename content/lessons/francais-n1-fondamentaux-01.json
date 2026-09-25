@@ -1,0 +1,142 @@
+{
+  "slug": "francais-n1-fondamentaux-01",
+  "title": "Alphabet & voyelles (a, e, i, o, u, y)",
+  "summary": "Découvrir l'alphabet français et les voyelles ; lire des syllabes simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Connaître l'alphabet (noms des lettres)",
+    "Identifier les 6 voyelles a/e/i/o/u/y",
+    "Lire des syllabes CV simples (ma, mi, mo…)",
+    "Écrire quelques syllabes simples au son"
+  ],
+  "keywords": [
+    "alphabet",
+    "voyelles",
+    "lecture",
+    "CV",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Lecture au CP : premiers repères",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Références officielles lecture/décodage"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Bienvenue dans l'alphabet français",
+      "content": "En français, on lit de **gauche à droite**. L'alphabet comprend **26 lettres** : 6 **voyelles** (a, e, i, o, u, y) et des **consonnes**. Nous allons commencer par les voyelles et des syllabes **CV** (consonne + voyelle)."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Les 6 voyelles",
+        "content": "**a, e, i, o, u, y** — écoute et répète.\nExemples de syllabes : **ma, mi, mo** / **ta, ti, to** / **lu, la, li**."
+      },
+      {
+        "type": "example",
+        "title": "Tableau de syllabes CV",
+        "content": "| Consonne | a | e | i | o | u | y |\n|---|---|---|---|---|---|---|\n| m | ma | me | mi | mo | mu | my |\n| t | ta | te | ti | to | tu | ty |\n| l | la | le | li | lo | lu | ly |",
+        "examples": [
+          {
+            "code": "ma / mi / mo",
+            "title": "Série m + voyelles",
+            "description": "Lecture CV",
+            "explanation": "On associe m + a/e/i/o/u/y"
+          },
+          {
+            "code": "ta / ti / to",
+            "title": "Série t + voyelles",
+            "description": "Lecture CV",
+            "explanation": "Même principe avec t"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je coche le bon son",
+        "content": "- [x] **ma** commence par **m**\n- [ ] **ti** se lit **ta**\n- [x] **lu** contient la voyelle **u**"
+      },
+      {
+        "type": "exercise",
+        "title": "Je lis et j’épelle",
+        "content": "Lis à voix haute : **ma, mi, mo, la, li, lo, ta, ti, to**.\nÉpelle les voyelles : **a, e, i, o, u, y**."
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "26 lettres ; 6 voyelles. Lecture de syllabes **CV**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Bravo ! Tu connais les voyelles et tu sais lire des syllabes **CV**.",
+      "keyTakeaways": [
+        "Voyelles a/e/i/o/u/y",
+        "Syllabes CV lues"
+      ],
+      "nextSteps": [
+        "Passer aux syllabes **CVC** (consonne-voyelle-consonne)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche des voyelles (PDF)",
+          "description": "Support visuel à imprimer",
+          "url": "https://eduscol.education.fr"
+        },
+        {
+          "title": "Jeu de cartes syllabes",
+          "description": "Associer consonnes et voyelles",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien de voyelles principales en français ?",
+        "type": "multiple-choice",
+        "options": [
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": "6",
+        "explanation": "a, e, i, o, u, y",
+        "points": 10
+      },
+      {
+        "question": "La syllabe **ma** est de type…",
+        "type": "multiple-choice",
+        "options": [
+          "CV",
+          "CVC"
+        ],
+        "correctAnswer": "CV",
+        "explanation": "Consonne + voyelle",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "alphabet",
+      "voyelles"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "isl-theological-debate",
+  "title": "Débat théologique",
+  "description": "Débattre de questions théologiques",
+  "duration": "60 min",
+  "difficulty": "expert",
+  "subject": "sciences-islamiques",
+  "materials": [
+    "Questions théologiques",
+    "Sources",
+    "Arguments"
+  ],
+  "instructions": [
+    "Préparez vos arguments",
+    "Structurez votre intervention",
+    "Citez vos sources",
+    "Écoutez et répondez"
+  ],
+  "learningObjectives": [
+    "Analyser des questions complexes",
+    "Argumenter avec des preuves",
+    "Développer l'esprit critique"
+  ],
+  "tips": [
+    "Préparez vos arguments à l'avance avec des sources fiables",
+    "Structurez votre intervention en introduction, développement, conclusion",
+    "Écoutez attentivement les arguments adverses",
+    "Restez respectueux et ouvert au dialogue"
+  ],
+  "assessment": [
+    "L'argumentation est-elle structurée et claire ?",
+    "Les sources sont-elles citées correctement ?",
+    "L'élève écoute-t-il et répond-il aux arguments adverses ?",
+    "Le débat respecte-t-il les règles de courtoisie ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

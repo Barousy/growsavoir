@@ -1,0 +1,47 @@
+{
+  "id": "isl-quran-recitation",
+  "title": "Récitation du Coran et apprentissage du tajweed",
+  "description": "Développer la capacité de réciter le Coran avec la bonne prononciation et en respectant les règles de tajweed",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "sciences-islamiques",
+  "materials": [
+    "Mushaf (copie du Coran) de bonne qualité",
+    "Audio des récitations par des récitants reconnus",
+    "Carnet de notes pour les règles de tajweed",
+    "Fiches des règles de prononciation de base",
+    "Enregistreur pour pratiquer et s'écouter",
+    "Fiches de versets à mémoriser",
+    "Grille d'évaluation de la récitation",
+    "Matériel de révision des règles"
+  ],
+  "instructions": [
+    "Écoute et observation (8 min) : Écoutez attentivement la récitation plusieurs fois. Observez la prononciation, l'intonation et les pauses. Notez les points particuliers de prononciation.",
+    "Pratique guidée de la prononciation (10 min) : Pratiquez la prononciation en imitant le récitant. Concentrez-vous sur les lettres difficiles et les règles de tajweed de base. Utilisez un miroir pour vérifier l'articulation.",
+    "Mémorisation progressive (5 min) : Mémorisez les versets par petits groupes. Récitez-les en respectant les règles de tajweed apprises. Vérifiez votre prononciation avec l'audio.",
+    "Récitation complète et évaluation (2 min) : Récitez les versets mémorisés avec le bon tajweed. Enregistrez-vous pour identifier les points d'amélioration. Notez les règles à retravailler."
+  ],
+  "learningObjectives": [
+    "Améliorer la prononciation arabe avec une attention particulière aux lettres coraniques",
+    "Mémoriser des versets du Coran de manière progressive et structurée",
+    "Comprendre et appliquer les règles de tajweed de base",
+    "Développer la confiance en soi dans la récitation publique",
+    "Cultiver l'amour et le respect du Livre d'Allah"
+  ],
+  "tips": [
+    "Écoutez attentivement avant de pratiquer",
+    "Pratiquez régulièrement pour consolider la mémorisation",
+    "Respectez les pauses et l'intonation",
+    "Commencez par des versets courts et simples"
+  ],
+  "assessment": [
+    "La prononciation est-elle claire et fidèle à l'original ?",
+    "Les versets sont-ils mémorisés correctement ?",
+    "Les règles de tajweed de base sont-elles respectées ?",
+    "L'élève montre-t-il de la concentration et du respect ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

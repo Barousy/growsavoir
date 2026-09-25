@@ -1,0 +1,47 @@
+{
+  "id": "info-web-development",
+  "title": "Développement web et création de sites",
+  "description": "Maîtriser les technologies web de base en créant un site web complet avec HTML, CSS et des fonctionnalités interactives",
+  "duration": "75 min",
+  "difficulty": "advanced",
+  "subject": "informatique",
+  "materials": [
+    "Éditeur de code (VS Code, Sublime Text, ou éditeur en ligne)",
+    "Tutoriels HTML/CSS détaillés et progressifs",
+    "Références et documentation des langages web",
+    "Fiches de référence des balises HTML et propriétés CSS",
+    "Images et contenus pour le site",
+    "Grille d'évaluation du site web",
+    "Matériel de planification et de design",
+    "Fichiers de sauvegarde et de versioning"
+  ],
+  "instructions": [
+    "Planification et conception (20 min) : Planifiez votre site en créant un wireframe ou un schéma. Définissez les pages, la navigation et l'organisation du contenu. Préparez les éléments graphiques et textuels.",
+    "Création de la structure HTML (25 min) : Créez la structure HTML en respectant la sémantique et l'accessibilité. Utilisez les bonnes balises pour organiser le contenu. Créez une navigation claire et logique.",
+    "Ajout du style CSS (25 min) : Ajoutez le style CSS pour rendre votre site attrayant et responsive. Utilisez les propriétés de mise en page, de couleur et de typographie. Testez l'apparence sur différentes tailles d'écran.",
+    "Intégration de l'interactivité (5 min) : Intégrez des fonctionnalités JavaScript simples pour améliorer l'expérience utilisateur. Testez toutes les fonctionnalités et corrigez les problèmes."
+  ],
+  "learningObjectives": [
+    "Maîtriser les technologies web fondamentales (HTML, CSS, JavaScript)",
+    "Créer des interfaces utilisateur modernes et responsives",
+    "Intégrer différents composants et fonctionnalités de manière cohérente",
+    "Développer des compétences de design web et d'expérience utilisateur",
+    "Maîtriser les outils de développement web et de débogage"
+  ],
+  "tips": [
+    "Commencez par une structure HTML simple avant d'ajouter le style",
+    "Utilisez des commentaires pour organiser votre code",
+    "Testez régulièrement dans différents navigateurs",
+    "Respectez les standards web et l'accessibilité"
+  ],
+  "assessment": [
+    "Le site web est-il fonctionnel et accessible ?",
+    "Le code HTML respecte-t-il les bonnes pratiques ?",
+    "Le design CSS est-il attrayant et responsive ?",
+    "L'élève peut-il expliquer la structure de son code ?"
+  ],
+  "ageGroup": "15+",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

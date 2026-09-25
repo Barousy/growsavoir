@@ -1,0 +1,105 @@
+{
+  "slug": "fiqh-n1-fondamentaux-01",
+  "title": "Découvrir le fiqh : adorer Allah au quotidien",
+  "summary": "Comprendre que le fiqh, ce sont les **règles faciles** pour bien adorer Allah chaque jour (propreté, prière, bonnes manières).",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Dire ce qu’est le fiqh (règles de la pratique)",
+    "Citer 3 moments où on applique le fiqh (toilettes, prière, repas)",
+    "Adopter une intention sincère"
+  ],
+  "keywords": [
+    "fiqh",
+    "adoration",
+    "règles",
+    "intention"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Progression GrowSavoir — niveau enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le fiqh, à quoi ça sert ?",
+      "content": "Le **fiqh** nous apprend **comment** faire les choses qu’Allah aime : rester **propre**, **prier**, se **comporter** avec douceur. On commence par une **bonne intention** (pour plaire à Allah)."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Trois domaines du fiqh N1",
+        "content": "1) **Propreté** (ṭahâra) 2) **Prière** (ṣalât) 3) **Bonnes manières** (adab)."
+      },
+      {
+        "type": "example",
+        "title": "Exemples quotidiens",
+        "content": "Se laver les mains, faire les **ablutions**, dire « **Bismillah** » avant de manger."
+      },
+      {
+        "type": "activity",
+        "title": "Mon intention",
+        "content": "Dis à voix basse : « Je fais cela **pour Allah**. »"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Fiqh = **règles** pour adorer Allah **chaque jour**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais présenter le fiqh simplement.",
+      "keyTakeaways": [
+        "Intention",
+        "Propreté",
+        "Prière",
+        "Adab"
+      ],
+      "nextSteps": [
+        "La **propreté** et la ṭahâra (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche « Qu’est-ce que le fiqh ? »",
+          "description": "Mémo illustré N1",
+          "url": "https://example.com/fiqh-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le fiqh sert à…",
+        "type": "multiple-choice",
+        "options": [
+          "Raconter des histoires",
+          "Savoir comment adorer Allah"
+        ],
+        "correctAnswer": "Savoir comment adorer Allah",
+        "explanation": "Fiqh = règles pratiques",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "introduction"
+    ]
+  }
+}

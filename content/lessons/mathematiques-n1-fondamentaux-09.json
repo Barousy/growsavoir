@@ -1,0 +1,98 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-09",
+  "title": "Mesurer des longueurs — unités non standard",
+  "summary": "Comparer et estimer des longueurs ; mesurer avec des unités non conventionnelles (cubes, trombones).",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Comparer long/court",
+    "Mesurer avec unités non standard",
+    "Aligner sans espace/chevauchement"
+  ],
+  "keywords": [
+    "mesures",
+    "longueurs",
+    "unités non standard"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Grandeurs et mesures",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Initiation à la mesure"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Mesurer, c’est comparer",
+      "content": "On **aligne** des unités **identiques** **sans espace**. On annonce « environ … unités ». "
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemple",
+        "content": "Le crayon mesure **7 trombones**. La règle mesure **10 cubes**."
+      },
+      {
+        "type": "activity",
+        "title": "Je mesure",
+        "content": "Choisis un objet et mesure-le avec des **carrés** de papier identiques."
+      },
+      {
+        "type": "exercise",
+        "title": "Je compare",
+        "content": "Range du plus **court** au plus **long** : ficelle A (6 unités), B (4), C (9)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Même unité, alignée correctement."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais mesurer avec des unités simples.",
+      "keyTakeaways": [
+        "Comparer",
+        "Aligner"
+      ],
+      "nextSteps": [
+        "Le temps : heures et demi-heures"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour mesurer, on doit…",
+        "type": "multiple-choice",
+        "options": [
+          "Changer d’unité à chaque objet",
+          "Utiliser la **même** unité identique"
+        ],
+        "correctAnswer": "Utiliser la **même** unité identique",
+        "explanation": "Comparaison possible",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "mesures"
+    ]
+  }
+}

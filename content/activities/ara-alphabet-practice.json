@@ -1,0 +1,46 @@
+{
+  "id": "ara-alphabet-practice",
+  "title": "Pratique de l'alphabet arabe",
+  "description": "Maîtriser l'écriture et la reconnaissance des lettres arabes avec des exercices progressifs et des modèles détaillés",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "arabe",
+  "materials": [
+    "Cahier d'écriture arabe avec lignes guidées",
+    "Stylo à pointe fine ou crayon HB",
+    "Modèles de lettres avec flèches directionnelles",
+    "Feuilles de pratique avec lettres pointillées",
+    "Règle pour tracer les lignes de base",
+    "Crayons de couleur pour différencier les groupes de lettres",
+    "Fiches de révision avec images associées"
+  ],
+  "instructions": [
+    "Préparation et observation (5 min) : Installez-vous confortablement. Observez attentivement la forme de chaque lettre. Identifiez les éléments communs (points, boucles, lignes).",
+    "Tracé guidé (10 min) : Suivez les flèches directionnelles pour tracer chaque lettre. Commencez par les lettres simples (أ، ب، ت). Concentrez-vous sur la proportion et l'équilibre.",
+    "Pratique autonome (5 min) : Tracez chaque lettre 5 fois en respectant l'ordre et la direction. Vérifiez la régularité de votre écriture.",
+    "Révision et consolidation (5 min) : Récitez l'alphabet en pointant chaque lettre. Identifiez les lettres qui nécessitent plus de pratique."
+  ],
+  "learningObjectives": [
+    "Reconnaître et identifier toutes les 28 lettres de l'alphabet arabe",
+    "Maîtriser l'écriture manuscrite avec la bonne direction et proportion",
+    "Comprendre les différentes formes des lettres selon leur position",
+    "Développer la motricité fine et la coordination œil-main",
+    "Mémoriser l'ordre de l'alphabet arabe"
+  ],
+  "tips": [
+    "Tenez votre stylo correctement pour un meilleur contrôle",
+    "Tracez d'abord au crayon avant de repasser au stylo",
+    "Pratiquez chaque lettre jusqu'à ce qu'elle soit parfaite",
+    "Utilisez des couleurs pour mémoriser les groupes de lettres"
+  ],
+  "assessment": [
+    "L'élève peut-il identifier 90% des lettres sans aide ?",
+    "L'écriture est-elle lisible et proportionnée ?",
+    "La direction du tracé est-elle correcte ?",
+    "L'élève peut-il réciter l'alphabet dans l'ordre ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

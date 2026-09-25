@@ -1,0 +1,95 @@
+{
+  "slug": "informatique-n1-fondamentaux-09",
+  "title": "Sons, costumes et décors — enrichir un projet",
+  "summary": "Changer le costume d’un sprite, changer le décor, jouer un son au bon moment.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Changer costume/décor",
+    "Jouer un son",
+    "Synchroniser son + action"
+  ],
+  "keywords": [
+    "sons",
+    "costumes",
+    "décors",
+    "multimédia"
+  ],
+  "sources": [
+    {
+      "title": "Scratch — Sounds & Costumes",
+      "url": "https://scratch.mit.edu",
+      "type": "website",
+      "description": "Tutoriels média"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Rendre vivant",
+      "content": "Un **costume** change l’apparence d’un personnage. Un **décor** change l’arrière-plan. On peut **jouer un son**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Script",
+        "content": "Quand **drapeau cliqué** → **changer costume** → **jouer son** → **dire \"Coucou !\"**."
+      },
+      {
+        "type": "activity",
+        "title": "Carte animée",
+        "content": "Crée une **carte de vœux** : nouveau décor + son + message."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Costume + décor + son = **projet riche**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais enrichir ton projet.",
+      "keyTakeaways": [
+        "Costumes",
+        "Décors",
+        "Sons"
+      ],
+      "nextSteps": [
+        "**Déboguer** un script (leçon 10)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour changer l’apparence du personnage :",
+        "type": "multiple-choice",
+        "options": [
+          "Décor",
+          "Costume"
+        ],
+        "correctAnswer": "Costume",
+        "explanation": "Décor = fond",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "média"
+    ]
+  }
+}

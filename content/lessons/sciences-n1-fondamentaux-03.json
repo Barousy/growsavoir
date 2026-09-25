@@ -1,0 +1,104 @@
+{
+  "slug": "sciences-n1-fondamentaux-03",
+  "title": "Vivant ou non vivant ? Les besoins des êtres vivants",
+  "summary": "Distinguer vivant/non vivant et identifier les besoins essentiels : air, eau, nourriture, habitat, lumière (pour les plantes).",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Classer vivant / non vivant",
+    "Nommer les besoins vitaux",
+    "Donner des exemples"
+  ],
+  "keywords": [
+    "vivant",
+    "non vivant",
+    "besoins"
+  ],
+  "sources": [
+    {
+      "title": "La main à la pâte — Vivant/non vivant",
+      "url": "https://www.fondation-lamap.org",
+      "type": "website",
+      "description": "Séquences d’investigation"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qu’est-ce qui est vivant ?",
+      "content": "Un être vivant **naît**, **grandit**, **se nourrit**, **respire**, parfois **se déplace**, et meurt. Il a des **besoins**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Tri d’images",
+        "content": "Classe **chat, pierre, plante, robot, champignon, voiture** en vivant / non vivant."
+      },
+      {
+        "type": "concept",
+        "title": "Besoins essentiels",
+        "content": "Animaux : **air, eau, nourriture, abri**. Plantes : **eau, lumière, air, sol**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je justifie",
+        "content": "Pourquoi la **pierre** n’est pas vivante ? Pourquoi la **plante** est vivante ?"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Vivant = besoins + cycle de vie."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais distinguer vivant/non vivant.",
+      "keyTakeaways": [
+        "Besoins",
+        "Cycle de vie"
+      ],
+      "nextSteps": [
+        "Parties d’une **plante** (leçon 4)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche vivant/non vivant",
+          "description": "Critères simples",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une plante a besoin de…",
+        "type": "multiple-choice",
+        "options": [
+          "Lumière",
+          "Essence"
+        ],
+        "correctAnswer": "Lumière",
+        "explanation": "La plante fabrique sa matière avec la lumière.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 12
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "vivant"
+    ]
+  }
+}

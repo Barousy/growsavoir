@@ -1,0 +1,40 @@
+{
+  "id": "his-character-study",
+  "title": "Étude de personnages",
+  "description": "Étudier des figures historiques",
+  "duration": "35 min",
+  "difficulty": "intermediate",
+  "subject": "histoire-islam",
+  "materials": [
+    "Biographies",
+    "Images",
+    "Notes"
+  ],
+  "instructions": [
+    "Choisissez un personnage historique",
+    "Lisez sa biographie",
+    "Identifiez ses réalisations",
+    "Créez un portrait"
+  ],
+  "learningObjectives": [
+    "Comprendre l'impact historique",
+    "Analyser les motivations",
+    "Apprécier les réalisations"
+  ],
+  "tips": [
+    "Choisissez un personnage qui vous intéresse personnellement",
+    "Prenez des notes détaillées pendant la lecture",
+    "Recherchez des images et des documents d'époque",
+    "Réfléchissez à l'impact de ce personnage sur l'histoire"
+  ],
+  "assessment": [
+    "L'élève comprend-il l'importance historique du personnage ?",
+    "Les motivations sont-elles bien analysées ?",
+    "Le portrait créé reflète-t-il une compréhension approfondie ?",
+    "L'élève peut-il expliquer l'impact de ce personnage ?"
+  ],
+  "ageGroup": "9-11",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

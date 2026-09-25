@@ -1,0 +1,93 @@
+{
+  "slug": "aqida-n1-fondamentaux-09",
+  "title": "Aimer Allah et L’adorer seul — sincérité (al-Ikhlâṣ)",
+  "summary": "Comprendre que l’adoration appartient à Allah seul ; faire les actes pour Lui, avec sincérité.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Dire que l’adoration est pour Allah seul",
+    "Donner 3 exemples d’actes d’adoration",
+    "Expliquer la sincérité simplement"
+  ],
+  "keywords": [
+    "ikhlas",
+    "adoration",
+    "sincérité"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Repères"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Pour qui je le fais ?",
+      "content": "Prière, invocations, aumône, bonnes actions : je les fais pour **Allah**. C’est la **sincérité**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "Dire « **Bismillah** », prier, aider sa famille **pour plaire à Allah**."
+      },
+      {
+        "type": "activity",
+        "title": "Intention",
+        "content": "Avant une action, dis : « Je le fais **pour Allah** ». "
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Adorer **Allah seul** avec **ikhlâṣ**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu comprends la sincérité.",
+      "keyTakeaways": [
+        "Intention",
+        "Adoration"
+      ],
+      "nextSteps": [
+        "La **Shahâda** (leçon 10)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "À qui doit-on adresser la prière ?",
+        "type": "multiple-choice",
+        "options": [
+          "À Allah seul",
+          "À plusieurs"
+        ],
+        "correctAnswer": "À Allah seul",
+        "explanation": "Unicité dans l’adoration",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "ikhlas"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "histoire-n1-fondamentaux-01",
+  "title": "Création des cieux et de la terre — Le grand début",
+  "summary": "Découvrir qu'Allah a créé les cieux, la terre, la nuit et le jour ; remercier Allah pour Sa création.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Dire qu'Allah a créé les cieux et la terre",
+    "Employer les mots : création, ordre, gratitude",
+    "Observer des signes : soleil, lune, alternance jour/nuit"
+  ],
+  "keywords": [
+    "création",
+    "cieux",
+    "terre",
+    "soleil",
+    "lune"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya wa an-Nihāya (chapitres de la création)",
+      "url": "#",
+      "type": "book",
+      "description": "Source primaire, récit des commencements (adapté N1)"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui a tout créé ?",
+      "content": "Allah est le **Créateur**. Il a créé les **cieux** et la **terre**, la **nuit** et le **jour**, le **soleil** et la **lune**. Tout est **ordonné** par Sa sagesse."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Signes autour de nous",
+        "content": "Le **soleil** éclaire le **jour** ; la **lune** éclaire la **nuit** ; les **étoiles** nous guident."
+      },
+      {
+        "type": "activity",
+        "title": "Je remercie",
+        "content": "Note **3 choses** que tu aimes dans la création (ex. la pluie, les arbres, la lumière) et dis : **Al-ḥamdulillāh**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Le grand début : Allah a **créé** les cieux et la terre."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais que la création vient d’Allah.",
+      "keyTakeaways": [
+        "Créateur",
+        "Ordre",
+        "Gratitude"
+      ],
+      "nextSteps": [
+        "Création d’**Âdam** عليه السلام (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche — Les signes de la création",
+          "description": "Poster à colorier",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui a créé les cieux et la terre ?",
+        "type": "multiple-choice",
+        "options": [
+          "Allah",
+          "Personne"
+        ],
+        "correctAnswer": "Allah",
+        "explanation": "Croyance de base",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "création"
+    ]
+  }
+}

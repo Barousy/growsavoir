@@ -1,0 +1,105 @@
+{
+  "slug": "sira-n1-fondamentaux-01",
+  "title": "Qui est le Prophète Muhammad ﷺ ? — Présentation",
+  "summary": "Découvrir simplement qui est Muhammad ﷺ : le dernier Messager, envoyé par Allah avec un message de bonté et de vérité.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Dire que Muhammad ﷺ est le dernier Messager",
+    "Situer La Mecque comme ville de naissance",
+    "Citer deux qualités : honnêteté et miséricorde"
+  ],
+  "keywords": [
+    "sira",
+    "Muhammad",
+    "Prophète",
+    "Mecque",
+    "message"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Progression GrowSavoir — niveau enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le dernier Messager",
+      "content": "Muhammad ﷺ est le **dernier Messager** d’Allah. Il est né à **La Mecque**. Son message appelle à **adorer Allah** et à être **juste et bienveillant**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Un modèle",
+        "content": "Le Prophète ﷺ est un **exemple** pour nous : il disait la **vérité** et aidait les gens."
+      },
+      {
+        "type": "example",
+        "title": "Deux qualités",
+        "content": "• **Honnêteté** (al-Amîn — le digne de confiance) • **Douceur** avec les enfants."
+      },
+      {
+        "type": "activity",
+        "title": "Je retiens",
+        "content": "Complète : Muhammad ﷺ est le **dernier** ________ d’Allah."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Je sais qui est le Prophète ﷺ et quelles sont ses **qualités**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu peux présenter en une phrase qui est le Prophète ﷺ.",
+      "keyTakeaways": [
+        "Dernier Messager",
+        "Mecque",
+        "Qualités"
+      ],
+      "nextSteps": [
+        "Découvrir sa **naissance** et son **enfance** (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche « Qui est le Prophète ﷺ ? »",
+          "description": "Mémo illustré",
+          "url": "https://example.com/sira-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Muhammad ﷺ est…",
+        "type": "multiple-choice",
+        "options": [
+          "Un roi",
+          "Le dernier Messager"
+        ],
+        "correctAnswer": "Le dernier Messager",
+        "explanation": "Croyance de base",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "présentation"
+    ]
+  }
+}

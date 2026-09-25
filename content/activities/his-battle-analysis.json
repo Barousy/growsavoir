@@ -1,0 +1,40 @@
+{
+  "id": "his-battle-analysis",
+  "title": "Analyse de batailles",
+  "description": "Analyser des batailles historiques",
+  "duration": "50 min",
+  "difficulty": "advanced",
+  "subject": "histoire-islam",
+  "materials": [
+    "Sources historiques",
+    "Cartes",
+    "Analyses"
+  ],
+  "instructions": [
+    "Lisez les sources historiques",
+    "Analysez le contexte",
+    "Étudiez les stratégies",
+    "Évaluez l'impact"
+  ],
+  "learningObjectives": [
+    "Analyser des événements militaires",
+    "Comprendre les stratégies",
+    "Évaluer l'impact historique"
+  ],
+  "tips": [
+    "Commencez par des batailles bien documentées",
+    "Utilisez des cartes pour visualiser le terrain",
+    "Analysez le contexte politique et social",
+    "Comparez les stratégies des deux camps"
+  ],
+  "assessment": [
+    "L'analyse du contexte est-elle complète ?",
+    "Les stratégies sont-elles bien comprises ?",
+    "L'impact historique est-il bien évalué ?",
+    "L'élève peut-il expliquer les causes et conséquences ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

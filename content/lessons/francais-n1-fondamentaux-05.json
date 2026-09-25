@@ -1,0 +1,111 @@
+{
+  "slug": "francais-n1-fondamentaux-05",
+  "title": "Voyelles nasales (an/en/on/in) — découverte",
+  "summary": "Reconnaître an/en/on/in dans des mots courants (sans exceptions).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Identifier les nasales an/en/on/in",
+    "Lire des mots simples avec ces sons",
+    "Repérer la lettre muette n/m en fin"
+  ],
+  "keywords": [
+    "nasales",
+    "lecture",
+    "débutant"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Sons du français",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Découverte phonologique"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Respire par le nez…",
+      "content": "Les **nasales** se prononcent en **faisant passer l’air par le nez** : **an/en/on/in**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mots modèles",
+        "content": "**maman** (an), **dent** (en), **bon** (on), **lapin** (in).",
+        "examples": [
+          {
+            "code": "maman / dent / bon / lapin",
+            "title": "Repérage",
+            "description": "an / en / on / in",
+            "explanation": "Prononciation nasale"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je pointe le son",
+        "content": "Place **an/en/on/in** sous : **chant, vent, ballon, lapin**."
+      },
+      {
+        "type": "exercise",
+        "title": "Lecture guidée",
+        "content": "Lis 10 mots : **chant, vent, bonbon, lapin, maison, enfant, pantalon, dimanche, menton, ballon**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Tu reconnais **an/en/on/in** dans des mots courants."
+      }
+    ],
+    "conclusion": {
+      "summary": "Les nasales sont repérées.",
+      "keyTakeaways": [
+        "an/en/on/in reconnus"
+      ],
+      "nextSteps": [
+        "Accents (é/è/ê) & diacritiques"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche nasales",
+          "description": "Mémo images",
+          "url": "https://www.cned.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **lapin**, le son final est…",
+        "type": "multiple-choice",
+        "options": [
+          "on",
+          "in"
+        ],
+        "correctAnswer": "in",
+        "explanation": "lap**in**",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "nasales"
+    ]
+  }
+}

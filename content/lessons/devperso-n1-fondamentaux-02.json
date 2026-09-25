@@ -1,0 +1,101 @@
+{
+  "slug": "devperso-n1-fondamentaux-02",
+  "title": "Mes émotions de base",
+  "summary": "Identifier joie, tristesse, colère, peur et dire « Je ressens… ».",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 14,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Nommer 4 émotions",
+    "Exprimer « Je ressens… »",
+    "Choisir une stratégie calme"
+  ],
+  "keywords": [
+    "émotions",
+    "joie",
+    "colère",
+    "peur",
+    "tristesse"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne — Émotions N1",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Repères émotionnels"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je mets des mots",
+      "content": "**Joie**, **tristesse**, **colère**, **peur**. Je dis : « **Je ressens** de la joie/colère… ». "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Feu tricolore",
+        "content": "**Rouge**: je m’arrête ; **Orange**: je respire ; **Vert**: je parle calmement."
+      },
+      {
+        "type": "activity",
+        "title": "Cartes émotion",
+        "content": "Je choisis une **carte** et je complète: « Je ressens… quand… »"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Nommer aide à **se calmer**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais nommer tes émotions.",
+      "keyTakeaways": [
+        "Je ressens…",
+        "Feu tricolore"
+      ],
+      "nextSteps": [
+        "**Respiration calme** (leçon 3)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes émotions",
+          "description": "4 pictos à imprimer",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dire « Je ressens… » sert à…",
+        "type": "multiple-choice",
+        "options": [
+          "Se moquer",
+          "Se comprendre et se calmer"
+        ],
+        "correctAnswer": "Se comprendre et se calmer",
+        "explanation": "Alphabétisation émotionnelle",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "émotions"
+    ]
+  }
+}

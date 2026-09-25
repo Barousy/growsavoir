@@ -1,0 +1,93 @@
+{
+  "slug": "histoire-n1-fondamentaux-02",
+  "title": "Création d'Âdam عليه السلام — Premier homme et prophète",
+  "summary": "Comprendre qu'Âdam est le premier homme et le premier prophète, honoré par Allah.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Dire qu'Âdam est le premier homme",
+    "Expliquer simple: Allah lui a appris",
+    "Respecter les enseignements"
+  ],
+  "keywords": [
+    "Âdam",
+    "premier prophète",
+    "création"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Âdam)",
+      "url": "#",
+      "type": "book",
+      "description": "Adaptation enfant"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Le premier prophète",
+      "content": "Allah a créé **Âdam** عليه السلام et lui a **enseigné**. Il est notre premier **prophète**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Dignité humaine",
+        "content": "Respecter **l’humain** : dire **vraies paroles**, ne pas **faire de mal**."
+      },
+      {
+        "type": "activity",
+        "title": "Je retiens",
+        "content": "Complète : Âdam est le **premier** ______ (homme/prophète)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Âdam : **créé** par Allah, **enseigné** par Allah."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais Âdam عليه السلام.",
+      "keyTakeaways": [
+        "Création",
+        "Enseignement"
+      ],
+      "nextSteps": [
+        "**Nûḥ** عليه السلام (leçon 3)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Âdam est…",
+        "type": "multiple-choice",
+        "options": [
+          "Le premier homme et prophète",
+          "Un roi"
+        ],
+        "correctAnswer": "Le premier homme et prophète",
+        "explanation": "Récit fondateur",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "adam"
+    ]
+  }
+}

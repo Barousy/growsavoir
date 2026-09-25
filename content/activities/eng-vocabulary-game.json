@@ -1,0 +1,45 @@
+{
+  "id": "eng-vocabulary-game",
+  "title": "Jeu de vocabulaire thématique",
+  "description": "Apprendre et mémoriser du vocabulaire anglais de base par thèmes avec des jeux interactifs et des associations visuelles",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "anglais",
+  "materials": [
+    "Cartes de vocabulaire avec images (couleurs, animaux, famille, nourriture)",
+    "Images imprimées en couleur",
+    "Timer ou chronomètre",
+    "Tableau blanc ou grande feuille",
+    "Marqueurs colorés",
+    "Sac en tissu pour cacher les cartes"
+  ],
+  "instructions": [
+    "Préparation (5 min) : Organisez les cartes par thème. Préparez le tableau avec les catégories. Testez le timer.",
+    "Introduction du thème (5 min) : Présentez 5-6 mots d'un thème. Prononcez clairement chaque mot en montrant l'image. L'élève répète.",
+    "Jeu d'association (10 min) : Mélangez les cartes. L'élève doit associer chaque mot à son image. Chronométrez pour ajouter du défi.",
+    "Jeu de devinettes (5 min) : Cachez une image dans le sac. L'élève doit deviner le mot en anglais en posant des questions."
+  ],
+  "learningObjectives": [
+    "Acquérir un vocabulaire de base de 20-30 mots par thème",
+    "Associer correctement mots anglais et images",
+    "Pratiquer la prononciation avec l'accent anglais",
+    "Développer la mémoire visuelle et auditive",
+    "Renforcer la compréhension des catégories sémantiques"
+  ],
+  "tips": [
+    "Commencez par des thèmes familiers (couleurs, animaux domestiques)",
+    "Utilisez des gestes pour renforcer la mémorisation",
+    "Répétez chaque mot 3 fois avec des pauses",
+    "Félicitez chaque bonne réponse pour motiver l'élève"
+  ],
+  "assessment": [
+    "L'élève peut-il identifier 80% des mots sans aide ?",
+    "La prononciation est-elle compréhensible ?",
+    "L'association mot-image est-elle rapide et précise ?",
+    "L'élève peut-il utiliser les mots dans des phrases simples ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

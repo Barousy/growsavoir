@@ -1,0 +1,139 @@
+{
+  "slug": "arabe-n1-fondamentaux-01",
+  "title": "L'alphabet arabe - Les lettres de base",
+  "summary": "Découvrir et apprendre les 28 lettres de l'alphabet arabe",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Citer les 28 lettres de l’alphabet arabe",
+    "Connaître le sens d’écriture (droite → gauche)",
+    "Identifier les lettres avec et sans points",
+    "Comprendre les 4 formes d’écriture (isolée, initiale, médiane, finale)",
+    "Savoir qu’il existe 6 lettres qui ne se lient pas à gauche"
+  ],
+  "keywords": [
+    "arabe",
+    "alphabet",
+    "lettres",
+    "écriture droite-gauche",
+    "formes d’écriture",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Alphabet arabe — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alphabet_arabe",
+      "type": "website",
+      "description": "Référence générale sur les lettres, les formes et la direction de l’écriture"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Bienvenue dans l’alphabet arabe",
+      "content": "\nL’arabe s’écrit **de droite à gauche** et comporte **28 lettres**.  \nChaque lettre peut changer de forme selon sa **position dans le mot** :\n\n- **Isolée**\n- **Initiale** (au début)\n- **Médiane** (au milieu)\n- **Finale** (à la fin)\n\n> 🎯 Objectif : connaître les **noms des lettres**, repérer les **points** et comprendre les **formes d’écriture**.\n        ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Arabic_alphabet.svg/640px-Arabic_alphabet.svg.png"
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Les 28 lettres (nom et repères)",
+        "content": "\n| Lettre | Nom (ar) | Nom (fr/translit.) | Points |\n|---|---|---|---|\n| ا | ألف | alif | 0 |\n| ب | باء | bâ | 1 (bas) |\n| ت | تاء | tâ | 2 (haut) |\n| ث | ثاء | thâ | 3 (haut) |\n| ج | جيم | jîm | 1 (bas) |\n| ح | حاء | ḥâ (soufflée) | 0 |\n| خ | خاء | khâ | 1 (haut) |\n| د | دال | dâl | 0 |\n| ذ | ذال | dhâl | 1 (haut) |\n| ر | راء | râ | 0 |\n| ز | زاي | zay | 1 (haut) |\n| س | سين | sîn | 0 |\n| ش | شين | shîn | 3 (haut) |\n| ص | صاد | ṣâd | 0 |\n| ض | ضاد | ḍâd | 1 (haut) |\n| ط | طاء | ṭâ | 0 |\n| ظ | ظاء | ẓâ | 1 (haut) |\n| ع | عين | ‘ayn | 0 |\n| غ | غين | ghayn | 1 (haut) |\n| ف | فاء | fâ | 1 (haut) |\n| ق | قاف | qâf | 2 (haut)* |\n| ك | كاف | kâf | 0 |\n| ل | لام | lâm | 0 |\n| م | ميم | mîm | 0 |\n| ن | نون | nûn | 1 (haut) |\n| هـ | هاء | hâ | 0 |\n| و | واو | wâw | 0 |\n| ي | ياء | yâ | 2 (bas)** |\n\n* selon police : parfois 1 point.  \n** yâ’ isolé/final peut s’écrire avec ou sans points (selon le style).\n          "
+      },
+      {
+        "type": "concept",
+        "title": "Connexion des lettres : rappel clé",
+        "content": "\nLa plupart des lettres s’attachent **à droite et à gauche**.  \n⚠️ **6 lettres** ne se lient **pas** à la lettre **suivante** (à gauche) :  \n**ا — د — ذ — ر — ز — و**\n\n> Elles se lient à droite (si précédées), mais **coupent** la liaison vers la suite.\n          "
+      },
+      {
+        "type": "example",
+        "title": "Formes d’écriture : isolée / initiale / médiane / finale",
+        "content": "\nExemples pratiques :\n\n**ب (bâ)**  \n- Isolée : ب  \n- Initiale : بـ  \n- Médiane : ـبـ  \n- Finale : ـب\n\n**م (mîm)**  \n- Isolée : م  \n- Initiale : مـ  \n- Médiane : ـمـ  \n- Finale : ـم\n\n**ل (lâm)**  \n- Isolée : ل  \n- Initiale : لـ  \n- Médiane : ـلـ  \n- Finale : ـل\n          ",
+        "examples": [
+          {
+            "code": "ب / بـ / ـبـ / ـب",
+            "title": "bâ — 4 formes",
+            "description": "La lettre s’attache selon sa position",
+            "explanation": "À mémoriser visuellement."
+          },
+          {
+            "code": "م / مـ / ـمـ / ـم",
+            "title": "mîm — 4 formes",
+            "description": "Formes très fréquentes",
+            "explanation": "On les retrouve partout."
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Repérage rapide (Vrai/Faux)",
+        "content": "\n- [x] **ث** a **3 points**  \n- [ ] **م** a **1 point**  \n- [x] **ن** a **1 point**  \n- [x] **ز** a **1 point**  \n- [ ] **ا** s’attache à la lettre suivante\n          "
+      },
+      {
+        "type": "exercise",
+        "title": "Copie guidée (formes)",
+        "content": "\nRecopie lentement les séries (respecte la **direction droite→gauche**) :\n\n- ب — بـ — ـبـ — ـب  \n- م — مـ — ـمـ — ـم  \n- ل — لـ — ـلـ — ـل\n\n> Astuce : dis à voix haute le **nom** de la lettre pendant que tu écris.\n          "
+      },
+      {
+        "type": "summary",
+        "title": "Récapitulatif",
+        "content": "\n- 28 lettres, écriture **droite → gauche**  \n- Lettres avec/sans **points** (attention à leur position)  \n- **4 formes** selon l’emplacement dans le mot  \n- **6 lettres** ne se lient pas à gauche (aperçu)\n          "
+      }
+    ],
+    "conclusion": {
+      "summary": "\n**Bravo !** Tu connais l’**alphabet arabe**, la **direction d’écriture** et les **formes** de base.  \nTu es prêt(e) pour la lecture avec **voyelles courtes (harakât)** dans la prochaine leçon.\n        ",
+      "keyTakeaways": [
+        "28 lettres, droite → gauche",
+        "Points = lettres différentes",
+        "4 formes : isolée / initiale / médiane / finale",
+        "6 lettres non-liantes (aperçu)"
+      ],
+      "nextSteps": [
+        "Passer à la leçon 2 : Les voyelles courtes (Harakât)",
+        "S’entraîner à copier 10 lettres/jour (4 formes)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Alphabet arabe — Wikipédia",
+          "description": "Table d’ensemble et nomenclature",
+          "url": "https://fr.wikipedia.org/wiki/Alphabet_arabe"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien de formes peut prendre une lettre arabe selon sa position ?",
+        "type": "multiple-choice",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correctAnswer": "4",
+        "explanation": "Isolée, initiale, médiane, finale.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.889Z",
+    "updatedAt": "2025-08-30T06:37:37.895Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "leçon",
+      "fondamentaux",
+      "alphabet"
+    ]
+  }
+}

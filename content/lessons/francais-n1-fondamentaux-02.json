@@ -1,0 +1,129 @@
+{
+  "slug": "francais-n1-fondamentaux-02",
+  "title": "Syllabes CVC (fermer la syllabe)",
+  "summary": "Lire des syllabes CVC et des mots courts (mal, sol, lit…).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Lire des syllabes CVC",
+    "Différencier CV et CVC",
+    "Lire des mots courts du quotidien",
+    "Coder à l'écrit quelques CVC"
+  ],
+  "keywords": [
+    "lecture",
+    "CVC",
+    "débutant"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Lecture/décodage",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères officiels"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Fermer la syllabe",
+      "content": "Une syllabe **CVC** se termine par une **consonne** : **mal, sol, lit**. On garde la voyelle courte et nette."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "CV vs CVC",
+        "content": "**ma** (CV) ≠ **mal** (CVC). On **ajoute** une consonne finale."
+      },
+      {
+        "type": "example",
+        "title": "Tableau CVC",
+        "content": "| CVC | Lecture |\n|---|---|\n| mal | mal |\n| sol | sol |\n| lit | lit |\n| mer | mer |",
+        "examples": [
+          {
+            "code": "mal / sol / lit",
+            "title": "CVC simples",
+            "description": "Lecture fermée",
+            "explanation": "Consonne finale audible"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Vrai/Faux",
+        "content": "- [x] **mal** est une syllabe **CVC**\n- [ ] **ma** est CVC\n- [x] **sol** se termine par une consonne"
+      },
+      {
+        "type": "exercise",
+        "title": "Je lis 12 CVC",
+        "content": "mal, sel, sol, lit, mer, cul, tul, pal, bol, fil, tas, mus"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "CVC = voyelle **fermée** par une consonne."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais lire **CVC**. On ajoute des sons fréquents.",
+      "keyTakeaways": [
+        "CV ≠ CVC",
+        "lecture de mots courts"
+      ],
+      "nextSteps": [
+        "Aller vers **sons fréquents** (ch, ou, oi)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche CVC à imprimer",
+          "description": "Liste d’entraînement",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quelle forme est CVC ?",
+        "type": "multiple-choice",
+        "options": [
+          "ma",
+          "mal"
+        ],
+        "correctAnswer": "mal",
+        "explanation": "Consonne finale",
+        "points": 10
+      },
+      {
+        "question": "Dans **sol**, la dernière lettre est…",
+        "type": "multiple-choice",
+        "options": [
+          "voyelle",
+          "consonne"
+        ],
+        "correctAnswer": "consonne",
+        "explanation": "CVC",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "CVC"
+    ]
+  }
+}

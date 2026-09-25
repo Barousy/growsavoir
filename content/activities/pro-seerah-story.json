@@ -1,0 +1,40 @@
+{
+  "id": "pro-seerah-story",
+  "title": "Récit de la Sira",
+  "description": "Écouter et raconter des histoires",
+  "duration": "20 min",
+  "difficulty": "beginner",
+  "subject": "prophete-muhammad",
+  "materials": [
+    "Livre de Sira",
+    "Images",
+    "Audio"
+  ],
+  "instructions": [
+    "Lisez ou écoutez l'histoire",
+    "Identifiez les personnages",
+    "Comprenez le message",
+    "Racontez à votre tour"
+  ],
+  "learningObjectives": [
+    "Connaître la vie du Prophète",
+    "Comprendre les enseignements",
+    "Développer l'empathie"
+  ],
+  "tips": [
+    "Choisissez des histoires adaptées à l'âge de l'enfant",
+    "Utilisez des images pour illustrer l'histoire",
+    "Posez des questions pour vérifier la compréhension",
+    "Encouragez l'enfant à raconter l'histoire avec ses propres mots"
+  ],
+  "assessment": [
+    "L'enfant peut-il identifier les personnages principaux ?",
+    "Le message principal est-il compris ?",
+    "L'enfant peut-il raconter l'histoire de manière cohérente ?",
+    "L'empathie envers les personnages est-elle développée ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

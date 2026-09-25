@@ -1,0 +1,99 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-11",
+  "title": "Monnaie (€) — reconnaître et compter de petites sommes",
+  "summary": "Identifier les pièces € et c ; composer des montants simples jusqu’à 2 € ; faire l’appoint avec pièces courantes.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Reconnaître pièces 1c/2c/5c/10c/20c/50c/1€/2€",
+    "Compter par 1, 2, 5, 10",
+    "Composer ≤ 2 €"
+  ],
+  "keywords": [
+    "monnaie",
+    "euros",
+    "centimes"
+  ],
+  "sources": [
+    {
+      "title": "Banque de France — L’euro",
+      "url": "https://www.banque-france.fr",
+      "type": "website",
+      "description": "Découvrir les pièces"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Pièces en euros",
+      "content": "Centimes : **1c, 2c, 5c, 10c, 20c, 50c** ; Pièces : **1€**, **2€**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Composer un montant",
+        "content": "**30c** = 10c + 10c + 10c ; **1€** = 50c + 50c ; **2€** = 1€ + 1€."
+      },
+      {
+        "type": "activity",
+        "title": "Je paie",
+        "content": "Prix : **70c**. Donne des pièces pour faire **70c**."
+      },
+      {
+        "type": "exercise",
+        "title": "J'additionne",
+        "content": "1€ + 20c + 20c = __ ; 50c + 20c + 5c = __"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Reconnaître et **compter** les pièces."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais compter de petites sommes.",
+      "keyTakeaways": [
+        "compter par 1/2/5/10",
+        "équivalences"
+      ],
+      "nextSteps": [
+        "Données et problèmes"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "50c + 20c = __",
+        "type": "multiple-choice",
+        "options": [
+          "60c",
+          "70c",
+          "80c"
+        ],
+        "correctAnswer": "70c",
+        "explanation": "50+20",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "monnaie"
+    ]
+  }
+}

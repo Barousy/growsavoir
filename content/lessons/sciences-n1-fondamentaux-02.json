@@ -1,0 +1,103 @@
+{
+  "slug": "sciences-n1-fondamentaux-02",
+  "title": "Les cinq sens : voir, entendre, toucher, sentir, goûter",
+  "summary": "Identifier les cinq sens et relier chaque sens à son organe ; mener de petites observations sensorielles.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Nommer 5 sens",
+    "Associer organe ↔ sens",
+    "Décrire une observation sensorielle"
+  ],
+  "keywords": [
+    "cinq sens",
+    "organe",
+    "observer"
+  ],
+  "sources": [
+    {
+      "title": "Cité des sciences — Corps humain",
+      "url": "https://www.cite-sciences.fr",
+      "type": "website",
+      "description": "Ressources ludiques sur les sens"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Nos outils d’observation",
+      "content": "Yeux = **voir** ; Oreilles = **entendre** ; Peau/main = **toucher** ; Nez = **sentir** ; Langue = **goûter**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Table de correspondance",
+        "content": "Image d’un citron : **voir** (jaune), **sentir** (acide), **goûter** (acide), **toucher** (lisse), **entendre** (aucun son)."
+      },
+      {
+        "type": "activity",
+        "title": "Boîtes mystère",
+        "content": "Touche (sans regarder) et décris : **doux/rugueux**, **chaud/froid**, **dur/mou**."
+      },
+      {
+        "type": "exercise",
+        "title": "Je décris",
+        "content": "Choisis un objet et décris-le avec **au moins 3 sens**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "5 sens = 5 façons de **collecter des informations**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais utiliser tes sens pour mieux observer.",
+      "keyTakeaways": [
+        "Organes et sens"
+      ],
+      "nextSteps": [
+        "Vivant / non vivant"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche 5 sens",
+          "description": "Trace écrite à compléter",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel organe pour sentir ?",
+        "type": "multiple-choice",
+        "options": [
+          "Nez",
+          "Main"
+        ],
+        "correctAnswer": "Nez",
+        "explanation": "Le nez sent les odeurs.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "cinq-sens"
+    ]
+  }
+}

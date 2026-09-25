@@ -1,0 +1,47 @@
+{
+  "id": "dp-organisation-quotidien",
+  "title": "Organisation personnelle et gestion du quotidien",
+  "description": "Développer des méthodes d'organisation efficaces pour optimiser son temps et sa productivité",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Carnet d'organisation et de planification",
+    "Fiches de méthodes d'organisation",
+    "Matériel de planification (agenda, calendrier)",
+    "Fiches de priorités et de gestion du temps",
+    "Grille d'évaluation de l'organisation",
+    "Matériel de rangement et d'organisation",
+    "Fiches de routines et d'habitudes",
+    "Timer ou chronomètre"
+  ],
+  "instructions": [
+    "Analyse de l'organisation actuelle (8 min) : Évaluez votre niveau d'organisation actuel. Identifiez les domaines qui fonctionnent et ceux à améliorer. Notez vos observations et vos besoins.",
+    "Apprentissage des méthodes (10 min) : Étudiez différentes méthodes d'organisation (matrice d'Eisenhower, méthode Pomodoro, etc.). Identifiez celles qui correspondent à votre style. Préparez-vous à les tester.",
+    "Mise en place pratique (5 min) : Choisissez une méthode et mettez-la en place dans votre quotidien. Créez vos outils d'organisation. Établissez vos routines et habitudes.",
+    "Suivi et amélioration (2 min) : Testez votre nouvelle organisation pendant quelques jours. Évaluez son efficacité. Ajustez et améliorez selon vos besoins."
+  ],
+  "learningObjectives": [
+    "Développer des compétences d'organisation personnelle efficaces",
+    "Maîtriser différentes méthodes de gestion du temps",
+    "Créer des routines et habitudes productives",
+    "Optimiser l'utilisation de son temps et de ses ressources",
+    "Cultiver la discipline et la régularité dans l'organisation"
+  ],
+  "tips": [
+    "Commencez par une méthode simple et augmentez progressivement",
+    "Soyez patient dans l'établissement de nouvelles habitudes",
+    "Adaptez les méthodes à votre style personnel",
+    "Célébrez chaque amélioration dans votre organisation"
+  ],
+  "assessment": [
+    "L'organisation personnelle s'améliore-t-elle ?",
+    "Les méthodes choisies sont-elles efficaces ?",
+    "Les routines et habitudes sont-elles établies ?",
+    "L'utilisation du temps est-elle optimisée ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

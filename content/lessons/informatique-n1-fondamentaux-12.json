@@ -1,0 +1,122 @@
+{
+  "slug": "informatique-n1-fondamentaux-12",
+  "title": "Projet & Évaluation N1 — Carte animée interactive",
+  "summary": "Réaliser une petite carte animée : message + décor + son + déplacement + interaction clavier/souris. Quiz final sur les notions-clés.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-01",
+    "informatique-n1-fondamentaux-02",
+    "informatique-n1-fondamentaux-03",
+    "informatique-n1-fondamentaux-04",
+    "informatique-n1-fondamentaux-05",
+    "informatique-n1-fondamentaux-06",
+    "informatique-n1-fondamentaux-07",
+    "informatique-n1-fondamentaux-08",
+    "informatique-n1-fondamentaux-09",
+    "informatique-n1-fondamentaux-10",
+    "informatique-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Assembler événements + actions",
+    "Intégrer sons/décors",
+    "Présenter un mini-projet"
+  ],
+  "keywords": [
+    "projet",
+    "évaluation",
+    "scratch"
+  ],
+  "sources": [
+    {
+      "title": "code.org — Hour of Code",
+      "url": "https://code.org",
+      "type": "website",
+      "description": "Projets courts"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes du projet",
+      "content": "Crée une **carte animée** qui **affiche un message**, **change de décor**, **joue un son**, **se déplace** et **réagit** à une touche ou au clic."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Checklist",
+        "content": "• 1 message — • 1 décor — • 1 son — • 1 déplacement — • 1 interaction."
+      },
+      {
+        "type": "activity",
+        "title": "Plan rapide",
+        "content": "Choisis un **thème** (anniversaire, remerciement, météo…). Fais un **croquis** (storyboard)."
+      },
+      {
+        "type": "summary",
+        "title": "Rendu",
+        "content": "Montre ton projet et explique **comment il fonctionne**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Bravo 🎉 Tu valides le niveau **N1** en informatique !",
+      "keyTakeaways": [
+        "Séquences",
+        "Boucles",
+        "Événements",
+        "Débogage"
+      ],
+      "nextSteps": [
+        "Passer au **N2** : variables, plus de logique"
+      ],
+      "additionalResources": [
+        {
+          "title": "Galerie de projets débutants",
+          "description": "Inspiration",
+          "url": "https://scratch.mit.edu"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Un **événement** sert à…",
+        "type": "multiple-choice",
+        "options": [
+          "Décorer le sprite",
+          "Démarrer une action en réponse à quelque chose"
+        ],
+        "correctAnswer": "Démarrer une action en réponse à quelque chose",
+        "explanation": "Ex: drapeau, touche, clic",
+        "points": 10
+      },
+      {
+        "question": "Quelle suite décrit une **boucle** ?",
+        "type": "multiple-choice",
+        "options": [
+          "Dire Bonjour une fois",
+          "Répéter 5 fois Avancer"
+        ],
+        "correctAnswer": "Répéter 5 fois Avancer",
+        "explanation": "Itération",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "projet"
+    ]
+  }
+}

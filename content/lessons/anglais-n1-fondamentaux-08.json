@@ -1,0 +1,100 @@
+{
+  "slug": "anglais-n1-fondamentaux-08",
+  "title": "Weather & Clothes — It is… / I wear…",
+  "summary": "Décrire la météo et choisir des vêtements adaptés.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Dire la météo (sunny, rainy, cold…)",
+    "Associer vêtements (coat, hat…)",
+    "Phrases It is… / I wear…"
+  ],
+  "keywords": [
+    "weather",
+    "clothes",
+    "it is",
+    "I wear"
+  ],
+  "sources": [
+    {
+      "title": "British Council Kids — Weather",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "type": "website",
+      "description": "Météo pour enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "What’s the weather like?",
+      "content": "Weather: sunny, rainy, cloudy, windy, hot, cold.\nClothes: coat, hat, boots, T-shirt, shorts."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**It is rainy. I wear a coat.** / **It is hot. I wear a T-shirt.**"
+      },
+      {
+        "type": "activity",
+        "title": "Je choisis",
+        "content": "Associe météo→vêtements : **cold → coat** ; **hot → T-shirt** …"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris 3 phrases **It is … / I wear …**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Météo + vêtements = phrases utiles."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu parles de la météo et des habits.",
+      "keyTakeaways": [
+        "It is…",
+        "I wear…"
+      ],
+      "nextSteps": [
+        "Animals & can/can’t"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Il fait froid. Tu choisis…",
+        "type": "multiple-choice",
+        "options": [
+          "T-shirt",
+          "Coat"
+        ],
+        "correctAnswer": "Coat",
+        "explanation": "Vêtement chaud",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "weather",
+      "clothes"
+    ]
+  }
+}

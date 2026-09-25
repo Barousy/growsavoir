@@ -1,0 +1,89 @@
+{
+  "slug": "histoire-n1-fondamentaux-06",
+  "title": "Quraysh et La Mecque — gardiens de la Ka‘ba",
+  "summary": "Situer la tribu de Quraysh, leur rôle autour de la Ka‘ba et les valeurs (hospitalité, respect du sacré).",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Nommer Quraysh",
+    "Relier à la Ka‘ba",
+    "Citer une belle valeur (hospitalité)"
+  ],
+  "keywords": [
+    "Quraysh",
+    "Mecque",
+    "Ka‘ba",
+    "valeurs"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Généalogies et Mecque)",
+      "url": "#",
+      "type": "book",
+      "description": "Contexte préislamique"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Autour de la Maison sacrée",
+      "content": "La tribu de **Quraysh** vivait à **La Mecque** et honorait la **Ka‘ba**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Bonne manière",
+        "content": "Liste **3 bonnes manières** dans un lieu sacré : **calme**, **propreté**, **respect**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "**Quraysh** : ville de **Mecque**, **Ka‘ba**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu situes Quraysh.",
+      "keyTakeaways": [
+        "Mecque",
+        "Ka‘ba"
+      ],
+      "nextSteps": [
+        "**Année de l’Éléphant** (leçon 7)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quraysh est lié à…",
+        "type": "multiple-choice",
+        "options": [
+          "La Mecque et la Ka‘ba",
+          "Rome"
+        ],
+        "correctAnswer": "La Mecque et la Ka‘ba",
+        "explanation": "Repère clé",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "quraysh"
+    ]
+  }
+}

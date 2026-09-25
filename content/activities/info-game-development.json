@@ -1,0 +1,47 @@
+{
+  "id": "info-game-development",
+  "title": "Développement de jeux vidéo simples",
+  "description": "Créer un jeu vidéo complet en intégrant la conception, la programmation et les éléments graphiques dans un projet cohérent",
+  "duration": "50 min",
+  "difficulty": "intermediate",
+  "subject": "informatique",
+  "materials": [
+    "Moteur de jeu adapté (Unity, Godot, ou plateforme en ligne)",
+    "Assets graphiques libres de droits ou créés personnellement",
+    "Tutoriels de développement de jeux",
+    "Fiches de conception de jeu (mécaniques, règles, objectifs)",
+    "Logiciel de création graphique simple",
+    "Grille d'évaluation du jeu",
+    "Matériel de prise de notes et de planification",
+    "Fichiers de sauvegarde et de versioning"
+  ],
+  "instructions": [
+    "Conception et planification (15 min) : Concevez votre jeu en définissant les mécaniques, les règles et les objectifs. Créez un storyboard ou un diagramme de votre jeu. Planifiez les étapes de développement.",
+    "Création des éléments graphiques (15 min) : Créez ou adaptez les éléments graphiques nécessaires (personnages, décors, objets). Utilisez des outils simples de création graphique. Organisez vos assets dans des dossiers.",
+    "Programmation de la logique (15 min) : Programmez la logique de base de votre jeu (mouvement, collisions, score). Intégrez les éléments graphiques dans votre code. Testez chaque fonctionnalité au fur et à mesure.",
+    "Test et amélioration (5 min) : Testez votre jeu en identifiant les bugs et les problèmes d'ergonomie. Améliorez le gameplay en ajustant les paramètres. Documentez les améliorations apportées."
+  ],
+  "learningObjectives": [
+    "Concevoir un projet de jeu vidéo complet avec une vision claire",
+    "Intégrer différents éléments (graphiques, sonores, programmation) de manière cohérente",
+    "Tester et itérer sur un projet pour améliorer la qualité",
+    "Développer la créativité et la logique de conception de jeux",
+    "Maîtriser les outils de développement de jeux de base"
+  ],
+  "tips": [
+    "Commencez par un jeu très simple avant de complexifier",
+    "Testez votre jeu à chaque étape de développement",
+    "N'ayez pas peur de simplifier si c'est trop complexe",
+    "Documentez vos choix de conception"
+  ],
+  "assessment": [
+    "Le jeu est-il fonctionnel et jouable ?",
+    "La conception est-elle cohérente et engageante ?",
+    "Les différents éléments sont-ils bien intégrés ?",
+    "L'élève peut-il expliquer les choix de conception ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

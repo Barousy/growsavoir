@@ -1,0 +1,47 @@
+{
+  "id": "fra-grammar-analysis",
+  "title": "Analyse grammaticale approfondie",
+  "description": "Développer une compréhension approfondie de la structure grammaticale française à travers l'analyse de textes variés",
+  "duration": "40 min",
+  "difficulty": "advanced",
+  "subject": "francais",
+  "materials": [
+    "Textes variés (littéraires, journalistiques, informatifs)",
+    "Manuel de grammaire française complet",
+    "Crayons de couleur pour le codage",
+    "Fiches d'analyse grammaticale",
+    "Grille d'identification des classes de mots",
+    "Dictionnaire grammatical",
+    "Exemples de phrases analysées",
+    "Timer pour gérer le temps d'analyse"
+  ],
+  "instructions": [
+    "Lecture et préparation (10 min) : Lisez le texte attentivement. Identifiez les phrases complexes. Préparez vos outils d'analyse et votre espace de travail.",
+    "Identification des classes de mots (15 min) : Analysez chaque phrase mot par mot. Identifiez la classe grammaticale de chaque mot (nom, verbe, adjectif, etc.). Utilisez le code couleur pour faciliter la visualisation.",
+    "Analyse de la structure (10 min) : Repérez les fonctions grammaticales (sujet, verbe, complément). Identifiez les propositions principales et subordonnées. Analysez la complexité syntaxique.",
+    "Interprétation stylistique (5 min) : Expliquez les choix grammaticaux de l'auteur. Reliez la structure grammaticale aux effets stylistiques et au sens du texte."
+  ],
+  "learningObjectives": [
+    "Maîtriser la grammaire française dans sa complexité et ses nuances",
+    "Analyser la structure grammaticale des textes avec précision",
+    "Repérer et identifier les fonctions grammaticales dans des phrases complexes",
+    "Comprendre les effets stylistiques produits par les choix grammaticaux",
+    "Développer la conscience linguistique et l'analyse critique des textes"
+  ],
+  "tips": [
+    "Commencez par des phrases simples avant d'analyser des structures complexes",
+    "Utilisez des couleurs différentes pour chaque classe de mots",
+    "Vérifiez vos analyses avec le manuel de grammaire",
+    "Reliez toujours la grammaire au sens du texte"
+  ],
+  "assessment": [
+    "L'identification des classes de mots est-elle correcte ?",
+    "L'analyse de la structure est-elle précise et complète ?",
+    "Les fonctions grammaticales sont-elles bien repérées ?",
+    "L'élève peut-il expliquer les effets stylistiques ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

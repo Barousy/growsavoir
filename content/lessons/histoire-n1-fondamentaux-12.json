@@ -1,0 +1,106 @@
+{
+  "slug": "histoire-n1-fondamentaux-12",
+  "title": "Projet & Évaluation — « Du ciel à La Mecque »",
+  "summary": "Créer une affiche : ciel/terre, Âdam, Nûḥ, Ibrâhîm, Zamzam/Ka‘ba, Quraysh, Éléphant, Naissance ; puis quiz final.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-11"
+  ],
+  "learningObjectives": [
+    "Synthétiser visuellement",
+    "Raconter en 2 min",
+    "Réussir le quiz"
+  ],
+  "keywords": [
+    "projet",
+    "affiche",
+    "évaluation"
+  ],
+  "sources": [
+    {
+      "title": "Projet N1 (adapté d’Ibn Kathîr)",
+      "url": "#",
+      "type": "book",
+      "description": "Fil rouge du niveau"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Consignes",
+      "content": "Sur une **A3**, dessine les **8 étapes** et écris un **mot-clé** sous chaque dessin."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "Explique ton affiche en **2 minutes**."
+      },
+      {
+        "type": "summary",
+        "title": "Bravo 🎉",
+        "content": "Tu valides **Histoire N1** !"
+      }
+    ],
+    "conclusion": {
+      "summary": "Niveau terminé.",
+      "keyTakeaways": [
+        "Création",
+        "Prophètes",
+        "Mecque"
+      ],
+      "nextSteps": [
+        "Passer à **N2** (périodes à Médine, conquêtes, etc.)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Modèle d’affiche",
+          "description": "Gabarit à imprimer",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui a créé les cieux et la terre ?",
+        "type": "multiple-choice",
+        "options": [
+          "Allah",
+          "Les hommes"
+        ],
+        "correctAnswer": "Allah",
+        "explanation": "Croyance de base",
+        "points": 10
+      },
+      {
+        "question": "Quelle source d’eau bénie se trouve à La Mecque ?",
+        "type": "multiple-choice",
+        "options": [
+          "Zamzam",
+          "Nil"
+        ],
+        "correctAnswer": "Zamzam",
+        "explanation": "Repère historique",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 18
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "projet"
+    ]
+  }
+}

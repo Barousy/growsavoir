@@ -1,0 +1,95 @@
+{
+  "slug": "fiqh-n1-fondamentaux-05",
+  "title": "Ṣalât — qu’est-ce que la prière ?",
+  "summary": "Découvrir la prière : ses **horaires**, ses **rangs** (unités), et l’idée de se tourner vers la **qibla** (direction de la Ka‘ba).",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Nommer 5 prières obligatoires",
+    "Comprendre la notion de qibla",
+    "Connaître l’idée des unités (rak‘ât)"
+  ],
+  "keywords": [
+    "prière",
+    "salat",
+    "qibla",
+    "horaires"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Ṣalât",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Repères enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Rencontre avec Allah",
+      "content": "Il y a **5 prières** dans la journée : **Fajr**, **Ḍuhr**, **‘Aṣr**, **Maghrib**, **‘Ishâ**. On se tourne vers la **qibla**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Unité (rak‘a)",
+        "content": "Une **rak‘a** = se **tenir debout**, **inclinaison** (rukû‘), **prosternation** (sujûd)."
+      },
+      {
+        "type": "activity",
+        "title": "Je repère la qibla",
+        "content": "Avec un adulte, repère la **direction** de la Ka‘ba dans la pièce."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "5 prières, **qibla**, unités (rak‘ât)."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les bases de la prière.",
+      "keyTakeaways": [
+        "5 prières",
+        "Qibla",
+        "Rak‘ât"
+      ],
+      "nextSteps": [
+        "Les **gestes** de la prière (leçon 6)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien y a-t-il de prières quotidiennes obligatoires ?",
+        "type": "multiple-choice",
+        "options": [
+          "3",
+          "5"
+        ],
+        "correctAnswer": "5",
+        "explanation": "Rythme de la journée",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "salat"
+    ]
+  }
+}

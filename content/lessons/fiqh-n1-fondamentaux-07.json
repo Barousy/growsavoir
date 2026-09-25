@@ -1,0 +1,93 @@
+{
+  "slug": "fiqh-n1-fondamentaux-07",
+  "title": "Formules & adkâr simples pendant la prière",
+  "summary": "Découvrir des **formules faciles** à dire pendant la prière (niveau enfant) et l’importance de la concentration (khushû‘).",
+  "level": "n1-fondamentaux",
+  "subject": "Fiqh (Jurisprudence)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "fiqh-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Dire Bismillah/Allahu Akbar/Subḥâna Rabbiyal-‘Aẓîm/Subḥâna Rabbiyal-A‘la",
+    "Rester concentré",
+    "Suivre un adulte en prière"
+  ],
+  "keywords": [
+    "adhkar",
+    "formules",
+    "khushu"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Fiqh N1 — Adkâr",
+      "url": "https://example.com/fiqh-n1",
+      "type": "website",
+      "description": "Formules simplifiées"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des mots qui embellissent la prière",
+      "content": "On dit **Allahu Akbar** en changeant de position, **Subḥâna Rabbiyal-‘Aẓîm** en inclinaison, **Subḥâna Rabbiyal-A‘la** en prosternation. On reste **concentré**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Formules clés (N1)",
+        "content": "• *Allahu Akbar* · • *Subḥâna Rabbiyal-‘Aẓîm* · • *Subḥâna Rabbiyal-A‘la*."
+      },
+      {
+        "type": "activity",
+        "title": "Je répète doucement",
+        "content": "Répète **3 fois** avec un adulte, en chuchotant."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Des **adkâr** pour accompagner les **gestes**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais des formules simples.",
+      "keyTakeaways": [
+        "Allahu Akbar",
+        "Subḥâna…"
+      ],
+      "nextSteps": [
+        "La **mosquée** et l’**adhân** (leçon 8)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "En prosternation, on dit surtout…",
+        "type": "multiple-choice",
+        "options": [
+          "Subḥâna Rabbiyal-A‘la",
+          "Bonjour"
+        ],
+        "correctAnswer": "Subḥâna Rabbiyal-A‘la",
+        "explanation": "Formule de sujûd",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.210Z",
+    "updatedAt": "2026-09-25T19:47:56.210Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "fiqh",
+      "n1",
+      "adhkar"
+    ]
+  }
+}

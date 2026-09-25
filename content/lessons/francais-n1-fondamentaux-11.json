@@ -1,0 +1,111 @@
+{
+  "slug": "francais-n1-fondamentaux-11",
+  "title": "Compréhension — petit texte & questions",
+  "summary": "Lire un court paragraphe et répondre à 3 questions simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Lire un paragraphe court",
+    "Répondre à qui/où/quoi",
+    "Reformuler une idée"
+  ],
+  "keywords": [
+    "compréhension",
+    "lecture"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Comprendre des textes courts",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères de compréhension"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Je lis pour comprendre",
+      "content": "Lis calmement, repère **mots clés** et **signes**, puis réponds."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Texte",
+        "content": "Lina **a** un **chat** noir. Le matin, **elle** **parle** au chat. Le chat **est** sur la chaise **dans** la cuisine.",
+        "examples": [
+          {
+            "code": "Lina / chat / chaise / cuisine",
+            "title": "Mots clés",
+            "description": "Repérage",
+            "explanation": "Aide à répondre"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Questions",
+        "content": "1) Qui a un chat ?\n2) Où est le chat ?\n3) Que fait Lina ?"
+      },
+      {
+        "type": "exercise",
+        "title": "Je reformule",
+        "content": "Écris une phrase qui résume le texte."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Comprendre un **texte court** (3–4 phrases)."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu réponds à des questions simples.",
+      "keyTakeaways": [
+        "Qui/Où/Quoi"
+      ],
+      "nextSteps": [
+        "Évaluation finale N1"
+      ],
+      "additionalResources": [
+        {
+          "title": "Grille questions",
+          "description": "Qui ? Où ? Quoi ?",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Où est le chat ?",
+        "type": "multiple-choice",
+        "options": [
+          "Dans la cuisine",
+          "Dans le jardin",
+          "Dans la salle de bain"
+        ],
+        "correctAnswer": "Dans la cuisine",
+        "explanation": "Sur la chaise dans la cuisine",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "compréhension"
+    ]
+  }
+}

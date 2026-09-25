@@ -1,0 +1,128 @@
+{
+  "slug": "francais-n1-fondamentaux-04",
+  "title": "c/ç/ss et g/ge/gu — sons [s]/[ʒ]/[g]",
+  "summary": "Lire le son [s] avec c/ç/ss et distinguer g dur/g doux (ge/gi).",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 26,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Lire [s] avec c/ç/ss",
+    "Lire g dur [g] vs g doux [ʒ]",
+    "Appliquer sur des mots fréquents",
+    "Coder 4 à 5 mots"
+  ],
+  "keywords": [
+    "cédille",
+    "ss",
+    "ge",
+    "gi",
+    "orthographe"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Étude du code",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères sons/graphies"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Graphies courantes",
+      "content": "- **c** devant e/i/y → [s] (ex. **ce**, **ici**).\n- **ç** → [s] (ex. **garçon**).\n- **ss** → [s] (ex. **classe**).\n- **g** devant e/i/y → [ʒ] (**genou**, **girafe**).\n- **ga/go/gu** → [g] (**gâteau**, **gomme**, **guitare**)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mots modèles",
+        "content": "**classe, garçon, glace, genou, girafe, guitare**.",
+        "examples": [
+          {
+            "code": "classe / garçon / glace",
+            "title": "Repérage [s]",
+            "description": "c/ç/ss",
+            "explanation": "Trois façons pour [s]"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Classe le son",
+        "content": "Coche **[s]** ou **[ʒ]/[g]** pour : **ce**, **ça**, **tasse**, **girafe**, **gomme**."
+      },
+      {
+        "type": "exercise",
+        "title": "Dictée flash",
+        "content": "Écris 6 mots : **classe, garçon, glace, genou, girafe, guitare**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "c/ç/ss donnent souvent **[s]** ; **g** varie selon la voyelle suivante."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais repérer **[s]** et **[g]/[ʒ]**.",
+      "keyTakeaways": [
+        "c/ç/ss → [s]",
+        "ge/gi → [ʒ]",
+        "ga/go/gu → [g]"
+      ],
+      "nextSteps": [
+        "Voyelles nasales simples"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche sons c/ç/ss & g",
+          "description": "Mémo pratique",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le **ç** de garçon se lit…",
+        "type": "multiple-choice",
+        "options": [
+          "[k]",
+          "[s]"
+        ],
+        "correctAnswer": "[s]",
+        "explanation": "cédille → [s]",
+        "points": 10
+      },
+      {
+        "question": "Dans **girafe**, le **g** se lit…",
+        "type": "multiple-choice",
+        "options": [
+          "[g]",
+          "[ʒ]"
+        ],
+        "correctAnswer": "[ʒ]",
+        "explanation": "g + i/e → [ʒ]",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "sons",
+      "cédille"
+    ]
+  }
+}

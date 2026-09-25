@@ -1,0 +1,160 @@
+{
+  "slug": "arabe-n1-fondamentaux-06",
+  "title": "Le tanwîn (ــً / ــٍ / ــٌ) — an / in / un",
+  "summary": "Apprendre la nunation : les marques d’indéfini prononcées an / in / un en fin de mot.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Arabe",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "arabe-n1-fondamentaux-01",
+    "arabe-n1-fondamentaux-02",
+    "arabe-n1-fondamentaux-03",
+    "arabe-n1-fondamentaux-04",
+    "arabe-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Reconnaître les trois signes du tanwîn : ً / ٍ / ٌ",
+    "Lire correctement an / in / un en fin de mot",
+    "Savoir que le tanwîn marque l’indéfini (pas avec ال )",
+    "Appliquer la règle d’alif du tanwîn fatha (…ًا) et ses exceptions simples"
+  ],
+  "keywords": [
+    "arabe",
+    "tanwîn",
+    "nunation",
+    "an",
+    "in",
+    "un",
+    "n1"
+  ],
+  "sources": [
+    {
+      "title": "Harakât — Wikipédia (rappels)",
+      "url": "https://fr.wikipedia.org/wiki/Harakat",
+      "type": "website",
+      "description": "Présentation des voyelles brèves et rappels utiles sur le tanwîn"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qu’est-ce que le tanwîn ?",
+      "content": "\nLe **tanwîn** (التنوين) ajoute un **son de n** en fin de mot.  \nIl existe **trois formes** :\n\n- **ً** (*fathatan*) → **an**\n- **ٍ** (*kasratan*) → **in**\n- **ٌ** (*dammatan*) → **un**\n\n> Le tanwîn indique souvent que le nom est **indéfini**. **Il ne s’emploie pas avec** l’article défini **ال** (*al-*).\n      "
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Lecture des trois tanwîn",
+        "content": "\nOn lit **an / in / un** **en fin de mot** uniquement :\n\n- **كِتَابٌ** → *kitāb**un***  \n- **كِتَابٍ** → *kitāb**in***  \n- **كِتَابًا** → *kitāb**an*** (voir l’**alif** ci-dessous)\n        "
+      },
+      {
+        "type": "example",
+        "title": "Tableau d’exemples (indéfini)",
+        "content": "\n| Mot (base) | + ٌ (un) | + ٍ (in) | + ً (an) | Lecture |\n|---|---|---|---|---|\n| كِتَاب | كِتَابٌ | كِتَابٍ | كِتَابًا | kitabun / kitabin / kitaban |\n| قَلَم | قَلَمٌ | قَلَمٍ | قَلَمًا | qalamun / qalamin / qalaman |\n| مَدْرَسَة | مَدْرَسَةٌ | مَدْرَسَةٍ | مَدْرَسَةً | madrasatun / madrasatin / madrasatan |\n        ",
+        "examples": [
+          {
+            "code": "كِتَابًا",
+            "title": "kitāban",
+            "description": "Fathatan avec alif",
+            "explanation": "Tanwîn fatḥ s’écrit souvent **…ًا**."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "Tanwîn fatḥ : l’**alif** et les exceptions simples",
+        "content": "\n- En général, **on ajoute un alif** avant **ً** : **قَلَمًا**.  \n- **Pas d’alif** après **ة** (*tâ’ marbûṭa*) : **مَدْرَسَةً**.  \n- **Pas d’alif** après **ى** (*alif maqṣūra*) : **هُدًى** (*hudān*).  \n\n> Pour N1 : retiens surtout **…ًا** sauf **…ةً** et **…ىً**.\n        "
+      },
+      {
+        "type": "activity",
+        "title": "Vrai / Faux",
+        "content": "\n- [x] **الكتاب** ne prend pas de tanwîn.  \n- [x] **مَدْرَسَةً** s’écrit **sans** alif après **ة**.  \n- [ ] **قَلَمٍ** se lit **qalaman**.  \n- [x] **كِتَابٌ** se lit **kitābun**.\n        "
+      },
+      {
+        "type": "exercise",
+        "title": "Lis puis transforme",
+        "content": "\n**Lecture** :  \n- **قَلَمٌ** — **كِتَابًا** — **مَدْرَسَةٍ** — **هُدًى**\n\n**Transformation en ً (an)** :  \n- **قَلَم** → **قَلَمًا**  \n- **مَدْرَسَة** → **مَدْرَسَةً**  \n- **كِتَاب** → **كِتَابًا**\n\n> Astuce : pense **indéfini** + **son n** final.\n        "
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "\n- **ً / ٍ / ٌ** → **an / in / un** en **fin de mot**  \n- Pas de tanwîn avec **ال**  \n- **…ًا** en général, **…ةً / …ىً** sans alif\n        "
+      }
+    ],
+    "conclusion": {
+      "summary": "\nBravo ! Tu sais lire et écrire le **tanwîn**.  \nÀ ce stade, tu maîtrises **harakât**, **madd**, **sukûn**, **shadda** et **tanwîn** : la base parfaite pour lire des mots simples.\n      ",
+      "keyTakeaways": [
+        "Tanwîn = an / in / un",
+        "Marque d’indéfini en fin de mot",
+        "Règle de l’alif du fathatan (et exceptions)"
+      ],
+      "nextSteps": [
+        "S’entraîner à lire un petit texte avec tanwîn",
+        "Poursuivre vers **lettres solaires & lunaires** ou **alif madda** selon le programme"
+      ],
+      "additionalResources": [
+        {
+          "title": "Harakat — wiki (rappels utiles)",
+          "description": "Compléments sur les diacritiques et la lecture",
+          "url": "https://fr.wikipedia.org/wiki/Harakat"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le tanwîn **ً** se lit…",
+        "type": "multiple-choice",
+        "options": [
+          "in",
+          "un",
+          "an",
+          "on"
+        ],
+        "correctAnswer": "an",
+        "explanation": "Fathatan se lit **an**.",
+        "points": 10
+      },
+      {
+        "question": "Quelle forme est correcte avec **tâ’ marbûṭa** ?",
+        "type": "multiple-choice",
+        "options": [
+          "مَدْرَسَةًا",
+          "مَدْرَسَةً",
+          "مَدْرَسَةٍا",
+          "مَدْرَسَةٌا"
+        ],
+        "correctAnswer": "مَدْرَسَةً",
+        "explanation": "Après **ة**, on écrit **…ةً** sans alif ajouté.",
+        "points": 10
+      },
+      {
+        "question": "Le tanwîn s’emploie avec **ال** (article défini) ?",
+        "type": "multiple-choice",
+        "options": [
+          "Oui",
+          "Non"
+        ],
+        "correctAnswer": "Non",
+        "explanation": "Le tanwîn marque l’indéfini, il ne se combine pas avec **ال**.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 30
+  },
+  "metadata": {
+    "createdAt": "2025-08-30T06:37:37.900Z",
+    "updatedAt": "2025-08-30T06:37:37.900Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "arabe",
+      "n1",
+      "tanwîn",
+      "nunation"
+    ]
+  }
+}

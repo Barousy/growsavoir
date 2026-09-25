@@ -1,0 +1,134 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-01",
+  "title": "Compter et écrire les nombres de 0 à 10",
+  "summary": "Construire le sens du nombre : compter, dire, lire et écrire 0–10 ; correspondance terme à terme.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Réciter la suite orale de 0 à 10",
+    "Associer quantité ↔ chiffre (10-frame, doigts, objets)",
+    "Écrire correctement les chiffres 0–10"
+  ],
+  "keywords": [
+    "nombres",
+    "0-10",
+    "comptage",
+    "écriture des chiffres",
+    "ten-frame"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Nombres CP",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères de progressivité — nombres et calcul"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Découvrir les nombres 0 à 10",
+      "content": "On compte des **objets**, on montre avec les **doigts**, on complète un **dixier (10-frame)**. Le **zéro** représente « aucune quantité »."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Représentations",
+        "content": "Nombre **5** = 🖐️ doigts = ⚪⚪⚪⚪⚪ = chiffre **5**.\nUtilise un **10-frame** : remplis 1 à 10 cases."
+      },
+      {
+        "type": "example",
+        "title": "Correspondance",
+        "content": "Associe : **7** ↔ sept ⚫⚫⚫⚫⚫⚫⚫ ; **0** ↔ aucune bille.",
+        "examples": [
+          {
+            "code": "10-frame",
+            "title": "Grille de 10",
+            "description": "Cases à compléter",
+            "explanation": "Visualiser la quantité"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je compte",
+        "content": "Compte **8** cubes ; écris le chiffre. Puis enlève 3, combien reste-t-il ?"
+      },
+      {
+        "type": "exercise",
+        "title": "J'écris sans modèle",
+        "content": "Trace **0–10**. Attention au sens du tracé."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Lire/écrire/compter **0–10** ; zéro = absence."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais compter et écrire 0–10.",
+      "keyTakeaways": [
+        "Quantité ↔ chiffre",
+        "10-frame"
+      ],
+      "nextSteps": [
+        "Aller vers **11–20**"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes 10-frame",
+          "description": "Gabarits à imprimer",
+          "url": "https://eduscol.education.fr"
+        },
+        {
+          "title": "Affiche 0–10",
+          "description": "Chiffres et doigts",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien de billes ⚫⚫⚫⚫⚫ ?",
+        "type": "multiple-choice",
+        "options": [
+          "4",
+          "5",
+          "6"
+        ],
+        "correctAnswer": "5",
+        "explanation": "On compte 5",
+        "points": 10
+      },
+      {
+        "question": "Que représente **0** ?",
+        "type": "multiple-choice",
+        "options": [
+          "Une bille",
+          "Aucune bille"
+        ],
+        "correctAnswer": "Aucune bille",
+        "explanation": "Zéro = absence",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "0-10"
+    ]
+  }
+}

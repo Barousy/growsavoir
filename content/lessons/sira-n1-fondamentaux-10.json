@@ -1,0 +1,94 @@
+{
+  "slug": "sira-n1-fondamentaux-10",
+  "title": "Vie à Médine — mosquée, fraternité, règles de vie",
+  "summary": "Découvrir la construction de la mosquée, la fraternité entre croyants et des règles de bonne vie en communauté.",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Dire que la mosquée est le centre de la ville",
+    "Citer un exemple de fraternité",
+    "Respecter les règles de vie ensemble"
+  ],
+  "keywords": [
+    "medine",
+    "mosquée",
+    "fraternité",
+    "règles"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Médine",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Vie de la première communauté"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Construire ensemble",
+      "content": "À **Médine**, le Prophète ﷺ et les compagnons ont **construit la mosquée**. On y **priait**, on **apprenait**, on **partageait**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Règles simples",
+        "content": "Se **respecter**, dire **salâm**, **aider** les plus faibles."
+      },
+      {
+        "type": "activity",
+        "title": "Acte de fraternité",
+        "content": "Écris une **action** pour rendre l’école plus **solidaire**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Mosquée = **cœur** de la ville ; **fraternité** au quotidien."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la vie à Médine.",
+      "keyTakeaways": [
+        "Mosquée",
+        "Fraternité"
+      ],
+      "nextSteps": [
+        "Qualités du Prophète ﷺ (leçon 11)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La mosquée à Médine servait à…",
+        "type": "multiple-choice",
+        "options": [
+          "Dormir seulement",
+          "Prier, apprendre, partager"
+        ],
+        "correctAnswer": "Prier, apprendre, partager",
+        "explanation": "Centre de vie",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "medine"
+    ]
+  }
+}

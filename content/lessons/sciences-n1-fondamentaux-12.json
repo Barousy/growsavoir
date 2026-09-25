@@ -1,0 +1,119 @@
+{
+  "slug": "sciences-n1-fondamentaux-12",
+  "title": "Hygiène et santé : se protéger et rester en forme",
+  "summary": "Gestes d’hygiène (mains, dents), sommeil, activité physique et alimentation équilibrée ; sécurité domestique simple.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-01",
+    "sciences-n1-fondamentaux-02",
+    "sciences-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Lister 4 gestes d’hygiène",
+    "Citer 3 familles d’aliments",
+    "Relier sommeil/activité à la santé"
+  ],
+  "keywords": [
+    "hygiène",
+    "santé",
+    "sécurité"
+  ],
+  "sources": [
+    {
+      "title": "Santé publique France — Hygiène mains",
+      "url": "https://www.santepubliquefrance.fr",
+      "type": "website",
+      "description": "Ressources éducatives"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Mon corps en forme",
+      "content": "**Se laver les mains**, **brosser ses dents**, **bien dormir**, **bouger** chaque jour, **manger équilibré**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Routine santé",
+        "content": "Lavage des mains : avant de manger / après toilettes. Dents : matin et soir 2 min."
+      },
+      {
+        "type": "activity",
+        "title": "Mon menu équilibré",
+        "content": "Compose une assiette : **fruits/légumes**, **féculents**, **protéines**, **eau**."
+      },
+      {
+        "type": "exercise",
+        "title": "Sécurité",
+        "content": "Entoure les **gestes sûrs** : ne pas toucher les prises ; demander pour utiliser une paire de ciseaux."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Habitudes qui **protègent** ma santé."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais les gestes pour rester en bonne santé.",
+      "keyTakeaways": [
+        "Hygiène",
+        "Sommeil",
+        "Bouger",
+        "Manger équilibré"
+      ],
+      "nextSteps": [
+        "Bilan N1 : mini-projet d’investigation à la maison"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche hygiène des mains",
+          "description": "Étapes illustrées",
+          "url": "https://www.santepubliquefrance.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "On se lave les mains…",
+        "type": "multiple-choice",
+        "options": [
+          "Après avoir joué dehors uniquement",
+          "Avant de manger et après les toilettes"
+        ],
+        "correctAnswer": "Avant de manger et après les toilettes",
+        "explanation": "Moments clés",
+        "points": 10
+      },
+      {
+        "question": "La boisson conseillée au quotidien est…",
+        "type": "multiple-choice",
+        "options": [
+          "Soda",
+          "Eau"
+        ],
+        "correctAnswer": "Eau",
+        "explanation": "Hydratation saine",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 14
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "hygiène"
+    ]
+  }
+}

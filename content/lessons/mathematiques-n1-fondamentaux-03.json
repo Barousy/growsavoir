@@ -1,0 +1,106 @@
+{
+  "slug": "mathematiques-n1-fondamentaux-03",
+  "title": "Comparer et ordonner jusqu’à 20 (<, >, =)",
+  "summary": "Utiliser les symboles <, >, = ; ranger des nombres ; repérer le plus grand/petit jusqu’à 20.",
+  "level": "n1-fondamentaux",
+  "subject": "Mathématiques",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "mathematiques-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Comparer deux nombres",
+    "Ordonner 3 à 5 nombres",
+    "Utiliser <, >, ="
+  ],
+  "keywords": [
+    "comparer",
+    "ordonner",
+    "< > ="
+  ],
+  "sources": [
+    {
+      "title": "CNED — Comparer des nombres",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Initiation aux comparateurs"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui est le plus grand ?",
+      "content": "On compare d’abord la **dizaine**, puis les **unités**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "14 **>** 9 ; 12 **<** 18 ; 15 **=** 15.",
+        "examples": [
+          {
+            "code": "14 > 9",
+            "title": "Comparer",
+            "description": "Plus grand",
+            "explanation": "Une dizaine vs aucune"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je place le bon signe",
+        "content": "11 __ 10 ; 7 __ 9 ; 16 __ 16"
+      },
+      {
+        "type": "exercise",
+        "title": "J’ordonne",
+        "content": "Range : 12, 5, 19, 8, 15 (du plus petit au plus grand)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Comparer = utiliser **<, >, =**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu compares et ranges jusqu’à 20.",
+      "keyTakeaways": [
+        "Dizaine puis unités"
+      ],
+      "nextSteps": [
+        "Additions jusque 10"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel signe ? 12 __ 18",
+        "type": "multiple-choice",
+        "options": [
+          ">",
+          "<",
+          "="
+        ],
+        "correctAnswer": "<",
+        "explanation": "12 est plus petit",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.206Z",
+    "updatedAt": "2026-09-25T19:47:56.206Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "maths",
+      "n1",
+      "comparaison"
+    ]
+  }
+}

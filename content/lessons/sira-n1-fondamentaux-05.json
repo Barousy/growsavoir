@@ -1,0 +1,95 @@
+{
+  "slug": "sira-n1-fondamentaux-05",
+  "title": "La Révélation — Grotte de Ḥirâ’ et Jibrîl عليه السلام",
+  "summary": "Comprendre que la Révélation vient d’Allah par l’Ange Jibrîl ; première sourate révélée « Lis ! ». ",
+  "level": "n1-fondamentaux",
+  "subject": "Sîra (Biographie du Prophète ﷺ)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "sira-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Dire que le Coran vient d’Allah",
+    "Nommer l’Ange Jibrîl",
+    "Expliquer simplement « Lis ! »"
+  ],
+  "keywords": [
+    "révélation",
+    "Jibril",
+    "Hira",
+    "Lis"
+  ],
+  "sources": [
+    {
+      "title": "Référentiel interne Sîra N1 — Révélation",
+      "url": "https://example.com/sira-n1",
+      "type": "website",
+      "description": "Événement fondateur"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Début de la mission",
+      "content": "Dans la grotte de **Ḥirâ’**, l’Ange **Jibrîl** a apporté la Révélation d’Allah au Prophète ﷺ : « **Lis !** ». C’est le début du **Coran**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Avec douceur",
+        "content": "Le Prophète ﷺ a reçu l’aide et le **réconfort** de Khadîja."
+      },
+      {
+        "type": "activity",
+        "title": "Mot-clé",
+        "content": "Entoure le mot : **Lis** (Iqra)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "La Révélation vient d’**Allah** par **Jibrîl**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais comment la Révélation a commencé.",
+      "keyTakeaways": [
+        "Iqra",
+        "Jibrîl",
+        "Coran"
+      ],
+      "nextSteps": [
+        "Les **premiers musulmans** (leçon 6)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Qui a apporté la Révélation ?",
+        "type": "multiple-choice",
+        "options": [
+          "Mikâ’îl",
+          "Jibrîl"
+        ],
+        "correctAnswer": "Jibrîl",
+        "explanation": "Ange de la Révélation",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.211Z",
+    "updatedAt": "2026-09-25T19:47:56.211Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sira",
+      "n1",
+      "revelation"
+    ]
+  }
+}

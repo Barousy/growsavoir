@@ -1,0 +1,113 @@
+{
+  "slug": "francais-n1-fondamentaux-09",
+  "title": "La phrase : majuscule, point ; Sujet + Verbe + Complément",
+  "summary": "Construire et lire des phrases courtes correctement ponctuées.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 24,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Reconnaître début/fin de phrase",
+    "Former S+V+C simples",
+    "Ponctuer correctement"
+  ],
+  "keywords": [
+    "phrase",
+    "ponctuation",
+    "SVC"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Maîtrise de la langue",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Règles de base"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Une phrase complète",
+      "content": "La phrase commence par **majuscule** et se termine par un **point**. Elle contient au minimum un **sujet** et un **verbe**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples S+V+C",
+        "content": "**Léo** (**sujet**) **mange** (**verbe**) **une pomme** (**complément**).",
+        "examples": [
+          {
+            "code": "Lina lit un livre.",
+            "title": "SVC",
+            "description": "Phrase minimale",
+            "explanation": "Sujet + verbe + complément"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je corrige",
+        "content": "ajoute majuscule/point : **leo parle au chat**"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis 3 phrases",
+        "content": "Écris 3 phrases S+V+C avec des GN de la leçon 8."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Phrase = Majuscule + S/V/C + Point."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais former des phrases simples.",
+      "keyTakeaways": [
+        "Majuscule/Point",
+        "S+V+C"
+      ],
+      "nextSteps": [
+        "Présent : verbes fréquents"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche phrase SVC",
+          "description": "Mémo classe",
+          "url": "https://eduscol.education.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **Léo joue au ballon.**, quel est le **verbe** ?",
+        "type": "multiple-choice",
+        "options": [
+          "Léo",
+          "joue",
+          "ballon"
+        ],
+        "correctAnswer": "joue",
+        "explanation": "Action",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "phrase"
+    ]
+  }
+}

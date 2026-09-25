@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GrowSavoir">
+  <rect width="64" height="64" rx="14" fill="#2563eb"/>
+  <path d="M32 14 14 22l18 8 18-8-18-8Z" fill="#fff"/>
+  <path d="M20 27v11c0 4 5.4 7 12 7s12-3 12-7V27l-12 5.4L20 27Z" fill="#fff" opacity=".82"/>
+</svg>

@@ -1,0 +1,127 @@
+{
+  "slug": "francais-n1-fondamentaux-03",
+  "title": "Sons fréquents : ch / ou / oi",
+  "summary": "Lire et reconnaître ch / ou / oi dans des mots simples.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Française",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 26,
+  "isLocked": false,
+  "prerequisites": [
+    "francais-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Reconnaître et lire ch / ou / oi",
+    "Lire des mots fréquents avec ces sons",
+    "Écrire quelques exemples",
+    "Discriminer à l’oral ces trois sons"
+  ],
+  "keywords": [
+    "sons",
+    "digrammes",
+    "ou",
+    "oi",
+    "ch"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Lire/écrire au CP",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Ressources pédagogiques"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Trois sons utiles",
+      "content": "**ch** → /ʃ/ (cha), **ou** → /u/ (loup), **oi** → /wa/ (roi)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Mots modèles",
+        "content": "**chat**, **loup**, **roi**, **chou**, **bois**.",
+        "examples": [
+          {
+            "code": "chat / loup / roi",
+            "title": "Références",
+            "description": "ch / ou / oi",
+            "explanation": "Associer son/graphie"
+          }
+        ]
+      },
+      {
+        "type": "activity",
+        "title": "Je coche",
+        "content": "- [x] **ch** dans **chou**\n- [x] **ou** dans **loup**\n- [x] **oi** dans **bois**"
+      },
+      {
+        "type": "exercise",
+        "title": "Je lis puis j’écris",
+        "content": "Lis : **chat, loup, roi**. Écris 3 mots avec **oi**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "**ch/ou/oi** repérés et lus."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu lis **ch, ou, oi**.",
+      "keyTakeaways": [
+        "ch = /ʃ/",
+        "ou = /u/",
+        "oi = /wa/"
+      ],
+      "nextSteps": [
+        "c/ç/ss et g/gu/ge"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche sons ch/ou/oi",
+          "description": "Mémo visuel",
+          "url": "https://www.cned.fr"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **roi**, le son est…",
+        "type": "multiple-choice",
+        "options": [
+          "/ʁo/",
+          "/wa/"
+        ],
+        "correctAnswer": "/wa/",
+        "explanation": "oi → /wa/",
+        "points": 10
+      },
+      {
+        "question": "Coche un mot avec **ch**",
+        "type": "multiple-choice",
+        "options": [
+          "lait",
+          "chou"
+        ],
+        "correctAnswer": "chou",
+        "explanation": "ch → /ʃ/",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.204Z",
+    "updatedAt": "2026-09-25T19:47:56.204Z",
+    "author": "GrowSavoir",
+    "version": "1.1.0",
+    "tags": [
+      "français",
+      "n1",
+      "sons"
+    ]
+  }
+}

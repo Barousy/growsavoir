@@ -1,0 +1,100 @@
+{
+  "slug": "anglais-n1-fondamentaux-02",
+  "title": "Short Vowels — a / e / i / o / u",
+  "summary": "Maîtriser les voyelles courtes dans des mots CVC fréquents.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 25,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Lire et discriminer a/e/i/o/u courts",
+    "Décoder 15 mots CVC",
+    "Orthographier 5 CVC simples"
+  ],
+  "keywords": [
+    "phonics",
+    "CVC",
+    "short vowels",
+    "a e i o u"
+  ],
+  "sources": [
+    {
+      "title": "Phonics (CVC) — BBC Bitesize",
+      "url": "https://www.bbc.co.uk/bitesize",
+      "type": "website",
+      "description": "Décodage CVC"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Voyelles courtes",
+      "content": "**a /æ/** cat ; **e /ɛ/** bed ; **i /ɪ/** sit ; **o /ɒ/** dog ; **u /ʌ/** sun."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Listes CVC",
+        "content": "**a**: cat, map, bag — **e**: bed, pen, leg — **i**: pin, sit, fin — **o**: dog, box, pot — **u**: sun, cup, bus"
+      },
+      {
+        "type": "activity",
+        "title": "Tic-tac-toe CVC",
+        "content": "Coche si la voyelle est correcte : c**a**t / p**e**n / f**i**n / s**o**ck / b**u**s"
+      },
+      {
+        "type": "exercise",
+        "title": "Dictée-sons",
+        "content": "Écris 10 CVC dictés (ex : cat, pen, pig, box, sun)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "5 voyelles courtes → lecture fluide des CVC."
+      }
+    ],
+    "conclusion": {
+      "summary": "Les CVC sont acquis. On ajoute les **sight words**.",
+      "keyTakeaways": [
+        "a/e/i/o/u courts",
+        "CVC"
+      ],
+      "nextSteps": [
+        "Greetings & sight words (the, a, I, and, is)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Dans **bed**, la voyelle est…",
+        "type": "multiple-choice",
+        "options": [
+          "/æ/",
+          "/ɛ/"
+        ],
+        "correctAnswer": "/ɛ/",
+        "explanation": "e court",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 20
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "phonics",
+      "CVC"
+    ]
+  }
+}

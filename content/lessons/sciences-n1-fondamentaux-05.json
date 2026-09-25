@@ -1,0 +1,103 @@
+{
+  "slug": "sciences-n1-fondamentaux-05",
+  "title": "Les animaux : grandes familles et besoins",
+  "summary": "Reconnaître quelques grandes familles (mammifères, oiseaux, poissons, reptiles, amphibiens) et leurs besoins communs.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Citer 5 familles",
+    "Donner 1 exemple par famille",
+    "Rappeler les besoins vitaux"
+  ],
+  "keywords": [
+    "animaux",
+    "classification",
+    "besoins"
+  ],
+  "sources": [
+    {
+      "title": "Muséum national d’Histoire naturelle — Oiseaux et mammifères",
+      "url": "https://www.mnhn.fr",
+      "type": "website",
+      "description": "Découvertes naturalistes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des animaux très différents",
+      "content": "**Mammifères** (chat), **oiseaux** (moineau), **poissons** (poisson rouge), **reptiles** (lézard), **amphibiens** (grenouille)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Indices rapides",
+        "content": "Oiseau = **plumes** ; Mammifère = **poils** ; Poisson = **nageoires** ; Reptile = **écailles** ; Amphibien = **peau nue**."
+      },
+      {
+        "type": "activity",
+        "title": "Je classe",
+        "content": "Place **baleine, canard, carpe, serpent, grenouille** dans la bonne famille."
+      },
+      {
+        "type": "exercise",
+        "title": "Besoins",
+        "content": "Tous ont besoin d’**air**, **eau**, **nourriture**, **abri**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Familles + besoins communs."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu reconnais de grandes familles animales.",
+      "keyTakeaways": [
+        "Plumes/poils/nageoires…"
+      ],
+      "nextSteps": [
+        "Habitats et milieux (leçon 6)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche animaux",
+          "description": "Cartes à classer",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le moineau appartient aux…",
+        "type": "multiple-choice",
+        "options": [
+          "Mammifères",
+          "Oiseaux"
+        ],
+        "correctAnswer": "Oiseaux",
+        "explanation": "Plumes = oiseau.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "animaux"
+    ]
+  }
+}

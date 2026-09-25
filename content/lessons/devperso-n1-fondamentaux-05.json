@@ -1,0 +1,95 @@
+{
+  "slug": "devperso-n1-fondamentaux-05",
+  "title": "Mes affaires en ordre",
+  "summary": "Ranger son sac et sa table, étiqueter ses cahiers, retrouver vite ses affaires.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Classer par catégorie",
+    "Étiqueter cahiers",
+    "Ranger en 3 minutes chrono"
+  ],
+  "keywords": [
+    "rangement",
+    "ordre",
+    "cartable",
+    "étiquettes"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Organisation simple",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Tris et étiquettes"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Chaque chose à sa place",
+      "content": "Je **range** par **catégories** : écriture, lecture, coloriage."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "3 minutes chrono",
+        "content": "Je mets **crayons** dans trousse, **cahiers** empilés, **déchets** à la poubelle."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Un espace **clair** aide à **apprendre**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais t’organiser.",
+      "keyTakeaways": [
+        "Catégories",
+        "Étiquettes"
+      ],
+      "nextSteps": [
+        "**Objectif simple** (leçon 6)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Etiquettes à imprimer",
+          "description": "Nom, matière, couleur",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Ranger par catégories veut dire…",
+        "type": "multiple-choice",
+        "options": [
+          "Tout mélanger",
+          "Regrouper ce qui se ressemble"
+        ],
+        "correctAnswer": "Regrouper ce qui se ressemble",
+        "explanation": "Principe de base",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "organisation"
+    ]
+  }
+}

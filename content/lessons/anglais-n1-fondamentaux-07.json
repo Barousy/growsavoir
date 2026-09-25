@@ -1,0 +1,99 @@
+{
+  "slug": "anglais-n1-fondamentaux-07",
+  "title": "Days of the Week & Daily Routines",
+  "summary": "Connaître les jours et décrire une routine simple au présent.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-06"
+  ],
+  "learningObjectives": [
+    "Nommer Monday→Sunday",
+    "Employer I get up / I go to school",
+    "Ajouter heures simples (o’clock)"
+  ],
+  "keywords": [
+    "days",
+    "routines",
+    "present simple"
+  ],
+  "sources": [
+    {
+      "title": "ESL Kids — Days & Routines",
+      "url": "https://www.eslkidstuff.com",
+      "type": "website",
+      "description": "Fiches pédagogiques"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Monday to Sunday",
+      "content": "Days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.\nRoutine: **I get up at seven o’clock. I go to school.**"
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Routine modèle",
+        "content": "**On Monday**, I get up at 7 o’clock. I go to school. **On Saturday**, I play."
+      },
+      {
+        "type": "activity",
+        "title": "Vrai/Faux",
+        "content": "F: Sunday est un jour d’école. V: Saturday est le week-end."
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris ta routine (2 phrases) pour **Monday** et **Saturday**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Jours + routine **I + verbe** au présent."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu présentes une routine.",
+      "keyTakeaways": [
+        "Days",
+        "Present simple (I …)"
+      ],
+      "nextSteps": [
+        "Weather & Clothes"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "After Friday, the day is…",
+        "type": "multiple-choice",
+        "options": [
+          "Saturday",
+          "Thursday"
+        ],
+        "correctAnswer": "Saturday",
+        "explanation": "Order of days",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "days",
+      "routines"
+    ]
+  }
+}

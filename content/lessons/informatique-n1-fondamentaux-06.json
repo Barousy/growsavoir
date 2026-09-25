@@ -1,0 +1,92 @@
+{
+  "slug": "informatique-n1-fondamentaux-06",
+  "title": "Boucles — répéter pour aller plus vite (débranché)",
+  "summary": "Découvrir la répétition : « répète 4 fois avancer » ; simplifier une longue séquence par une boucle.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Remplacer répétitions par boucle",
+    "Exécuter une boucle simple",
+    "Comprendre « répète N fois »"
+  ],
+  "keywords": [
+    "boucle",
+    "répétition",
+    "unplugged"
+  ],
+  "sources": [
+    {
+      "title": "CS Unplugged — Répétitions",
+      "url": "https://csunplugged.org",
+      "type": "website",
+      "description": "Activités papier"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Répéter efficacement",
+      "content": "Au lieu de **Avance, Avance, Avance, Avance** → **Répète 4 fois [Avance]**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Motifs",
+        "content": "Dessine un motif de **4** carrés : **Répète 4 fois [■]**."
+      },
+      {
+        "type": "activity",
+        "title": "Parcours",
+        "content": "Atteins la case (0,4) : **Répète 4 fois [Avance]**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Boucle = **répéter** plusieurs fois."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais utiliser les boucles.",
+      "keyTakeaways": [
+        "Répète N fois"
+      ],
+      "nextSteps": [
+        "Découvrir les **conditions** (leçon 7)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quelle écriture est plus courte ?",
+        "type": "multiple-choice",
+        "options": [
+          "Avance x4",
+          "Répète 4 fois [Avance]"
+        ],
+        "correctAnswer": "Répète 4 fois [Avance]",
+        "explanation": "Notion de boucle",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "boucles"
+    ]
+  }
+}

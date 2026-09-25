@@ -1,0 +1,101 @@
+{
+  "slug": "informatique-n1-fondamentaux-08",
+  "title": "Programmer par blocs — premiers scripts (Scratch/Blockly)",
+  "summary": "Créer un mini-programme avec « quand drapeau cliqué », « dire », « avancer » ; déplacer un personnage.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Lancer un script (événement)",
+    "Déplacer un sprite",
+    "Afficher un message"
+  ],
+  "keywords": [
+    "scratch",
+    "blockly",
+    "événements",
+    "sprites"
+  ],
+  "sources": [
+    {
+      "title": "Scratch — Getting Started",
+      "url": "https://scratch.mit.edu",
+      "type": "website",
+      "description": "Démarrer avec Scratch"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Drag & drop",
+      "content": "On **assemble** des **blocs** comme des **Lego**. Exemple d’événement : **Quand drapeau vert cliqué**."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Script de base",
+        "content": "Quand **drapeau cliqué** → **dire \"Bonjour !\"** → **avancer de 10 pas**."
+      },
+      {
+        "type": "activity",
+        "title": "Je déplace",
+        "content": "Fais bouger ton personnage **à droite** puis **à gauche** en appuyant sur les flèches."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Événement + action(s) = **script**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu as créé ton premier script 🎉",
+      "keyTakeaways": [
+        "Blocs",
+        "Événements",
+        "Déplacement"
+      ],
+      "nextSteps": [
+        "Ajouter **sons et décors** (leçon 9)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Tutoriels Scratch Junior",
+          "description": "Pas à pas visuels",
+          "url": "https://scratch.mit.edu"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quel bloc démarre un script ?",
+        "type": "multiple-choice",
+        "options": [
+          "Dire",
+          "Quand drapeau cliqué"
+        ],
+        "correctAnswer": "Quand drapeau cliqué",
+        "explanation": "Bloc événement",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 9
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "blocs"
+    ]
+  }
+}

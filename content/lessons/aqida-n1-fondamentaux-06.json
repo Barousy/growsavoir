@@ -1,0 +1,102 @@
+{
+  "slug": "aqida-n1-fondamentaux-06",
+  "title": "Les six piliers de la foi (al-Îmân) — panorama",
+  "summary": "Croire en Allah, Ses Anges, Ses Livres, Ses Messagers, le Jour dernier et le Destin (bien/mal).",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "aqida-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Nommer les 6 piliers",
+    "Associer un exemple simple à chaque pilier",
+    "Réciter la liste"
+  ],
+  "keywords": [
+    "piliers de la foi",
+    "iman"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Résumé N1"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "La base de la croyance",
+      "content": "1) Allah 2) Anges 3) Livres 4) Messagers 5) Jour dernier 6) Destin."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Exemples",
+        "content": "Jour dernier → Allah nous questionnera ; Destin → Allah **sait** tout."
+      },
+      {
+        "type": "activity",
+        "title": "Je mémorise",
+        "content": "Répète la liste **3 fois** avec gestes (six doigts)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Les **6 piliers** = **al-Îmân**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais citer les 6 piliers.",
+      "keyTakeaways": [
+        "Allah",
+        "Anges",
+        "Livres",
+        "Messagers",
+        "Jour dernier",
+        "Destin"
+      ],
+      "nextSteps": [
+        "Jour dernier (leçon 7)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche 6 piliers",
+          "description": "Mémo à imprimer",
+          "url": "https://example.com/aqida-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Fait-il partie des 6 piliers : croire aux Anges ?",
+        "type": "multiple-choice",
+        "options": [
+          "Non",
+          "Oui"
+        ],
+        "correctAnswer": "Oui",
+        "explanation": "C’est le 2e pilier",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "piliers-foi"
+    ]
+  }
+}

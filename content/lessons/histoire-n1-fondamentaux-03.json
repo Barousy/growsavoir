@@ -1,0 +1,89 @@
+{
+  "slug": "histoire-n1-fondamentaux-03",
+  "title": "Nûḥ عليه السلام — Patience et arche",
+  "summary": "Nûḥ appelle à adorer Allah ; Allah sauve les croyants dans l'arche.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Citer Nûḥ",
+    "Définir « patience » (sabr) simplement",
+    "Dire que les croyants ont été sauvés"
+  ],
+  "keywords": [
+    "Nûḥ",
+    "déluge",
+    "arche",
+    "patience"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Nûḥ)",
+      "url": "#",
+      "type": "book",
+      "description": "Récit du Déluge"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Appel et patience",
+      "content": "Le prophète **Nûḥ** a parlé **longtemps** à son peuple. Allah a **sauvé** les croyants dans une **arche**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je m’inspire",
+        "content": "Je m’entraîne à la **patience** pendant une petite tâche (ranger, lire 5 min)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Nûḥ : **appel**, **patience**, **sauvetage**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais l’histoire de Nûḥ.",
+      "keyTakeaways": [
+        "Sabr",
+        "Sauvetage"
+      ],
+      "nextSteps": [
+        "**Ibrâhîm** عليه السلام (leçon 4)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Nûḥ a appelé à…",
+        "type": "multiple-choice",
+        "options": [
+          "Adorer Allah",
+          "Désobéir"
+        ],
+        "correctAnswer": "Adorer Allah",
+        "explanation": "Tawḥîd",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "nuh"
+    ]
+  }
+}

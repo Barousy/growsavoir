@@ -1,0 +1,129 @@
+{
+  "slug": "sciences-n1-fondamentaux-01",
+  "title": "Qu’est-ce que la science ? Observer et se poser des questions",
+  "summary": "Découvrir la démarche scientifique: observer, questionner, imaginer, expérimenter et conclure en sécurité.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Comprendre les 5 étapes simples de la démarche scientifique",
+    "Utiliser ses cinq sens pour observer",
+    "Connaître 5 règles de sécurité de base en sciences"
+  ],
+  "keywords": [
+    "observation",
+    "question",
+    "expérience",
+    "sécurité",
+    "méthode scientifique"
+  ],
+  "sources": [
+    {
+      "title": "Éduscol — Démarche d’investigation",
+      "url": "https://eduscol.education.fr",
+      "type": "website",
+      "description": "Repères pour l’investigation scientifique"
+    },
+    {
+      "title": "La main à la pâte",
+      "url": "https://www.fondation-lamap.org",
+      "type": "website",
+      "description": "Pédagogie par l’investigation pour le primaire"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Observer, c’est déjà faire de la science !",
+      "content": "La science commence par **observer** avec ses **cinq sens**, puis **se poser des questions** : *Que se passe-t-il ? Pourquoi ?* On **imagine** une réponse (hypothèse), on **teste** (expérimente), puis on **conclut** et on **explique**."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Les 5 étapes",
+        "content": "1) Observer · 2) Questionner · 3) Imaginer (hypothèse) · 4) Tester · 5) Conclure."
+      },
+      {
+        "type": "example",
+        "title": "Exemple simple",
+        "content": "La plante près de la fenêtre pousse-t-elle mieux ? → Hypothèse : **oui** car plus de lumière → Test : placer deux plantes (fenêtre / placard) et observer."
+      },
+      {
+        "type": "activity",
+        "title": "Chasse aux observations",
+        "content": "Regarde la classe/maison : **3 choses** à décrire (couleur, forme, texture, odeur, son)."
+      },
+      {
+        "type": "exercise",
+        "title": "Sécurité en sciences",
+        "content": "Règles : 1) Ne rien goûter 2) Protéger les yeux 3) Ranger 4) L’eau loin des prises 5) Demander l’aide d’un adulte."
+      },
+      {
+        "type": "summary",
+        "title": "À retenir",
+        "content": "Science = **observer + questionner + tester** en sécurité."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais la démarche pour faire une petite expérience.",
+      "keyTakeaways": [
+        "Observer",
+        "Questionner",
+        "Tester",
+        "Conclure",
+        "Sécurité"
+      ],
+      "nextSteps": [
+        "Utiliser les **cinq sens** pour mieux observer (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche Démarche scientifique",
+          "description": "5 étapes illustrées à imprimer",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La première étape de la démarche scientifique est…",
+        "type": "multiple-choice",
+        "options": [
+          "Tester",
+          "Observer"
+        ],
+        "correctAnswer": "Observer",
+        "explanation": "On observe d’abord.",
+        "points": 10
+      },
+      {
+        "question": "Citer une règle de sécurité.",
+        "type": "multiple-choice",
+        "options": [
+          "Goûter les produits",
+          "Demander l’aide d’un adulte"
+        ],
+        "correctAnswer": "Demander l’aide d’un adulte",
+        "explanation": "On ne goûte rien et on se fait aider.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 12
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "méthode"
+    ]
+  }
+}

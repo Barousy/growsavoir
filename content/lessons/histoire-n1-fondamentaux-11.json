@@ -1,0 +1,102 @@
+{
+  "slug": "histoire-n1-fondamentaux-11",
+  "title": "Révision N1 — frise du début du monde à la naissance du Prophète ﷺ",
+  "summary": "Construire une frise : Création des cieux → Âdam → Nûḥ → Ibrâhîm → Ismâʿîl/Ka‘ba → Quraysh → Éléphant → Naissance.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-01",
+    "histoire-n1-fondamentaux-02",
+    "histoire-n1-fondamentaux-03",
+    "histoire-n1-fondamentaux-04",
+    "histoire-n1-fondamentaux-05",
+    "histoire-n1-fondamentaux-06",
+    "histoire-n1-fondamentaux-07",
+    "histoire-n1-fondamentaux-08",
+    "histoire-n1-fondamentaux-09",
+    "histoire-n1-fondamentaux-10"
+  ],
+  "learningObjectives": [
+    "Ordonner 8 étapes",
+    "Présenter la frise en 2 min",
+    "Utiliser 6 mots-clés"
+  ],
+  "keywords": [
+    "frise",
+    "révision",
+    "chronologie"
+  ],
+  "sources": [
+    {
+      "title": "Synthèse N1 (adaptée d’Ibn Kathîr)",
+      "url": "#",
+      "type": "book",
+      "description": "Sélection d’étapes majeures"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "On assemble",
+      "content": "Prépare une **frise** avec 8 **cartes** (dessin + mot-clé)."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Étapes",
+        "content": "Création cieux/terre → Âdam → Nûḥ → Ibrâhîm → Ismâʿîl/Ka‘ba → Quraysh → Année de l’Éléphant → Naissance."
+      },
+      {
+        "type": "activity",
+        "title": "Je présente",
+        "content": "Explique ta frise à un camarade en **2 minutes**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Tu connais les **grands repères**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Révision terminée.",
+      "keyTakeaways": [
+        "Repères",
+        "Mots-clés"
+      ],
+      "nextSteps": [
+        "**Projet & évaluation** (leçon 12)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Place dans l’ordre : Âdam / Création des cieux",
+        "type": "multiple-choice",
+        "options": [
+          "Création des cieux avant Âdam",
+          "Âdam avant création des cieux"
+        ],
+        "correctAnswer": "Création des cieux avant Âdam",
+        "explanation": "Chronologie",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 7
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "révision"
+    ]
+  }
+}

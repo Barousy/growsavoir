@@ -1,0 +1,104 @@
+{
+  "slug": "sciences-n1-fondamentaux-08",
+  "title": "L’eau autour de nous : solide, liquide, gaz",
+  "summary": "Découvrir les états de l’eau et quelques changements simples (glace ↔ eau ↔ vapeur).",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Nommer 3 états de l’eau",
+    "Observer fonte/évaporation (sécurité)",
+    "Relier météo ↔ états"
+  ],
+  "keywords": [
+    "eau",
+    "solide",
+    "liquide",
+    "gaz"
+  ],
+  "sources": [
+    {
+      "title": "Cité des sciences — Eau",
+      "url": "https://www.cite-sciences.fr",
+      "type": "website",
+      "description": "Ateliers et ressources sur l’eau"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Trois états",
+      "content": "**Glace** = solide ; **eau** = liquide ; **vapeur** = gaz."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Changements",
+        "content": "**Glace → eau** = fondre ; **Eau → vapeur** = s’évaporer ; **Vapeur → eau** = se condenser."
+      },
+      {
+        "type": "activity",
+        "title": "Gobelets d’eau",
+        "content": "Place un gobelet d’eau **au soleil** et un **à l’ombre**. Observe : le niveau baisse au soleil (évaporation)."
+      },
+      {
+        "type": "exercise",
+        "title": "Je relie",
+        "content": "Neige → **solide** ; Pluie → **liquide** ; Nuage → **gouttelettes/gaz** (mélange)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "L’eau change d’état selon la **température**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais nommer les états de l’eau.",
+      "keyTakeaways": [
+        "Solide/liquide/gaz"
+      ],
+      "nextSteps": [
+        "Matériaux et propriétés (leçon 9)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Fiche états de l’eau",
+          "description": "Schéma à compléter",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "La glace qui fond devient…",
+        "type": "multiple-choice",
+        "options": [
+          "Gaz",
+          "Liquide"
+        ],
+        "correctAnswer": "Liquide",
+        "explanation": "Fonte = solide → liquide",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "eau"
+    ]
+  }
+}

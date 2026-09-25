@@ -1,0 +1,103 @@
+{
+  "slug": "sciences-n1-fondamentaux-06",
+  "title": "Habitats et milieux : forêt, désert, mer",
+  "summary": "Relier quelques animaux/plantes à leur habitat et comprendre l’idée d’adaptation simple.",
+  "level": "n1-fondamentaux",
+  "subject": "Sciences",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "sciences-n1-fondamentaux-05"
+  ],
+  "learningObjectives": [
+    "Citer 3 habitats",
+    "Associer 2 êtres vivants par habitat",
+    "Comprendre « s’adapter » simplement"
+  ],
+  "keywords": [
+    "habitats",
+    "milieux",
+    "adaptation"
+  ],
+  "sources": [
+    {
+      "title": "Parc zoologique — fiches habitats",
+      "url": "https://www.parczoologiqueparis.fr",
+      "type": "website",
+      "description": "Milieux de vie et espèces"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Où vivent-ils ?",
+      "content": "**Forêt** (renard, chêne), **désert** (dromadaire, cactus), **mer** (poisson, algues)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Adaptations",
+        "content": "Dromadaire : réserve d’eau ; Cactus : stocke l’eau ; Poisson : nageoires et branchies."
+      },
+      {
+        "type": "activity",
+        "title": "Relie",
+        "content": "Relie chaque animal à son **habitat** : renard ↔ forêt ; dromadaire ↔ désert ; thon ↔ mer."
+      },
+      {
+        "type": "exercise",
+        "title": "Je justifie",
+        "content": "Pourquoi le **cactus** vit-il au désert ?"
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Milieu = **besoins adaptés**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu fais le lien entre êtres vivants et milieux.",
+      "keyTakeaways": [
+        "Forêt/désert/mer"
+      ],
+      "nextSteps": [
+        "Météo & saisons (leçon 7)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Cartes habitats",
+          "description": "Forêt, désert, mer à manipuler",
+          "url": "https://www.fondation-lamap.org"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Le dromadaire vit surtout…",
+        "type": "multiple-choice",
+        "options": [
+          "En forêt",
+          "Au désert"
+        ],
+        "correctAnswer": "Au désert",
+        "explanation": "Adapté au désert.",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 10
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.207Z",
+    "updatedAt": "2026-09-25T19:47:56.207Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "sciences",
+      "n1",
+      "habitats"
+    ]
+  }
+}

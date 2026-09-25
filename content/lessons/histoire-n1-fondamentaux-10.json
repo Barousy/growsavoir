@@ -1,0 +1,95 @@
+{
+  "slug": "histoire-n1-fondamentaux-10",
+  "title": "Contexte de la péninsule — déserts, oasis, caravanes",
+  "summary": "Repères géographiques et économiques simples : désert/oasis, routes commerciales.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 16,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-09"
+  ],
+  "learningObjectives": [
+    "Différencier désert/oasis",
+    "Décrire une caravane",
+    "Placer Mecque sur carte simple"
+  ],
+  "keywords": [
+    "désert",
+    "oasis",
+    "caravane",
+    "Mecque"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Contexte arabe préislamique (Al-Bidāya)",
+      "url": "#",
+      "type": "book",
+      "description": "Repères synthétisés"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Autour de nous",
+      "content": "Beaucoup de **déserts** et des **oasis** avec de l’eau. Des **caravanes** relient les **villes**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je place",
+        "content": "Sur une carte simplifiée, place **La Mecque** et dessine une **route**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Désert **≠** oasis ; caravane = **échanges**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais le décor de la sîra.",
+      "keyTakeaways": [
+        "Désert/Oasis",
+        "Routes"
+      ],
+      "nextSteps": [
+        "**Révision & mots-clés** (leçon 11)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Carte muette Arabie",
+          "description": "À imprimer",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Une oasis, c’est…",
+        "type": "multiple-choice",
+        "options": [
+          "Un endroit avec de l’eau",
+          "Un volcan"
+        ],
+        "correctAnswer": "Un endroit avec de l’eau",
+        "explanation": "Définition simple",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 6
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "contexte"
+    ]
+  }
+}

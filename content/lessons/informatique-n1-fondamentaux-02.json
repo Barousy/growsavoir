@@ -1,0 +1,96 @@
+{
+  "slug": "informatique-n1-fondamentaux-02",
+  "title": "Souris et clavier : cliquer, glisser, taper",
+  "summary": "Apprendre les actions de base : clic, double-clic, glisser-déposer ; touches Entrée, Espace, Retour arrière, Majuscule.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-01"
+  ],
+  "learningObjectives": [
+    "Pointer et cliquer avec précision",
+    "Glisser-déposer un objet",
+    "Taper son prénom et une courte phrase"
+  ],
+  "keywords": [
+    "souris",
+    "clavier",
+    "cliquer",
+    "glisser",
+    "taper"
+  ],
+  "sources": [
+    {
+      "title": "Pix — Compétences numériques débutant",
+      "url": "https://pix.fr",
+      "type": "website",
+      "description": "Gestes élémentaires"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Pointer, cliquer, taper",
+      "content": "**Clic gauche** pour sélectionner, **double-clic** pour ouvrir, **glisser** pour déplacer. Clavier : **Espace**, **Entrée**, **Retour arrière (⌫)**, **Majuscule**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je vise",
+        "content": "Clique sur 10 cibles (grosses puis petites)."
+      },
+      {
+        "type": "exercise",
+        "title": "Je tape",
+        "content": "Écris ton **prénom** puis « Bonjour ! ». Utilise **Majuscule** pour la première lettre."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Souris précise + frappe simple."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais cliquer et taper des mots.",
+      "keyTakeaways": [
+        "clic/double-clic",
+        "glisser",
+        "taper"
+      ],
+      "nextSteps": [
+        "Découvrir **fichiers et dossiers** (leçon 3)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Pour ouvrir un dossier :",
+        "type": "multiple-choice",
+        "options": [
+          "Un clic",
+          "Un double-clic"
+        ],
+        "correctAnswer": "Un double-clic",
+        "explanation": "Comportement courant",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "souris-clavier"
+    ]
+  }
+}

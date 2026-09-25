@@ -1,0 +1,94 @@
+{
+  "slug": "devperso-n1-fondamentaux-08",
+  "title": "Politesse et respect — les mots magiques",
+  "summary": "Dire bonjour, s’il te plaît, merci, pardon ; prendre soin des lieux et des personnes.",
+  "level": "n1-fondamentaux",
+  "subject": "Développement Personnel",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 12,
+  "isLocked": false,
+  "prerequisites": [
+    "devperso-n1-fondamentaux-07"
+  ],
+  "learningObjectives": [
+    "Utiliser 4 mots magiques",
+    "Demander sans exiger",
+    "Respecter le matériel commun"
+  ],
+  "keywords": [
+    "politesse",
+    "respect",
+    "vivre-ensemble"
+  ],
+  "sources": [
+    {
+      "title": "DP N1 — Vivre ensemble",
+      "url": "https://example.com/devperso-n1",
+      "type": "website",
+      "description": "Rituels de classe"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Des mots qui aident",
+      "content": "Je dis **bonjour**, **s’il te plaît**, **merci**, **pardon**."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Jeu de rôle",
+        "content": "Par deux, on **joue** une situation et on place les **mots magiques**."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Politesse = **respect** des **personnes** et des **lieux**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu pratiques la politesse.",
+      "keyTakeaways": [
+        "Merci",
+        "Pardon"
+      ],
+      "nextSteps": [
+        "**Travail en équipe** (leçon 9)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche Mots Magiques",
+          "description": "Poster classe",
+          "url": "https://example.com/devperso-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Quand je reçois de l’aide, je dis…",
+        "type": "multiple-choice",
+        "options": [
+          "Rien",
+          "Merci"
+        ],
+        "correctAnswer": "Merci",
+        "explanation": "Rituel social",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.213Z",
+    "updatedAt": "2026-09-25T19:47:56.213Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "devperso",
+      "n1",
+      "politesse"
+    ]
+  }
+}

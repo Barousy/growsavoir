@@ -1,0 +1,89 @@
+{
+  "slug": "histoire-n1-fondamentaux-09",
+  "title": "Jeunesse : « al-Amîn » — le digne de confiance",
+  "summary": "Découvrir la qualité de vérité et de confiance dans la jeunesse du Prophète ﷺ.",
+  "level": "n1-fondamentaux",
+  "subject": "Histoire de l'Islam",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 15,
+  "isLocked": false,
+  "prerequisites": [
+    "histoire-n1-fondamentaux-08"
+  ],
+  "learningObjectives": [
+    "Expliquer « al-Amîn »",
+    "Donner un exemple de vérité",
+    "Imiter une bonne action"
+  ],
+  "keywords": [
+    "jeunesse",
+    "al-amîn",
+    "confiance",
+    "vérité"
+  ],
+  "sources": [
+    {
+      "title": "Ibn Kathîr — Al-Bidāya (Jeunesse du Prophète ﷺ)",
+      "url": "#",
+      "type": "book",
+      "description": "Qualités reconnues"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Digne de confiance",
+      "content": "On appelait le Prophète ﷺ **al-Amîn** : il **disait la vérité** et on pouvait **lui confier** des biens."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Je m’engage",
+        "content": "Aujourd’hui, je fais une **action honnête** (rendre un objet, dire la vérité)."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Qualité : **confiance** et **vérité**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu connais « al-Amîn ».",
+      "keyTakeaways": [
+        "Vérité",
+        "Confiance"
+      ],
+      "nextSteps": [
+        "**Contexte de l’Arabie** (leçon 10)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "« al-Amîn » signifie…",
+        "type": "multiple-choice",
+        "options": [
+          "Digne de confiance",
+          "Très en colère"
+        ],
+        "correctAnswer": "Digne de confiance",
+        "explanation": "Surnom du Prophète ﷺ",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 5
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.212Z",
+    "updatedAt": "2026-09-25T19:47:56.212Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "histoire",
+      "n1",
+      "al-amin"
+    ]
+  }
+}

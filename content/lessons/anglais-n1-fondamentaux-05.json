@@ -1,0 +1,98 @@
+{
+  "slug": "anglais-n1-fondamentaux-05",
+  "title": "Classroom Objects & Prepositions (in/on/under)",
+  "summary": "Nommer les objets de la classe et utiliser in / on / under.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 22,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-04"
+  ],
+  "learningObjectives": [
+    "Vocabulaire scolaire",
+    "Prépositions in/on/under",
+    "Phrases There is/are + préposition"
+  ],
+  "keywords": [
+    "classroom",
+    "prepositions",
+    "in/on/under"
+  ],
+  "sources": [
+    {
+      "title": "British Council Kids — Prepositions",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "type": "website",
+      "description": "in/on/under pour enfants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "In / On / Under",
+      "content": "Objet : book, pen, pencil, bag, desk, chair, board.\nPrépositions : **in** (dans), **on** (sur), **under** (sous)."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Phrases modèles",
+        "content": "**The pen is on the desk.** / **The book is in the bag.** / **The cat is under the chair.**"
+      },
+      {
+        "type": "activity",
+        "title": "Vrai/Faux image mentale",
+        "content": "F: **The pen is under the desk.** (non, il est sur le bureau) ; V: **The book is in the bag.**"
+      },
+      {
+        "type": "exercise",
+        "title": "Je produis",
+        "content": "Écris 5 phrases : objet + **is** + **in/on/under** + lieu."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Objets de classe + **in/on/under**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais localiser un objet.",
+      "keyTakeaways": [
+        "in / on / under"
+      ],
+      "nextSteps": [
+        "Family & possessives my/your"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Choisis : The cat is __ the chair.",
+        "type": "multiple-choice",
+        "options": [
+          "on",
+          "under"
+        ],
+        "correctAnswer": "under",
+        "explanation": "sous",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "classroom",
+      "prepositions"
+    ]
+  }
+}

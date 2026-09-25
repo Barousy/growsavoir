@@ -1,0 +1,47 @@
+{
+  "id": "sci-research-project",
+  "title": "Projet de recherche scientifique complet",
+  "description": "Développer les compétences de recherche scientifique en conduisant un projet complet de la formulation de la question à la présentation des résultats",
+  "duration": "75 min",
+  "difficulty": "advanced",
+  "subject": "sciences",
+  "materials": [
+    "Question de recherche claire et précise",
+    "Sources d'information variées (livres, articles, sites web fiables)",
+    "Méthodes de recherche et d'analyse appropriées",
+    "Carnet de recherche avec grilles d'analyse",
+    "Matériel de documentation (ordinateur, imprimante)",
+    "Fiches de méthodologie de recherche",
+    "Grille d'évaluation des sources",
+    "Matériel de présentation (poster, diaporama)"
+  ],
+  "instructions": [
+    "Formulation et cadrage (15 min) : Formulez votre question de recherche de manière claire et précise. Définissez le champ d'étude et les limites de votre projet. Identifiez les objectifs spécifiques.",
+    "Recherche documentaire (25 min) : Recherchez des informations dans des sources variées et fiables. Évaluez la qualité et la pertinence de chaque source. Organisez vos notes de manière structurée.",
+    "Conception de la méthodologie (20 min) : Concevez votre approche méthodologique. Choisissez les méthodes d'analyse appropriées. Préparez vos outils de collecte et d'analyse de données.",
+    "Analyse et présentation (15 min) : Analysez vos données et vos résultats. Organisez vos conclusions. Préparez une présentation claire et structurée de vos résultats."
+  ],
+  "learningObjectives": [
+    "Conduire une recherche scientifique complète et méthodique",
+    "Analyser des données et des informations avec rigueur",
+    "Présenter des résultats scientifiques de manière claire et structurée",
+    "Évaluer la qualité et la fiabilité des sources d'information",
+    "Développer la pensée critique et la méthode scientifique"
+  ],
+  "tips": [
+    "Commencez par une question simple et précise",
+    "Vérifiez toujours la fiabilité de vos sources",
+    "Prenez des notes organisées dès le début",
+    "Présentez vos résultats de manière visuelle"
+  ],
+  "assessment": [
+    "La question de recherche est-elle claire et précise ?",
+    "Les sources utilisées sont-elles fiables et variées ?",
+    "La méthodologie est-elle appropriée et rigoureuse ?",
+    "La présentation des résultats est-elle claire et structurée ?"
+  ],
+  "ageGroup": "12-14",
+  "isInteractive": false,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}

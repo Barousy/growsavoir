@@ -1,0 +1,108 @@
+{
+  "slug": "aqida-n1-fondamentaux-01",
+  "title": "Allah est Un — Le Créateur (at-Tawḥîd)",
+  "summary": "Découvrir que Dieu (Allah) est Unique, Créateur de tout, et que nous L'adorons Lui seul.",
+  "level": "n1-fondamentaux",
+  "subject": "Aqîda (Creed)",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 18,
+  "isLocked": false,
+  "prerequisites": [],
+  "learningObjectives": [
+    "Dire qu'Allah est Unique (Unicité)",
+    "Nommer quelques créations d’Allah",
+    "Comprendre que l'on adore Allah seul"
+  ],
+  "keywords": [
+    "tawhid",
+    "créateur",
+    "adoration"
+  ],
+  "sources": [
+    {
+      "title": "Programme interne Aqîda N1",
+      "url": "https://example.com/aqida-n1",
+      "type": "website",
+      "description": "Référentiel pédagogique GrowSavoir"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Qui nous a créés ?",
+      "content": "Allah a **créé** le ciel, la terre, les animaux, **toi** et **moi**. Il est **Unique** (un Seul Dieu). Nous L’**adorons** Lui seul."
+    },
+    "mainContent": [
+      {
+        "type": "concept",
+        "title": "Unicité",
+        "content": "Un seul Créateur, un seul Dieu à adorer. Rien ne Lui ressemble."
+      },
+      {
+        "type": "example",
+        "title": "Exemples de création",
+        "content": "Montagnes, pluie, plantes, étoiles : signes de la **Puissance** d’Allah."
+      },
+      {
+        "type": "activity",
+        "title": "Je regarde les signes",
+        "content": "Dessine 3 choses qu’Allah a créées et dis « **Mâ shâ Allah** ». "
+      },
+      {
+        "type": "exercise",
+        "title": "Je complète",
+        "content": "Allah est **Un** ; Allah a **créé** __ ; On **adore** __ seul."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Allah est **Unique** et **Créateur** ; je L’adore **seul**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais dire qu'Allah est Unique et Créateur.",
+      "keyTakeaways": [
+        "Unicité",
+        "Création",
+        "Adoration"
+      ],
+      "nextSteps": [
+        "Découvrir **les beaux Noms d’Allah** (leçon 2)"
+      ],
+      "additionalResources": [
+        {
+          "title": "Affiche : Allah a créé…",
+          "description": "Fiche à compléter",
+          "url": "https://example.com/aqida-n1"
+        }
+      ]
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Combien de dieux adorons-nous ?",
+        "type": "multiple-choice",
+        "options": [
+          "Plusieurs",
+          "Un seul"
+        ],
+        "correctAnswer": "Un seul",
+        "explanation": "Unicité",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.209Z",
+    "updatedAt": "2026-09-25T19:47:56.209Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "aqida",
+      "n1",
+      "tawhid"
+    ]
+  }
+}

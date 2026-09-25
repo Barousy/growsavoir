@@ -1,0 +1,99 @@
+{
+  "slug": "informatique-n1-fondamentaux-03",
+  "title": "Fichiers et dossiers : ranger pour retrouver",
+  "summary": "Créer, nommer, enregistrer et ouvrir un fichier ; organiser dans des dossiers ; glisser-déposer.",
+  "level": "n1-fondamentaux",
+  "subject": "Informatique",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "informatique-n1-fondamentaux-02"
+  ],
+  "learningObjectives": [
+    "Créer/renommer un dossier",
+    "Enregistrer un document",
+    "Ouvrir/fermer correctement"
+  ],
+  "keywords": [
+    "fichier",
+    "dossier",
+    "enregistrer",
+    "ouvrir"
+  ],
+  "sources": [
+    {
+      "title": "CNED — Organiser ses fichiers",
+      "url": "https://www.cned.fr",
+      "type": "website",
+      "description": "Arborescence simple"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "Un classeur numérique",
+      "content": "Un **fichier** est comme une **feuille**. Un **dossier** est comme une **chemise**. On les **nomme** clairement."
+    },
+    "mainContent": [
+      {
+        "type": "example",
+        "title": "Bon nommage",
+        "content": "« Dessin_chat_2025 » mieux que « Nouveau document »."
+      },
+      {
+        "type": "activity",
+        "title": "Je range",
+        "content": "Crée un dossier **Mes travaux** puis un sous-dossier **Dessins**. Enregistre un dessin dedans."
+      },
+      {
+        "type": "exercise",
+        "title": "Je retrouve",
+        "content": "Ouvre le fichier « Dessin_chat_2025 ». Modifie → Enregistre."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Créer/nommer/enregistrer/ouvrir."
+      }
+    ],
+    "conclusion": {
+      "summary": "Tu sais ranger tes documents.",
+      "keyTakeaways": [
+        "Arborescence",
+        "Nom clair"
+      ],
+      "nextSteps": [
+        "Découvrir **Internet** (leçon 4)"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "Un dossier, c’est…",
+        "type": "multiple-choice",
+        "options": [
+          "Une feuille",
+          "Une chemise qui contient des fichiers"
+        ],
+        "correctAnswer": "Une chemise qui contient des fichiers",
+        "explanation": "Image mentale utile",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 8
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.208Z",
+    "updatedAt": "2026-09-25T19:47:56.208Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "informatique",
+      "n1",
+      "fichiers"
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "slug": "anglais-n1-fondamentaux-04",
+  "title": "Numbers 0–20 & Colours",
+  "summary": "Compter de 0 à 20 et nommer les couleurs de base.",
+  "level": "n1-fondamentaux",
+  "subject": "Langue Anglaise",
+  "ageGroup": "6-8 ans",
+  "estimatedMinutes": 20,
+  "isLocked": false,
+  "prerequisites": [
+    "anglais-n1-fondamentaux-03"
+  ],
+  "learningObjectives": [
+    "Compter 0–20",
+    "Nommer les couleurs",
+    "Utiliser There is/are avec numbers"
+  ],
+  "keywords": [
+    "numbers",
+    "colours",
+    "counting"
+  ],
+  "sources": [
+    {
+      "title": "Cambridge Primary — Numbers & Colours",
+      "url": "https://www.cambridgeinternational.org",
+      "type": "website",
+      "description": "Repères débutants"
+    }
+  ],
+  "body": {
+    "introduction": {
+      "title": "0–20 & colours",
+      "content": "0–20 : zero, one, two, three… twenty. Couleurs : red, blue, yellow, green, black, white, pink, orange, brown, purple."
+    },
+    "mainContent": [
+      {
+        "type": "activity",
+        "title": "Colour by number",
+        "content": "Colore **3** étoiles en **red**, **2** cercles en **blue**."
+      },
+      {
+        "type": "exercise",
+        "title": "There is / There are",
+        "content": "**There are** three cats. **There is** one dog."
+      },
+      {
+        "type": "summary",
+        "title": "Récap",
+        "content": "Nombres + couleurs + **there is/are**."
+      }
+    ],
+    "conclusion": {
+      "summary": "Comptage et couleurs acquis.",
+      "keyTakeaways": [
+        "0–20",
+        "couleurs",
+        "there is/are"
+      ],
+      "nextSteps": [
+        "Classroom objects & prepositions"
+      ],
+      "additionalResources": []
+    }
+  },
+  "assessment": {
+    "quiz": [
+      {
+        "question": "How many? 🐱🐱🐱",
+        "type": "multiple-choice",
+        "options": [
+          "two",
+          "three"
+        ],
+        "correctAnswer": "three",
+        "explanation": "3 cats",
+        "points": 10
+      }
+    ],
+    "passingScore": 80,
+    "timeLimit": 15
+  },
+  "metadata": {
+    "createdAt": "2026-09-25T19:47:56.205Z",
+    "updatedAt": "2026-09-25T19:47:56.205Z",
+    "author": "GrowSavoir",
+    "version": "1.0.0",
+    "tags": [
+      "anglais",
+      "n1",
+      "numbers",
+      "colours"
+    ]
+  }
+}

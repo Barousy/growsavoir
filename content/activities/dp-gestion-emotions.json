@@ -1,0 +1,47 @@
+{
+  "id": "dp-gestion-emotions",
+  "title": "Gestion des émotions et intelligence émotionnelle",
+  "description": "Apprendre à reconnaître, comprendre et gérer ses émotions de manière constructive",
+  "duration": "30 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Fiches d'identification des émotions",
+    "Cartes d'émotions avec illustrations",
+    "Matériel de relaxation (balles de stress, coussins)",
+    "Fiches de techniques de gestion émotionnelle",
+    "Journal des émotions",
+    "Grille d'évaluation de la gestion émotionnelle",
+    "Matériel artistique pour l'expression émotionnelle",
+    "Fiches de respiration et de méditation"
+  ],
+  "instructions": [
+    "Identification des émotions (8 min) : Utilisez les cartes d'émotions pour identifier ce que vous ressentez. Nommez précisément vos émotions. Observez les sensations physiques associées.",
+    "Compréhension des déclencheurs (10 min) : Analysez ce qui a déclenché ces émotions. Identifiez les situations, pensées ou événements qui les ont provoquées. Notez vos observations.",
+    "Techniques de gestion (10 min) : Pratiquez des techniques de respiration et de relaxation. Expérimentez différentes stratégies de gestion émotionnelle. Trouvez ce qui fonctionne pour vous.",
+    "Expression et intégration (2 min) : Exprimez vos émotions de manière constructive (art, écriture, parole). Intégrez ces techniques dans votre quotidien. Planifiez leur utilisation future."
+  ],
+  "learningObjectives": [
+    "Reconnaître et nommer précisément ses émotions",
+    "Comprendre les déclencheurs et les causes de ses émotions",
+    "Développer des stratégies de gestion émotionnelle constructives",
+    "Améliorer l'intelligence émotionnelle et l'empathie",
+    "Cultiver la conscience émotionnelle et l'auto-régulation"
+  ],
+  "tips": [
+    "Prenez le temps d'identifier précisément vos émotions",
+    "N'ayez pas peur de vos émotions, elles sont normales",
+    "Pratiquez les techniques de relaxation régulièrement",
+    "Soyez patient dans l'apprentissage de la gestion émotionnelle"
+  ],
+  "assessment": [
+    "L'élève peut-il identifier ses émotions avec précision ?",
+    "La compréhension des déclencheurs est-elle développée ?",
+    "Les techniques de gestion sont-elles utilisées efficacement ?",
+    "L'intelligence émotionnelle s'améliore-t-elle ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": false,
+  "requiresSupervision": true
+}

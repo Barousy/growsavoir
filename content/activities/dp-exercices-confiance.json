@@ -1,0 +1,47 @@
+{
+  "id": "dp-exercices-confiance",
+  "title": "Exercices de confiance en soi",
+  "description": "Renforcer la confiance en soi à travers des exercices pratiques et des défis progressifs",
+  "duration": "25 min",
+  "difficulty": "beginner",
+  "subject": "developpement-personnel",
+  "materials": [
+    "Fiches d'exercices de confiance",
+    "Miroir pour les exercices d'affirmation",
+    "Enregistreur pour les exercices vocaux",
+    "Fiches de suivi des progrès",
+    "Espace privé pour les exercices",
+    "Grille d'évaluation de la confiance",
+    "Matériel de motivation (récompenses, encouragements)",
+    "Fiches de techniques de respiration"
+  ],
+  "instructions": [
+    "Échauffement et préparation (5 min) : Commencez par des exercices de respiration et de relaxation. Préparez votre espace et votre matériel. Adoptez une posture confiante.",
+    "Exercices d'affirmation (10 min) : Pratiquez des affirmations positives devant le miroir. Commencez par des phrases simples et augmentez progressivement la difficulté. Observez votre langage corporel.",
+    "Exercices vocaux et posturaux (8 min) : Travaillez votre voix et votre posture. Pratiquez des exercices de projection vocale. Adoptez des postures de pouvoir et de confiance.",
+    "Intégration et pratique (2 min) : Intégrez ces exercices dans votre routine quotidienne. Notez vos progrès et vos observations. Planifiez les prochaines étapes."
+  ],
+  "learningObjectives": [
+    "Renforcer la confiance en soi et l'estime de soi",
+    "Développer une posture et un langage corporel confiants",
+    "Améliorer la projection vocale et la communication",
+    "Cultiver des habitudes positives et constructives",
+    "Développer la résilience face aux défis"
+  ],
+  "tips": [
+    "Commencez par des exercices simples et augmentez progressivement",
+    "Pratiquez régulièrement pour consolider les acquis",
+    "Célébrez chaque petit progrès et victoire",
+    "Soyez patient avec vous-même dans ce processus"
+  ],
+  "assessment": [
+    "L'élève pratique-t-il régulièrement les exercices ?",
+    "La confiance en soi s'améliore-t-elle progressivement ?",
+    "La posture et le langage corporel sont-ils plus confiants ?",
+    "L'élève peut-il identifier ses progrès ?"
+  ],
+  "ageGroup": "6-8",
+  "isInteractive": true,
+  "canBeDoneAlone": true,
+  "requiresSupervision": false
+}
