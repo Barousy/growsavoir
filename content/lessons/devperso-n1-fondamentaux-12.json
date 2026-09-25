@@ -30,14 +30,7 @@
     "portfolio",
     "évaluation"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Projet",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Clôture du niveau"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Mon portfolio",
@@ -68,8 +61,7 @@
       "additionalResources": [
         {
           "title": "Modèle de portfolio",
-          "description": "Couverture + sommaire",
-          "url": "https://example.com/devperso-n1"
+          "description": "Couverture + sommaire"
         }
       ]
     }

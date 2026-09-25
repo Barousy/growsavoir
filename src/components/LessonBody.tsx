@@ -103,7 +103,14 @@ export default function LessonBody({ body }: { body: Body }) {
               <ul>
                 {conclusion.additionalResources.map((resource, index) => (
                   <li key={index}>
-                    <a href={resource.url} rel="noopener nofollow">{resource.title}</a>
+                    {/* Beaucoup de ces « ressources » sont des supports à
+                        préparer (une affiche, une carte muette) : elles n'ont
+                        pas d'URL, et n'ont pas à en inventer une. */}
+                    {resource.url ? (
+                      <a href={resource.url} rel="noopener nofollow">{resource.title}</a>
+                    ) : (
+                      <span>{resource.title}</span>
+                    )}
                     {resource.description ? ` — ${resource.description}` : null}
                   </li>
                 ))}

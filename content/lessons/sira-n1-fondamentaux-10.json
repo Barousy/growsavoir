@@ -21,14 +21,7 @@
     "fraternité",
     "règles"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Médine",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Vie de la première communauté"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Construire ensemble",

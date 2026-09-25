@@ -20,14 +20,7 @@
     "mecque",
     "confiance"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Patience",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Approche bienveillante"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Face aux difficultés",

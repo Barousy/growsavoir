@@ -30,14 +30,7 @@
     "évaluation",
     "prière"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Synthèse",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Checklist finale"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Consigne du projet",
@@ -74,8 +67,7 @@
       "additionalResources": [
         {
           "title": "Modèle d’affiche",
-          "description": "Gabarit à imprimer",
-          "url": "https://example.com/fiqh-n1"
+          "description": "Gabarit à imprimer"
         }
       ]
     }

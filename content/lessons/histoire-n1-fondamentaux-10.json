@@ -24,7 +24,6 @@
   "sources": [
     {
       "title": "Ibn Kathîr — Contexte arabe préislamique (Al-Bidāya)",
-      "url": "#",
       "type": "book",
       "description": "Repères synthétisés"
     }
@@ -58,8 +57,7 @@
       "additionalResources": [
         {
           "title": "Carte muette Arabie",
-          "description": "À imprimer",
-          "url": "#"
+          "description": "À imprimer"
         }
       ]
     }

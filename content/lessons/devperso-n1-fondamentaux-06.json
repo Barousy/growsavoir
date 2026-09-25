@@ -21,14 +21,7 @@
     "étapes",
     "motivation"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Objectifs",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Méthode 3 étapes"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Je choisis un but",
@@ -58,8 +51,7 @@
       "additionalResources": [
         {
           "title": "Fiche objectif",
-          "description": "Gabarit simple",
-          "url": "https://example.com/devperso-n1"
+          "description": "Gabarit simple"
         }
       ]
     }

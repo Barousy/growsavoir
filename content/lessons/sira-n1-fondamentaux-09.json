@@ -21,14 +21,7 @@
     "ansar",
     "entraide"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Hijra",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Migration vers Médine"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Changer de ville",

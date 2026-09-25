@@ -21,14 +21,7 @@
     "cartable",
     "étiquettes"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Organisation simple",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Tris et étiquettes"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Chaque chose à sa place",
@@ -58,8 +51,7 @@
       "additionalResources": [
         {
           "title": "Etiquettes à imprimer",
-          "description": "Nom, matière, couleur",
-          "url": "https://example.com/devperso-n1"
+          "description": "Nom, matière, couleur"
         }
       ]
     }

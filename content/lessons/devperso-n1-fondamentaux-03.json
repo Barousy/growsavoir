@@ -20,14 +20,7 @@
     "calme",
     "auto-régulation"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Outils de retour au calme",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Techniques brèves"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Je souffle",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Affiche Respiration",
-          "description": "Pas à pas visuel",
-          "url": "https://example.com/devperso-n1"
+          "description": "Pas à pas visuel"
         }
       ]
     }

@@ -20,14 +20,7 @@
     "douceur",
     "invocation"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Ṭâ’if",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Épisode niveau enfant"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Douceur et pardon",

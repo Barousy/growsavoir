@@ -20,14 +20,7 @@
     "adoration",
     "sincérité"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Repères"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Pour qui je le fais ?",

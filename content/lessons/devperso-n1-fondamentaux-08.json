@@ -20,14 +20,7 @@
     "respect",
     "vivre-ensemble"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Vivre ensemble",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Rituels de classe"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Des mots qui aident",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Affiche Mots Magiques",
-          "description": "Poster classe",
-          "url": "https://example.com/devperso-n1"
+          "description": "Poster classe"
         }
       ]
     }

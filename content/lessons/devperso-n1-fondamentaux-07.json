@@ -20,14 +20,7 @@
     "effort",
     "état d’esprit"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Esprit de progression",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Growth mindset adapté"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Je progresse",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Carnet des progrès",
-          "description": "1 ligne par jour",
-          "url": "https://example.com/devperso-n1"
+          "description": "1 ligne par jour"
         }
       ]
     }

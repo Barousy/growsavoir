@@ -13,7 +13,7 @@ export type QuizItem = { question: string; type: string; options?: string[]; cor
 export type Body = {
   introduction?: { title?: string; content?: string; image?: string };
   mainContent?: Section[];
-  conclusion?: { summary?: string; keyTakeaways?: string[]; nextSteps?: string[]; additionalResources?: { title: string; url: string; description?: string }[] };
+  conclusion?: { summary?: string; keyTakeaways?: string[]; nextSteps?: string[]; additionalResources?: { title: string; url?: string; description?: string }[] };
 };
 
 /** Un champ JSON stocké en texte : on ne fait jamais tomber une page dessus. */

@@ -21,14 +21,7 @@
     "Hira",
     "Lis"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Révélation",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Événement fondateur"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Début de la mission",

@@ -20,14 +20,7 @@
     "Mecque",
     "message"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Progression GrowSavoir — niveau enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Le dernier Messager",
@@ -68,8 +61,7 @@
       "additionalResources": [
         {
           "title": "Affiche « Qui est le Prophète ﷺ ? »",
-          "description": "Mémo illustré",
-          "url": "https://example.com/sira-n1"
+          "description": "Mémo illustré"
         }
       ]
     }

@@ -23,7 +23,6 @@
   "sources": [
     {
       "title": "Projet N1 (adapté d’Ibn Kathîr)",
-      "url": "#",
       "type": "book",
       "description": "Fil rouge du niveau"
     }
@@ -58,8 +57,7 @@
       "additionalResources": [
         {
           "title": "Modèle d’affiche",
-          "description": "Gabarit à imprimer",
-          "url": "#"
+          "description": "Gabarit à imprimer"
         }
       ]
     }

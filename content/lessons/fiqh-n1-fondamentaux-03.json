@@ -20,14 +20,7 @@
     "ablutions",
     "prière"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — wudû’",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Fiche étapes simplifiées"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Se préparer à prier",
@@ -63,8 +56,7 @@
       "additionalResources": [
         {
           "title": "Poster Wudû’ enfants",
-          "description": "Étapes illustrées",
-          "url": "https://example.com/fiqh-n1"
+          "description": "Étapes illustrées"
         }
       ]
     }

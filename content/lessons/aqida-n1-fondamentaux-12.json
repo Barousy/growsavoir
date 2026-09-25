@@ -30,14 +30,7 @@
     "évaluation",
     "livret"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Synthèse et évaluation"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Consignes du livret",
@@ -72,8 +65,7 @@
       "additionalResources": [
         {
           "title": "Modèle de livret",
-          "description": "Gabarit à imprimer",
-          "url": "https://example.com/aqida-n1"
+          "description": "Gabarit à imprimer"
         }
       ]
     }

@@ -23,7 +23,6 @@
   "sources": [
     {
       "title": "Ibn Kathîr — Al-Bidāya wa an-Nihāya (chapitres de la création)",
-      "url": "#",
       "type": "book",
       "description": "Source primaire, récit des commencements (adapté N1)"
     }
@@ -63,8 +62,7 @@
       "additionalResources": [
         {
           "title": "Affiche — Les signes de la création",
-          "description": "Poster à colorier",
-          "url": "#"
+          "description": "Poster à colorier"
         }
       ]
     }

@@ -18,14 +18,7 @@
     "créateur",
     "adoration"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Référentiel pédagogique GrowSavoir"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Qui nous a créés ?",
@@ -71,8 +64,7 @@
       "additionalResources": [
         {
           "title": "Affiche : Allah a créé…",
-          "description": "Fiche à compléter",
-          "url": "https://example.com/aqida-n1"
+          "description": "Fiche à compléter"
         }
       ]
     }

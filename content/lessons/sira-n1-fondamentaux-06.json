@@ -21,14 +21,7 @@
     "ali",
     "zayd"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Premiers croyants",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Repères simples"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Les premiers soutiens",

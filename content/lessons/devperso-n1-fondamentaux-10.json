@@ -20,14 +20,7 @@
     "sablier",
     "concentration"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Gestion du temps",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Blocs courts"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Des blocs de temps",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Sablier papier",
-          "description": "Patron à découper",
-          "url": "https://example.com/devperso-n1"
+          "description": "Patron à découper"
         }
       ]
     }

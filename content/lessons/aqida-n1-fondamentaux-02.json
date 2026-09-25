@@ -19,14 +19,7 @@
     "asma al-husna",
     "noms d’Allah"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Sélection pédagogique"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Allah a de beaux Noms",
@@ -69,8 +62,7 @@
       "additionalResources": [
         {
           "title": "Cartes des Noms",
-          "description": "À colorier",
-          "url": "https://example.com/aqida-n1"
+          "description": "À colorier"
         }
       ]
     }

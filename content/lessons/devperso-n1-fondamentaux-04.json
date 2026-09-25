@@ -20,14 +20,7 @@
     "habitudes",
     "organisation"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Routines",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Grille simple"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Des petits pas",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Fiche Routine",
-          "description": "Tableau à cocher",
-          "url": "https://example.com/devperso-n1"
+          "description": "Tableau à cocher"
         }
       ]
     }

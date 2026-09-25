@@ -20,14 +20,7 @@
     "propreté",
     "hygiène"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — ṭahâra",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Notions adaptées enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Propre = prêt",

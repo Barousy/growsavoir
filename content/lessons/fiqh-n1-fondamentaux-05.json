@@ -21,14 +21,7 @@
     "qibla",
     "horaires"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Ṣalât",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Repères enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Rencontre avec Allah",

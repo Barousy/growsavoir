@@ -20,14 +20,7 @@
     "formules",
     "khushu"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Adkâr",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Formules simplifiées"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Des mots qui embellissent la prière",

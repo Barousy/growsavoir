@@ -20,14 +20,7 @@
     "tawhid",
     "messager"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Formulation et sens"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Deux phrases importantes",

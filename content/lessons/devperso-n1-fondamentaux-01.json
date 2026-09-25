@@ -19,14 +19,7 @@
     "respect",
     "tour de parole"
   ],
-  "sources": [
-    {
-      "title": "Programme interne — DP N1",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Progression N1"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Qui suis‑je ?",
@@ -62,8 +55,7 @@
       "additionalResources": [
         {
           "title": "Affiche Écoute Active",
-          "description": "Mémo 3 étapes",
-          "url": "https://example.com/devperso-n1"
+          "description": "Mémo 3 étapes"
         }
       ]
     }

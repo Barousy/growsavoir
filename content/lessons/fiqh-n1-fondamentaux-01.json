@@ -19,14 +19,7 @@
     "règles",
     "intention"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Progression GrowSavoir — niveau enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Le fiqh, à quoi ça sert ?",
@@ -68,8 +61,7 @@
       "additionalResources": [
         {
           "title": "Affiche « Qu’est-ce que le fiqh ? »",
-          "description": "Mémo illustré N1",
-          "url": "https://example.com/fiqh-n1"
+          "description": "Mémo illustré N1"
         }
       ]
     }

@@ -20,14 +20,7 @@
     "jumu‘a",
     "adab"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Jumu‘a",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Rappels N1"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Le jour béni",

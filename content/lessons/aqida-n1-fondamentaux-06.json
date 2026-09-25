@@ -19,14 +19,7 @@
     "piliers de la foi",
     "iman"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Résumé N1"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "La base de la croyance",
@@ -65,8 +58,7 @@
       "additionalResources": [
         {
           "title": "Affiche 6 piliers",
-          "description": "Mémo à imprimer",
-          "url": "https://example.com/aqida-n1"
+          "description": "Mémo à imprimer"
         }
       ]
     }

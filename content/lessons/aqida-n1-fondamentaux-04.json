@@ -20,14 +20,7 @@
     "coran",
     "révélation"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Repères enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Le Livre d’Allah",
@@ -67,8 +60,7 @@
       "additionalResources": [
         {
           "title": "Affiche adab du Coran",
-          "description": "Rappels visuels",
-          "url": "https://example.com/aqida-n1"
+          "description": "Rappels visuels"
         }
       ]
     }

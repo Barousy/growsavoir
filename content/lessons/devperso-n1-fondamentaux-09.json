@@ -21,14 +21,7 @@
     "rôle",
     "coopération"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Coopération",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Rôles simples"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "On réussit ensemble",
@@ -58,8 +51,7 @@
       "additionalResources": [
         {
           "title": "Cartes de rôles",
-          "description": "À découper",
-          "url": "https://example.com/devperso-n1"
+          "description": "À découper"
         }
       ]
     }

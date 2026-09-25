@@ -22,14 +22,7 @@
     "peur",
     "tristesse"
   ],
-  "sources": [
-    {
-      "title": "Programme interne — Émotions N1",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Repères émotionnels"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Je mets des mots",
@@ -64,8 +57,7 @@
       "additionalResources": [
         {
           "title": "Cartes émotions",
-          "description": "4 pictos à imprimer",
-          "url": "https://example.com/devperso-n1"
+          "description": "4 pictos à imprimer"
         }
       ]
     }

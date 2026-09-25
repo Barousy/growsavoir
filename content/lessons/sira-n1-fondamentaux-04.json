@@ -20,14 +20,7 @@
     "famille",
     "soutien"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Famille",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Notions familiales"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Une épouse fidèle",

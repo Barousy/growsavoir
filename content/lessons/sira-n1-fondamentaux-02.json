@@ -22,14 +22,7 @@
     "Halima",
     "Mecque"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Enfance",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Notions adaptées enfants"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Ses débuts",

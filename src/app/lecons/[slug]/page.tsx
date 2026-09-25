@@ -18,7 +18,8 @@ import { SITE_NAME, absolute, levelLabel, jsonLd } from '@/lib/site';
 export const revalidate = 3600;
 
 type Params = { params: Promise<{ slug: string }> };
-type Source = { title: string; url: string; type?: string; description?: string };
+/** L'URL est facultative : une référence de livre n'en a pas. */
+type Source = { title: string; url?: string; type?: string; description?: string };
 type Assessment = { quiz?: QuizItem[]; passingScore?: number; timeLimit?: number };
 
 export async function generateStaticParams() {
@@ -159,7 +160,13 @@ export default async function Lecon({ params }: Params) {
             <ul>
               {sources.map((source, index) => (
                 <li key={index}>
-                  <a href={source.url} rel="noopener nofollow">{source.title}</a>
+                  {/* Sans URL — un ouvrage, par exemple — la référence s'affiche
+                      en texte. Mieux vaut pas de lien qu'un lien mort. */}
+                  {source.url ? (
+                    <a href={source.url} rel="noopener nofollow">{source.title}</a>
+                  ) : (
+                    <span>{source.title}</span>
+                  )}
                   {source.description ? ` — ${source.description}` : null}
                 </li>
               ))}

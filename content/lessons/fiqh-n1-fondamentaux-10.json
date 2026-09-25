@@ -20,14 +20,7 @@
     "jeûne",
     "siyam"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Ramadan",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Notions enfantines"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Un mois spécial",

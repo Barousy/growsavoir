@@ -20,14 +20,7 @@
     "communication",
     "message je"
   ],
-  "sources": [
-    {
-      "title": "DP N1 — Communication bienveillante",
-      "url": "https://example.com/devperso-n1",
-      "type": "website",
-      "description": "Étapes simples"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Parler sans blesser",
@@ -57,8 +50,7 @@
       "additionalResources": [
         {
           "title": "Fiche Message Je",
-          "description": "Modèle à trous",
-          "url": "https://example.com/devperso-n1"
+          "description": "Modèle à trous"
         }
       ]
     }

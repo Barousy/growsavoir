@@ -20,14 +20,7 @@
     "jugement",
     "bonnes actions"
   ],
-  "sources": [
-    {
-      "title": "Programme interne Aqîda N1",
-      "url": "https://example.com/aqida-n1",
-      "type": "website",
-      "description": "Approche bienveillante"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Mes actions comptent",

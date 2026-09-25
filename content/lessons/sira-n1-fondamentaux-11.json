@@ -21,14 +21,7 @@
     "justice",
     "douceur"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Sîra N1 — Qualités",
-      "url": "https://example.com/sira-n1",
-      "type": "website",
-      "description": "Éducation du caractère"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Un caractère magnifique",

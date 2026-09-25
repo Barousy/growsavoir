@@ -20,14 +20,7 @@
     "partage",
     "entraide"
   ],
-  "sources": [
-    {
-      "title": "Référentiel interne Fiqh N1 — Ṣadaqa",
-      "url": "https://example.com/fiqh-n1",
-      "type": "website",
-      "description": "Idées de partage"
-    }
-  ],
+  "sources": [],
   "body": {
     "introduction": {
       "title": "Donner avec le sourire",
