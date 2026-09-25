@@ -3,8 +3,8 @@
  *
  * `mode: 'insensitive'` est propre à PostgreSQL : Prisma le rejette sur MySQL
  * au moment de la requête, donc ni le typecheck ni le build ne le voient. Ce
- * test relit le code des pages pour qu'il ne revienne pas par un report de
- * correctif depuis la branche PostgreSQL.
+ * test relit le code des pages pour que l'option ne revienne pas par un
+ * copier-coller d'exemple trouvé ailleurs.
  */
 import test from 'node:test';
 import assert from 'node:assert/strict';

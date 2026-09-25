@@ -2,7 +2,7 @@
   "name": "growsavoir",
   "version": "1.0.0",
   "private": true,
-  "description": "Plateforme éducative GrowSavoir — variante MySQL/MariaDB pour hébergement mutualisé (o2switch).",
+  "description": "Plateforme éducative GrowSavoir — rendu serveur, console d'administration, contenu et utilisateurs gérables.",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",

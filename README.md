@@ -8,12 +8,6 @@ Cette version est une reconstruction. La précédente était un développement e
 cours — déployée, partiellement indexée, mais jamais lancée. Celle-ci en reprend
 le contenu et change la façon dont il est servi.
 
-> **Cette branche est la variante MySQL / MariaDB**, destinée à un hébergement
-> mutualisé o2switch. La branche `claude/refonte-growsavoir` est la même
-> application sur PostgreSQL, pour un hébergement de type Vercel, Netlify ou
-> Neon. Les deux ne diffèrent que par cinq points, listés plus bas : tout
-> développement se fait sur la branche PostgreSQL, puis se reporte ici.
->
 > Mise en ligne chez o2switch : **[docs/o2switch.md](docs/o2switch.md)**.
 
 ---
@@ -223,26 +217,28 @@ réservé au développement local.
 
 ---
 
-## Différences avec la branche PostgreSQL
+## Pourquoi MySQL plutôt que PostgreSQL
 
-Cinq points, et rien d'autre. Un correctif écrit sur `claude/refonte-growsavoir`
-se reporte ici par `git cherry-pick` sans conflit, sauf s'il touche à l'un d'eux.
+Le site vise un hébergement mutualisé o2switch. Leur documentation est explicite
+sur deux points : l'outil cPanel « Setup Node.js App » fait tourner une
+application Node derrière Phusion Passenger (versions jusqu'à 24), mais leur
+PostgreSQL est en 9.6 et ils annoncent qu'ils cesseront probablement de le
+proposer, cPanel envisageant d'en retirer le support. MariaDB, lui, y est
+pleinement supporté et sans limite de nombre de bases.
 
-1. **`prisma/schema.prisma`** : `provider = "mysql"`, et les champs longs
-   annotés `@db.Text` / `@db.LongText`. Sur MySQL, Prisma traduit un `String`
-   par `VARCHAR(191)` : sans ces annotations, l'insertion d'une leçon échoue —
-   la plus longue fait aujourd'hui 4 180 caractères.
-2. **`prisma/migrations/`** : migration initiale régénérée en SQL MySQL, tables
-   en `utf8mb4` / `utf8mb4_unicode_ci` (l'arabe, les emojis et les accents
-   passent sans perte — vérifié).
-3. **`src/app/admin/lecons/page.tsx`** : `mode: 'insensitive'` retiré, car
-   c'est une option PostgreSQL que Prisma refuse sur MySQL. La collation rend
-   déjà la recherche insensible à la casse — et, en prime, aux accents :
-   « harakat » trouve « Harakât », ce que la version PostgreSQL ne fait pas.
-4. **`server.js`** : fichier de démarrage pour Passenger, qui charge un script
-   au lieu de lancer `next start`. `npm start` l'utilise.
-5. **`docs/o2switch.md`**, `.env.example` et ce README : la documentation de
-   déploiement.
+Deux conséquences dans le code, faciles à défaire si l'hébergement change un
+jour :
+
+1. **Les champs longs sont annotés `@db.Text` / `@db.LongText`.** Sur MySQL,
+   Prisma traduit un `String` par `VARCHAR(191)`, alors que le corps de la plus
+   longue leçon fait 4 180 caractères. Sans annotation, l'insertion échoue à
+   l'exécution — ni le typecheck ni le build ne la voient passer. Un test
+   (`tests/schema-mysql.test.mjs`) refuse qu'un champ long reparte sans
+   annotation.
+2. **Pas de `mode: 'insensitive'` dans les requêtes.** C'est une option
+   PostgreSQL, que Prisma rejette sur MySQL. La collation `utf8mb4_unicode_ci`
+   fait le travail, et même un peu plus : la recherche de la console est
+   insensible à la casse *et* aux accents — « harakat » trouve « Harakât ».
 
 ## Ce qui reste à faire
 
