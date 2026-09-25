@@ -4,15 +4,16 @@ Plateforme éducative : 132 leçons et 43 fiches d’activités, en langues, sci
 et sciences islamiques, avec une console d’administration pour le contenu, les
 comptes et les fonctionnalités.
 
-Cette version est une reconstruction. Elle reprend le contenu du site précédent
-et change la façon dont il est servi.
+Cette version est une reconstruction. La précédente était un développement en
+cours — déployée, partiellement indexée, mais jamais lancée. Celle-ci en reprend
+le contenu et change la façon dont il est servi.
 
 ---
 
 ## Pourquoi une reconstruction
 
-Le site précédent construisait chaque page dans le navigateur. Mesuré page par
-page avant d’écrire une ligne de code :
+La version précédente construisait chaque page dans le navigateur. Mesuré page
+par page sur le déploiement existant, avant d’écrire une ligne de code :
 
 | | avant | maintenant |
 |---|---|---|
@@ -26,10 +27,13 @@ page avant d’écrire une ligne de code :
 | Pages dans le sitemap | 144, dont 12 sans contenu | 193, toutes servies |
 | Vérification Google | `your-google-verification-code` | à renseigner (voir plus bas) |
 
-Un moteur de recherche indexait donc l’écran de chargement à la place des
-leçons. La correction n’était pas un réglage de balises : il fallait que les
-pages soient produites sur le serveur. C’est ce que fait cette version, et tout
-le reste en découle.
+Le site n’étant pas lancé, il n’y avait aucun référencement acquis à sauver. Le
+défaut n’en était pas moins structurel : un moteur de recherche recevait l’écran
+de chargement à la place de la leçon — et avec lui un lecteur d’écran, un
+navigateur sans JavaScript, et toute connexion trop lente pour attendre. La
+correction n’était pas un réglage de balises : il fallait que les pages soient
+produites sur le serveur. C’est ce que fait cette version, et tout le reste en
+découle.
 
 ---
 
@@ -192,9 +196,11 @@ réservé au développement local.
    elle-même ce qui manque.
 2. Dans la Search Console, soumettre `https://growsavoir.com/sitemap.xml` et
    demander l’indexation de quelques leçons pour amorcer.
-3. Vérifier que les anciennes adresses redirigent : `/lessons/…` vers
-   `/lecons/…`, `/catalogue/arabic` vers `/catalogue/arabe`, etc. Les
-   redirections sont permanentes (301) et listées dans `next.config.mjs`.
+3. Les anciennes adresses (`/lessons/…`, `/catalogue/arabic`…) redirigent en
+   301 vers les nouvelles. C’est une précaution, pas une reprise d’héritage :
+   quelques pages avaient été explorées pendant le développement. Les
+   redirections sont listées dans `next.config.mjs` et peuvent être retirées
+   quand le domaine repart de zéro.
 4. Planifier `npm run purge` une fois par jour (les messages de contact ont une
    durée de conservation annoncée dans la politique de confidentialité ; une
    durée annoncée doit être appliquée).
